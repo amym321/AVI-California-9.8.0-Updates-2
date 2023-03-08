@@ -1,0 +1,140 @@
+<div class="search-overlay">
+  <form action="{{ routes.search_url }}" method="get" class="search-bar" role="search">
+    <input type="hidden" name="type" value="product,page,article">
+    <input type="search" name="q" placeholder="{{ 'general.search.placeholder' | t }}" class="query" value="" aria-label="{{ 'general.search.placeholder' | t }}" autocorrect="off" autocomplete="off" autocapitalize="none">
+    <a class="btn icon close" data-action="toggle-search" aria-label="{{ 'general.accessibility.close_modal' | t }}"><i class="fc fc-close"></i></a>
+  </form>
+  
+  {% if settings.predictive_search_enabled %}
+    <div class="predictive-search-results collection">
+    </div>
+    <script id="CollectionSuggestionsTemplate" type="text/template">
+      <div class="products columns_4">
+        {% raw %}
+          {{#products}}
+            <div class="product {{#if soldout}}soldout{{/if}} {{#if on_sale}}on-sale{{/if}}">
+              <a class="inner" href="{{ url }}">
+                <div class="image">
+                  <div class="line"></div>
+                  <div class="frame {% endraw %}{{ settings.image_ratio }}{% raw %}"
+                    {% endraw %}{% if settings.image_ratio == 'adapt' %}{% raw %} style="padding-bottom: {{ aspect_ratio }}%;"{% endraw %}{% endif %}{% raw %}
+                  >
+                    <img src="{{ img }}"
+                         srcset=
+                          "{{ img }} 1x,
+                           {{ img_2x }} 2x,
+                           {{ img_3x }} 3x
+                          "
+                          width="{{ img_width }}"
+                          height="{{ img_height }}"
+                          style="width: 100%; height: auto;"
+                    />
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="status nowrap">
+                    {{#if soldout}}
+                      <span class="ca sold">{% endraw %}{{ 'products.product.sold_out' | t }}{% raw %}</span>
+                    {{else}}
+                      {{#if on_sale}}
+                        <span class="ca sale">{% endraw %}{{ 'products.product.on_sale' | t }}{% raw %}</span>
+                      {{else}}
+                        <span class="ca buy">{% endraw %}{{ 'products.product.buy' | t }}{% raw %}</span>
+                      {{/if}}
+                    {{/if}}
+                  </div>
+                  <div class="metas">
+                    {% endraw %}
+                    {% if settings.predictive_search_show_title %}
+                    {% raw %}
+                      <div class="title">{{ title }}</div>
+                    {% endraw %}
+                    {% endif %}
+                    {% if settings.predictive_search_show_vendor %}
+                    {% raw %}
+                      <div class="vendor">{{ vendor }}</div>
+                    {% endraw %}
+                    {% endif %}
+                    {% if settings.predictive_search_show_price %}
+                    {% raw %}
+                      <div>
+                        <span class="price">
+                          {{#if price_varies}}
+                            {{from_price}}
+                          {{else}}
+                            {{price}}
+                          {{/if}}
+                        </span>
+                        {{#if on_sale}}
+                          <span class="price striped">{{compare_at_price}}</span>
+                        {{/if}}
+                      </div>
+                    {% endraw %}
+                    {% endif %}
+                    {% raw %}
+                  </div>
+                </div>
+              </a>
+            </div>
+          {{/products}}
+          {{#pages}}
+            <div class="product">
+              <a class="inner" href="{{ url }}">
+                <div class="image">
+                  <svg class="placeholder-svg {% endraw %}{{ settings.image_ratio }}{% raw %}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525 525">
+                    <path d="M257.27 229.5a1 1 0 100 2h36a1 1 0 000-2h-36zM231.27 242a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 254a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 266a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 278a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 290a1 1 0 100 2h62a1 1 0 000-2h-62z"></path><path fill-rule="evenodd" d="M309 199h-64.5v.04a.99.99 0 00-.43.25l-29.77 29.5a1 1 0 00-.3.71V323a3 3 0 003 3h92a3 3 0 003-3V202a3 3 0 00-3-3zm-93 124v-92.5h26.77a3 3 0 003-3V201H309a1 1 0 011 1v121a1 1 0 01-1 1h-92a1 1 0 01-1-1zm1.43-94.5h25.34a1 1 0 001-1v-25.1l-26.34 26.1z" clip-rule="evenodd"></path>
+                  </svg>
+                  <div class="info">
+                    <div class="status nowrap">
+                      <span class="ca buy">{% endraw %}{{ 'general.search.page' | t }}{% raw %}</span>
+                    </div>
+                    <div class="metas">
+                      <div class="title">{{ title }}</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {{/pages}}
+          {{#articles}}
+            <div class="product">
+              <a class="inner" href="{{ url }}">
+                <div class="image">
+                  {{#if hasImage}}
+                    <div class="frame {% endraw %}{{ settings.image_ratio }}{% raw %}"
+                      {% endraw %}{% if settings.image_ratio == 'adapt' %}{% raw %} style="padding-bottom: {{ aspect_ratio }}%;"{% endraw %}{% endif %}{% raw %}
+                    >
+                      <img src="{{ img }}"
+                          class="opacity-80"
+                          srcset=
+                            "{{ img }} 1x,
+                             {{ img_2x }} 2x,
+                             {{ img_3x }} 3x
+                            "
+                          width="{{ img_width }}"
+                          height="{{ img_height }}"
+                          style="width: 100%; height: auto;"
+                      />
+                    </div>
+                  {{else}}
+                    <svg class="placeholder-svg {% endraw %}{{ settings.image_ratio }}{% raw %}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525 525">
+                      <path d="M257.27 229.5a1 1 0 100 2h36a1 1 0 000-2h-36zM231.27 242a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 254a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 266a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 278a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 290a1 1 0 100 2h62a1 1 0 000-2h-62z"></path><path fill-rule="evenodd" d="M309 199h-64.5v.04a.99.99 0 00-.43.25l-29.77 29.5a1 1 0 00-.3.71V323a3 3 0 003 3h92a3 3 0 003-3V202a3 3 0 00-3-3zm-93 124v-92.5h26.77a3 3 0 003-3V201H309a1 1 0 011 1v121a1 1 0 01-1 1h-92a1 1 0 01-1-1zm1.43-94.5h25.34a1 1 0 001-1v-25.1l-26.34 26.1z" clip-rule="evenodd"></path>
+                    </svg>
+                  {{/if}}
+                  <div class="info">
+                    <div class="status nowrap">
+                      <span class="ca buy">{% endraw %}{{ 'general.search.article' | t }}{% raw %}</span>
+                    </div>
+                    <div class="metas">
+                      <div class="title">{{ title }}</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {{/articles}}
+        {% endraw %}
+      </div>
+    </script>
+  {% endif %}
+</div>

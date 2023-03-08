@@ -1,0 +1,49 @@
+{% liquid
+  if block.settings.image != blank
+    assign slide_id = "slide-" | append: block.id 
+  else
+    assign slide_index_modulo = slide_index | modulo: 2
+    assign slide_id = "slide-" | append: slide_index_modulo
+  endif
+%}
+
+<div class="slide {{ slide_id }} {{ block.settings.slide_text_color }}" data-index="{{ slide_index }}" {{ block.shopify_attributes }}>
+  {% if block.settings.image != blank %}
+    {% render 'set-slide-background', slide_id: slide_id, block: block %}
+  {% else %}
+    <div class="placeholder-background">
+      {% assign index = slide_index | plus: 1 | modulo: 2 | plus: 1 %}
+      {{ 'lifestyle-' | append: index | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {% endif %}
+  <div class="overlay" style="background: {{ block.settings.overlay_color }}; opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};"></div>
+  <div class="content {{ block.settings.text_alignment }} {%- if section.settings.arrows and section.blocks.size > 1 -%}with-arrows{%- endif -%}">
+    <div class="container">
+      {% unless block.settings.heading == blank %}
+        <h2>{{ block.settings.heading | newline_to_br }}</h2>
+      {% endunless %}
+      {% unless block.settings.subheading == blank %}
+        <h3>{{ block.settings.subheading }}</h3>
+      {% endunless %}
+      {% unless block.settings.cta == blank %}
+        {% liquid
+          if block.settings.link == blank
+            assign button_link = routes.all_products_collection_url
+          else
+            assign button_link = block.settings.link
+          endif
+        %}
+        <a href="{{ button_link }}" class="btn action">{{ block.settings.cta | escape }}</a>
+      {% endunless %}
+      {% unless block.settings.button_to_scroll == blank %}
+        <div>
+          <a class="btn line" data-action="scroll" tabindex="-1">{{ block.settings.button_to_scroll }}</a>
+        </div>
+      {% endunless %}
+    </div>
+  </div>
+  <div class="bottom-left">
+    {{ block.settings.credits }}
+  </div>
+</div>
+

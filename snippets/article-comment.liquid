@@ -1,0 +1,57 @@
+{% if blog.comments_enabled? %}
+  <div id="comments" class="comments {{ settings.content_alignment }}">
+    {% assign number_of_comments = article.comments_count %}
+    {% if number_of_comments > 0 %}
+      <h3>{{ 'blogs.comments.title' | t: count: number_of_comments }}:</h3>
+      {% if comment and comment.created_at %}
+        <h4 class="note form-success">
+          {% if blog.moderated? %}
+            {{ 'blogs.comment_form.success_moderated' | t }}
+          {% else %}
+            {{ 'blogs.comment_form.success' | t }}
+          {% endif %}
+        </h4>
+      {% endif %}
+      {% paginate article.comments by 24 %}
+        {% for comment in article.comments %}
+          <div id="{{ comment.id }}" class="{% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}">
+            {% render 'comment' with comment as comment %}
+          </div>
+        {% endfor %}
+        {% if paginate.next %}
+          <div class="pagination comments align-left">
+            <a class="more btn line small" href="{{ paginate.next.url }}" data-action="load-more-comments" data-message="{{ 'general.pagination.comments_loading' | t }}">
+              {{ 'general.pagination.comments_more' | t }}
+            </a>
+          </div>
+        {% endif %}
+      {% endpaginate %}
+    {% endif %}
+
+    <h3>{{ 'blogs.comment_form.title' | t }}:</h3>
+    {% form 'new_comment', article %}
+      <div class="row">
+        <input class="full{% if form.errors contains "author" %} error{% endif %}" type="text" name="comment[author]" placeholder="{{ 'blogs.comment_form.name' | t }}" aria-label="{{ 'blogs.comment_form.name' | t }}" id="comment-author" value="{{ form.author }}" autocapitalize="words">
+      </div>
+      <div class="row">
+        <input class="full{% if form.errors contains "email" %} error{% endif %}" type="email" name="comment[email]" placeholder="{{ 'blogs.comment_form.email' | t }}" aria-label="{{ 'blogs.comment_form.email' | t }}" id="comment-email" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+      </div>
+      <div class="row">
+        <textarea class="full{% if form.errors contains "body" %} error{% endif %}" name="comment[body]" id="comment-body" placeholder="{{ 'blogs.comment_form.message' | t }}" aria-label="{{ 'blogs.comment_form.message' | t }}">{{ form.body }}</textarea>
+      </div>
+
+      {% if blog.moderated? %}
+        <div class="row">
+          <p><span class="highlight">{{ 'blogs.comment_form.moderated' | t }}</span></p>
+        </div>
+      {% endif %}
+
+      <div class="row">
+        <input type="submit" class="btn action small" value="{{ 'blogs.comment_form.post' | t }}">
+      </div>
+
+    {% endform %}
+
+  </div>
+
+{% endif %}

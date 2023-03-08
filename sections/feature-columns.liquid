@@ -1,0 +1,208 @@
+<div class="content feature-columns {% render 'content-classes', scope: section %}">
+  <div class="inner with-layout-options centered" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="titles">
+      <h2 class="section-title">{{ section.settings.title | escape }}</h2>
+      <div class="rte">
+        {{ section.settings.subtitle }}
+      </div>
+    </div>
+    <div class="row cols layout-{{ section.blocks.size }}">
+      {% assign index = 1 %}
+      {% for block in section.blocks limit: section.blocks.size %}
+        <div class="col" {{ block.shopify_attributes }}>
+          {% if block.settings.image == blank %}
+            <div class="number">{{ index }}</div>
+          {% else %}
+            {% if block.settings.image_url %}<a href="{{ block.settings.image_url }}">{% endif %}
+            <img src="{{ block.settings.image | img_url: '480x480' }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" style="max-width: {{ block.settings.image.width }}px; width: 100%; height: auto;">
+            {% if block.settings.image_url %}</a>{% endif %}
+          {% endif %}
+          <h3>{{ block.settings.title }}</h3>
+          <div class="rte">
+            {{ block.settings.text }}
+          </div>
+        </div>
+        {% if section.blocks.size == 4 and index == 2 %}
+          <div class="break"></div>
+        {% endif %}
+        {% assign index = index | plus: 1 %}
+      {% endfor %}
+    </div>
+    {% unless section.settings.button_label == blank or section.settings.button_link == blank %}
+      <a href="{{ section.settings.button_link }}" class="btn action small">{{ section.settings.button_label | escape }}</a>
+    {% endunless %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Text columns with images",
+    "es": "Columnas de texto con imágenes"
+  },
+  "max_blocks": 27,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.settings.heading.label",
+      "default": {
+        "en": "Text columns with images",
+        "es": "Columnas de texto con imágenes"
+      }
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": {
+        "en": "Text",
+        "es": "Texto"
+      },
+      "default": {
+        "en": "<p>Use this section to describe details that make your store different.</p>",
+        "es": "<p>Utiliza esta sección para hablar de las cosas que destacarías de tu tienda.</p>"
+      }
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": {
+        "en": "Button label",
+        "es": "Etiqueta del botón"
+      }
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": {
+        "en": "Button link",
+        "es": "Enlace del botón"
+      }
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": {
+        "en": "Max width",
+        "es": "Ancho máximo"
+      },
+      "default": 1200,
+      "min": 400,
+      "max": 2000,
+      "step": 50,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "label": "t:sections.settings.show_on_desktop.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "label": "t:sections.settings.show_on_mobile.label",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_column",
+      "name": {
+        "en": "Text column",
+        "es": "Columna de texto"
+      },
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Heading",
+            "es": "Título"
+          },
+          "default": {
+            "en": "Add a title or tagline",
+            "es": "Añadir un título o eslogan"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": {
+            "en": "Text",
+            "es": "Texto"
+          },
+          "default": {
+            "en": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.</p>",
+            "es": "<p>Comparte entradas de blogs, productos o promociones con tus clientes. Usa este texto para describir productos, compartir detalles sobre la disponibilidad y el estilo, o como un espacio para mostrar reseñas recientes o preguntas frecuentes.</p>"
+          }
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "en": "Image",
+            "es": "Imagen"
+          }
+        },
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": {
+            "en": "Image link",
+            "es": "Enlace en la imagen"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Text columns with images",
+        "es": "Columnas de texto con imágenes"
+      },
+      "blocks": [
+        {
+          "type": "text_column"
+        },
+        {
+          "type": "text_column"
+        },
+        {
+          "type": "text_column"
+        },
+        {
+          "type": "text_column"
+        },
+        {
+          "type": "text_column"
+        },
+        {
+          "type": "text_column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,377 @@
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<div class="content product {% render 'content-classes', scope: section %} {% if section.settings.enable_sticky_info %}sticky{% endif %}" data-section-id="{{ section.id }}" data-section-type="product">
+  <div class="item">
+    <div class="media">
+      <div class="product-media {% if product.media.size > 1 %}{{ section.settings.product_images_layout }}{% endif %}">
+        {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
+        <div class="frame">
+          <div class="table">
+            <div class="cell">
+              <div>
+                {%- for media in product.media -%}
+                  {% render 'media', media: media, featured_media: featured_media %}
+                {%- endfor -%}
+              </div>
+              {% render 'product-view-in-space', product: product %}
+            </div>
+          </div>
+        </div>
+        {% if product.media.size > 1 %}
+          <div class="gallery">
+            {% for media in product.media %}
+              <div class="thumb {% cycle product.handle: 'col-0', 'col-1', 'col-2', 'col-3' %} ">
+                <a href="{{ media.preview_image | img_url: '1024x1024' }}" data-action="show-product-media" data-id="{{ media.id }}" class="{% if media.media_type == 'model' %} model{% endif %}{% if featured_media == media %} active{% endif %}">
+                  <div>
+                    {% assign alt = media.alt | escape %}
+                    {% render 'resp-img',
+                      image: media.preview_image,
+                      sizes: "240px",
+                      default_size: "240x240",
+                      squared: true,
+                      alt: alt
+                    %}
+                    {%- if media.media_type == 'video' or media.media_type =='external_video' -%}
+                      <div class="badge">
+                        {% render 'icon-video-badge-full-color' %}
+                      </div>
+                    {%- endif -%}
+                    {%- if media.media_type == 'model' -%}
+                      <div class="badge">
+                        {% render 'icon-3d-badge-full-color' %}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </a>
+              </div>
+            {% endfor %}    
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="inner">
+        {% form 'product', product %}
+          {%- assign has_variant_picker = false -%}
+          {%- for block in section.blocks -%}
+            <div class="block type-{{ block.type }} {% if block.settings.increase_space_before_block %}expanded-top{% endif %}" {{ block.shopify_attributes }}>
+              {%- case block.type -%}
+              {%- when '@app' -%}
+                {% render block %}
+              {%- when 'available_stock_units' -%}
+                {% capture units %}
+                  <span class="units">{{ product.selected_or_first_available_variant.inventory_quantity }}</span>
+                {% endcapture %}
+                <div class="description stock {% unless product.selected_or_first_available_variant.inventory_management == 'shopify' %}hide{% endunless %}" id="productStock-{{ section.id }}">
+                  {% if product.selected_or_first_available_variant.inventory_management == 'shopify' %}
+                    {{ 'products.product.available_units_html' | t: units: units }}
+                  {% else %}
+                    {{ 'products.product.available_units_html' | t: units: '-' }}
+                  {% endif %}
+                </div>
+              {%- when 'text' -%}
+                {%- case block.settings.text_style -%}
+                  {%- when 'body' -%}
+                    <div class="rte description">
+                      {{ block.settings.text }}
+                    </div>
+                  {%- when 'subtitle' -%}
+                    <h3>{{ block.settings.text }}</h3>
+                  {%- when 'uppercase' -%}
+                    <h3 style="text-transform: uppercase;">{{ block.settings.text }}</h3>
+                {%- endcase -%}
+              {%- when 'title' -%}
+                <h1 style="margin:0;font-size:2.4em;">{{ product.title }}</h1>
+              {%- when 'description' -%}
+                {%- if product.description != blank -%}
+                <div class="description rte">
+                    {{ product.description }}
+                 </div>
+              	<div class="options rte">
+                  <ul id="sweetAlmond">
+                    <li>9 oz bag</li>
+                    <li class="link"><a href="/collections/superfood-granola/products/sweet-almond-coconut-3-pack">3 Pack</a></li>
+                  </ul>
+                  <ul id="sweetAlmond3">
+                    <li class="link"><a href="/collections/superfood-granola/products/sweet-almond-coconut">9 oz bag</a></li>
+                    <li>3 Pack</li>
+                  </ul>
+                  <ul id="doubleChocolate">
+                    <li>9 oz bag</li>
+                    <li class="link"><a href="/collections/superfood-granola/products/double-chocolate-sea-salt-3-pack">3 Pack</a></li>
+                  </ul>
+                   <ul id="doubleChocolate3">
+                     <li class="link"><a href="/collections/superfood-granola/products/double-chocolate-sea-salt">9 oz bag</a></li>
+                    <li>3 Pack</li>
+                  </ul>
+                    
+                  <ul id="goSubscribe">
+                  {% render 'th-subscription', product: product %}
+                  </ul>
+              	</div>
+              
+                {%- endif -%}
+              
+           
+             
+                <div class="product-block {% if block.settings.increase_space_before_block %}expanded-top{% endif %}" {{ block.shopify_attributes }}>
+                  <div>
+                    {% assign variant = product.selected_or_first_available_variant %}
+                    <h3 class="price" id="productPrice-{{ section.id }}">{{ current_variant.price | money }}</h3>
+                    {% if product.compare_at_price > product.price %}
+                      <h3 class="price striped" id="comparePrice-{{ section.id }}">{{ current_variant.compare_at_price | money }}</h3>
+                    {% endif %}
+                    <span id="unitPrice-{{ section.id }}">
+                      {%- render 'unit-price', from: current_variant -%}
+                    </span>
+                  </div>
+                  {{ form | payment_terms }}
+                </div>
+              {%- when 'share' -%}
+                {% if block.settings.facebook_sharing_products or
+                      block.settings.twitter_sharing_products or
+                      block.settings.pinterest_sharing_products %}
+
+                  {% assign current_url = shop.url | append: product.url %}
+                  <div class="share">
+                    {% if block.settings.facebook_sharing_products %}
+                      <a target="_blank" href="//www.facebook.com/sharer.php?u={{ current_url }}" class="icon circle facebook" title="{{ 'products.product.share_on' | t: platform: 'Facebook' }}">
+                        <i class="fc fc-facebook"></i>
+                      </a>
+                    {% endif %}
+                    {% if block.settings.twitter_sharing_products %}
+                      <a target="_blank" href="//twitter.com/share?text={{ product.title | url_param_escape }}&amp;url={{ current_url }}" class="icon twitter" title="{{ 'products.product.share_on' | t: platform: 'Twitter' }}">
+                        <i class="fc fc-twitter"></i>
+                      </a>
+                    {% endif %}
+                    {% if block.settings.pinterest_sharing_products %}
+                      <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ current_url }}&amp;description={{ product.title | url_param_escape }}&amp;media={{ product.featured_media.preview_image | img_url: 'original' | prepend: 'http:' | split: '?' | first }}" class="icon pinterest" title="{{ 'products.product.share_on' | t: platform: 'Pinterest' }}">
+                        <i class="fc fc-pinterest"></i>
+                      </a>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              
+              {%- when 'quantity_selector' -%}
+                <div class="quantity">
+                  <label class="regular" for="productQuantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
+                  <div class="select number">
+                    <input type="number" id="productQuantity-{{ section.id }}" name="quantity" value="1" pattern="[0-9]*" min="1" {% if product.selected_or_first_available_variant.inventory_management  == 'shopify' and product.selected_or_first_available_variant.inventory_quantity > 0%}max="{{ product.selected_or_first_available_variant.inventory_quantity }}"{% endif %} {% unless current_variant.available %}disabled{% endunless %}>
+                    <div class="arrow">
+                      <i class="fc fc-angle-down fc-lg"></i>
+                    </div>
+                  </div>
+                </div>
+              {%- when 'variant_picker' -%}
+                {%- assign has_variant_picker = true -%}
+                {%- if product.has_only_default_variant -%}
+                  <input name="id" type="hidden" value="{{ current_variant.id }}">
+                {%- else -%}
+                  <div>
+                    {% for option in product.options_with_values %}
+                    {% liquid
+                      if block.settings.swatches_selector contains option.name
+                        assign is_color = true
+                      else
+                        assign is_color = false
+                      endif
+                      if block.settings.popup_selector == option.name and block.settings.popup_text != blank and block.settings.popup_page != blank
+                        assign has_popup = true
+                      else
+                        assign has_popup = false
+                      endif
+                    %}
+                      <div class="variant-wrapper js">
+                        {% unless option.name == 'Default' or option.name == 'Title' %}
+                          <label class="regular" for="SingleOptionSelector-{{ section.id }}-{{ forloop.index0 }}">
+                            <span>{{ option.name }}</span>
+                            {% if has_popup %}
+                              <a href="{{ block.settings.popup_page.url }}" data-action="open-modal" data-modal-id="modal-{{ block.id }}">{{ block.settings.popup_text }}</a>
+                              <div class="modal animated hidden" id="modal-{{ block.id }}">
+                                <div class="background"></div>
+                                <div class="frame">
+                                  <h2 class="section-title">{{ block.settings.popup_page.title }}</h1>
+                                  <div class="rte">
+                                    {{ block.settings.popup_page.content }}
+                                  </div>
+                                  <a href="#" data-action="close-modal" class="close" aria-label="{{ 'general.accessibility.close_modal' | t }}">
+                                    <i class="fc fc-close"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            {% endif %}
+                          </label>
+                        {% endunless %}
+                        {%- if block.settings.picker_type == 'button' or is_color -%}
+                          <fieldset class="{{ block.settings.picker_type }} {{ option.name | handleize }}"
+                            name="{{ option.name | handleize }}"
+                            id="ProductSelect-option-{{ forloop.index0 }}">
+                            {% assign option_index = forloop.index %}
+                            {% for value in option.values %}
+                              {% assign variant_label_state = true %}
+                              {% if product.options.size == 1 %}
+                                {% unless product.variants[forloop.index0].available %}
+                                  {% assign variant_label_state = false %}
+                                {% endunless %}
+                              {% endif %}
+                              <input type="radio"
+                                {% if option.selected_value == value %} checked="checked"{% endif %}
+                                {% unless variant_label_state %} disabled="disabled"{% endunless %}
+                                value="{{ value | escape }}"
+                                name="{{ option.name | handleize }}"
+                                class="single-option-selector-{{ section.id }}{% unless variant_label_state %} disabled{% endunless %}"
+                                data-index="option{{ option_index }}"
+                                id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}">
+                              <label
+                                for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"
+                                class="{% unless variant_label_state %}disabled{% endunless %} {% if is_color %}color{% endif %}"
+                              >
+                                {%- if is_color -%}
+                                  <div style="
+                                    background-color: {{ value }};
+                                    background-image: url('{{ value | handleize | append: '.jpg' | file_url }}');
+                                  "></div>
+                                {%- else -%}
+                                  {{ value | escape }}
+                                {%- endif -%}
+                              </label>
+                            {% endfor %}
+                          </fieldset>
+                        {%- else -%}
+                          <div class="select">
+                            <select class="single-option-selector single-option-selector-{{ section.id }}" id="productSelect-option-{{ forloop.index0 }}" data-name="{{ option.name }}" data-index="option{{ forloop.index }}" aria-label="{{ option.name }}">
+                              {% for value in option.values %}
+                                <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                              {% endfor %}
+                            </select>
+                            <div class="arrow"><i class="fc fc-angle-down fc-lg"></i></div>
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <div class="variant-wrapper no-js">
+                    <div class="select">
+                      <select name="id" id="productSelect-{{ section.id }}" class="product-variants">
+                        {% for variant in product.variants %}
+                          {% if variant.available %}
+                            <option value="{{variant.id}}" data-sku="{{ variant.sku }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %}>
+                              {{ variant.title }} - {{ variant.price | money_with_currency }}
+                            </option>
+                          {% else %}
+                            <option disabled="disabled">
+                              {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                            </option>
+                          {% endif %}
+                        {% endfor %}
+                      </select>
+                      <div class="arrow"><i class="fc fc-angle-down fc-lg"></i></div>
+                    </div>
+                  </div>
+                {% endif %}
+              {%- when 'buy_buttons' -%}
+                <div class="buttons">
+                  <button type="submit" name="add" class="add-to-cart {% if block.settings.show_dynamic_checkout %}with-payment-button{% endif %} {% unless current_variant.available %}disabled{% endunless %}" id="addToCart-{{ section.id }}" data-action="add-to-cart" {% unless current_variant.available %}disabled{% endunless %}>
+                    <span class="add">
+                      {%- if current_variant.available -%}
+                        
+                      ORDER NOW
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                    </span>
+                    <i class="fc fc-cog fc-spin"></i>
+                    <span class="adding">{{ 'products.product.adding_to_cart' | t }}
+                  </button>
+                  {% if block.settings.show_dynamic_checkout %}
+                    {{ form | payment_button }}
+                  {% endif %}
+                </div>
+                <div
+                  data-store-availability-container
+                  data-product-title="{{ product.title | escape }}"
+                  data-root-url="{{ routes.root_url }}"
+                  data-has-only-default-variant="{{ product.has_only_default_variant }}"
+                ></div>
+              {%- when 'rating' -%}
+                {% liquid
+                  if product.metafields.reviews.rating.value != blank
+                    assign rating = product.metafields.reviews.rating.value.rating
+                    assign scale_max = product.metafields.reviews.rating.value.scale_max
+                    assign rating_count = product.metafields.reviews.rating_count
+                  else
+                    assign rating = 0
+                    assign scale_max = 5
+                    assign rating_count = 0
+                  endif
+                  assign rating_decimal = 0
+                  assign decimal = rating | modulo: 1
+                  if decimal >= 0.3 and decimal <= 0.7
+                    assign rating_decimal = 0.5
+                  elsif decimal > 0.7
+                    assign rating_decimal = 1
+                  endif
+                %}
+                <div class="rating-container">
+                  <div class="rating" role="img" aria-label="{{ 'general.accessibility.star_reviews_info' | t: rating_value: value, rating_max: scale_max }}">
+                    <span aria-hidden="true" class="rating-star" style="--rating: {{ rating | floor }}; --rating-max: {{ scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
+                  </div>
+                  <p class="rating-text">
+                    <span aria-hidden="true">{{ rating }} / {{ scale_max }}</span>
+                  </p>
+                  <p class="rating-count">
+                    <span aria-hidden="true">({{ "products.product.total_reviews" | t: count: rating_count }})</span>
+                    <span class="visually-hidden">{{ "products.product.total_reviews" | t: count: rating_count }}</span>
+                  </p>
+                </div>
+              {%- when 'custom_liquid' -%}
+                {{ block.settings.custom_liquid }}
+              {%- when 'collapsible_tab' -%}
+                <div class="accordion" {{ block.shopify_attributes }}>
+                  <details>
+                    <summary>
+                      <div class="header">
+                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        <h3>
+                          {{ block.settings.heading | default: block.settings.page.title }}
+                        </h3>
+                      </div>
+                      <div class="arrow">
+                        <i class="fc fc-angle-down fc-lg"></i>
+                      </div>
+                    </summary>
+                    <div class="rte">
+                      {{ block.settings.content }}
+                      {{ block.settings.page.content }}
+                    </div>
+                  </details>
+                </div>
+              {%- endcase -%}
+            </div>
+          {%- endfor -%}
+          {% unless has_variant_picker %}
+            <input type="hidden" name="id" value="{{ current_variant.id }}">
+          {% endunless %}
+        {% endform %}
+      </div>
+        <div class="product-icons"><img src="https://cdn.shopify.com/s/files/1/0632/6881/5104/files/all-icons.png?v=1650554707" alt="Superfood Granola" /></div>
+
+    </div>
+  </div>
+</div>
+
+{% unless product.empty? %}
+  <script>
+    window.inventory = window.inventory || {};
+    {%- for variant in product.variants -%}
+      window.inventory[{{ variant.id }}] = {{ variant.inventory_quantity }};
+    {%- endfor -%}
+  </script>
+  <script type="application/json" id="ProductJson-{{ section.id }}">
+    {{ product | json }}
+  </script>
+  <script type="application/json" id="ModelJson-{{ section.id }}">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>
+{% endunless %}

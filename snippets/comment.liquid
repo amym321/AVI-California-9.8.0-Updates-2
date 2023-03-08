@@ -1,0 +1,9 @@
+<div class="comment">
+  {% capture date %}
+    {{ comment.created_at | date: format: 'day_month_and_year' }}
+  {% endcapture %}
+  <h5>{{ 'blogs.comments.comment_title_html' | t: author: comment.author, date: date }}</h5>
+  <div>
+    {{ comment.content }}
+  </div>
+</div>

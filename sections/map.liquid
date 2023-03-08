@@ -1,0 +1,262 @@
+{% assign display_map = false %}
+{%- if section.settings.api_key != blank and section.settings.map_address -%}
+  {% assign display_map = true %}
+{%- endif -%}
+
+<div class="content map with-background {% render 'content-classes', scope: section %}" data-section-id="{{ section.id }}" data-section-type="map" data-api-key="{{ section.settings.api_key }}">
+  <div class="background">
+    {% if display_map %}
+      <div class="map-container" id="Map-{{ section.id }}" data-address-setting="{{ section.settings.map_address | escape }}">
+        <div class="warning"></div>
+      </div>
+    {% else %}
+      {% if section.settings.image %}
+        <div class="image"></div>
+        <style type="text/css">
+          #shopify-section-{{ section.id }} .image {
+            background-position: {{ section.settings.position }};
+            {% render 'resp-bg-img', image: section.settings.image, size: '4096x' %}
+          }
+          {% assign sizes = "2048,1944,1728,1512,1024,768,512,375" | split: "," %}
+          {% for size in sizes %}
+            {% assign size_x = size | append: 'x' %}
+            @media screen and (max-width: {{ size }}px) {
+              #shopify-section-{{ section.id }} .image {
+                {% render 'resp-bg-img', image: section.settings.image, size: size_x %}
+              }
+            }
+          {% endfor %}
+        </style>
+      {% else %}
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    {% endif %}
+  </div>
+  <div class="info">
+    {% if section.settings.heading != blank %}
+      <h2 class="section-title">{{ section.settings.heading | escape }}</h2>
+    {% endif %}
+    {% if section.settings.address != blank %}
+      {{ section.settings.address }}
+    {% endif %}
+    {% if section.settings.button != blank and section.settings.map_address != blank %}
+      <p>
+        <a href="https://maps.google.com?daddr={{ section.settings.map_address | escape }}" target="_blank" class="btn action small">
+          {{ section.settings.button | escape }}
+        </a>
+      </p>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": {
+      "en": "Map",
+      "es": "Mapa"
+    },
+    "class": "map-section",
+    "settings": [
+     {
+        "type": "text",
+        "id": "heading",
+        "label": {
+          "en": "Heading",
+          "es": "Título"
+        },
+        "default": {
+          "en": "Our store",
+          "es": "Nuestra tienda"
+        }
+      },
+      {
+        "type": "richtext",
+        "id": "address",
+        "label": {
+          "en": "Address and hours",
+          "es": "Dirección y horarios"
+        },
+        "default": {
+          "en": "<p>123 Fake St.<br>Toronto, Canada</p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm</p>",
+          "es": "<p>123 Fake St. <br> Toronto, Canadá</p><p>Lun - Vie, 10 a.m. - 9 p.m. <br> Sábados, de 11 am a 09 pm <br> Domingos, de 11 am a 05 pm</p>"
+        }
+      },
+      {
+        "id": "map_address",
+        "type": "text",
+        "label": {
+          "en": "Map address",
+          "es": "Dirección en el mapa"
+        },
+        "info": {
+          "en": "Google Maps will find the exact location",
+          "es": "Google Maps encontrará la ubicación exacta"
+        },
+        "default": {
+          "en": "301 Front St W, Toronto",
+          "es": "301 Front St W, Toronto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "button",
+        "label": {
+          "en": "Map link label",
+          "es": "Texto del botón"
+        },
+        "default": {
+          "en": "Directions",
+          "es": "Cómo llegar"
+        }
+      },
+      {
+        "type": "header",
+        "content": {
+          "en": "Background",
+          "es": "Fondo"
+        }
+      },
+      {
+        "id": "api_key",
+        "type": "text",
+        "label": {
+          "en": "Google Maps API key",
+          "es": "Registrar una clave API de Google Maps"
+        },
+        "info": {
+          "en": "You’ll need to [register a Google Maps API Key](https://help.shopify.com/manual/using-themes/troubleshooting/map-section-api-key) to display the map",
+          "es": "Deberás [registrar una clave API de Google Maps](https://help.shopify.com/manual/using-themes/troubleshooting/map-section-api-key) para mostrar el plano"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": {
+          "en": "Image",
+          "es": "Imagen"
+        },
+        "info": {
+          "en": "Displayed if the map isn’t loaded",
+          "es": "Aparece si el mapa no está cargado"
+        }
+      },
+      {
+        "type": "select",
+        "id": "position",
+        "label": {
+          "en": "Image alignment",
+          "es": "Aliniación de la imagen"
+        },
+        "default": "center center",
+        "options": [
+          {
+            "label": {
+              "en": "Top left",
+              "es": "Arriba izquierda"
+            },
+            "value": "top left"
+          },
+          {
+            "label": {
+              "en": "Top center",
+              "es": "Arriba centro"
+            },
+            "value": "top center"
+          },
+          {
+            "label": {
+              "en": "Top right",
+              "es": "Arriba derecha"
+            },
+            "value": "top right"
+          },
+          {
+            "label": {
+              "en": "Middle left",
+              "es": "Medio izquierda"
+            },
+            "value": "center left"
+          },
+          {
+            "label": {
+              "en": "Middle center",
+              "es": "Medio centro"
+            },
+            "value": "center center"
+          },
+          {
+            "label": {
+              "en": "Middle right",
+              "es": "Medio derecha"
+            },
+            "value": "center right"
+          },
+          {
+            "label": {
+              "en": "Bottom left",
+              "es": "Abajo izquierda"
+            },
+            "value": "bottom left"
+          },
+          {
+            "label": {
+              "en": "Bottom center",
+              "es": "Abajo centro"
+            },
+            "value": "bottom center"
+          },
+          {
+            "label": {
+              "en": "Bottom right",
+              "es": "Abajo derecha"
+            },
+            "value": "bottom right"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": {
+          "en": "Section settings",
+          "es": "Configuración de la sección"
+        }
+      },
+      {
+        "type": "header",
+        "content": "t:sections.settings.header.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "expanded",
+        "label": "t:sections.settings.expanded.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "expanded_content",
+        "label": "t:sections.settings.expanded_content.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_desktop",
+        "label": "t:sections.settings.show_on_desktop.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_mobile",
+        "label": "t:sections.settings.show_on_mobile.label",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "name": {
+          "en": "Map",
+          "es": "Mapa"
+        }
+      }
+    ]
+  }
+{% endschema %}

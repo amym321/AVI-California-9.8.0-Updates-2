@@ -1,0 +1,302 @@
+<div class="content banner-with-text position-{{ section.settings.text_position }} align-{{ section.settings.text_align }} with-background {% render 'content-classes', scope: section %}">
+  <div class="background">
+    {% if section.settings.image %}
+      <div class="image"></div>
+      <style type="text/css">
+        #shopify-section-{{ section.id }} .image {
+          background-position: {{ section.settings.image_position }};
+          background-repeat: no-repeat;
+          {% render 'resp-bg-img', image: section.settings.image, size: '4096x' %}
+        }
+
+        {% liquid
+          if section.settings.image_for_mobile != blank
+            assign mobile_image = section.settings.image_for_mobile
+          else
+            assign mobile_image = section.settings.image
+          endif
+          assign sizes = "2048,1944,1728,1512,1024,768,512,375" | split: ","
+        %}
+
+        {% for size in sizes %}
+          {% liquid
+            assign size_x = size | append: 'x'
+            if size == "512" or size == "375"
+              assign image = mobile_image
+            else
+              assign image = section.settings.image
+            endif
+          %}
+          @media screen and (max-width: {{ size }}px) {
+            #shopify-section-{{ section.id }} .image {
+              {% render 'resp-bg-img', image: image, size: size_x %}
+            }
+          }
+        {% endfor %}
+      </style>
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  <div class="info">
+    {% if section.settings.title != blank %}
+      <h2 class="section-title">{{ section.settings.title | escape }}</h2>
+    {% endif %}
+    {% if section.settings.text != blank %}
+      {{ section.settings.text }}
+    {% endif %}
+    {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+      <p>
+        <a href="{{ section.settings.button_link }}" class="btn action small">
+          {{ section.settings.button_label | escape }}
+        </a>
+      </p>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": {
+      "en": "Banner with text",
+      "es": "Bandera con texto"
+    },
+    "class": "banner-with-text-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": {
+          "en": "Heading",
+          "es": "Título"
+        },
+        "default": {
+          "en": "Banner with text",
+          "es": "Bandera con texto"
+        }
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": {
+          "en": "Text",
+          "es": "Texto"
+        },
+        "default": {
+          "en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "es": "<p>Vincula un texto largo con una imagen para dar visibilidad a tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad, estilo, o incluso ofrece una reseña.</p>"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": {
+          "en": "Image",
+          "es": "Imagen"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "image_for_mobile",
+        "label": {
+          "en": "Image for mobile devices (optional)",
+          "es": "Imagen para dispositivos móviles (opcional)"
+        }
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": {
+          "en": "Image position",
+          "es": "Posición de la imagen"
+        },
+        "default": "center center",
+        "options": [
+          {
+            "label": {
+              "en": "Top left",
+              "es": "Arriba izquierda"
+            },
+            "value": "top left"
+          },
+          {
+            "label": {
+              "en": "Top center",
+              "es": "Arriba centro"
+            },
+            "value": "top center"
+          },
+          {
+            "label": {
+              "en": "Top right",
+              "es": "Arriba derecha"
+            },
+            "value": "top right"
+          },
+          {
+            "label": {
+              "en": "Middle left",
+              "es": "Medio izquierda"
+            },
+            "value": "center left"
+          },
+          {
+            "label": {
+              "en": "Middle center",
+              "es": "Medio centro"
+            },
+            "value": "center center"
+          },
+          {
+            "label": {
+              "en": "Middle right",
+              "es": "Medio derecha"
+            },
+            "value": "center right"
+          },
+          {
+            "label": {
+              "en": "Bottom left",
+              "es": "Abajo izquierda"
+            },
+            "value": "bottom left"
+          },
+          {
+            "label": {
+              "en": "Bottom center",
+              "es": "Abajo centro"
+            },
+            "value": "bottom center"
+          },
+          {
+            "label": {
+              "en": "Bottom right",
+              "es": "Abajo derecha"
+            },
+            "value": "bottom right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_position",
+        "label": {
+          "en": "Text position",
+          "es": "Posición del texto"
+        },
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": {
+              "en": "Left",
+              "es": "Izquierda"
+            }
+          },
+          {
+            "value": "center",
+            "label": {
+              "en": "Center",
+              "es": "Centro"
+            }
+          },
+          {
+            "value": "right",
+            "label": {
+              "en": "Right",
+              "es": "Derecha"
+            }
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": {
+          "en": "Text align",
+          "es": "Aliniación del texto"
+        },
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": {
+              "en": "Left",
+              "es": "Izquierda"
+            }
+          },
+          {
+            "value": "center",
+            "label": {
+              "en": "Center",
+              "es": "Centro"
+            }
+          },
+          {
+            "value": "right",
+            "label": {
+              "en": "Right",
+              "es": "Derecha"
+            }
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": {
+          "en": "Button label",
+          "es": "Texto en el botón"
+        },
+        "default": {
+          "en": "Explore",
+          "es": "Explorar"
+        }
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": {
+          "en": "Button link",
+          "es": "Enlace en el botón"
+        }
+      },
+      {
+        "type": "header",
+        "content": "t:sections.settings.header.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "expanded",
+        "label": "t:sections.settings.expanded.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "expanded_content",
+        "label": "t:sections.settings.expanded_content.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_desktop",
+        "label": "t:sections.settings.show_on_desktop.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_mobile",
+        "label": "t:sections.settings.show_on_mobile.label",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "name": {
+          "en": "Banner with text",
+          "es": "Banner con texto"
+        }
+      }
+    ]
+  }
+{% endschema %}

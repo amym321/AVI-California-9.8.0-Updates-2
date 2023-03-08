@@ -1,0 +1,40 @@
+<div class="side-pick" role="dialog" aria-modal="true" aria-labelledby="PickingPopupHeading">
+  <div class="side-pick-header">
+    <a class="btn icon close" data-action="toggle-pick" tabindex="-1" aria-label="{{ 'general.accessibility.close_modal' | t }}"><i class="fc fc-close"></i></a>
+    <h2 id="PickingPopupHeading" data-store-availability-modal-product-title></h2>
+    <h3>{{ product_variant.title }}</h3>
+  </div>
+  <div class="locations">
+    {%- for availability in pick_up_availabilities -%}
+      <div class="location">
+        <h4>{{availability.location.name}}</h4>
+        <div class="address">
+          {%- assign address = availability.location.address -%}
+          {{ address | format_address }}
+          {%- if address.phone.size > 0 -%}
+            <p class="phone">
+              <a href="tel:{{ address.phone }}">{{ address.phone }}</a>
+            </p>
+          {%- endif -%}
+        </div>
+        <div class="availability">
+          {%- if availability.available -%}
+            <div class="icon icon-in-stock">
+              <i class="fc fc-check"></i>
+            </div>
+            <p>
+              {{ 'store_availability.general.pick_up_available' | t }}, {{ availability.pick_up_time | downcase }}
+            </p>
+          {%- else -%}
+            <div class="icon icon-out-of-stock">
+              <i class="fc fc-close"></i>
+            </div>
+            <p>
+              {{ 'store_availability.general.pick_up_currently_unavailable' | t }}
+            </p>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

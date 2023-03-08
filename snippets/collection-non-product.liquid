@@ -1,0 +1,44 @@
+<div class="product">
+  <a class="inner" href="{{ item.url }}">
+    <div class="image">
+      {%- liquid
+        assign aspect_ratio = item.image.aspect_ratio
+        if item.image.aspect_ratio == nil
+          assign aspect_ratio = 1
+        endif
+      -%}
+      <div class="frame {{ settings.image_ratio }}"
+        {% if settings.image_ratio == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: aspect_ratio | times: 100 }}%;"{% endif %}
+      >
+        {%- if item.image != blank -%}
+          {% render 'resp-img',
+           image: item.image,
+           alt: item.image.alt,
+           class: "image",
+           default_size: "1080x",
+           sizes: "(max-width: 960px) 100vw, 860px",
+           itemprop: "image"
+          %}
+        {%- else -%}
+          <svg class="placeholder-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525 525">
+            <path d="M257.27 229.5a1 1 0 100 2h36a1 1 0 000-2h-36zM231.27 242a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 254a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 266a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 278a1 1 0 100 2h62a1 1 0 000-2h-62zM231.27 290a1 1 0 100 2h62a1 1 0 000-2h-62z"></path><path fill-rule="evenodd" d="M309 199h-64.5v.04a.99.99 0 00-.43.25l-29.77 29.5a1 1 0 00-.3.71V323a3 3 0 003 3h92a3 3 0 003-3V202a3 3 0 00-3-3zm-93 124v-92.5h26.77a3 3 0 003-3V201H309a1 1 0 011 1v121a1 1 0 01-1 1h-92a1 1 0 01-1-1zm1.43-94.5h25.34a1 1 0 001-1v-25.1l-26.34 26.1z" clip-rule="evenodd"></path>
+          </svg>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="info">
+      <div class="status nowrap">
+        {%- case item.object_type -%}
+        {%- when 'article' -%}
+          {%- assign tag = 'general.search.article' | t -%}
+        {%- when 'page' -%}
+          {%- assign tag = 'general.search.page' | t -%}
+        {%- endcase -%}
+        <span class="ca buy">{{ tag }}</span>
+      </div>
+      <div class="metas">
+        <div class="title">{{ item.title | truncate: 50 | escape }}</div>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,425 @@
+<div class="content slideshow height_{{ section.settings.hero_height }} no-padding with-background {% render 'content-classes', scope: section %} {% if section.settings.hero_parallax %}with-parallax{% endif %}" id="slideshow-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
+  <div class="slides" data-autoplay="{{ section.settings.autoplay }}" data-arrows="{{ section.settings.arrows }}" data-speed="{{ section.settings.autoplay_speed }}" data-use-fade="{{ section.settings.use_fade }}">
+    {% liquid
+      if section.blocks.size > 0
+        assign slide_index = 0
+        for block in section.blocks
+          render 'slide', block: block, slide_index: slide_index
+          assign slide_index = slide_index | plus: 1
+        endfor
+      else
+        render 'no-blocks'
+      endif
+    %}
+  </div>
+</div>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {%- if section.settings.logo -%}
+      {% assign image_size = section.settings.logo.width | append:'x' %}
+      "logo": {{ section.settings.logo | img_url: image_size | prepend: "https:" | json }},
+    {%- endif -%}
+    "url": {{ shop.url | append: page.url | json }}
+  }
+</script>
+
+{% schema %}
+{
+  "name": {
+    "en": "Slideshow",
+    "es": "Diapositivas"
+  },
+  "class": "section-slideshow",
+  "max_blocks": 12,
+  "settings": [
+    {
+     "type": "range",
+     "id": "hero_height",
+     "min": 20,
+     "max": 100,
+     "step": 10,
+     "unit": "%",
+     "default": 90,
+     "label": {
+       "en": "Height",
+       "es": "Altura"
+     }
+    },
+    {
+      "type": "checkbox",
+      "id": "arrows",
+      "label": {
+        "en": "Show pagination arrows",
+        "es": "Mostrar flechas"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": {
+        "en": "Auto-rotate slides",
+        "es": "Transicionar las diapositivas automáticamente"
+      },
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "use_fade",
+      "label": {
+        "en": "Transition",
+        "es": "Transición"
+      },
+      "options": [
+        {
+          "value": "true",
+          "label": {
+            "en": "Fade",
+            "es": "Transparencia"
+          }
+        },
+        {
+          "value": "false",
+          "label": {
+            "en": "Swipe",
+            "es": "Deslizamiento"
+          }
+        }
+      ],
+      "default": "false"
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": {
+        "en": "Change slides every",
+        "es": "Cambiar diapositivas cada"
+      },
+      "default": 5,
+      "min": 3,
+      "max": 8,
+      "step": 1,
+      "unit": {
+        "en": "sec",
+        "es": "seg"
+      }
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Other options",
+        "es": "Otras opciones"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_parallax",
+      "label": {
+        "en": "Show parallax animation",
+        "es": "Mostrar animación parallax"
+      },
+      "default": true,
+      "info": {
+        "en": "Visible when scrolling.",
+        "es": "Visible al desplazarse por la página."
+      }
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "label": "t:sections.settings.show_on_desktop.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "label": "t:sections.settings.show_on_mobile.label",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": {
+        "en": "Slide",
+        "es": "Diapositiva"
+      },
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "en": "Image",
+            "es": "Imagen"
+          }
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": {
+            "en": "Tint",
+            "es": "Tinta"
+          },
+          "default": "#292929"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "unit": "%",
+          "label": {
+            "en": "Tint strength",
+            "es": "Fuerza del tinte"
+          },
+          "default": 0
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": {
+            "en": "Image background position",
+            "es": "Centrado de la imagen de fondo"
+          },
+          "default": "center",
+          "options": [
+            {
+              "value": "top",
+              "label": {
+                "en": "Top",
+                "es": "Arriba"
+              }
+            },
+            {
+              "value": "center",
+              "label": {
+                "en": "Middle",
+                "es": "Medio"
+              }
+            },
+            {
+              "value": "bottom",
+              "label": {
+                "en": "Bottom",
+                "es": "Abajo"
+              }
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image_for_mobile",
+          "label": {
+            "en": "Image for mobile",
+            "es": "Imagen para dispositivos móviles"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "select",
+          "id": "slide_text_color",
+          "label": {
+            "en": "Text color",
+            "es": "Color del texto"
+          },
+          "default": "is-dark",
+          "options": [
+            {
+              "value": "is-light",
+              "label": {
+                "en": "Light",
+                "es": "Color claro"
+              }
+            },
+            {
+              "value": "is-dark",
+              "label": {
+                "en": "Dark",
+                "es": "Color oscuro"
+              }
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": {
+            "en": "Text alignment",
+            "es": "Aliniación del texto"
+          },
+          "default": "middle center",
+          "options": [
+            {
+              "value": "middle left",
+              "label": {
+                "en": "Middle left",
+                "es": "Medio izquierda"
+              }
+            },
+            {
+              "value": "bottom left",
+              "label": {
+                "en": "Bottom left",
+                "es": "Abajo izquierda"
+              }
+            },
+            {
+              "value": "middle center",
+              "label": {
+                "en": "Middle center",
+                "es": "Medio centro"
+              }
+            },
+            {
+              "value": "bottom center",
+              "label": {
+                "en": "Bottom center",
+                "es": "Abajo centro"
+              }
+            },
+            {
+              "value": "middle right",
+              "label": {
+                "en": "Middle right",
+                "es": "Medio derecha"
+              }
+            },
+            {
+              "value": "bottom right",
+              "label": {
+                "en": "Bottom right",
+                "es": "Abajo derecha"
+              }
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": {
+            "en": "Heading",
+            "es": "Título"
+          },
+          "default": {
+            "en": "Slideshow Heading",
+            "es": "Título de la diapositiva"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": {
+            "en": "Subheading",
+            "es": "Subtítulo"
+          },
+          "default": {
+            "en": "Slideshow subheading.",
+            "es": "Subtítulo de la diapositiva."
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "text",
+          "id": "cta",
+          "label": {
+            "en": "Button",
+            "es": "Botón"
+          },
+          "default": {
+            "en": "Browse our products",
+            "es": "Descubre nuestros productos"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": {
+            "en": "Button link",
+            "es": "Enlace del botón"
+          }
+        },
+        {
+          "type": "text",
+          "id": "button_to_scroll",
+          "label": {
+            "en": "Scroll button",
+            "es": "Botón para desplazarse"
+          },
+          "default": {
+            "en": "Learn more",
+            "es": "Descubre más"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "text",
+          "id": "credits",
+          "label": {
+            "en": "Image credits",
+            "es": "Créditos de la imagen"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": {
+      "en": "Slideshow",
+      "es": "Diapositivas"
+    },
+    "settings": {
+      "autoplay": true
+    },
+    "blocks": [
+      {
+        "type": "image",
+        "settings": {
+          "slide_text_color": "is-light"
+        }
+      },
+      {
+        "type": "image",
+        "settings": {
+          "slide_text_color": "is-dark"
+        }
+      }
+    ]
+  }]
+}
+{% endschema %}

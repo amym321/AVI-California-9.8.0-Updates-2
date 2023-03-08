@@ -1,0 +1,14 @@
+{% if blog.next_article or blog.previous_article %}
+  <div class="navigation {{ settings.pages_title_alignment }}">
+    {% if blog.next_article %}
+      <a class="btn icon" href="{{ blog.next_article }}" alt="{{ 'blogs.article.previous_article' | t }}" data-action="keydown" data-key="37"><i class="fc fc-angle-left fc-lg"></i></a>
+    {% else %}
+      <a class="btn icon end" href=""><i class="fc fc-angle-left fc-lg"></i></a>
+    {% endif %}
+    {% if blog.previous_article %}
+      <a class="btn icon" href="{{ blog.previous_article }}" alt="{{ 'blogs.article.next_article' | t }}" data-action="keydown" data-key="39"><i class="fc fc-angle-right fc-lg"></i></a>
+    {% else %}
+      <a class="btn icon end"><i class="fc fc-angle-right fc-lg"></i></a>
+    {% endif %}
+  </div>
+{% endif %}

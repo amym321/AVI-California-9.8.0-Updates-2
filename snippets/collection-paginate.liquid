@@ -1,0 +1,7 @@
+{% if paginate.next %}
+  <div class="pagination">
+    <a class="more btn action small semi" href="{{ paginate.next.url }}" data-action="load-more-collections" data-message="{{ 'general.pagination.collections_loading' | t }}">
+      {{ 'general.pagination.collections_more' | t }}
+    </a>
+  </div>
+{% endif %}

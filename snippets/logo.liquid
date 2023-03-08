@@ -1,0 +1,38 @@
+<div class="logo {% if section.settings.logo %}with-image{% endif %}" itemscope itemtype="http://schema.org/Organization">
+  <a href="{{ shop.url }}{{ routes.root_url }}" itemprop="url" tabindex="-1">
+    <h2>
+      {%- if section.settings.logo or section.settings.transparent_header_logo -%}
+        {% capture image_size %}{{ section.settings.logo_max_width }}x{% endcapture %}
+        {%- if section.settings.logo %}
+          <img src="{{ section.settings.logo | img_url: image_size }}"
+               srcset=
+                "{{ section.settings.logo | img_url: image_size, scale: 1 }} 1x,
+                 {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x,
+                 {{ section.settings.logo | img_url: image_size, scale: 3 }} 3x
+                "
+               alt="{{ section.settings.logo.alt | default: shop.name }}"
+               itemprop="logo"
+               class="regular"
+               width="{{ section.settings.logo.width }}"
+               height="{{ section.settings.logo.height }}"
+          >
+        {%- endif -%}
+        {%- if section.settings.transparent_header_logo -%}
+          <img src="{{ section.settings.transparent_header_logo | img_url: image_size }}"
+               srcset=
+                "{{ section.settings.transparent_header_logo | img_url: image_size, scale: 1 }} 1x,
+                 {{ section.settings.transparent_header_logo | img_url: image_size, scale: 2 }} 2x,
+                 {{ section.settings.transparent_header_logo | img_url: image_size, scale: 3 }} 3x
+                "
+               alt="{{ section.settings.transparent_header_logo.alt | default: shop.name }}"
+               class="transparent"
+               width="{{ section.settings.transparent_header_logo.width }}"
+               height="{{ section.settings.transparent_header_logo.height }}"
+          >
+        {%- endif -%}
+      {%- else -%}
+        {{ shop.name }}
+      {%- endif -%}
+    </h2>
+  </a>
+</div>

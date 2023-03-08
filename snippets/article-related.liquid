@@ -1,0 +1,15 @@
+{% if blog.articles_count > 1 %}
+  <div class="{{ settings.content_alignment }}">
+    <h3>{{ 'blogs.article.other_articles' | t }}:</h3>
+    <div class="recent posts">
+      {% assign id = article.id %}
+      {% for article in blog.articles limit: 6 %}
+        {% if article.id != id %}
+          <div class="post">
+            <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

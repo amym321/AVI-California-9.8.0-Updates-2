@@ -1,0 +1,32 @@
+<div class="content">
+  <h2>{{ 'customer.register.title' | t }}</h2>
+  <h4>{{ 'customer.register.subtitle' | t }}</h4>
+  {% form 'create_customer' %}
+    <div class="row">
+      <input class="full{% if form.errors contains 'first_name' %} error{% endif %}" name="customer[first_name]" id="first_name" placeholder="{{ 'customer.register.first_name' | t }}" autocapitalize="words" type="text" autofocus="autofocus" aria-label="{{ 'customer.register.first_name' | t }}">
+      {% render 'form-field-error', form: form, field: 'first_name' %}
+    </div>
+    <div class="row">
+      <input class="full{% if form.errors contains 'last_name' %} error{% endif %}" name="customer[last_name]" id="last_name" placeholder="{{ 'customer.register.last_name' | t }}" type="text" autocapitalize="words" aria-label="{{ 'customer.register.last_name' | t }}">
+      {% render 'form-field-error', form: form, field: 'last_name' %}
+    </div>
+    <div class="row">
+      <input class="full{% if form.errors contains 'email' %} error{% endif %}" name="customer[email]" id="email" placeholder="{{ 'customer.register.email' | t }}" type="email" autocorrect="off" autocapitalize="off" aria-label="{{ 'customer.register.email' | t }}">
+      {% render 'form-field-error', form: form, field: 'email' %}
+    </div>
+    <div class="row">
+      <input class="full{% if form.errors contains 'password' %} error{% endif %}" name="customer[password]" id="create_password" placeholder="{{ 'customer.register.password' | t }}" type="password" aria-label="{{ 'customer.register.password' | t }}">
+      {% render 'form-field-error', form: form, field: 'password' %}
+    </div>
+    {% render 'form-errors', form: form %}
+    <div class="row">
+      <input class="btn action full" data-action="process" data-message="{{ 'customer.register.submitting' | t }}" name="commit" type="submit" value="{{ 'customer.register.submit' | t }}" formnovalidate="formnovalidate">
+    </div>
+    <div class="row left">
+      {% capture link %}
+        <a class="underscore" href="{{ routes.root_url }}">{{ 'customer.register.return_to_store' | t }}</a>
+      {% endcapture %}
+      {{ 'general.navigation.cancel_html' | t: link: link }}
+    </div>
+  {% endform %}
+</div>

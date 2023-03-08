@@ -1,0 +1,42 @@
+<a href="{{ collection.url }}" class="collections-item {{ collection_item_width }} {{ section.settings.collection_height }} {{ section.settings.collection_image_size }}">
+  <div class="title">
+    <h4>{{ collection.title }}</h4>    
+  </div>
+
+  {% liquid
+    if collection_item_width != blank
+      if collection_item_width == 'one-whole'
+        assign image_size = "2048x"
+      elsif collection_item_width == 'one-half'
+        assign image_size = "1024x"
+      else
+        assign image_size = "600x"
+      endif
+    else
+      assign image_size = "1024x"
+    endif
+
+    if collection.image
+      assign image = collection.image
+    else
+      assign image = collection.products.first.featured_image
+    endif
+  %}
+
+  <style type="text/css">
+    #image-{{ section.id }}-{{ collection.id }} {
+      {% render 'resp-bg-img', image: image, size: image_size %}
+    }
+    {% assign sizes = "960,600,375" | split: "," %}
+    {% for size in sizes %}
+      {% assign size_x = size | append: 'x' %}
+      @media screen and (max-width: {{ size }}px) {
+        #image-{{ section.id }}-{{ collection.id }} {
+          {% render 'resp-bg-img', image: image, size: size_x %}
+        }
+      }
+    {% endfor %}
+  </style>
+
+  <div id="image-{{ section.id }}-{{ collection.id }}" class="image opacity-{{ section.settings.collection_image_opacity }}"></div>
+</a>

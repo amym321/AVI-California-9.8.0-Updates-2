@@ -1,0 +1,139 @@
+{% assign blog = blogs[section.settings.blog] %}
+<div class="content featured-blog {% render 'content-classes', scope: section %}">
+  <div class="inner with-layout-options {{ settings.content_layout }}" style="max-width: {{ section.settings.max_width }}px;">
+    {% unless section.settings.title == blank %}
+      <h2 class="section-title">{{ section.settings.title | escape }}</h2>
+    {% endunless %}
+    {% assign mod = section.settings.post_limit | at_most: blog.articles.size | modulo: 2 %}
+    <div class="posts {{ section.settings.layout }} {% if section.settings.layout == "grid" and mod == 0 %} grid-with-even-posts{% endif %} {% if blog.articles.size == 1 %}one{% endif %}">
+      {% liquid
+        unless blog.empty?
+          for article in blog.articles limit: section.settings.post_limit
+            render 'post' blog: blog, article: article
+          endfor
+        else
+          for i in (1..section.settings.post_limit)
+            render 'post-onboarding', index: i
+          endfor
+        endunless
+      %}
+    </div>
+    {% unless blog.empty? %}
+      {% if blog.articles_count > section.settings.post_limit %}
+        <a href="{{ blog.url }}" class="btn action small">{{ 'blogs.general.view_all_articles' | t }}</a>
+      {% endif %}
+    {% endunless %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Featured blog",
+    "es": "Blog destacado"
+  },
+  "settings": [
+    {
+      "id": "blog",
+      "type": "blog",
+      "label": {
+        "en": "Blog",
+        "es": "Blog"
+      }
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": {
+        "en": "Layout",
+        "es": "Diseño"
+      },
+      "default": "grid",
+      "options": [
+        {
+          "value": "grid",
+          "label": {
+            "en": "Grid",
+            "es": "Cuadrícula"
+          }
+        },
+        {
+          "value": "list",
+          "label": {
+            "en": "List",
+            "es": "Lista"
+          }
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "post_limit",
+      "min": 2,
+      "max": 10,
+      "step": 2,
+      "label": {
+        "en": "Posts",
+        "es": "Entradas"
+      },
+      "default": 2
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.settings.heading.label",
+      "info": "t:sections.settings.heading.info",
+      "default": "Check our latest news"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": {
+        "en": "Max width",
+        "es": "Ancho máximo"
+      },
+      "default": 950,
+      "min": 400,
+      "max": 2000,
+      "step": 50,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "label": "t:sections.settings.show_on_desktop.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "label": "t:sections.settings.show_on_mobile.label",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Featured blog",
+        "es": "Blog destacado"
+      }
+    }
+  ]
+}
+{% endschema %}

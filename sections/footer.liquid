@@ -1,0 +1,404 @@
+
+{% unless section.settings.footer_hidden %}
+  {% unless template == 'index' and section.settings.home_footer_hidden %}
+  
+    <div class="footer" data-section-id="{{ section.id }}" data-section-type="footer" role="contentinfo">
+      <div class="content with-padding {% render 'content-classes', scope: section %}">
+        {% if section.blocks.size > 0 %}
+          <div class="blocks-wrapper">
+            {% for block in section.blocks %}
+              <div class="block" {{ block.shopify_attributes }}>
+                {% if block.settings.title != blank %}
+                  <h2>{{ block.settings.title | escape }}</h2>
+                {% endif %}
+                {% case block.type %}
+                  {% when 'menu' %}
+                    {% assign menu = linklists[block.settings.menu] %}
+                    {% if menu.links.size > 7 %}
+                      {% assign cols = 2 %}
+                    {% else %}
+                      {% assign cols = 1 %}
+                    {% endif %}
+
+                    <p class="cols-{{ cols }}">
+                      {% for link in menu.links %}
+                        <a href="{{ link.url }}">{{ link.title }}</a><br>
+                      {% endfor %}
+                    </p>
+
+                  {% when 'contact' %}
+                    <p>
+                      {%- if block.settings.footer_contact_twitter != blank -%}
+                        <a href="https://twitter.com/{{ block.settings.footer_contact_twitter }}" target="_blank" title="{{ shop.name }} on Twitter"><i class="fc fc-twitter"></i>@{{ block.settings.footer_contact_twitter }}</a><br>
+                      {%- endif -%}
+                      {%- if block.settings.footer_contact_email != blank -%}
+                        <a href="mailto:{{ block.settings.footer_contact_email }}"><i class="fc fc-envelope-o"></i>{{ block.settings.footer_contact_email }}</a><br>
+                      {%- endif -%}
+                      {%- if block.settings.footer_contact_telephone != blank -%}
+                        <a href="tel:{{ block.settings.footer_contact_telephone }}"><i class="fc fc-phone"></i>{{ block.settings.footer_contact_telephone }}</a><br>
+                      {%- endif -%}
+                      {%- if block.settings.footer_contact_whatsapp != blank -%}
+                        <a href="https://api.whatsapp.com/send?phone={{ block.settings.footer_contact_whatsapp }}" target="_blank"><i class="fc fc-whatsapp"></i>{{ block.settings.footer_contact_whatsapp }}</a>
+                      {%- endif -%}
+                    </p>
+
+                  {% when 'text' %}
+                    <div class="rte">
+                      <div class="footer-icon"></div>
+                      {%- if block.settings.text != blank -%}
+                        {{ block.settings.text }}
+                      {%- endif -%}
+                    </div>
+
+                  {% when 'newsletter' %}
+                    {% render 'footer-newsletter-form' %}
+                
+                
+
+                  {% when 'social' %}
+                    {% render 'connect' %}
+
+                {% endcase %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <div class="bottom">
+          <div class="left">
+            {% if shop.enabled_payment_types != empty and section.settings.footer_show_payments %}
+              <div class="extra">
+                {{ 'layout.footer.accepted_payments' | t }}:
+                <div class="icons">
+                  {% for type in shop.enabled_payment_types %}
+                    {{ type | payment_type_svg_tag: class:'payment-icon' }}
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+            <div class="extra">
+              {% assign year = 'now' | date: '%Y' %}
+              {% capture shop_name %}
+                {{ shop.name | link_to: '/' }}
+              {% endcapture %}
+              {{ 'layout.footer.copyright_html' | t: year: year, shop_name: shop_name }}<br>
+              <div class="legal-links">
+              <a href="/pages/privacy-policy">Privacy Policy</a>&nbsp;•&nbsp;<a href="/pages/terms-and-conditions">Terms &amp; Conditions</a> 
+              </div>
+              
+           
+            </div>
+          </div>
+          <div class="right">
+            {% render 'language-and-country-selectors', extended: true %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endunless %}
+{% endunless %}
+
+{% schema %}
+{
+  "name": {
+    "en": "Footer",
+    "es": "Pié de página"
+  },
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "footer_show_payments",
+      "label": {
+        "en": "Show payment icons",
+        "es": "Mostrar formas de pago"
+      },
+      "info": "When payments are enabled",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "home_footer_hidden",
+      "label": {
+        "en": "Remove footer from home page",
+        "es": "Eliminar el pié de página de la página de inicio"
+      },
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "footer_hidden",
+      "label": {
+        "en": "Remove footer from all pages",
+        "es": "Eliminar el pié de página de todas las páginas"
+      },
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Language Selector",
+        "es": "Selector de idioma"
+      },
+      "info": {
+        "en": "To add a language, go to your [language settings.](/admin/settings/languages)",
+        "es": "Para agregar un idioma, ve a tu[configuración de idioma](/admin/settings/languages)"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_language_selector",
+      "label": {
+        "en": "Show language selector",
+        "es": "Mostrar el selector de idioma"
+      },
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Country/region Selector",
+        "es": "Selector de país/región"
+      },
+      "info": {
+        "en": "To add a country/region, go to your [payment settings.](/admin/settings/payments)",
+        "es": "Para agregar un país/región, ve a tu [configuración de pago](/admin/settings/payments)"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": {
+        "en": "Show country/region selector",
+        "es": "Mostrar el selector de país/región"
+      },
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": {
+        "en": "Menu",
+        "es": "Menú"
+      },
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Heading",
+            "es": "Título"
+          },
+          "default": {
+            "en": "Quick links",
+            "es": "Accesos directos"
+          }
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": {
+            "en": "Menu",
+            "es": "Menú"
+          },
+          "default": "footer",
+          "info": {
+            "en": "This menu won't show dropdown items",
+            "es": "Este menú no muestra submenus"
+          }
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "name": {
+        "en": "Contact",
+        "es": "Contacto"
+      },
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Heading",
+            "es": "Título"
+          },
+          "default": {
+            "en": "Contact us",
+            "es": "Contáctanos"
+          }
+        },
+        {
+          "type": "text",
+          "id": "footer_contact_email",
+          "label": {
+            "en": "Email address",
+            "es": "Correo electrónico"
+          },
+          "default": {
+            "en": "support@shopify.com",
+            "es": "support@shopify.com"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "text",
+          "id": "footer_contact_twitter",
+          "label": {
+            "en": "Twitter username",
+            "es": "Nombre de usuario en Twitter"
+          },
+          "default": {
+            "en": "shopify",
+            "es": "shopify"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "text",
+          "id": "footer_contact_telephone",
+          "label": {
+            "en": "Telephone number",
+            "es": "Número de teléfono"
+          },
+          "default": {
+            "en": "+1 917 (123) 4567",
+            "es": "+1 917 (123) 4567"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        },
+        {
+          "type": "text",
+          "id": "footer_contact_whatsapp",
+          "label": {
+            "en": "Whatsapp number",
+            "es": "Número de Whatsapp"
+          },
+          "info": {
+            "en": "Optional",
+            "es": "Opcional"
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": {
+        "en": "Text",
+        "es": "Texto"
+      },
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Heading",
+            "es": "Título"
+          },
+          "default": {
+            "en": "About us",
+            "es": "Acerca de nosotros"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": {
+            "en": "Text",
+            "es": "Texto"
+          },
+          "default": {
+            "en": "<p>Share store details, promotions, or brand content with your customers.</p>",
+            "es": "<p>Comparte información sobre tu tienda, promociones u otros contenidos con tus clientes.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "social",
+      "name": {
+        "en": "Social icons",
+        "es": "Redes sociales"
+      },
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Heading",
+            "es": "Título"
+          },
+          "default": {
+            "en": "Follow us",
+            "es": "Síguenos"
+          }
+        },
+        {
+          "type": "paragraph",
+          "content": {
+            "en": "Edit your social settings and accounts in General settings",
+            "es": "Modifica tus redes sociales en Ajustes de tema"
+          }
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": {
+        "en": "Newsletter signup",
+        "es": "Suscripción al newsletter"
+      },
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Heading",
+            "es": "Título"
+          },
+          "default": {
+            "en": "Newsletter",
+            "es": "Newsletter"
+          }
+        },
+        {
+          "type": "paragraph",
+          "content": {
+            "en": "Subscribers will be added to your “accepts marketing” [customer list.](/admin/customers?query=&accepts_marketing=1)",
+            "es": "Se añadirá los suscriptores a tu lista \"acepta marketing\"[lista de clients.](/admin/customers?query=&accepts_marketing=1)"
+          }
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "menu"
+      },
+      {
+        "type": "contact"
+      },
+      {
+        "type": "text"
+      },
+      {
+        "type": "social"
+      }
+    ]
+  }
+}
+{% endschema %}

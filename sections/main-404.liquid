@@ -1,0 +1,25 @@
+<div class="content page page-404">
+  <div class="inner with-layout-options centered">
+    <h2 class="align-center">{{ 'general.404.title' | t }}</h2>
+    <h4 class="align-center">{{ 'general.404.subtitle' | t }}</h4>
+    <div class="row extra center">
+      <a href="{{ routes.root_url }}" class="btn small action">{{ 'general.404.continue_shopping' | t }}</a>
+    </div>
+    <div class="row center hide-on-desktop">
+      {% capture link %}
+        <a class="underscore" href="{{ routes.root_url }}" data-action="toggle-browse">{{ 'general.404.open_menu' | t }}</a>
+      {% endcapture %}
+      {{ 'general.navigation.cancel_html' | t: link: link }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "404 page",
+    "es": "Página 404"
+  },
+  "class": "section-404"
+}
+{% endschema %}

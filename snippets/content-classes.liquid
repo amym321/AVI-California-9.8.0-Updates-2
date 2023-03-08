@@ -1,0 +1,21 @@
+{%- liquid
+  assign content_classes = ''
+  if scope
+    if scope.settings.show_background
+      assign content_classes = content_classes | append: ' with-background'
+    endif
+    if scope.settings.expanded
+      assign content_classes = content_classes | append: ' expanded'
+    endif
+    if scope.settings.expanded_content
+      assign content_classes = content_classes | append: ' no-padding'
+    endif
+    if scope.settings.show_on_desktop == false
+      assign content_classes = content_classes | append: ' hide-on-desktop'
+    endif
+    if scope.settings.show_on_mobile == false
+      assign content_classes = content_classes | append: ' hide-on-mobile'
+    endif
+  endif
+-%}
+{{ content_classes }}

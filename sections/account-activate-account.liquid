@@ -1,0 +1,24 @@
+<div class="content">
+  <h2>{{ 'customer.activate_account.title' | t }}</h2>
+  <h4>{{ 'customer.activate_account.subtitle' | t }}</h4>
+  {% form 'activate_customer_password' %}
+    <div class="row">
+      <input class="full{% if form.errors contains 'password' %} error{% endif %}" name="customer[password]" id="customer_password" placeholder="{{ 'customer.activate_account.password' | t }}" type="password" aria-label="{{ 'customer.activate_account.password' | t }}">
+    </div>
+    <div class="row">
+      <input class="full{% if form.errors contains 'password' %} error{% endif %}" name="customer[password_confirmation]" id="customer_password_confirmation" placeholder="{{ 'customer.activate_account.password_confirm' | t }}" type="password" aria-label="{{ 'customer.activate_account.password_confirm' | t }}">
+    </div>
+    <div class="row">
+      <input class="btn action full" data-action="process" data-message="{{ 'customer.activate_account.submitting' | t }}" name="commit" type="submit" value="{{ 'customer.activate_account.submit' | t }}">
+    </div>
+    <div class="row left">
+      <input class="btn full" type="submit" class="text-link" name="decline" id="customer_decline" value="{{ 'customer.activate_account.cancel' | t }}">
+    </div>
+    <div class="row left">
+      {% capture link %}
+        <a class="underscore" href="{{ routes.root_url }}">{{ 'customer.activate_account.return_to_store' | t }}</a>
+      {% endcapture %}
+      {{ 'general.navigation.cancel_html' | t: link: link }}
+    </div>
+  {% endform %}
+</div>

@@ -1,0 +1,184 @@
+<div class="content">
+  <h2>{{ 'customer.addresses.title' | t }}</h2>
+  {% if customer.addresses_count > 0 %}
+    <h4>{{ 'customer.addresses.subtitle' | t }}</h4>
+    <div class="addresses">
+      {% for address in customer.addresses %}
+        <div class="address" id="view_address_{{ address.id }}">
+          <p class="big">
+            <span class="highlight">{{ address.first_name }} {{address.last_name }}</span><br>
+            {% if address.company != blank %}{{ address.company }}<br>{% endif %}
+            {{ address.street }}<br>
+            {{ address.city }}
+            {% if address.province_code %}
+              {{ address.province_code | upcase }}
+            {% endif %}
+            {{ address.zip | upcase }}
+            {{ address.country }}<br>
+            {% if address.phone != "" %}
+              {{ 'customer.addresses.phone_label' | t }} {{ address.phone }}
+            {% endif %}
+          </p>
+          {% if address == customer.default_address %}
+            <div class="default">{{ 'customer.addresses.default' | t }}</div>
+          {% endif %}
+          <p class="actions">
+            {{ 'customer.addresses.edit' | t | edit_customer_address_link: address.id }} /
+            {{ 'customer.addresses.delete' | t | delete_customer_address_link: address.id }}
+          </p>
+        </div>
+
+        <div id="edit_address_{{ address.id }}" class="address hide">
+          {% form 'customer_address', address %}
+            <h2>{{ 'customer.addresses.edit_address' | t }}:</h2>
+            <h4>{{ 'customer.addresses.recipient' | t }}:</h4>
+            <div class="row">
+              <input type="text" id="address_first_name_{{form.id}}" class="full" name="address[first_name]" value="{{form.first_name}}" autocapitalize="words" placeholder="{{ 'customer.addresses.first_name' | t }}" aria-label="{{ 'customer.addresses.first_name' | t }}">
+            </div>
+            <div class="row">
+              <input type="text" id="address_last_name_{{form.id}}" class="full" name="address[last_name]" value="{{form.last_name}}" autocapitalize="words" placeholder="{{ 'customer.addresses.last_name' | t }}" aria-label="{{ 'customer.addresses.last_name' | t }}">
+            </div>
+            <div class="row">
+              <input type="text" id="address_company_{{form.id}}" class="full" name="address[company]" value="{{form.company}}" autocapitalize="words" placeholder="{{ 'customer.addresses.company' | t }}" aria-label="{{ 'customer.addresses.company' | t }}">
+            </div>
+            <div class="row">
+              <input type="tel" id="address_phone_{{form.id}}" class="full" name="address[phone]" value="{{form.phone}}" placeholder="{{ 'customer.addresses.phone' | t }}" aria-label="{{ 'customer.addresses.phone' | t }}">
+            </div>
+            <h4>{{ 'customer.addresses.address' | t }}:</h4>
+            <div class="row">
+              <input type="text" id="address_address1_{{form.id}}" class="full" name="address[address1]" value="{{form.address1}}" autocapitalize="words" placeholder="{{ 'customer.addresses.address1' | t }}" aria-label="{{ 'customer.addresses.address1' | t }}">
+            </div>
+            <div class="row">  
+              <input type="text" id="address_address2_{{form.id}}" class="full" name="address[address2]" value="{{form.address2}}" autocapitalize="words" placeholder="{{ 'customer.addresses.address2' | t }}" aria-label="{{ 'customer.addresses.address2' | t }}">
+            </div>
+            <div class="row">
+              <input type="text" id="address_city_{{form.id}}" class="full" name="address[city]" value="{{form.city}}" autocapitalize="words" placeholder="{{ 'customer.addresses.city' | t }}" aria-label="{{ 'customer.addresses.city' | t }}">
+            </div>
+            <div class="row">
+              <input type="text" id="address_zip_{{form.id}}" class="full" name="address[zip]" value="{{form.zip}}" autocapitalize="characters" placeholder="{{ 'customer.addresses.zip' | t }}" aria-label="{{ 'customer.addresses.zip' | t }}">
+            </div>
+            <label for="address_country_{{form.id}}">
+              <h4>{{ 'customer.addresses.country' | t }}:</h4>
+            </label>
+            <div class="row">
+              <div class="select">
+                <select id="address_country_{{form.id}}" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
+                <div class="arrow">
+                  <i class="fc fc-angle-down fc-lg"></i>
+                </div>
+              </div>
+            </div>
+            <div id="address_province_container_{{form.id}}" style="display:none" class="row">
+              <label for="address_province_{{form.id}}">
+                <h4>{{ 'customer.addresses.province' | t }}:</h4>
+              </label>
+              <div class="select">
+                <select id="address_province_{{form.id}}" name="address[province]" data-default="{{form.province}}"></select>
+                <div class="arrow">
+                  <i class="fc fc-angle-down fc-lg"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row checkbox">
+              <h4>{{ 'customer.addresses.set_default_label' | t }}</h4>
+              <label for="address_default_address_{{form.id}}">
+                {{ form.set_as_default_checkbox }} {{ 'customer.addresses.set_default_action' | t }}
+              </label>
+            </div>
+
+            <div class="row">
+              <input type="submit" class="btn action small full" value="{{ 'customer.addresses.update' | t }}" data-action="process" data-message="{{ 'customer.addresses.updating' | t }}" >
+            </div>
+
+            <div class="row">
+              <a href="#" class="btn small full" onclick="Shopify.CustomerAddress.toggleForm({{form.id}}); return false;">{{ 'customer.addresses.cancel' | t }}</a>
+            </div>
+          {% endform %}
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <h4>{{ 'customer.addresses.empty' | t }}</h4>
+  {% endif %}
+  <div id="add_address" class="address hide">
+    {% form 'customer_address', customer.new_address %}
+      <h2>{{ 'customer.addresses.add_new' | t }}:</h2>
+      <h4>{{ 'customer.addresses.recipient' | t }}:</h4>
+      <div class="row">
+        <input type="text" id="address_first_name_new" class="full" name="address[first_name]" value="{{form.first_name}}" autocapitalize="words" placeholder="{{ 'customer.addresses.first_name' | t }}" aria-label="{{ 'customer.addresses.first_name' | t }}">
+      </div>
+      <div class="row">
+        <input type="text" id="address_last_name_new" class="full" name="address[last_name]" value="{{form.last_name}}" autocapitalize="words" placeholder="{{ 'customer.addresses.last_name' | t }}" aria-label="{{ 'customer.addresses.last_name' | t }}">
+      </div>
+      <div class="row">
+        <input type="text" id="address_company_new" class="full" name="address[company]" value="{{form.company}}" autocapitalize="words" placeholder="{{ 'customer.addresses.company' | t }}" aria-label="{{ 'customer.addresses.company' | t }}">
+      </div>
+      <div class="row">
+        <input type="tel" id="address_phone_new" class="full" name="address[phone]" value="{{form.phone}}" placeholder="{{ 'customer.addresses.phone' | t }}" aria-label="{{ 'customer.addresses.phone' | t }}">
+      </div>
+      <h4>{{ 'customer.addresses.address' | t }}:</h4>
+      <div class="row">
+        <input type="text" id="address_address1_new" class="full" name="address[address1]" value="{{form.address1}}" autocapitalize="words" placeholder="{{ 'customer.addresses.address1' | t }}" aria-label="{{ 'customer.addresses.address1' | t }}">
+      </div>
+      <div class="row">  
+        <input type="text" id="address_address2_new" class="full" name="address[address2]" value="{{form.address2}}" autocapitalize="words" placeholder="{{ 'customer.addresses.address2' | t }}" aria-label="{{ 'customer.addresses.address2' | t }}">
+      </div>
+      <div class="row">
+        <input type="text" id="address_city_new" class="full" name="address[city]" value="{{form.city}}" autocapitalize="words" placeholder="{{ 'customer.addresses.city' | t }}" aria-label="{{ 'customer.addresses.city' | t }}">
+      </div>
+      <div class="row">
+        <input type="text" id="address_zip_new" class="full" name="address[zip]" value="{{form.zip}}" autocapitalize="characters" placeholder="{{ 'customer.addresses.zip' | t }}" aria-label="{{ 'customer.addresses.zip' | t }}">
+      </div>
+      <label for="address_country_new">
+        <h4>{{ 'customer.addresses.country' | t }}:</h4>
+      </label>
+      <div class="row">
+        <div class="select">
+          <select id="address_country_new" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
+          <div class="arrow">
+            <i class="fc fc-angle-down fc-lg"></i>
+          </div>
+        </div>
+      </div>
+      <div id="address_province_container_new" style="display:none" class="row">
+        <label for="address_province_new">
+          <h4>{{ 'customer.addresses.province' | t }}:</h4>
+        </label>
+        <div class="select">
+          <select id="address_province_new" name="address[province]" data-default="{{form.province}}"></select>
+          <div class="arrow">
+            <i class="fc fc-angle-down fc-lg"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row checkbox">
+        <h4>{{ 'customer.addresses.set_default_label' | t }}</h4>
+        <label for="address_default_address_new">
+          {{ form.set_as_default_checkbox }} {{ 'customer.addresses.set_default_action' | t }}
+        </label>
+      </div>
+      <div class="row">
+        <input type="submit" class="btn action small full" value="{{ 'customer.addresses.add' | t }}" data-action="process" data-message="{{ 'customer.addresses.adding' | t }}" >
+      </div>
+      <div class="row">
+        <a href="#" class="btn small full" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">{{ 'customer.addresses.cancel' | t }}</a>
+      </div>
+    {% endform %}
+  </div>
+  <div class="row">
+    <a href="#" class="btn action small" id="add_new_address_button" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">{{ 'customer.addresses.add' | t }}</a>
+  </div>
+  <div class="row">
+    {% capture link %}
+      <a class="underscore" href="{{ routes.account_url }}">{{ 'customer.addresses.return' | t }}</a>
+    {% endcapture %}
+    {{ 'general.navigation.cancel_html' | t: link: link }}
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.customer_addresses = [];
+  {% for address in customer.addresses %}
+    window.customer_addresses.push({{ address.id }});
+  {% endfor %}
+</script>

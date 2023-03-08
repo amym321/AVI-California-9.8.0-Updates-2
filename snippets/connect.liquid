@@ -1,0 +1,60 @@
+{% liquid
+  assign total = 0
+  assign cols = 1
+  if settings.social_facebook_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_twitter_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_pinterest_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_instagram_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_tiktok_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_linkedin_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_flickr_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_yelp_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_vimeo_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_youtube_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_tumblr_link != blank
+    assign total = total | plus: 1
+  endif
+  if settings.social_wordpress_link != blank
+    assign total = total | plus: 1
+  endif
+  if total > 3
+    assign cols = 2
+  endif
+%}
+
+{% if total > 0 %}
+  <p class="connect cols-{{ cols }}">
+    {% if settings.social_facebook_link != blank %}<a href="{{ settings.social_facebook_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Facebook' }}"><i class="fc fc-facebook"></i></a><br>{% endif %}
+    {% if settings.social_twitter_link != blank %}<a href="{{ settings.social_twitter_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Twitter' }}"><i class="fc fc-twitter-square"></i></a><br>{% endif %}
+    {% if settings.social_pinterest_link != blank %}<a href="{{ settings.social_pinterest_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Pinterest' }}"><i class="fc fc-pinterest"></i></a><br>{% endif %}
+    {% if settings.social_instagram_link != blank %}<a href="{{ settings.social_instagram_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Instagram' }}"><i class="fc fc-instagram"></i></a><br>{% endif %}
+    {% if settings.social_tiktok_link != blank %}<a href="{{ settings.social_tiktok_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'TikTok' }}"><i class="fc fc-tiktok"></i></a><br>{% endif %}
+    {% if settings.social_linkedin_link != blank %}<a href="{{ settings.social_linkedin_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Linkedin' }}"><i class="fc fc-linkedin-square"></i></a><br>{% endif %}
+    {% if settings.social_flickr_link != blank %}<a href="{{ settings.social_flickr_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Flickr' }}"><i class="fc fc-flickr"></i></a><br>{% endif %}
+    {% if settings.social_yelp_link != blank %}<a href="{{ settings.social_yelp_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Yelp' }}"><i class="fc fc-yelp"></i>Yelp</a><br>{% endif %}
+    {% if settings.social_vimeo_link != blank %}<a href="{{ settings.social_vimeo_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Vimeo' }}"><i class="fc fc-vimeo-square"></i></a><br>{% endif %}
+    {% if settings.social_youtube_link != blank %}<a href="{{ settings.social_youtube_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Youtube' }}"><i class="fc fc-youtube-square"></i></a><br>{% endif %}
+    {% if settings.social_tumblr_link != blank %}<a href="{{ settings.social_tumblr_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Tumblr' }}"><i class="fc fc-tumblr-square"></i></a><br>{% endif %}
+    {% if settings.social_wordpress_link != blank %}<a href="{{ settings.social_wordpress_link }}" target="_blank" title="{{ 'layout.footer.platform' | t: name: shop.name, platform: 'Wordpress' }}"><i class="fc fc-wordpress"></i></a><br>{% endif %}
+  </p>
+{% endif %}

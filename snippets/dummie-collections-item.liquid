@@ -1,0 +1,8 @@
+<a href="admin/collections" class="collections-item dummie {{ collection_item_width }} {{ section.settings.collection_height }} {{ section.settings.collection_image_size }}" target="_blank">
+  <div class="title">
+    <h4>{{ 'home_page.onboarding.add_collection' | t }}</h4>
+  </div>
+  {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+  {% capture placeholder_class %}placeholder-svg opacity-{{ section.settings.collection_image_opacity }}{% endcapture %}
+  {{ 'collection-' | append: current | placeholder_svg_tag: placeholder_class }}
+</a>

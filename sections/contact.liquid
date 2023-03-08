@@ -1,0 +1,72 @@
+<div class="content page">
+  <div class="inner with-layout-options {{ settings.content_layout }} ">
+    <div class="main aff-wrapper {{ settings.pages_title_alignment }}">
+   		<div id="contactFormAffiliates">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <h4>{{ 'contact.form.post_success' | t }}</h4>
+        {% endif %}
+        <div class="row">
+          <input class="full{% if form.errors contains 'name' %} error{% endif %}" type="text" id="contactFormName" name="contact[name]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" aria-label="{{ 'contact.form.name' | t }}">
+          {% render 'form-field-error', form: form, field: 'name' %}
+        </div>
+        <div class="row">
+          <input class="full{% if form.errors contains 'email' %} error{% endif %}" type="email" id="contactFormEmail" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" aria-label="{{ 'contact.form.email' | t }}">
+          {% render 'form-field-error', form: form, field: 'email' %}
+        </div>
+        <div class="row">
+          <input class="full{% if form.errors contains 'phone' %} error{% endif %}" type="text" id="contactFormPhone" name="contact[phone]" placeholder="TikTok / Instagram  / Facebook " pattern="[0-9]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" aria-label="{{ 'contact.form.phone' | t }}">
+          {% render 'form-field-error', form: form, field: 'phone' %}
+        </div>
+        <div class="row">
+          <textarea class="full" rows="5" id="contactFormMessage" name="contact[body]" placeholder="Address" aria-label="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+        </div>
+        <div class="row">
+          <input class="btn action full" name="commit" type="submit" value="{{ 'contact.form.send' | t }}">
+        </div>
+      {% endform %}
+      </div>
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      <div id="contactForm">
+        <h1>Contact</h1>
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <h4>{{ 'contact.form.post_success' | t }}</h4>
+        {% endif %}
+        <div class="row">
+          <input class="full{% if form.errors contains 'name' %} error{% endif %}" type="text" id="contactFormName" name="contact[name]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" aria-label="{{ 'contact.form.name' | t }}">
+          {% render 'form-field-error', form: form, field: 'name' %}
+        </div>
+        <div class="row">
+          <input class="full{% if form.errors contains 'email' %} error{% endif %}" type="email" id="contactFormEmail" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" aria-label="{{ 'contact.form.email' | t }}">
+          {% render 'form-field-error', form: form, field: 'email' %}
+        </div>
+        <div class="row">
+          <input class="full{% if form.errors contains 'phone' %} error{% endif %}" type="tel" id="contactFormPhone" name="contact[phone]" placeholder="{{ 'contact.form.phone' | t }}" pattern="[0-9]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" aria-label="{{ 'contact.form.phone' | t }}">
+          {% render 'form-field-error', form: form, field: 'phone' %}
+        </div>
+        <div class="row">
+          <textarea class="full" rows="5" id="contactFormMessage" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}" aria-label="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+        </div>
+        <div class="row">
+          <input class="btn action full" name="commit" type="submit" value="{{ 'contact.form.send' | t }}">
+        </div>
+      {% endform %}
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Contact",
+    "es": "Contacto"
+  },
+  "class": "section-contact"
+}
+{% endschema %}

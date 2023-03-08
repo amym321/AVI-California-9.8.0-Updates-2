@@ -1,0 +1,83 @@
+{% liquid
+  assign on_sale = false
+  if product.compare_at_price > product.price
+    assign on_sale = true
+  endif
+
+  assign soldout = true
+  if product.available 
+    assign soldout = false
+  endif
+
+  if collection
+    assign product_url = product.url | within: collection
+  else
+    assign product_url = product.url
+  endif
+%}
+
+<div class="product {% if soldout %} soldout{% endif %}{% if on_sale %} on-sale{% endif %} {{ images_class }}">
+  <a class="inner" href="{{ product_url }}">
+    <div class="image">
+      <div class="line"></div>
+      {%- liquid
+        assign aspect_ratio = product.featured_media.aspect_ratio
+        if product.featured_media.aspect_ratio == nil
+          assign aspect_ratio = 1
+        endif
+      -%}
+      <div class="frame {{ settings.image_ratio }}"
+        {% if settings.image_ratio == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: aspect_ratio | times: 100 }}%;"{% endif %}
+      >
+        {% liquid
+          assign default_size = "562x"
+          assign sizes = "(max-width: 620px) 100vw, 50vw"
+          assign alt = product.featured_media.alt | escape
+          render 'resp-img', image: product.featured_media.preview_image, default_size: default_size, sizes: sizes, alt: alt
+          if settings.show_product_secondary_image and product.media.size > 1
+            assign alt = product.media[1].alt | escape
+            render 'resp-img', image: product.media[1], default_size: default_size, sizes: sizes, alt: alt
+          endif
+        %}
+      </div>
+    </div>    
+    <div class="info">
+      <div class="status nowrap">
+        {% if soldout %}
+          <span class="ca sold">{{ 'products.product.sold_out' | t }}</span>
+        {% elsif on_sale %}
+          <span class="ca sale">{{ 'products.product.on_sale' | t }}</span>
+        {% else %}
+          <span class="ca buy">{{ 'products.product.buy' | t }}</span>
+        {% endif %}
+      </div>
+      <div class="metas">
+        {% if settings.show_product_titles %}
+          <div class="title">{{ product.title }}</div>
+        {% endif %}
+        <div>
+          {% liquid
+            for variant in product.variants
+              if variant.price == product.price_min
+                assign variant_price_min = variant
+                break
+              endif
+            endfor
+          %}
+          {% capture product_price_min %}
+            <span class="price">{{ variant_price_min.price | money }}</span>
+          {% endcapture %}
+          {% if product.price_varies %}
+            <span class="price">{{ 'products.product.from_html' | t: price: product_price_min }}</span>
+          {% else %}
+            {{ product_price_min }}
+          {% endif %}
+          {% if variant_price_min.compare_at_price > variant_price_min.price %}
+            <span class="price striped">{{ variant_price_min.compare_at_price | money }}</span>
+          {% endif %}
+          {%- render 'unit-price', from: variant_price_min -%}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

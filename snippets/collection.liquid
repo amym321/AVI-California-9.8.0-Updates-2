@@ -1,0 +1,81 @@
+{% liquid
+  assign collection_title_escaped =  collection.title | escape
+  assign collection_current_type_escaped =  collection.current_type | escape
+  assign columns = section.settings.columns | times: 1
+  assign rows = section.settings.rows | times: 1
+  assign limit = columns | times: rows
+%}
+
+<div class="collection">
+  <div class="head">
+    {% if template == 'list-collections' %}
+      <a class="link" href="{{ collection.url }}"><h2>{{ collection.title }}</h2></a>
+      <a class="link" href="{{ collection.url }}" title="{{ collection.title }}">{{ 'collections.general.view_all_products' | t }} &rsaquo;</a>
+    {% else %}
+      {%- if section.settings.show_collection_image and collection.image -%}
+        <div class="image">
+          <img srcset=
+            "{% for dimension in dimensions %}
+              {% assign img_url = dimension | append: 'x' %}
+              {{ collection.image | img_url: img_url }} {{ dimension }}w,
+            {% endfor %}"
+            sizes="100vw"
+            src="{{ collection.image | img_url: '2048x' }}"
+            alt="{{ collection.title | escape }}"
+            style="max-width: 100%;"
+            loading="lazy">
+        </div>
+      {%- endif -%}
+      {% if collection.handle == 'all' %}
+        <h2>{{ 'collections.general.catalog' | t }}</h2>
+      {% else %}
+        <h1 style="font-size:2.5em;margin: 0 0 10px;">{{ collection.title }}</h1>
+    <h3>WITH ANCIENT LUPINI FLAKES!</h3>
+      {% endif %}
+      {% if collection.products_count < 0 %}
+        {%- if section.settings.enable_filtering and collection.all_products_count > collection.products_count -%}
+          <h4>{{ 'collections.general.filter_products_count' | t: count: collection.products_count, total: collection.all_products_count }}</h4>
+        {% else %}
+          <h4>{{ 'collections.general.products_count' | t: count: collection.products_count }}</h4>
+        {%- endif -%}
+      {% endif %}
+      {% if collection.description != blank and section.settings.show_collection_description %}
+        <div class="description rte">
+          {{ collection.description }}
+        </div>
+      {% endif %}
+      {% render 'filtering-and-sorting' %}
+    {% endif %}
+  </div>
+  {% if template == "index" %}
+    <div class="products columns_{{ columns }}">
+      {% liquid
+        for product in collection.products limit: limit
+          render 'collection-product', product: product, columns: columns
+        else
+          if limit > 0
+            for i in (1..limit)
+              render 'collection-product-onboarding', i: i
+            endfor
+          endif
+        endfor
+      %}
+    </div>
+  {% else %}
+    {% if collection.products_count > 0 %}
+      <div class="products columns_{{ columns }}">
+        {% liquid
+          for product in collection.products limit: limit
+            render 'collection-product', product: product, columns: columns
+          endfor
+          if template == 'collection'
+            render 'collection-product-pagination' with paginate as paginate
+          endif
+        %}
+      </div>
+    {% else %}
+      <h4>{{ 'collections.general.no_products' | t }}</h4>
+    {% endif %}
+  {% endif %}
+</div>
+

@@ -1,0 +1,62 @@
+<div class="content apps {% render 'content-classes', scope: section %}" data-section-id="{{ section.id }}" data-section-type="apps">
+  {%- for block in section.blocks -%}
+    {% render block %}
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Apps",
+    "es": "Apps"
+  },
+  "class": "apps",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded_content",
+      "label": "t:sections.settings.expanded_content.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "label": "t:sections.settings.show_on_desktop.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "label": "t:sections.settings.show_on_mobile.label",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [{
+    "name": {
+      "en": "Apps",
+      "es": "Apps"
+    }
+  }]
+}
+{% endschema %}

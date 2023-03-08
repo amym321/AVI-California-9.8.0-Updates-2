@@ -1,0 +1,33 @@
+<style type="text/css">
+  .{{ slide_id }} {
+    background-position: center {{ block.settings.alignment }};
+    {% render 'resp-bg-img', image: block.settings.image, size: '4096x' %}
+  }
+
+  {% if block.settings.image != blank %}
+    {% liquid
+      if block.settings.image_for_mobile != blank
+        assign mobile_image = block.settings.image_for_mobile
+        assign sizes = "2048,1944,1728,1512,1024,768,512,375" | split: ","
+      else
+        assign mobile_image = block.settings.image
+        assign sizes = "2048,1944,1728,1512,1024" | split: ","
+      endif
+    %}
+    {% for size in sizes %}
+      {% liquid
+        assign size_x = size | append: 'x'
+        if size == "512" or size == "375"
+          assign image = mobile_image
+        else
+          assign image = block.settings.image
+        endif
+      %}
+      @media screen and (max-width: {{ size }}px) {
+        .{{ slide_id }} {
+          {% render 'resp-bg-img', image: image, size: size_x %}
+        }
+      }
+    {% endfor %}
+  {% endif %}
+</style>

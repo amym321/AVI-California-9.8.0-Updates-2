@@ -1,0 +1,396 @@
+{
+  "sections": {
+    "settings": {
+      "header": {
+        "content": "Section settings"
+      },
+      "heading": {
+        "label": "Heading",
+        "info": "Optional"
+      },
+      "show_background": {
+        "label": "Show background"
+      },
+      "expanded": {
+        "label": "Expand background"
+      },
+      "expanded_content": {
+        "label": "Expand content"
+      },
+      "content_max_width": {
+        "label": "Content max width"
+      },
+      "show_on_desktop": {
+        "label": "Show on desktop"
+      },
+      "show_on_mobile": {
+        "label": "Show on mobile"
+      }
+    },
+    "main-product": {
+      "name": "Product information",
+      "block_settings": "Block settings",
+      "increase_space": "Increase space before block",
+      "blocks": {
+        "available_stock_units": {
+          "name": "Available stock units",
+          "content": "Check [this tutorial](https://help.shopify.com/manual/products/inventory) to activate tracking on your product inventory."
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Text"
+            },
+            "text_style": {
+              "label": "Text style",
+              "options__1": {
+                "label": "Body"
+              },
+              "options__2": {
+                "label": "Subtitle"
+              },
+              "options__3": {
+                "label": "Uppercase"
+              }
+            }
+          }
+        },
+        "title": {
+          "name": "Title"
+        },
+        "price": {
+          "name": "Price"
+        },
+        "quantity_selector": {
+          "name": "Quantity selector"
+        },
+        "variant_picker": {
+          "name": "Variant picker",
+          "settings": {
+            "picker_type": {
+              "label": "Type",
+              "options__1": {
+                "label": "Dropdown"
+              },
+              "options__2": {
+                "label": "Button"
+              }
+            },
+            "swatches_selector":{
+              "header": "Swatches",
+              "label": "Option name for swatches",
+              "info": "Write the variant option name that will display swatches. Use a comma separated list to support multiple options: \"Color, Colour\"."
+            },
+            "popup_selector":{
+              "header": "Information popup",
+              "label": "Option name for information popup",
+              "info": "Write the variant option name that will display a link to the information popup. Example: \"Size\"."
+            },
+            "popup_text":{
+              "label": "Information popup link text"
+            },
+            "popup_page":{
+              "label": "Information popup content",
+              "info": "Choose a page as a source for the popup content. You can add text, tables, or images to this page."
+            }
+          }
+        },
+        "buy_buttons": {
+          "name": "Buy buttons",
+          "settings": {
+            "show_dynamic_checkout": {
+              "label": "Show dynamic checkout buttons",
+              "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            }
+          }
+        },
+        "pickup_availability": {
+          "name": "Pickup availability"
+        },
+        "description": {
+          "name": "Description"
+        },
+        "share": {
+          "name": "Share",
+          "settings": {
+            "featured_image_info": {
+              "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+            },
+            "title_info": {
+              "content": "A store title and description are included with the preview image. [Learn more](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            }
+          }
+        },
+        "collapsible_tab": {
+          "name": "Collapsible tab",
+          "settings": {
+            "heading": {
+              "info": "Include a heading that explains the content.",
+              "label": "Heading"
+            },
+            "content": {
+              "label": "Tab content",
+              "info": "You can use \"product metafields\" and \"dynamic sources\" to have specific content for each product. [Lear more](https://small-victories.notion.site/How-do-I-have-different-product-information-in-the-Collapsible-tab-block-8cd1c86401134776990eb087103ac051)"
+            },
+            "page": {
+              "label": "Tab content from page"
+            },
+            "icon": {
+              "label": "Icon",
+              "options__1": {
+                "label": "None"
+              },
+              "options__2": {
+                "label": "Box"
+              },
+              "options__3": {
+                "label": "Chat bubble"
+              },
+              "options__4": {
+                "label": "Check mark"
+              },
+              "options__5": {
+                "label": "Dryer"
+              },
+              "options__6": {
+                "label": "Eye"
+              },
+              "options__7": {
+                "label": "Heart"
+              },
+              "options__8": {
+                "label": "Iron"
+              },
+              "options__9": {
+                "label": "Leaf"
+              },
+              "options__10": {
+                "label": "Leather"
+              },
+              "options__11": {
+                "label": "Lock"
+              },
+              "options__12": {
+                "label": "Map pin"
+              },
+              "options__13": {
+                "label": "Pants"
+              },
+              "options__14": {
+                "label": "Plane"
+              },
+              "options__15": {
+                "label": "Price tag"
+              },
+              "options__16": {
+                "label": "Question mark"
+              },
+              "options__17": {
+                "label": "Return"
+              },
+              "options__18": {
+                "label": "Ruler"
+              },
+              "options__19": {
+                "label": "Shirt"
+              },
+              "options__20": {
+                "label": "Shoe"
+              },
+              "options__21": {
+                "label": "Silhouette"
+              },
+              "options__22": {
+                "label": "Star"
+              },
+              "options__23": {
+                "label": "Truck"
+              },
+              "options__24": {
+                "label": "Washing"
+              }
+            }
+          }
+        },
+        "popup": {
+          "name": "Pop-up",
+          "settings": {
+            "link_label": {
+              "label": "Link label"
+            },
+            "page": {
+              "label": "Page"
+            }
+          }
+        },
+        "rating": {
+          "name": "Product rating",
+          "settings": {
+            "paragraph": {
+              "content": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-rating-block)"
+            }
+          }
+        },
+        "custom_liquid": {
+          "name": "Custom liquid",
+          "settings": {
+            "custom_liquid": {
+              "label": "Custom liquid",
+              "info": "Add app snippets or other Liquid code to create advanced customizations."
+            }
+          }
+        },
+        "border": {
+          "name": "Border"
+        }
+      },
+      "settings": {
+        "header": {
+          "content": "Media",
+          "info": "Learn more about [media types](https://help.shopify.com/manual/products/product-media)"
+        },
+        "enable_sticky_info": {
+          "label": "Enable sticky content on large screens"
+        },
+        "enable_video_looping": {
+          "label": "Enable video looping"
+        }
+      }
+    },
+    "main-collection": {
+      "name": "Collection page",
+      "settings": {
+        "header": {
+          "banner": "Collection header",
+          "filtering_and_sorting": "Filtering and sorting",
+          "product_grid": "Product grid"
+        },
+        "paragraph": {
+          "content": "To change collection descriptions or collection images, [edit your collections.](/admin/collections)"
+        },
+        "show_collection_description": {
+          "label": "Show collection description"
+        },
+        "show_collection_image": {
+          "label": "Show collection image",
+          "info": "For best results, use an image with a 16:9 aspect ratio."
+        },
+        "enable_sorting": {
+          "label": "Enable sorting"
+        },
+        "enable_filtering": {
+          "label": "Enable filtering",
+          "info": "[Customize filters](/admin/menus)"
+        }
+      }
+    },
+    "categories-list": {
+      "name": "Categories list",
+      "blocks": {
+        "category": {
+          "name": "Category",
+          "settings": {
+            "text": {
+              "label": "Text",
+              "default": "Text"
+            },
+            "link": {
+              "label": "Link"
+            },
+            "image": {
+              "label": "Image",
+              "info": "Optional"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Categories list"
+      }
+    },
+    "collage": {
+      "name": "Collage",
+      "settings": {
+        "desktop_layout": {
+          "label": "Desktop layout",
+          "options__1": {
+            "label": "Left large block"
+          },
+          "options__2": {
+            "label": "Right large block"
+          }
+        },
+        "mobile_layout": {
+          "label": "Mobile layout",
+          "options__1": {
+            "label": "Collage"
+          },
+          "options__2": {
+            "label": "Column"
+          }
+        }
+      },
+      "blocks": {
+        "block": {
+          "settings": {
+            "show_border": {
+              "label": "Show border"
+            }
+          }
+        },
+        "image": {
+          "name": "Image",
+          "settings": {
+            "image": {
+              "label": "Image"
+            },
+            "text": {
+              "label": "Text",
+              "info": "Optional"
+            },
+            "text_align": {
+              "label": "Text align",
+              "left": {
+                "label": "Left"
+              },
+              "center": {
+                "label": "Center"
+              },
+              "right": {
+                "label": "Right"
+              }
+            },
+            "link": {
+              "label": "Link",
+              "info": "Optional"
+            }
+          }
+        },
+        "product": {
+          "name": "Product",
+          "settings": {
+            "product": {
+              "label": "Product"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Collage"
+      }
+    },
+    "custom-liquid": {
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": {
+          "label": "Custom Liquid",
+          "info": "Add app snippets or other Liquid code to create advanced customizations."
+        }
+      },
+      "presets": {
+        "name": "Custom Liquid"
+      }
+    }
+  }
+}

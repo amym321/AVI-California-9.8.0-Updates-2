@@ -1,0 +1,15 @@
+{% form 'customer', id: "FooterForm" %}
+  {% if form.posted_successfully? %}
+    <h3 class="success">{{ 'layout.footer.newsletter_success' | t }}</h3>
+  {% else %}
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <input class="small {% if form.errors contains 'email' %} error{% endif %}" type="text" name="contact[email]" placeholder="{{ 'layout.footer.newsletter_email' | t }}" autocorrect="off" autocapitalize="off" aria-label="{{ 'layout.footer.newsletter_email' | t }}">
+<!--     <input type="submit" class="btn line" value="{{ 'layout.footer.newsletter_submit' | t }}"> -->
+	<input type="submit" class="btn line" value="Subscribe">
+    {% if form.errors %}
+      {% for field in form.errors %}
+        <div class="field-error">{{ form.errors.messages[field] }}</div>
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+{% endform %}

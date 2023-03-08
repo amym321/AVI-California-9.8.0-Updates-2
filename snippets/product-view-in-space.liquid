@@ -1,0 +1,13 @@
+{% assign first_3d_model = product.media | where: "media_type", "model" | first %}
+{%- if first_3d_model -%}
+  <button
+    aria-label="{{ 'products.product.view_in_space_label' | t }}"
+    class="view-in-space"
+    data-shopify-xr
+    data-shopify-model3d-id="{{ first_3d_model.id }}"
+    data-shopify-title="{{ product.title }}"
+    data-shopify-xr-hidden
+  >
+    {% render 'icon-3d-badge-full-color' %}<span class='text'>{{ 'products.product.view_in_space' | t }}</span>
+  </button>
+{%- endif -%}

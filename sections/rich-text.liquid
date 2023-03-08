@@ -1,0 +1,123 @@
+<div class="content rich-text {% render 'content-classes', scope: section %}">
+  {%- if section.settings.title == blank and section.settings.richtext == blank and section.settings.button_label == blank and section.settings.button_link == blank -%}
+    {% render 'no-blocks' %}
+  {%- else -%}
+    <div class="inner with-layout-options centered extended" style="max-width: {{ section.settings.max_width }}px;">
+      {%- if section.settings.title != blank -%}
+        <h2 class="section-title">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      <div class="rte">
+        {%- if section.settings.richtext != blank -%}
+          {{ section.settings.richtext }}
+        {%- endif -%}
+      </div>
+      {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="btn action small">{{ section.settings.button_label | escape }}</a>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Rich text",
+    "es": "Texto enriquecido"
+  },
+  "class": "section-rich-text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.settings.heading.label",
+      "default": {
+        "en": "Talk about your brand",
+        "es": "Habla de tu marca"
+      }
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": {
+        "en": "Text",
+        "es": "Texto"
+      },
+      "default": {
+        "en": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "es": "<p>Usa este texto para compartir información sobre tu marca con tus clientes. Describe un producto, comparte anuncios o recibe clientes en tu tienda.</p>"
+      }
+    },
+    {
+      "id": "button_label",
+      "type": "text",
+      "label": {
+        "en": "Button label",
+        "es": "Etiqueta de botón"
+      }
+    },
+    {
+      "id": "button_link",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "es": "Enlace de botón"
+      }
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": {
+        "en": "Max width",
+        "es": "Ancho máximo"
+      },
+      "default": 650,
+      "min": 400,
+      "max": 2000,
+      "step": 50,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded_content",
+      "label": "t:sections.settings.expanded_content.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "label": "t:sections.settings.show_on_desktop.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "label": "t:sections.settings.show_on_mobile.label",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Rich text",
+        "es": "Texto enriquecido"
+      }
+    }
+  ]
+}
+{% endschema %}

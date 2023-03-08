@@ -1,0 +1,119 @@
+<div class="content newsletter extra-padding {% render 'content-classes', scope: section %}" data-section-id="{{ section.id }}" data-section-type="newsletter">
+  <div class="titles">
+    {% if section.settings.heading %}
+      <h2 class="section-title">{{ section.settings.heading | escape }}</h2>
+    {% endif %}
+    {% if section.settings.subheading %}
+      <div class="rte">
+        {{ section.settings.subheading }}
+      </div>
+    {% endif %}
+  </div>
+  <div class="content">
+    {% assign form_id = "SectionForm-" | append: section.id %}
+    {% form 'customer', id: form_id %}
+      {% if form.posted_successfully? %}
+        <p class="success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+      {% else %}
+        <div class="table">
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <label for="email" class="hide">{{ 'contact.form.email' | t }}</label>
+          <input class="text {% if form.errors contains 'email' %} error{% endif %}" type="email" name="contact[email]" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" autocorrect="off" autocapitalize="off" id="email" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}">
+          <span class="input-group-btn">
+            <input type="submit" class="btn solid" value="{{ 'general.newsletter_form.submit' | t }}">
+          </span>
+        </div>
+        {% if form.errors %}
+          {% for field in form.errors %}
+            <div class="field-error">{{ form.errors.messages[field] }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+    {% endform %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": {
+      "en": "Newsletter",
+      "es": "Newsletter"
+    },
+    "class": "newsletter-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": {
+          "en": "Heading",
+          "es": "Título"
+        },
+        "default": {
+          "en": "Subscribe to our newsletter",
+          "es": "Suscríbete a nuestro newsletter"
+        }
+      },
+      {
+        "type": "richtext",
+        "id": "subheading",
+        "label": {
+          "en": "Subheading",
+          "es": "Subtítulo"
+        },
+        "default": {
+          "en": "<p>Promotions, new products and sales. Directly to your inbox.</p>",
+          "es": "<p>Promociones, novedades y ofertas. Todo directamente a tu email.</p>"
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": {
+          "en": "Any customers who sign up will have an account created for them in Shopify. [View customers](/admin/customers?query=&accepts_marketing=1)",
+          "es": "Todos los clientes que se registren tendrán una cuenta creada para ellos en Shopify. [Ver clientes](/admin/customers?query=&accepts_marketing=1)"
+        }
+      },
+      {
+        "type": "header",
+        "content": "t:sections.settings.header.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_background",
+        "label": "t:sections.settings.show_background.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "expanded",
+        "label": "t:sections.settings.expanded.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_desktop",
+        "label": {
+          "en": "Show on desktop",
+          "es": "Mostrar en la versión escritorio"
+        },
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_mobile",
+        "label": {
+          "en": "Show on mobile",
+          "es": "Mostrar en la versión móvil"
+        },
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "name": {
+          "en": "Newsletter",
+          "es": "Newsletter"
+        }
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,158 @@
+<div class="content">
+  <h2>{{ 'cart.general.title' | t }}</h2>
+  {% if cart.item_count > 0 %}
+    <form action="{{ routes.cart_url }}" method="post" novalidate>
+      <div class="items">
+        {% for item in cart.items %}
+          <div class="item">
+            <div class="left">
+             <div class="select number">
+                <input type="number" name="updates[]" id="updates_{{ item.id }}" data-action="update" value="{{ item.quantity }}" pattern="[0-9]*" min="1" {% if item.product.selected_or_first_available_variant.inventory_management  == 'shopify' and item.product.selected_or_first_available_variant.inventory_quantity > 0%}max="{{ item.product.selected_or_first_available_variant.inventory_quantity }}"{% endif %}>
+                <div class="arrow">
+                  <i class="fc fc-angle-down fc-lg"></i>
+                </div>
+              </div>
+              <img
+                src="{{ item | img_url: 'x45' }}"
+                srcset=
+                  "{{ item | img_url: 'x45', scale: 1 }} 1x,
+                   {{ item | img_url: 'x45', scale: 2 }} 2x,
+                   {{ item | img_url: 'x45', scale: 3 }} 3x"
+                alt="{{ item.title | escape }}" 
+                width="{{ item.image.width }}" height="{{ item.image.height }}"
+              />
+              
+              <div class="product">
+                <span class="title">{{ item.product.title }}</span> 
+                <span class="subtitle">
+                  {% unless item.variant.title contains 'Default' %}
+                    {{ item.variant.title }},
+                  {% endunless %}
+                  {% if item.selling_plan_allocation %}
+                    {{ item.selling_plan_allocation.selling_plan.name }},
+                  {% endif %}
+                  {%- if item.original_line_price != item.final_line_price -%}
+                    <span class="money"><del>{{ item.original_price | money }}</del></span>
+                    <span class="money">{{ item.final_price | money }}</span>
+                  {%- else -%}
+                    <span class="money">{{ item.price | money }}</span>
+                  {%- endif -%}
+                  {%- render 'unit-price', from: item -%}
+                  &nbsp;—&nbsp;<a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0" data-action="remove">{{ 'cart.general.remove' | t }}</a>
+                </span>
+                {% assign propertySize = item.properties | size %}
+                {% if propertySize > 0 %}
+                  {% for property in item.properties %}
+                    <span class="subtitle">
+                      {{ property.first }}: {{ property.last }}
+                    </span>
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+            <div class="right">
+              {%- if item.original_line_price != item.final_line_price -%}
+                <div class="price with-discount">
+                  <span class="money original"><del>{{ item.original_line_price | money }}</del></span><br>
+                  <span class="money final">{{ item.final_line_price | money }}</span>
+                  {%- if item.line_level_discount_allocations != blank -%}
+                    {%- for discount_allocation in item.line_level_discount_allocations -%}
+                      <br><span class="allocation"><i class="fc fc-tag"></i> {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})</span>
+                    {%- endfor -%}
+                  {%- endif -%}
+                </div>
+              {%- else -%}
+                <div class="price">
+                  <span class="money">{{ item.original_line_price | money }}</span>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {% endfor %}
+        {%- if cart.cart_level_discount_applications != blank -%}
+          {%- for discount_application in cart.cart_level_discount_applications -%}
+            <div class="item">
+              <div class="left">
+                <div class="discount">
+                  <div class="title">
+                    <i class="fc fc-tag"></i> {{- discount_application.title -}}
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="price with-discount">
+                  <span class="money final">–{{ discount_application.total_allocated_amount | money }}</span>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+        <div class="item last">
+          <div class="left">
+            {% if section.settings.continue_shopping_url != blank %}
+              <a class="btn" href="{{ section.settings.continue_shopping_url }}"><span>{{ 'cart.general.add_more_products' | t }}</span></a>
+            {% endif %}
+          </div>
+          <div class="right">
+            <div class="subtotal">{{ 'cart.general.subtotal' | t }}</div>
+            <div class="price subtotal">
+              <span class="money">{{ cart.total_price | money }}</span>
+            </div>
+            <small class="tax-note caption-large rte">
+              {% render 'shipping-and-taxes-text' %}
+            </small>
+          </div>
+        </div>
+      </div>
+      {% if settings.cart_notes_enable %}
+        <div class="block full">
+          <label for="CartSpecialInstructions">{{ 'cart.general.seller_instructions' | t }}</label>
+          <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+        </div>
+        <div class="clear"></div>
+      {% endif %}
+      <div class="block right">
+        <button type="submit" name="update" class="btn update full big no-js">
+          {{ 'cart.general.update' | t }}
+        </button>
+        <button type="submit" name="checkout" class="btn action full big" data-action="process" data-message="{{ 'cart.general.checking_out' | t }}">
+          {{ 'cart.general.checkout' | t }}
+        </button>
+      </div>
+      <div class="clear"></div>
+      {% if additional_checkout_buttons and settings.additional_checkout_buttons_enable %}
+        <div class="additional-checkout-buttons">
+          {{ content_for_additional_checkout_buttons }}
+        </div>
+      {% endif %}
+    </form>
+  {% else %}
+    <h4>{{ 'cart.general.empty' | t }}</h4>
+    {% if section.settings.continue_shopping_url != blank %}
+      <div class="row" style="margin-top: 20px;">
+        <a href="{{ section.settings.continue_shopping_url }}" class="btn small action">{{ 'cart.general.continue_browsing' | t }}</a>
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Cart page",
+    "es": "Página del carrito"
+  },
+  "class": "section-cart",
+  "settings": [
+    {
+      "type": "url",
+      "id": "continue_shopping_url",
+      "label": {
+        "en": "Continue shopping link",
+        "es": "Enlace a seguir comprando"
+      },
+      "default": "/collections"
+    }
+  ]
+}
+{% endschema %}

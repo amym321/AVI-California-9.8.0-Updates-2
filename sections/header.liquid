@@ -1,0 +1,504 @@
+{% liquid
+  assign side_nav_menu = linklists[section.settings.side_nav_linklist]
+  assign top_nav_menu = linklists[section.settings.top_nav_linklist]
+  if side_nav_menu.empty?
+    assign side_nav_menu = top_nav_menu
+  endif
+  assign index_mega = 0
+%}
+{%- if template == 'index' and section.settings.enable_transparent_header -%}
+  {% liquid
+    assign opacity_header_border = section.settings.transparent_header_border_opacity | divided_by: 100.0
+    if opacity_header_border > 0
+      assign color_header_border = section.settings.transparent_header_border_color | color_modify: 'alpha', opacity_header_border
+      assign border_header = "1px solid " | append: color_header_border
+    else
+      assign color_header_border = "transparent"
+      assign border_header = "none"
+    endif
+  %}
+  <style type="text/css">
+    .section-header .header.transparent {
+      --text-color: {{ section.settings.transparent_header_text_color}};
+      --border-color: {{ color_header_border}};
+      --border: {{ border_header }};
+    }
+  </style>
+{%- endif -%}
+
+<div class="header {% if template == 'index' and section.settings.enable_transparent_header %}overlaying transparent{% endif %} {% if section.settings.logo_position == 'left' %}logo-position-left{% endif %}" data-section-id="{{ section.id }}" data-section-type="header">
+  <div class="inner">
+    {% unless side_nav_menu.empty? %}
+      <div class="side-nav-section">
+        
+        <a class="btn icon browse" aria-label="{{ 'general.accessibility.menu' | t }}"><i class="fc fc-bars"></i></a>
+        <div class="side-nav" style="padding-top: {{ section.settings.header_padding }}px; padding-bottom: {{ section.settings.header_padding }}px;">
+          <div class="logo-icon-side"><img src="https://cdn.shopify.com/s/files/1/0632/6881/5104/files/AVI-logo.png?v=1647431715" alt="Avi Foods" /></div>
+          <a class="btn icon close" data-action="toggle-browse" tabindex="-1" aria-label="{{ 'general.accessibility.close_modal' | t }}"><i class="fc fc-close"></i></a>
+          <div class="nav" role="navigation" aria-label="Primary">
+            <ul role="list" class="main">
+              {% for link in side_nav_menu.links %}
+                <li>
+                  {% if link.levels == 0 %}
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                  {% else %}
+                    <a class="plus" href="{{ link.url }}" data-action="link-to-child-list" data-handle="ul-{{ link.title | handleize }}" aria-controls="PrimaryNavLabel-{{ link.title | handleize }}" aria-expanded="false">{{ link.title }}</a>
+                    <ul role="list" class="ul-{{ link.title | handleize }}" id="PrimaryNavLabel-{{ link.title | handleize }}">
+                      {% for child_link in link.links %}
+                        <li>
+                          {% if child_link.levels == 0 %}
+                            <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                          {% else %}
+                            <a href="{{ child_link.url }}" class="plus" data-action="link-to-child-list" data-handle="ul-{{ child_link.title | handleize }}" aria-controls="PrimaryNavLabel-{{ link.title | handleize }}" aria-expanded="false">{{ child_link.title }}</a>
+                            <ul role="list" class="ul-{{ child_link.title | handleize }}" id="PrimaryNavLabel-{{ child_link.title | handleize }}">
+                              {% for grandson_link in child_link.links %}
+                                <li>
+                                  <a href="{{ grandson_link.url }}">{{ grandson_link.title }}</a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </li>
+               
+              
+              {% endfor %}
+               <li><a href="/pages/our-Story">Our Story</a></li>
+              <li><a href="/pages/affiliates">Affiliates</a></li>
+                <li><a href="/pages/contact">Contact</a></li>
+              {% if shop.customer_accounts_enabled %}
+                <li class="separator">—</li>
+                {% if customer %}
+                  <li class="account"><a href="{{ routes.account_url }}">{{ 'layout.side_nav.account' | t }}</a></li>
+                  <li class="account"><a href="{{ routes.account_logout_url }}">{{ 'layout.side_nav.logout' | t }}</a></li>
+                {% else %}
+                  <li class="account"><a href="{{ routes.account_login_url }}">{{ 'layout.side_nav.signin' | t }}</a></li>
+                {% endif %}
+              {% endif %}
+            </ul>
+          </div>
+          <div class="extra">
+            {% if section.settings.show_social_icons %}
+              {% render 'connect' %}
+            {% endif %}
+            {% render 'language-and-country-selectors', extended: true %}          
+          </div>
+        </div>
+      </div>
+    {% endunless %}
+    {% if settings.cart_type == 'drawer' %}
+      {% render 'side-cart' %}
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="content" style="padding-top: {{ section.settings.header_padding }}px; padding-bottom: {{ section.settings.header_padding }}px;">
+      {% if section.settings.show_search %}
+        {% render 'search-overlay' %}
+      {% endif %}
+      <div class="left">
+        {% unless top_nav_menu.empty? %}
+          {%- liquid
+            assign megas = ''
+            for block in section.blocks
+              unless forloop.first == true
+                assign megas = megas | append: '::'
+              endunless
+              assign megas = megas | append: block.settings.name
+            endfor
+            assign megas = megas | split: '::'
+          -%}
+          {% unless side_nav_menu.empty? %}
+            <a class="btn icon browse" data-action="toggle-browse" tabindex="-1" aria-label="{{ 'general.accessibility.menu' | t }}"><i class="fc fc-bars"></i></a>
+          {% endunless %}
+          <div class="menu">
+            <div class="nav" role="navigation" aria-label="Secondary">
+              <ul role="list" class="main">
+                {% for link in top_nav_menu.links %}
+                  {% liquid
+                    if megas contains link.title
+                      assign has_mega =  true
+                    else
+                      assign has_mega =  false
+                    endif
+                  %}
+                  <li {% if has_mega %}class="megamenu" {{ section.blocks[index_mega].shopify_attributes }}{% assign index_mega = index_mega | plus: 1 %}{% endif %}>
+                    {% if link.levels == 0 %}
+                      <a href="{{ link.url }}" {% if link.url == request.path %}class="active"{% endif %}>{{ link.title }}</a>
+                    {% else %}
+                      <a class="plus" href="{{ link.url }}" data-action="link-to-child-list" data-handle="ul-{{ link.title | handleize }}" aria-controls="PrimaryNavLabel-{{ link.title | handleize }}" aria-expanded="false">{{ link.title }}</a>
+                      <ul role="list" class="tab ul-{{ link.title | handleize }} second {% if link.url == request.path %}active{% endif %}" id="PrimaryNavLabel-{{ link.title | handleize }}">
+                        {% if has_mega %}
+                          <div class="line"></div>
+                        {% endif %}
+                        <div class="columns">
+                          {% for child_link in link.links %}
+                            <li class="column">
+                              <a href="{{ child_link.url }}" class="column-header">{{ child_link.title }}</a>
+                              {% if child_link.levels > 0 %}
+                                <ul>
+                                  {% for grandson_link in child_link.links %}
+                                    {% assign index = index | plus: 1 %}
+                                    <li>
+                                      <a href="{{ grandson_link.url }}" class="column-child">{{ grandson_link.title }}</a>
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </li>
+                          {% endfor %}
+                          {% if has_mega %}
+                            {% for block in section.blocks %}
+                              {% if block.settings.name == link.title %}
+                                {% if block.settings['image-1'] != blank %}
+                                  {% render 'header-megamenu-image', block: block, index: 1 %}
+                                {% endif %}
+                              {% endif %}
+                            {% endfor %}
+                          {% endif %}
+                        </div>
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endunless %}
+      </div>
+      <div class="center">
+        {% render 'logo' %}
+      </div>
+      <div class="right">
+        <div class="menu">
+            <div id="desktopNav" class="nav" role="navigation" aria-label="Secondary">
+        		<ul role="list" class="main">
+                	<li><a href="/pages/our-story">Our Story</a></li>
+                  	<li><a href="/pages/affiliates">Affiliates</a></li>
+					<li><a href="/pages/contact">Contact</a></li>
+                </ul>
+          </div>
+        </div>
+        {% render 'language-and-country-selectors', extended: false %}
+        {% if shop.customer_accounts_enabled and section.settings.enable_account %}
+          {% if customer %}
+            <a class="btn icon user" href="{{ routes.account_url }}" aria-label="{{ 'layout.side_nav.account' | t }}">
+              <i class="fc fc-user"></i>
+            </a>
+          {% else %}
+            <a class="btn icon user" href="{{ routes.account_login_url }}" aria-label="{{ 'layout.side_nav.signin' | t }}">
+              <i class="fc fc-user"></i>
+            </a>
+          {% endif %}
+        {% endif %}
+        <a class="btn icon cart" href="{{ routes.cart_url }}" {% if settings.cart_type == 'drawer' %}data-action="toggle-cart"{% endif %} aria-label="{{ 'cart.general.title' | t }}">
+          <i class="fc fc-cart"></i>
+          <span class="circle cart-count {% if cart.item_count == 0 %}hidden-count{% endif %} {% if cart.item_count >= 100 %}empty{% endif %}">{%- if cart.item_count < 100 -%}{{ cart.item_count }}{%- endif -%}</span>
+        </a>
+        {% if section.settings.show_search %}
+          <a class="btn icon search" href="{{ routes.search_url }}" data-action="toggle-search" aria-label="{{ 'general.search.placeholder' | t }}"><i class="fc fc-search"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {%- if section.settings.logo -%}
+      {% assign image_size = section.settings.logo.width | append:'x' %}
+      "logo": {{ section.settings.logo | img_url: image_size | prepend: "https:" | json }},
+    {%- endif -%}
+    "url": {{ shop.url | append: page.url | json }}
+  }
+</script>
+
+{% schema %}
+{
+  "name": {
+    "en": "Header",
+    "es": "Cabecera"
+  },
+  "class": "section-header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": {
+        "en": "Logo image",
+        "es": "Logo"
+      }
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": {
+        "en": "Logo max width",
+        "es": "Ancho máximo del logo"
+      },
+      "default": 200,
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "label": {
+        "en": "Logo position",
+        "es": "Posición del logo"
+      },
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": {
+            "en": "Left",
+            "es": "Izquierda"
+          }
+        },
+        {
+          "value": "center",
+          "label": {
+            "en": "Centered",
+            "es": "Centrado"
+          }
+        }
+      ]
+    },
+    {
+      "type": "link_list",
+      "label": {
+        "en": "Main Menu",
+        "es": "Menú"
+      },
+      "id": "top_nav_linklist",
+      "default": "main-menu"
+    },
+    {
+      "type": "range",
+      "id": "header_padding",
+      "label": {
+        "en": "Vertical padding",
+        "es": "Espaciado vertical"
+      },
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": {
+        "en": "Show search icon",
+        "es": "Mostrar icono de búsqueda"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_account",
+      "label": {
+        "en": "Show account icon",
+        "es": "Mostrar icono de cuenta de usuario"
+      },
+      "info": {
+        "en": "When accounts are enabled",
+        "es": "Cuando la opción de cuenta está activada"
+      },
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Transparent header",
+        "es": "Cabecera transparente"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_transparent_header",
+      "label": {
+        "en": "Enable on home page",
+        "es": "Activar en la página de inicio"
+      }
+    },
+    {
+      "type": "color",
+      "id": "transparent_header_text_color",
+      "label": {
+        "en": "Text color",
+        "es": "Color del texto"
+      },
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "transparent_header_border_color",
+      "label": {
+        "en": "Border color",
+        "es": "Color del borde"
+      },
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "transparent_header_border_opacity",
+      "label": {
+        "en": "Border opacity",
+        "es": "Opacidad del borde"
+      },
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10
+    },
+    {
+      "type": "image_picker",
+      "id": "transparent_header_logo",
+      "label": {
+        "en": "Logo image",
+        "es": "Logo"
+      },
+      "info": {
+        "en": "Default logo will be used if no image is set.",
+        "es": "Si no se define, se utiliza el logo por defecto."
+      }
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Side navigation",
+        "es": "Navegación lateral"
+      }
+    },
+    {
+      "type": "link_list",
+      "label": {
+        "en": "Side menu",
+        "es": "Menú lateral"
+      },
+      "id": "side_nav_linklist",
+      "default": "main-menu",
+      "info": {
+         "en": "Visible on tablet and mobile. Main menu will be used if no menu is set.",
+         "es": "Visible en la versión de tableta y móvil. Se utilizará el menú principal si no se especifica ninguno."
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_icons",
+      "label": {
+        "en": "Show social icons",
+        "es": "Mostrar iconos de redes sociales"
+      },
+      "info": {
+        "en": "Edit your social settings and accounts in the Theme settings section",
+        "es": "Modifica tus redes sociales en Ajustes de tema"
+      },
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Language Selector",
+        "es": "Selector de idioma"
+      },
+      "info": {
+        "en": "To add a language, go to your [language settings.](/admin/settings/languages)",
+        "es": "Para agregar un idioma, ve a tu[configuración de idioma](/admin/settings/languages)"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_language_selector",
+      "label": {
+        "en": "Show language selector",
+        "es": "Mostrar el selector de idioma"
+      },
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Country/region Selector",
+        "es": "Selector de país/región"
+      },
+      "info": {
+        "en": "To add a country/region, go to your [payment settings.](/admin/settings/payments)",
+        "es": "Para agregar un país/región, ve a tu [configuración de pago](/admin/settings/payments)"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": {
+        "en": "Show country/region selector",
+        "es": "Mostrar el selector de país/región"
+      },
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mega",
+      "name": {
+        "en": "Mega menu",
+        "es": "Mega menú"
+      },
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": {
+            "en": "Menu item",
+            "es": "Elemento del menú"
+          },
+          "info": {
+            "en": "Add the menu item that you want to turn into a mega menu.",
+            "es": "Añade el nombre del elemento del menú que quieras convertir en un mega menú."
+          }
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Custom image",
+            "es": "Imagen personalizada"
+          }
+        },
+        {
+          "type": "image_picker",
+          "id": "image-1",
+          "label": {
+            "en": "Image",
+            "es": "Imagen"
+          }
+        },
+        {
+          "type": "url",
+          "id": "url-1",
+          "label": {
+            "en": "Link",
+            "es": "Enlace"
+          }
+        },
+        {
+          "type": "text",
+          "id": "text-1",
+          "label": {
+            "en": "Text",
+            "es": "Texto"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

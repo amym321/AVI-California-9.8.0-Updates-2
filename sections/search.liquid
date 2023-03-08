@@ -1,0 +1,120 @@
+<div class="content search {% render 'content-classes', scope: section %}" data-section-id="{{ section.id }}" data-section-type="search">
+  <form action="{{ routes.search_url }}" method="get" class="search-header" role="search">
+    <h2>{{ 'general.search.title' | t }}</h2>
+    <input type="hidden" name="options[prefix]" value="last" />
+    <input type="hidden" name="type" value="product,page,article">
+    <input type="search" name="q" placeholder="{{ 'general.search.placeholder' | t }}" class="query" value="{{ search.terms }}" tabindex="-1" aria-label="{{ 'general.search.placeholder' | t }}" autocorrect="off" autocomplete="off" autocapitalize="none">
+    <input type="hidden" class="btn" value="Search">
+  </form>
+
+  {% if search.performed %}
+    {% liquid
+      assign columns = section.settings.columns | times: 1
+      assign rows = section.settings.rows | times: 1
+      assign limit = columns | times: rows
+    %}
+    {% paginate search.results by limit %}
+      <div class="left">
+        <h2>{{ 'general.search.results_for_html' | t: terms: search.terms }}</h2>
+        <h4>{{ 'general.search.results_count' | t: count: search.results_count }}</h4>
+      </div>
+      {% render 'filtering-and-sorting', collection: search %}
+      <div class="collection">
+        <div class="products columns_{{ columns }}">
+          {% for item in search.results %}
+            {%- case item.object_type -%}
+            {%- when 'product' -%}
+              {% render 'collection-product' product: item, columns: columns %}
+            {%- when 'article' -%}
+              {% render 'collection-non-product', item: item, layout_class: layout_class %}
+            {%- when 'page' -%}
+              {% render 'collection-non-product', item: item, layout_class: layout_class %}
+            {%- endcase -%}
+          {% endfor %}
+          {% if paginate.next %}
+            <div class="pagination">
+              <a class="more btn action small semi" href="{{ paginate.next.url }}" title="{{ paginate.next.title }}" data-action="load-more-products" data-message="{{ 'general.pagination.search_results_loading' | t }}">
+                {{ 'general.pagination.search_results_more' | t }}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endpaginate %}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Search page",
+    "es": "Página de búsqueda"
+  },
+  "class": "section-search",
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": {
+        "en": "Products per row",
+        "es": "Productos por fila"
+      },
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "min": 3,
+      "max": 20,
+      "step": 1,
+      "label": {
+        "en": "Rows per page",
+        "es": "Filas por página"
+      },
+      "default": 4
+    },
+    {
+      "id": "enable_filtering",
+      "type": "checkbox",
+      "label": "t:sections.main-collection.settings.enable_filtering.label",
+      "default": false,
+      "info": "t:sections.main-collection.settings.enable_filtering.info"
+    },
+    {
+      "id": "enable_sorting",
+      "type": "checkbox",
+      "label": "t:sections.main-collection.settings.enable_sorting.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_labels",
+      "label": {
+        "en": "Show filter and sort labels",
+        "es": "Mostrar etiquetas de filtro y orden"
+      },
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": true
+    }
+  ]
+}
+
+{% endschema %}

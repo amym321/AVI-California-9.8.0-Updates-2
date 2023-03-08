@@ -1,0 +1,127 @@
+<div class="content featured-collection {% render 'content-classes', scope: section %}">
+  {% unless section.settings.title == blank %}
+    <h2 class="section-title">{{ section.settings.title | escape }}</h2>
+  {% endunless %}
+  <div class="row">
+    {% liquid
+      assign collection = collections[section.settings.collection]
+      render 'collection', collection: collection
+    %}
+    {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="btn action small">{{ section.settings.button_label | escape }}</a>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Featured collection",
+    "es": "Colección destacada"
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.settings.heading.label",
+      "default": {
+        "en": "Featured collection",
+        "es": "Colección destacada"
+      }
+    },
+    {
+      "id": "collection",
+      "type": "collection",
+      "label": {
+        "en": "Collection",
+        "es": "Colección"
+      }
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-collection.settings.paragraph.content"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": {
+        "en": "Products per row",
+        "es": "Productos por fila"
+      },
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "label": {
+        "en": "Rows per collection",
+        "es": "Filas por colección"
+      },
+      "default": 2
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": {
+        "en": "Button label",
+        "es": "Etiqueta del botón"
+      },
+      "default": {
+        "en": "Browse more products",
+        "es": "Descubre más productos"
+      },
+      "info": "t:sections.settings.heading.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": {
+        "en": "Button link",
+        "es": "Enlace del botón"
+      }
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_desktop",
+      "label": "t:sections.settings.show_on_desktop.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "label": "t:sections.settings.show_on_mobile.label",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Featured collection",
+        "es": "Colección destacada"
+      }
+    }
+  ]
+}
+{% endschema %}

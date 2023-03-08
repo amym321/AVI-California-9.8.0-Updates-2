@@ -1,0 +1,13 @@
+<div class="post" itemscope itemtype="http://schema.org/Article">
+  <div class="placeholder">
+    {% assign index = index | modulo: 2 | plus: 1 %}
+    {% assign svg-name =  'lifestyle-' | append: index %}
+    {{ svg-name | placeholder_svg_tag: 'placeholder-svg with-border' }}
+  </div>
+  <h4 class="{{ settings.pages_title_alignment }}"><time pubdate datetime="{{ 'now' | date: format: 'day_month_and_year' }}">{{ 'now' | date: format: 'day_month_and_year' }}</time></h4>
+  <h2 class="{{ settings.pages_title_alignment }}"><a href="#">{{ 'home_page.featured_blog.onboarding_blog_title' | t }}</a></h2>
+  <div itemprop="articleBody" class="text {{ settings.content_alignment }}">
+    <p>{{ 'home_page.featured_blog.onboarding_blog_excerpt' | t }}</p>
+    <p class="expanded"><a href="/admin/blogs" title="{{ article.title }}">{{ 'blogs.article.read_entire_article' | t }}</a></p>
+  </div>
+</div>

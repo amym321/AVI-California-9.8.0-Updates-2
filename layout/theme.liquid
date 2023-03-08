@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- California Theme Version 9.0.1 -->
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    {% render 'metas' %}
+    {% render 'resources' %}
+    {{ content_for_header }}
+  {% include 'alireviews_core' %}
+  {% include 'alireviews_custom' %}
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5STJDVQ');</script>
+<!-- End Google Tag Manager -->
+    <meta name="google-site-verification" content="tyScN_-YLG7rguYHlzJ53BQ952eYkN7Conz8_HzNvJQ" />
+ </head>
+
+  <body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {{ settings.content_layout }} {{ settings.content_alignment }} {% if settings.enable_sticky_header %}sticky-header{% endif %}">
+    <a class="skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    {% section 'announcement-bar' %}
+    {% section 'popup' %}
+    {% section 'header' %}
+    <div class="main" id="MainContent">
+      <div class="layout">
+        <div class="sections" id="Sections" role="main" >
+          {{ content_for_layout }}
+        </div>
+      </div>
+      {% section 'footer' %}
+    </div>
+    
+  {% render 'th-subscription-scripts' %} 
+<!-- **BEGIN** Hextom FSB Integration // Main Include - DO NOT MODIFY -->
+    {% render 'hextom_fsb_main', product: product, customer: customer %}
+    <!-- **END** Hextom FSB Integration // Main Include - DO NOT MODIFY -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5STJDVQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

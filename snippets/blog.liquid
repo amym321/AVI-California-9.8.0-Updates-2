@@ -1,0 +1,51 @@
+<style>
+.text.rte.align-left {
+  margin-bottom: 90px ! important;
+}
+.post .extra a.underscore {
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bd9c71;
+  border-radius: 5px;
+  padding: 3px;
+  background: #bd9c71;
+  line-height: 30px;
+}
+.content h3 {
+  text-align: left; 
+  color: #3db2b0 !important; 
+  padding: 15px 0px 5px 0px;
+  font-weight: 700;
+  font-size: 1.3em;
+  font-family: Josefin Sans,sans-serif;
+}
+.content h2 {
+  text-align: left; 
+  font-family: Josefin Sans,sans-serif;
+  font-size: 1.3em;
+}
+.post h2 a {
+    color: #bf9c6e;
+}
+.share a.icon {
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+</style>
+
+<div class="top {{ settings.pages_title_alignment }}">
+  <h2>
+    <a href="{{ blog.url }}">
+      {{ blog.title }}
+    </a>
+    <a class="rss" href="{{ shop.url }}{{ blog.url }}.atom" target="_blank">
+      <i class="fc fc-rss"></i>
+    </a>
+  </h2>
+  {% if current_tags %}
+    <h3>Tag: {{ current_tags.first }}</h3>
+  {% endif %}
+</div>

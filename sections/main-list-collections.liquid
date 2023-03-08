@@ -1,0 +1,79 @@
+{% assign not_showing_collections = true %}
+<div class="content collections {% render 'content-classes', scope: section %}">
+  {% liquid
+    if linklists.featured-collections.links.size > 0
+      for link in linklists.featured-collections.links
+      assign collection = link.object
+        render 'collection', collection: collection, products: collection.products
+        assign not_showing_collections = false
+      endfor
+    else
+      paginate collections by 6
+        for collection in collections
+          unless collection.handle == 'frontpage' or collection.handle == 'all'
+            render 'collection', collection: collection, products: collection.products
+            assign not_showing_collections = false
+          endunless
+        endfor
+        render 'collection-paginate', paginate: paginate
+      endpaginate
+    endif
+  %}
+
+  {% if not_showing_collections %}
+    <h2>{{ 'collections.general.collections' | t }}</h2>
+    <h4>{{ 'collections.general.no_collections' | t }}</h4>
+    <div class="row">
+      <a href="{{ routes.root_url }}" class="btn small action">{{ 'general.404.continue_shopping' | t }}</a>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Collections page",
+    "es": "Página de colecciones"
+  },
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns",
+      "label": {
+        "en": "Products per row",
+        "es": "Productos por fila"
+      },
+      "default": 4,
+      "min": 2,
+      "max": 6
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": {
+        "en": "Rows per collection",
+        "es": "Filas por colección"
+      },
+      "default": 1,
+      "min": 1,
+      "max": 6
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

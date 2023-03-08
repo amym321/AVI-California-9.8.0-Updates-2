@@ -1,0 +1,87 @@
+<style>
+  div.text.rte.align-left {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .posts.grid .post {
+  width: 24%;
+  margin-left: 1px;
+  margin-right: 1px;
+  }
+}
+
+.content h3 {
+  display: none;
+}
+
+h2.align-left {
+  font-size: 1.3em !important;
+}
+</style>
+
+{% paginate blog.articles by 12 %}
+  <div class="content blog blog-container {% render 'content-classes', scope: section %}">
+    <div class="inner with-layout-options {{ settings.content_layout }} ">
+      {% render 'blog' %}
+      {% assign mod = section.settings.post_limit | at_most: blog.articles.size | modulo: 2 %}
+      <div class="posts {{ section.settings.layout }} {% if section.settings.layout == "grid" and mod == 0 %} grid-with-even-posts{% endif %}">
+        {% render 'postexcerpt' for blog.articles as article %}      
+      </div>
+      {% render 'article-pagination' with paginate as paginate %}
+    </div>
+  </div>
+{% endpaginate %}
+
+
+{% schema %}
+{
+  "name": {
+    "en": "Blog pages",
+    "es": "Páginas del blog"
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": {
+        "en": "Layout",
+        "es": "Diseño"
+      },
+      "default": "list",
+      "options": [
+        {
+          "value": "grid",
+          "label": {
+            "en": "Grid",
+            "es": "Cuadrícula"
+          }
+        },
+        {
+          "value": "list",
+          "label": {
+            "en": "List",
+            "es": "Lista"
+          }
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "t:sections.settings.show_background.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "expanded",
+      "label": "t:sections.settings.expanded.label",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

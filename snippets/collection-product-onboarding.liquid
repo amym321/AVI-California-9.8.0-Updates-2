@@ -1,0 +1,19 @@
+<div class="product">
+  <a class="inner">
+    <div class="image">
+      {% assign mod = i | modulo: 6 | plus: 1 %}
+      {{ 'product-' | append: mod | placeholder_svg_tag: 'placeholder-svg darker' }}
+    </div>
+    <div class="info">
+      <div class="status nowrap">
+        <span class="ca buy">{{ 'products.product.buy' | t }}</span>
+      </div>
+      <div class="metas">
+        <div class="title">{{ 'home_page.collection.onboarding_product_name' | t }}</div>
+        <div>
+          <span class="price">{{ 1999 | money }}</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

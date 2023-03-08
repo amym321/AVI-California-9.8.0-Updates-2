@@ -1,0 +1,210 @@
+{% if section.settings.enable_popup %}
+  <div class="popup newsletter" data-section-id="{{ section.id }}" data-section-type="popup" data-delay="{{ section.settings.delay }}" data-frequency="{{ section.settings.frequency }}" data-test="{{ section.settings.enable_test }}">
+    <div class="modal animated hidden">
+      <div class="background"></div>
+      <div class="frame" style="max-width: {{ section.settings.content_max_width }}px;">
+        <div class="titles">
+          <h2 class="section-title">{{ section.settings.title }}</h2>
+          <div class="rte">
+            {{ section.settings.content }}
+          </div>            
+        </div>
+        <div class="content">
+          {% if section.settings.newsletter_enable %}
+            {% form 'customer', id: 'PopupForm' %}
+              {% if form.posted_successfully? %}
+                <p class="success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+              {% else %}
+                <div class="table">
+                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <label for="email" class="hide">{{ 'contact.form.email' | t }}</label>
+                  <input class="text {% if form.errors contains 'email' %} error{% endif %}" type="email" name="contact[email]" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" autocorrect="off" autocapitalize="off" id="email" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}">
+                  <span class="input-group-btn">
+                    <input type="submit" class="btn solid" value="{{ 'general.newsletter_form.submit' | t }}">
+                  </span>
+                </div>
+                {% if form.errors %}
+                  {% for field in form.errors %}
+                    <div class="field-error">{{ form.errors.messages[field] }}</div>
+                  {% endfor %}
+                {% endif %}
+              {% endif %}
+            {% endform %}
+          {% endif %}
+          {% if section.settings.button_enable and section.settings.button_label != blank %}
+            <a class="btn action normal" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+          {% endif %}
+        </div>
+        <a href="#" data-action="close-modal" class="close" aria-label="{{ 'general.accessibility.close_modal' | t }}">
+          <i class="fc fc-close"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": {
+    "en": "Popup",
+    "es": "Popup"
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_popup",
+      "label": {
+        "en": "Enable popup",
+        "es": "Activar popup"
+      },
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_test",
+      "label": {
+        "en": "Enable test mode",
+        "es": "Activar modo de prueba"
+      },
+      "info": {
+        "en": "Test mode displays your popup each time even after dismissing it. Disable this option once you are happy with how your popup looks.",
+        "es": "El modo de prueba muestra la ventana emergente cada vez, incluso después de descartarla. Desactive esta opción una vez que esté satisfecho con el aspecto de su ventana emergente."
+      },
+      "default": false
+    },
+    {
+      "id": "delay",
+      "type": "range",
+      "min": 2,
+      "max": 60,
+      "step": 1,
+      "unit": "sec",
+      "default": 5,
+      "label": {
+        "en": "Delay",
+        "es": "Demora"
+      },
+      "info": {
+        "en": "Delay is disabled in theme editor for visibility",
+        "es": "La demora está deshabilitada en el editor de temas"
+      }
+    },
+    {
+      "id": "frequency",
+      "type": "range",
+      "min": 2,
+      "max": 30,
+      "step": 1,
+      "unit": "day",
+      "default": 30,
+      "label": {
+        "en": "Frequency",
+        "es": "Frecuencia"
+      }
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": {
+        "en": "Max width",
+        "es": "Ancho máximo"
+      },
+      "default": 650,
+      "min": 400,
+      "max": 1200,
+      "step": 50,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Content",
+        "es": "Contenido"
+      }
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "en": "Title",
+        "es": "Título"
+      },
+      "default": {
+        "en": "Sign up and save",
+        "es": "Apúntate y consigue descuentos"
+      }
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": {
+        "en": "Text",
+        "es": "Texto"
+      },
+      "default": {
+        "en": "<p>You can use this popup to display some useful information to your customers. Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>",
+        "es": "<p>Suscríbete hoy y obtén un 10% de descuento en tu primera compra</p>"
+      }
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Newsletter",
+        "es": "Newsletter"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "newsletter_enable",
+      "label": {
+        "en": "Show newsletter signup",
+        "es": "Mostrar formulario del newsletter"
+      },
+      "default": true
+    },
+    {
+      "type": "paragraph",
+      "content": {
+        "en": "Any customers who sign up will have an account created for them in Shopify. [View customers](/admin/customers?query=&accepts_marketing=1)",
+        "es": "Todos los clientes que se registren tendrán una cuenta creada para ellos en Shopify. [Ver clientes](/admin/customers?query=&accepts_marketing=1)"
+      }
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Button",
+        "es": "Botón"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "button_enable",
+      "label": {
+        "en": "Show button",
+        "es": "Mostrar botón"
+      },
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": {
+        "en": "Button label",
+        "es": "Texto del botón"
+      },
+      "default": {
+        "en": "Optional button",
+        "es": "Botón opcional"
+      }
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": {
+        "en": "Button link",
+        "es": "Enlace del botón"
+      }
+    }
+  ]
+}
+{% endschema %}

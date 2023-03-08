@@ -1,0 +1,62 @@
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+<link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+<link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
+<meta name="google-site-verification" content="WjR72j004ZWTtNZq9oHPW-KcLQYhdDOErShFr8omRBE" />
+
+<link rel="preload" href="{{ 'california.css' | asset_url }}" as="style">
+<link rel="preload" href="{{ 'california.js' | asset_url }}" as="script">
+{% if template contains 'customers' %}
+  <link rel="preload" href="{{ 'shopify_common.js' | shopify_asset_url }}" as="script">
+  <link rel="preload" href="{{ 'customer_area.js' | shopify_asset_url }}" as="script">
+{% endif %}
+
+{%- liquid 
+  assign header_font = settings.header_font
+  assign base_font = settings.base_font
+-%}
+{% unless header_font.system? %}
+  <link rel="preload" as="font" href="{{ header_font | font_url }}" type="font/woff2" crossorigin>
+{% endunless %}
+{% unless base_font.system? %}
+  <link rel="preload" as="font" href="{{ base_font | font_url }}" type="font/woff2" crossorigin>
+{% endunless %}
+<link rel="preload" as="font" href="{{ 'california.woff' | asset_url }}" type="font/woff" crossorigin>
+<link rel="stylesheet" href="{{ 'california.css' | asset_url }}?v3" type="text/css" media="all">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  window.California = {
+    strings: {
+      add_to_cart: {{ 'products.product.add_to_cart' | t | json }},
+      sold_out: {{ 'products.product.sold_out' | t | json }},
+      unavailable: {{ 'products.product.unavailable' | t | json }},
+      zoom_close: {{ "products.zoom.close" | t | json }},
+      zoom_previous: {{ "products.zoom.prev" | t | json }},
+      zoom_next: {{ "products.zoom.next" | t | json }},
+      from_price: {{ "products.product.from_html" | t | json}},
+      money_format: {{ shop.money_format | strip_html | json }},
+      addressError: {{ 'map.errors.address_error' | t | json }},
+      addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+      addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+      authError: {{ 'map.errors.auth_error_html' | t | json }},
+      customer_delete_question: {{ 'customer.addresses.delete_question' | t | json }},
+      cart_empty: {{ 'cart.general.empty' | t | json }}
+    },
+    routes: {
+      search: "{{ routes.search_url }}",
+      cart: "{{ routes.cart_url }}",
+      account_addresses: "{{ routes.account_addresses_url }}"
+    }
+  };
+</script>
+
+<script src="{{ 'california.js' | asset_url }}" defer="defer"></script>
+{% if template contains 'customers' %}
+  <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+  <script src="{{ 'customer_area.js' | shopify_asset_url }}" defer="defer"></script>
+{% endif %}
+
+
+{{ 'gsap.min.js' | asset_url | script_tag }}
+{{ 'ScrollTrigger.min.js' | asset_url | script_tag }}
+{{ 'animation.js' | asset_url | script_tag }}

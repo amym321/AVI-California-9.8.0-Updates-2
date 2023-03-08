@@ -1,0 +1,61 @@
+<div class="content">
+  <h2 class="section-title">{{ 'customer.account.title' | t }}</h2>
+  <h3>{{ 'customer.account.user_info_html' | t: name: customer.name }}</h3>
+  <div class="row">
+    <a href="{{ routes.account_logout_url }}" class="btn small">{{ 'layout.side_nav.logout' | t }}</a>
+  </div>
+  <h4>—</h4>
+  <h2>{{ 'customer.account.details' | t }}</h2>
+  <div class="row">
+    <p class="expanded">
+      {% if customer.default_address %}
+        {% capture address %}
+          {{ customer.default_address.address1 }}{% if customer.default_address.address2 != blank %}, {{ customer.default_address.address2 }}{% endif %}
+          {% if customer.default_address.city != blank %}<br>in {{ customer.default_address.city }}{% endif %}
+          {% if customer.default_address.province != blank %} ({{ customer.default_address.province }}){% endif %}
+          {% if customer.default_address.zip != blank %} {{ customer.default_address.zip | upcase }}{% endif %}
+          {% if customer.default_address.country != blank %}<br> {{ customer.default_address.country }}{% endif %}
+        {% endcapture %}
+        {{ 'customer.account.address_info_html' | t: address: address }}
+      {% else %}
+        {{ 'customer.account.empty' | t }}
+      {% endif %}
+    </p>
+  </div>
+  <div class="row">
+    {% if customer.addresses_count == 0 %}
+      <a href="{{ routes.account_addresses_url }}" class="btn small action">{{ 'customer.account.add_address' | t }}</a>
+    {% else %}
+      <a href="{{ routes.account_addresses_url }}" class="btn small action">{{ 'customer.account.edit_addresses' | t: count: customer.addresses_count }}</a>
+    {% endif %}      
+  </div>
+
+  <h4>—</h4>
+  <h2>{{ 'customer.orders.title' | t }}</h2>
+  {% if customer.orders.size > 0 %}
+    <div class="orders">
+      {% for order in customer.orders %}
+        <div class="order">
+          {% capture date %}{{ order.created_at | date: format: 'day_month_and_year' }}{% endcapture %}
+          {% capture link %}<a href="{{ order.customer_url }}">{{ order.name }}</a>{% endcapture %}
+          <p class="big">{{ 'customer.orders.order_description_html' | t: date: date, link: link, financial_status: order.financial_status_label, fulfillment_status: order.fulfillment_status_label }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="row">
+      <p>{{ 'customer.orders.empty' | t }}</p>
+    </div>
+  {% endif %}
+
+  <div class="row">
+    <a class="btn action small" href="{{ routes.root_url }}">{{ 'customer.orders.new_order' | t }}</a>
+  </div>
+  <div class="row">
+    {% capture link %}
+      <a class="underscore" href="{{ routes.root_url }}">{{ 'customer.account.return_to_store' | t }}</a>
+    {% endcapture %}
+    {{ 'general.navigation.cancel_html' | t: link: link }}
+  </div>
+
+</div>
