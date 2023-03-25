@@ -206,6 +206,7 @@
         },
         "bf8abafd-5e72-43e1-ae64-3848850292c0": {
           "type": "text_column",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN LUPINI FLAKES<\/strong><\/p>",
