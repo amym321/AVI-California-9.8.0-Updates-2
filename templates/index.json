@@ -280,7 +280,8 @@
     "banner-with-text-left": {
       "type": "banner-with-text",
       "custom_css": [
-        ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}"
+        ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
+        ".content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto; }"
       ],
       "settings": {
         "title": "Sweet Almond Coconut",
@@ -301,7 +302,7 @@
     "banner-with-text-right": {
       "type": "banner-with-text",
       "custom_css": [
-        ".banner-with-text-section {min-height:450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important; }"
+        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}"
       ],
       "settings": {
         "title": "Double Chocolate Sea Salt",
