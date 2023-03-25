@@ -83,7 +83,8 @@
       ],
       "custom_css": [
         "img {max-width: 100px; margin: 0 auto 0 -50px;}",
-        ".custom-content .custom__item {padding:0 !important; display:flex !important; justify-content: center;}"
+        ".custom-content .custom__item {padding: 0 !important; display: flex !important; justify-content: center;}",
+        ".index-section {min-height: 150px;}"
       ],
       "settings": {
         "show_background": false,
