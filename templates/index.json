@@ -328,7 +328,8 @@
         ".content .flex-row {flex-direction: column; padding: 200px 0 150px 0;}",
         ".image-with-text .flex-row .image {flex: 0 0 100%; min-width: ;}",
         ".flex-row .info {text-align: center;}",
-        ".image-with-text .flex-row .info .category {display: none; }"
+        ".image-with-text .flex-row .info .category {display: none;}",
+        ".image-with-text .flex-row .info h2 {font-size: 2.6em !important; margin: 0 auto 20px auto; width: 90%; }"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/graph.png",
