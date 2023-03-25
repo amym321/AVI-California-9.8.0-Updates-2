@@ -115,8 +115,8 @@
           "footer_show_payments": false,
           "home_footer_hidden": false,
           "footer_hidden": false,
-          "show_language_selector": true,
-          "show_country_selector": true
+          "show_language_selector": false,
+          "show_country_selector": false
         }
       }
     },
@@ -164,9 +164,11 @@
         "header": {
           "type": "header",
           "settings": {
-            "header_padding": 30,
             "logo_position": "center",
-            "enable_transparent_header": false
+            "header_padding": 30,
+            "enable_transparent_header": false,
+            "transparent_header_text_color": "#FFFFFF",
+            "transparent_header_border_color": "#FFFFFF"
           }
         }
       }
@@ -202,9 +204,11 @@
         "header": {
           "type": "header",
           "settings": {
-            "header_padding": 20,
             "logo_position": "left",
-            "enable_transparent_header": true
+            "header_padding": 20,
+            "enable_transparent_header": true,
+            "transparent_header_text_color": "#FFFFFF",
+            "transparent_header_border_color": "#FFFFFF"
           }
         }
       }
@@ -227,8 +231,8 @@
           "settings": {
             "show_announcement": false,
             "home_page_only": false,
-            "color_announcement_bg": "#0f3e57",
-            "color_announcement_text": "#FFFFFF"
+            "color_announcement_text": "#FFFFFF",
+            "color_announcement_bg": "#0f3e57"
           }
         },
         "popup": {
@@ -240,9 +244,11 @@
         "header": {
           "type": "header",
           "settings": {
-            "header_padding": 30,
             "logo_position": "left",
-            "enable_transparent_header": false
+            "header_padding": 30,
+            "enable_transparent_header": false,
+            "transparent_header_text_color": "#FFFFFF",
+            "transparent_header_border_color": "#FFFFFF"
           }
         }
       }
@@ -267,8 +273,8 @@
           "settings": {
             "show_announcement": false,
             "home_page_only": true,
-            "color_announcement_bg": "#ff5555",
-            "color_announcement_text": "#FFFFFF"
+            "color_announcement_text": "#FFFFFF",
+            "color_announcement_bg": "#ff5555"
           }
         },
         "popup": {
@@ -280,9 +286,11 @@
         "header": {
           "type": "header",
           "settings": {
-            "header_padding": 30,
             "logo_position": "center",
-            "enable_transparent_header": true
+            "header_padding": 30,
+            "enable_transparent_header": true,
+            "transparent_header_text_color": "#FFFFFF",
+            "transparent_header_border_color": "#FFFFFF"
           }
         }
       }
