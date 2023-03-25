@@ -327,7 +327,8 @@
       "custom_css": [
         ".content .flex-row {flex-direction: column; padding: 200px 0 150px 0;}",
         ".image-with-text .flex-row .image {flex: 0 0 100%; min-width: ;}",
-        ".flex-row .info {text-align: center; }"
+        ".flex-row .info {text-align: center;}",
+        ".image-with-text .flex-row .info .category {display: none; }"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/graph.png",
