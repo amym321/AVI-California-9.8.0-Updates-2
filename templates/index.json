@@ -351,6 +351,7 @@
     },
     "alireviews-section-1661910018": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "alireviews-block-1661910018": {
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
