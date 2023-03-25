@@ -1,1 +1,122 @@
-{"sections":{"main-collection":{"type":"main-collection","settings":{"show_collection_image":false,"show_collection_description":false,"enable_filtering":false,"enable_sorting":false,"show_labels":false,"columns":2,"rows":3,"show_background":false,"expanded":true}},"164788197191fe3c0a":{"type":"feature-columns","blocks":{"164788197054459ef2-0":{"type":"text_column","settings":{"title":"","text":"<p><strong>WHOLE FOOD<\/strong><\/p><p><strong>FIBER<\/strong><\/p>","image":"shopify:\/\/shop_images\/prebiotic-fiber-icon.png","image_url":""}},"164788197054459ef2-1":{"type":"text_column","settings":{"title":"","text":"<p><strong>KETO<\/strong><\/p><p><strong>FRIENDLY<\/strong><\/p>","image":"shopify:\/\/shop_images\/keto-friendly-granola.png","image_url":""}},"164788197054459ef2-2":{"type":"text_column","settings":{"title":"","text":"<p><strong>NO ADDED <\/strong><\/p><p><strong>SUGAR<\/strong><\/p>","image":"shopify:\/\/shop_images\/sugar-free-granola-icon.png","image_url":""}},"164788197054459ef2-3":{"type":"text_column","settings":{"title":"","text":"<p><strong>GRAIN &<\/strong><\/p><p><strong>GLUTEN FREE<\/strong><\/p>","image":"shopify:\/\/shop_images\/gluten-free-granola-icon.png","image_url":""}},"164788197054459ef2-4":{"type":"text_column","settings":{"title":"","text":"<p><strong>SUPER<\/strong><\/p><p><strong>FOOD<\/strong><\/p>","image":"shopify:\/\/shop_images\/super-food-granola-icon.png","image_url":""}},"164788197054459ef2-5":{"type":"text_column","settings":{"title":"","text":"<p><strong>ECO<\/strong><\/p><p><strong>FRIENDLY<\/strong><\/p>","image":"shopify:\/\/shop_images\/eco-friendly-flakes-icon.png","image_url":""}},"dc7499a7-9136-4496-8630-92330a0f4f93":{"type":"text_column","settings":{"title":"","text":"<p><strong>NON<\/strong><\/p><p><strong>GMO<\/strong><\/p>","image":"shopify:\/\/shop_images\/plant-based-protein-icon.png","image_url":""}},"bc100b8f-95cb-4f3e-b552-b5a23c01cc9d":{"type":"text_column","settings":{"title":"","text":"<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN<\/strong><\/p>","image":"shopify:\/\/shop_images\/lupini-flakes-icon.png","image_url":""}}},"block_order":["164788197054459ef2-0","164788197054459ef2-1","164788197054459ef2-2","164788197054459ef2-3","164788197054459ef2-4","164788197054459ef2-5","dc7499a7-9136-4496-8630-92330a0f4f93","bc100b8f-95cb-4f3e-b552-b5a23c01cc9d"],"settings":{"title":"","subtitle":"","button_label":"","button_link":"","show_background":true,"expanded":false,"max_width":1200,"show_on_desktop":true,"show_on_mobile":true}}},"order":["main-collection","164788197191fe3c0a"]}
+{
+  "sections": {
+    "main-collection": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_image": false,
+        "show_collection_description": false,
+        "enable_filtering": false,
+        "enable_sorting": false,
+        "show_labels": false,
+        "columns": 2,
+        "rows": 3,
+        "show_background": false,
+        "expanded": true
+      }
+    },
+    "164788197191fe3c0a": {
+      "type": "feature-columns",
+      "blocks": {
+        "164788197054459ef2-0": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>WHOLE FOOD<\/strong><\/p><p><strong>FIBER<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/prebiotic-fiber-icon.png",
+            "image_url": ""
+          }
+        },
+        "164788197054459ef2-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>KETO<\/strong><\/p><p><strong>FRIENDLY<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/keto-friendly-granola.png",
+            "image_url": ""
+          }
+        },
+        "164788197054459ef2-2": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>NO ADDED <\/strong><\/p><p><strong>SUGAR<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/sugar-free-granola-icon.png",
+            "image_url": ""
+          }
+        },
+        "164788197054459ef2-3": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>GRAIN &<\/strong><\/p><p><strong>GLUTEN FREE<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/gluten-free-granola-icon.png",
+            "image_url": ""
+          }
+        },
+        "164788197054459ef2-4": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "<p><strong>SUPER<\/strong><\/p><p><strong>FOOD<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/super-food-granola-icon.png",
+            "image_url": ""
+          }
+        },
+        "164788197054459ef2-5": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "<p><strong>ECO<\/strong><\/p><p><strong>FRIENDLY<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/eco-friendly-flakes-icon.png",
+            "image_url": ""
+          }
+        },
+        "dc7499a7-9136-4496-8630-92330a0f4f93": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>NON GMO<\/strong><\/p><p><strong>SUPER FOOD<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/plant-based-protein-icon.png",
+            "image_url": ""
+          }
+        },
+        "bc100b8f-95cb-4f3e-b552-b5a23c01cc9d": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN & ECO FRIENDLY<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/lupini-flakes-icon.png",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "164788197054459ef2-0",
+        "164788197054459ef2-1",
+        "164788197054459ef2-2",
+        "164788197054459ef2-3",
+        "164788197054459ef2-4",
+        "164788197054459ef2-5",
+        "dc7499a7-9136-4496-8630-92330a0f4f93",
+        "bc100b8f-95cb-4f3e-b552-b5a23c01cc9d"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "button_label": "",
+        "button_link": "",
+        "show_background": true,
+        "expanded": false,
+        "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    }
+  },
+  "order": [
+    "main-collection",
+    "164788197191fe3c0a"
+  ]
+}
