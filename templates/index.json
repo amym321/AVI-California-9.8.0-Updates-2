@@ -377,6 +377,9 @@
     },
     "e9215ff1-807b-4aaa-9f69-13c9855a0337": {
       "type": "rich-text",
+      "custom_css": [
+        ".rich-text p {color: #ffffff00 !important;}"
+      ],
       "settings": {
         "title": "",
         "richtext": "<p>.<\/p>",
