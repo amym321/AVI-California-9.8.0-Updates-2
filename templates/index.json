@@ -186,21 +186,21 @@
             "image_url": ""
           }
         },
-        "feature-5": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN & ECO FRIENDLY<\/strong><\/p>",
-            "image": "shopify:\/\/shop_images\/eco-friendly-flakes-icon.png",
-            "image_url": ""
-          }
-        },
         "dfadbf3b-d281-468e-acdf-7dc5395a94a2": {
           "type": "text_column",
           "settings": {
             "title": "",
             "text": "<p><strong>SUPER FOOD<\/strong><\/p><p><strong>PLANT PROTEIN<\/strong><\/p>",
             "image": "shopify:\/\/shop_images\/plant-based-protein-icon.png",
+            "image_url": ""
+          }
+        },
+        "feature-5": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN & ECO FRIENDLY<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/eco-friendly-flakes-icon.png",
             "image_url": ""
           }
         },
@@ -221,8 +221,8 @@
         "feature-2",
         "feature-3",
         "feature-4",
-        "feature-5",
         "dfadbf3b-d281-468e-acdf-7dc5395a94a2",
+        "feature-5",
         "bf8abafd-5e72-43e1-ae64-3848850292c0"
       ],
       "custom_css": [
