@@ -281,7 +281,7 @@
       "type": "banner-with-text",
       "custom_css": [
         ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
-        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto; }"
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
       ],
       "settings": {
         "title": "Sweet Almond Coconut",
@@ -324,6 +324,11 @@
     },
     "16478530667bcdd444": {
       "type": "image-with-text",
+      "custom_css": [
+        ".content .flex-row {flex-direction: column; padding: 200px 0 150px 0;}",
+        ".image-with-text .flex-row .image {flex: 0 0 100%; min-width: ;}",
+        ".flex-row .info {text-align: center; }"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/graph.png",
         "subtitle": "Avi Foods",
