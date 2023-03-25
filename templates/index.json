@@ -178,6 +178,7 @@
         },
         "feature-4": {
           "type": "text_column",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><strong>SUPER<\/strong><\/p><p><strong>FOOD<\/strong><\/p>",
@@ -189,7 +190,7 @@
           "type": "text_column",
           "settings": {
             "title": "",
-            "text": "<p><strong>ECO FRIENDLY<\/strong><\/p><p><strong>FLAKES<\/strong><\/p>",
+            "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN & ECO FRIENDLY<\/strong><\/p>",
             "image": "shopify:\/\/shop_images\/eco-friendly-flakes-icon.png",
             "image_url": ""
           }
@@ -198,7 +199,7 @@
           "type": "text_column",
           "settings": {
             "title": "",
-            "text": "<p><strong>PLANT<\/strong><\/p><p><strong>PROTEIN<\/strong><\/p>",
+            "text": "<p><strong>SUPER FOOD<\/strong><\/p><p><strong>PLANT PROTEIN<\/strong><\/p>",
             "image": "shopify:\/\/shop_images\/plant-based-protein-icon.png",
             "image_url": ""
           }
@@ -227,7 +228,7 @@
         ".feature-columns {margin: 50px 0 0 0;}",
         ".inner {max-width: 1200px !important;}",
         ".cols .col {flex: 0 0 25%;}",
-        ".cols .col img {max-width: 145px !important; }"
+        ".cols .col img {max-width: 145px !important;}"
       ],
       "settings": {
         "title": "",
