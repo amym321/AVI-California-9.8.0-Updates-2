@@ -81,6 +81,10 @@
       "block_order": [
         "1647529858991c0f69-1"
       ],
+      "custom_css": [
+        "img {max-width: 100px; margin: 0 auto 0 -50px;}",
+        ".custom-content .custom__item {padding:0 !important; display:flex !important; justify-content: center;}"
+      ],
       "settings": {
         "show_background": false,
         "expanded": true,
