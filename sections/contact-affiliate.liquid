@@ -2,12 +2,11 @@
   <div class="inner with-layout-options {{ settings.content_layout }} ">
     <div class="main aff-wrapper {{ settings.pages_title_alignment }}">
 
-      <div class="rte">
-        {{ page.content }}
-      </div>
+    <div class="rte">
+      {{ page.content }}
+    </div>
 
-      <div id="contactForm">
-        <h1>Contact</h1>
+   	<div id="contactFormAffiliates">
       {% form 'contact' %}
         {% if form.posted_successfully? %}
           <h4>{{ 'contact.form.post_success' | t }}</h4>
@@ -21,18 +20,17 @@
           {% render 'form-field-error', form: form, field: 'email' %}
         </div>
         <div class="row">
-          <input class="full{% if form.errors contains 'phone' %} error{% endif %}" type="tel" id="contactFormPhone" name="contact[phone]" placeholder="{{ 'contact.form.phone' | t }}" pattern="[0-9]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" aria-label="{{ 'contact.form.phone' | t }}">
-          {% render 'form-field-error', form: form, field: 'phone' %}
+          <input class="full" type="text"  name="contact[social]" placeholder="TikTok / Instagram  / Facebook " value="{{ form.social }}" autocorrect="off" >
         </div>
         <div class="row">
-          <textarea class="full" rows="5" id="contactFormMessage" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}" aria-label="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+          <textarea class="full" rows="5" id="contactFormMessage" name="contact[body]" placeholder="Address" aria-label="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
         </div>
         <div class="row">
           <input class="btn action full" name="commit" type="submit" value="{{ 'contact.form.send' | t }}">
         </div>
       {% endform %}
-      </div>
-      
+    </div>
+
     </div>
   </div>
 </div>
