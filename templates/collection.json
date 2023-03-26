@@ -63,16 +63,6 @@
             "image_url": ""
           }
         },
-        "164788197054459ef2-5": {
-          "type": "text_column",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "text": "<p><strong>ECO<\/strong><\/p><p><strong>FRIENDLY<\/strong><\/p>",
-            "image": "shopify:\/\/shop_images\/eco-friendly-flakes-icon.png",
-            "image_url": ""
-          }
-        },
         "dc7499a7-9136-4496-8630-92330a0f4f93": {
           "type": "text_column",
           "settings": {
@@ -82,8 +72,18 @@
             "image_url": ""
           }
         },
+        "164788197054459ef2-5": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN & ECO FRIENDLY<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/eco-friendly-flakes-icon.png",
+            "image_url": ""
+          }
+        },
         "bc100b8f-95cb-4f3e-b552-b5a23c01cc9d": {
           "type": "text_column",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN & ECO FRIENDLY<\/strong><\/p>",
@@ -98,8 +98,8 @@
         "164788197054459ef2-2",
         "164788197054459ef2-3",
         "164788197054459ef2-4",
-        "164788197054459ef2-5",
         "dc7499a7-9136-4496-8630-92330a0f4f93",
+        "164788197054459ef2-5",
         "bc100b8f-95cb-4f3e-b552-b5a23c01cc9d"
       ],
       "settings": {
