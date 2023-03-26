@@ -1,1 +1,152 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{"increase_space_before_block":false}},"description":{"type":"description","settings":{"increase_space_before_block":true}},"8c9e8c30-c1da-452c-857d-61a00d14efae":{"type":"text","settings":{"text":"9 oz bag","text_style":"body","increase_space_before_block":false}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatches_selector":"Color","popup_selector":"Size","popup_text":"Size guide","popup_page":"","increase_space_before_block":true}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"increase_space_before_block":true}},"collapsible_tab_1":{"type":"collapsible_tab","settings":{"heading":"Double Chocolate Sea Salt","content":"","page":"double-chocolate-ingedients","icon":"none","increase_space_before_block":true}},"collapsible_tab_2":{"type":"collapsible_tab","settings":{"heading":"Product Description","content":"<p>Tab 2 content...<\/p>","page":"","icon":"none","increase_space_before_block":true}},"f59054e6-356f-4704-a941-2b3f78a873a4":{"type":"custom_liquid","settings":{"custom_liquid":""}}},"block_order":["title","description","8c9e8c30-c1da-452c-857d-61a00d14efae","variant_picker","buy_buttons","collapsible_tab_1","collapsible_tab_2","f59054e6-356f-4704-a941-2b3f78a873a4"],"settings":{"product_images_layout":"bottom","enable_sticky_info":false,"zoom_enable":true,"enable_video_looping":false,"show_background":false,"expanded":true}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":false,"product_recommendations_heading":"You may also like","columns":4,"show_background":true,"expanded":true,"show_on_desktop":true,"show_on_mobile":true}},"1647345961e57d9c97":{"type":"banner-with-text","settings":{"title":"Banner with text","text":"<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","image_position":"center center","text_position":"left","text_align":"left","button_label":"Explore","button_link":"","expanded":false,"expanded_content":false,"show_on_desktop":true,"show_on_mobile":true}},"alireviews-section-1658404841":{"type":"apps","blocks":{"alireviews-block-1658404841":{"type":"shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88","settings":{"name":"Review Box 1","vertical_alignment":"5","rating_color":"#3db2b0","section_color":"#ffffff","primary_text_color":"#BF9C6E"}}},"block_order":["alireviews-block-1658404841"],"settings":{}},"alireviews-widget-217451":{"type":"alireviews-widget-217451","disabled":true,"settings":{}}},"order":["main","product-recommendations","1647345961e57d9c97","alireviews-section-1658404841","alireviews-widget-217451"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "increase_space_before_block": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "increase_space_before_block": true
+          }
+        },
+        "8c9e8c30-c1da-452c-857d-61a00d14efae": {
+          "type": "text",
+          "settings": {
+            "text": "9 oz bag",
+            "text_style": "body",
+            "increase_space_before_block": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatches_selector": "Color",
+            "popup_selector": "Size",
+            "popup_text": "Size guide",
+            "popup_page": "",
+            "increase_space_before_block": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "increase_space_before_block": true
+          }
+        },
+        "collapsible_tab_1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Double Chocolate Sea Salt",
+            "content": "",
+            "page": "double-chocolate-ingedients",
+            "icon": "none",
+            "increase_space_before_block": true
+          }
+        },
+        "collapsible_tab_2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Description",
+            "content": "<p>Tab 2 content...<\/p>",
+            "page": "",
+            "icon": "none",
+            "increase_space_before_block": true
+          }
+        },
+        "f59054e6-356f-4704-a941-2b3f78a873a4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "8c9e8c30-c1da-452c-857d-61a00d14efae",
+        "variant_picker",
+        "buy_buttons",
+        "collapsible_tab_1",
+        "collapsible_tab_2",
+        "f59054e6-356f-4704-a941-2b3f78a873a4"
+      ],
+      "settings": {
+        "product_images_layout": "bottom",
+        "enable_sticky_info": false,
+        "zoom_enable": true,
+        "enable_video_looping": false,
+        "show_background": false,
+        "expanded": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": false,
+        "product_recommendations_heading": "You may also like",
+        "columns": 4,
+        "show_background": true,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "1647345961e57d9c97": {
+      "type": "banner-with-text",
+      "settings": {
+        "title": "Banner with text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "image_position": "center center",
+        "text_position": "left",
+        "text_align": "left",
+        "button_label": "Explore",
+        "button_link": "",
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "alireviews-widget-217451": {
+      "type": "alireviews-widget-217451",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "alireviews-section-1679866473241": {
+      "type": "apps",
+      "blocks": {
+        "alireviews-block-1679866473241": {
+          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "name": "Review Box 1",
+            "vertical_alignment": "2",
+            "rating_color": "#1F1F1F",
+            "section_color": "#ffffff",
+            "primary_text_color": "#1F1F1F"
+          }
+        }
+      },
+      "block_order": [
+        "alireviews-block-1679866473241"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1647345961e57d9c97",
+    "alireviews-widget-217451",
+    "alireviews-section-1679866473241"
+  ]
+}

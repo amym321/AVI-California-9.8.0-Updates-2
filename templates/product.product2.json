@@ -1,1 +1,115 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{"increase_space_before_block":false}},"description":{"type":"description","settings":{"increase_space_before_block":true}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"increase_space_before_block":true}}},"block_order":["title","description","buy_buttons"],"settings":{"product_images_layout":"bottom","enable_sticky_info":false,"zoom_enable":true,"enable_video_looping":false,"show_background":false,"expanded":true}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":false,"product_recommendations_heading":"You may also like","columns":4,"show_background":true,"expanded":true,"show_on_desktop":true,"show_on_mobile":true}},"1647887150e13ce0e2":{"type":"feature-columns","blocks":{"1647887150c62cadfd-0":{"type":"text_column","settings":{"title":"Product Description","text":"<p>Our Chocolate Sea Salt small batch Granola combines rich cocoa butter, chocolate chips and cocoa powder for the ultimate indulgent snack. Our grain-free clusters are not only keto friendly but have zero added sugars. Crafted with our magical lupini bean flakes, this granola will transform your nutritional profile and provide you with 9 grams of fiber to keep you energized and feeling full. This plant based protein offers loads of antioxidants from chia and flax seeds and can be enjoyed with milk, yogurt, a smoothie or just straight out of the bag! <\/p>","image_url":""}},"1647887150c62cadfd-1":{"type":"text_column","settings":{"title":"Ingredients","text":"<p>Lupini bean flakes, soluble tapioca fiber syrup, almonds, pecans, chocolate chips (unsweetened chocolate, erythritol, cocoa butter, stevia extract, sunflower lecithin), coconut oil, erythritol, flax seeds, chia seeds, cocoa powder (processed with alkali), coconut chips, vanilla extract, salt, monk fruit extract.<\/p>","image_url":""}}},"block_order":["1647887150c62cadfd-0","1647887150c62cadfd-1"],"settings":{"title":"","subtitle":"","button_label":"","button_link":"","show_background":true,"expanded":false,"max_width":1200,"show_on_desktop":true,"show_on_mobile":true}},"alireviews-section-1658404850":{"type":"apps","blocks":{"alireviews-block-1658404850":{"type":"shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88","settings":{"name":"Review Box 1","vertical_alignment":"2","rating_color":"#FAAD14","section_color":"#ffffff","primary_text_color":"#1F1F1F"}}},"block_order":["alireviews-block-1658404850"],"settings":{}}},"order":["main","product-recommendations","1647887150e13ce0e2","alireviews-section-1658404850"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "increase_space_before_block": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "increase_space_before_block": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "increase_space_before_block": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "buy_buttons"
+      ],
+      "settings": {
+        "product_images_layout": "bottom",
+        "enable_sticky_info": false,
+        "zoom_enable": true,
+        "enable_video_looping": false,
+        "show_background": false,
+        "expanded": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": false,
+        "product_recommendations_heading": "You may also like",
+        "columns": 4,
+        "show_background": true,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "1647887150e13ce0e2": {
+      "type": "feature-columns",
+      "blocks": {
+        "1647887150c62cadfd-0": {
+          "type": "text_column",
+          "settings": {
+            "title": "Product Description",
+            "text": "<p>Our Chocolate Sea Salt small batch Granola combines rich cocoa butter, chocolate chips and cocoa powder for the ultimate indulgent snack. Our grain-free clusters are not only keto friendly but have zero added sugars. Crafted with our magical lupini bean flakes, this granola will transform your nutritional profile and provide you with 9 grams of fiber to keep you energized and feeling full. This plant based protein offers loads of antioxidants from chia and flax seeds and can be enjoyed with milk, yogurt, a smoothie or just straight out of the bag! <\/p>",
+            "image_url": ""
+          }
+        },
+        "1647887150c62cadfd-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "Ingredients",
+            "text": "<p>Lupini bean flakes, soluble tapioca fiber syrup, almonds, pecans, chocolate chips (unsweetened chocolate, erythritol, cocoa butter, stevia extract, sunflower lecithin), coconut oil, erythritol, flax seeds, chia seeds, cocoa powder (processed with alkali), coconut chips, vanilla extract, salt, monk fruit extract.<\/p>",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1647887150c62cadfd-0",
+        "1647887150c62cadfd-1"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "button_label": "",
+        "button_link": "",
+        "show_background": true,
+        "expanded": false,
+        "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "alireviews-section-1679866475026": {
+      "type": "apps",
+      "blocks": {
+        "alireviews-block-1679866475026": {
+          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "name": "Review Box 1",
+            "vertical_alignment": "2",
+            "rating_color": "#1F1F1F",
+            "section_color": "#ffffff",
+            "primary_text_color": "#1F1F1F"
+          }
+        }
+      },
+      "block_order": [
+        "alireviews-block-1679866475026"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1647887150e13ce0e2",
+    "alireviews-section-1679866475026"
+  ]
+}
