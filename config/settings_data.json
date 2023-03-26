@@ -31,11 +31,11 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_announcement": false,
+          "show_announcement": true,
           "home_page_only": false,
-          "top_banner_text": "FREE Shipping Over $40!",
+          "top_banner_text": "FREE 1oz. SNACK with EVERY Order!",
           "announcement_link": "",
-          "color_announcement_text": "#f7f2e5",
+          "color_announcement_text": "#ffffff",
           "color_announcement_bg": "#bf9c6e"
         }
       },
