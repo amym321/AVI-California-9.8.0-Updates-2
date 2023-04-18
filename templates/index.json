@@ -424,7 +424,7 @@
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-5"
       ],
       "custom_css": [
-        ".feature-columns{backrgound-color: #bf9c6e !important;}"
+        ".feature-columns {backrgound-color: #bf9c6e !important;}"
       ],
       "settings": {
         "title": "Check Out Our Latest Recipes",
@@ -432,8 +432,8 @@
         "button_label": "",
         "button_link": "",
         "show_background": true,
-        "expanded": false,
-        "max_width": 2000,
+        "expanded": true,
+        "max_width": 900,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
