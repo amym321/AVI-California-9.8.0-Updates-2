@@ -435,6 +435,24 @@
         "show_on_mobile": true
       }
     },
+    "e9215ff1-807b-4aaa-9f69-13c9855a0337": {
+      "type": "rich-text",
+      "custom_css": [
+        ".rich-text p {color: #ffffff00 !important;}"
+      ],
+      "settings": {
+        "title": "",
+        "richtext": "",
+        "button_label": "See More Recipes",
+        "button_link": "shopify:\/\/blogs\/recipes",
+        "max_width": 650,
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "alireviews-widget-240757": {
       "type": "alireviews-widget-240757",
       "custom_css": [
@@ -493,25 +511,6 @@
         "show_on_mobile": true
       }
     },
-    "e9215ff1-807b-4aaa-9f69-13c9855a0337": {
-      "type": "rich-text",
-      "disabled": true,
-      "custom_css": [
-        ".rich-text p {color: #ffffff00 !important;}"
-      ],
-      "settings": {
-        "title": "",
-        "richtext": "<p>.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "max_width": 650,
-        "show_background": false,
-        "expanded": false,
-        "expanded_content": false,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "31e0fbfa-60df-4344-b031-61fee971de72": {
       "type": "featured-blog",
       "disabled": true,
@@ -540,10 +539,10 @@
     "alireviews-widget-230741",
     "alireviews-widget-231234",
     "6f22c8c0-8bb3-410b-9872-95104b611c34",
+    "e9215ff1-807b-4aaa-9f69-13c9855a0337",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
     "alireviews-section-1661910018",
-    "e9215ff1-807b-4aaa-9f69-13c9855a0337",
     "31e0fbfa-60df-4344-b031-61fee971de72"
   ]
 }
