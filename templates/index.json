@@ -473,8 +473,9 @@
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-2": {
           "type": "text_column",
           "settings": {
-            "title": "Add a title or tagline",
+            "title": "Quick Antioxidant Açaí Bowl",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image": "shopify:\/\/shop_images\/26.png",
             "image_url": ""
           }
         },
