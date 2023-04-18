@@ -441,8 +441,8 @@
     "e9215ff1-807b-4aaa-9f69-13c9855a0337": {
       "type": "rich-text",
       "custom_css": [
-        "a .bt,.btn {background-color: #2b9490; color: #fff;}",
-        "a.btn.action:hover, .btn.action:hover {background-color: #e052ad;}",
+        "a .btn, .btn {background-color: #2b9490; color: #fff;}",
+        "a.btn.action:hover,.btn.action:hover {background-color: #e052ad;}",
         " {background-color: #ffffff !important; background: #ffffff !important;}"
       ],
       "settings": {
