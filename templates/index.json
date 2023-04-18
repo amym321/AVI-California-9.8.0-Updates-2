@@ -441,7 +441,7 @@
     "e9215ff1-807b-4aaa-9f69-13c9855a0337": {
       "type": "rich-text",
       "custom_css": [
-        "{background-color: #f7f2e5 !important; background: #f7f2e5 !important;}"
+        "{background-color: #ffffff !important; background: #ffffff !important;}"
       ],
       "settings": {
         "title": "",
