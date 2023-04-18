@@ -331,7 +331,7 @@
         ".image-with-text .flex-row .info .category {display: none;}",
         ".image-with-text .flex-row .info h2 {font-size: 2.6em !important; margin: 0 auto 20px auto; width: 90%;}",
         ".image-with-text .flex-row .info p {color: #bf9c6e !important; font-size: 1.8em !important; font-weight: 100; margin: 0 0 50px 0;}",
-        ".image-with-text-section {background: #FFF; }"
+        ".image-with-text-section {background: #fff;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/graph.png",
@@ -433,6 +433,94 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "31e0fbfa-60df-4344-b031-61fee971de72": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog": "recipes",
+        "layout": "grid",
+        "post_limit": 2,
+        "title": "Check Our Latest Recipes",
+        "show_background": false,
+        "expanded": false,
+        "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "6f22c8c0-8bb3-410b-9872-95104b611c34": {
+      "type": "feature-columns",
+      "blocks": {
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-0": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image": "shopify:\/\/shop_images\/avinola-keto-yogurt.jpg",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-2": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-3": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-4": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-5": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-0",
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-1",
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-2",
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-3",
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-4",
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-5"
+      ],
+      "settings": {
+        "title": "Check Out Our Latest Recipes",
+        "subtitle": "",
+        "button_label": "",
+        "button_link": "",
+        "show_background": true,
+        "expanded": false,
+        "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -449,6 +537,8 @@
     "16494256826c42a5cf",
     "alireviews-widget-240757",
     "alireviews-section-1661910018",
-    "e9215ff1-807b-4aaa-9f69-13c9855a0337"
+    "e9215ff1-807b-4aaa-9f69-13c9855a0337",
+    "31e0fbfa-60df-4344-b031-61fee971de72",
+    "6f22c8c0-8bb3-410b-9872-95104b611c34"
   ]
 }
