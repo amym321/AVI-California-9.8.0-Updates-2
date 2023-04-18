@@ -452,6 +452,15 @@
     "6f22c8c0-8bb3-410b-9872-95104b611c34": {
       "type": "feature-columns",
       "blocks": {
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "Granola Cookie Dough Bites Recipe",
+            "text": "<p>Looking for a healthy breakfast that will satisfy your sweet tooth? Make this easy-to-make Granola Cookie Dough Bites!<\/p>",
+            "image": "shopify:\/\/shop_images\/34.png",
+            "image_url": ""
+          }
+        },
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-0": {
           "type": "text_column",
           "settings": {
@@ -459,14 +468,6 @@
             "text": "<p>These bars have a creamy, decadent layer and the perfect crunchy base. You can easily whip these up in 10 minutes and have everyone believing it took much more effort to make!<\/p>",
             "image": "shopify:\/\/shop_images\/22.png",
             "image_url": "https:\/\/avi-foods.com\/blogs\/recipes\/chocolate-granola-mousse-bars-recipe"
-          }
-        },
-        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-1": {
-          "type": "text_column",
-          "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
-            "image_url": ""
           }
         },
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-2": {
@@ -479,6 +480,7 @@
         },
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-3": {
           "type": "text_column",
+          "disabled": true,
           "settings": {
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
@@ -487,6 +489,7 @@
         },
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-4": {
           "type": "text_column",
+          "disabled": true,
           "settings": {
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
@@ -495,6 +498,7 @@
         },
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-5": {
           "type": "text_column",
+          "disabled": true,
           "settings": {
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
@@ -503,8 +507,8 @@
         }
       },
       "block_order": [
-        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-0",
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-1",
+        "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-0",
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-2",
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-3",
         "template--16745576530176__6f22c8c0-8bb3-410b-9872-95104b611c34-1681839704ba5ae4b8-4",
