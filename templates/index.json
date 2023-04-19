@@ -198,7 +198,7 @@
           "type": "text_column",
           "settings": {
             "title": "",
-            "text": "<p><strong>SUPER FOOD<\/strong><\/p><p><strong>PLANT PROTEIN<\/strong><\/p>",
+            "text": "<p><strong>PLANT <\/strong><\/p><p><strong>PROTEIN<\/strong><\/p>",
             "image": "shopify:\/\/shop_images\/plant-based-protein-icon.png",
             "image_url": ""
           }
