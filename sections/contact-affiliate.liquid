@@ -23,7 +23,7 @@
           <input class="full" type="text"  name="contact[social]" placeholder="TikTok / Instagram  / Facebook " value="{{ form.social }}" autocorrect="off" >
         </div>
         <div class="row">
-          <textarea class="full" rows="5" id="contactFormMessage" name="contact[body]" placeholder="Address" aria-label="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+          <textarea class="full" rows="5" id="contactFormMessage" name="contact[body]" placeholder="Message" aria-label="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
         </div>
         <div class="row">
           <input class="btn action full" name="commit" type="submit" value="{{ 'contact.form.send' | t }}">

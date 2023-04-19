@@ -9407,7 +9407,12 @@ body {
   .section-header .header .side-nav-section .connect { display: flex; flex-direction: row; justify-content: center; }
   .section-header .header .side-nav-section .extra > :first-child::before { display: none; }
 
-  .section-header .header .side-nav-section .nav ul ul li { margin-bottom: 20px; }/*- am*/
+  .section-header .header .side-nav-section .nav ul ul li { margin-bottom: 20px; } /*- am*/
+
+  @media (max-width: 960px){
+    .section-header .header .logo img { max-height: 90px; } /*- am*/
+    .section-header .header .content {padding-top: 10px !important; padding-bottom:5px !important; padding-left:15px; padding-right:15px;}/*- am*/
+  }
   
   @media only screen 
   and (min-device-width: 768px) 
@@ -9679,7 +9684,7 @@ body {
   /* ICONS - text with columns */
   .template-collection .feature-columns { margin: 0 0 100px 0; }
 
-  .template-collection .feature-columns  .cols .col { flex: 0 0 33%; } /* redundant */
+  .template-collection .feature-columns  .cols .col { flex: 0 0 25%; } /* flex: 0 0 33%; for 6*/
 
   .template-collection .feature-columns .cols .col  img { max-width: 145px !important; }
   
@@ -10088,6 +10093,12 @@ body {
   transform: translateY(10px);
 }
 
+/* pdp ali reviews */
+#shopify-ali-review time .alireview-date,
+#shopify-ali-review time.alireview-date {
+   display: none !important;
+}
+
 /* footer links*/
 @media screen and (min-width: 991px) {
   .footer .content .blocks-wrapper .block .cols-1 a {
@@ -10098,10 +10109,21 @@ body {
 /* blogs page */
 @media only screen and (min-width: 1000px) {
   .template-blog .posts.grid .post {
-    width: 48%;
+    width: 32%;
   }
 }
 
 .template-blog .blog-container .with-layout-options .top .rss .fc-rss {
   display:none;
+}
+
+/* instafeed */
+#insta-feed h2 {
+  font-size:32px !important;
+  padding-top: 30px;
+}
+@media only screen and (min-width: 769px) {
+  #insta-feed h2 {
+    padding-top: 30px;
+  }
 }
