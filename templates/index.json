@@ -178,20 +178,10 @@
         },
         "feature-4": {
           "type": "text_column",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><strong>SUPER<\/strong><\/p><p><strong>FOOD<\/strong><\/p>",
             "image": "shopify:\/\/shop_images\/super-food-granola-icon.png",
-            "image_url": ""
-          }
-        },
-        "dfadbf3b-d281-468e-acdf-7dc5395a94a2": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "<p><strong>SUPER FOOD<\/strong><\/p><p><strong>PLANT PROTEIN<\/strong><\/p>",
-            "image": "shopify:\/\/shop_images\/plant-based-protein-icon.png",
             "image_url": ""
           }
         },
@@ -204,9 +194,17 @@
             "image_url": ""
           }
         },
+        "dfadbf3b-d281-468e-acdf-7dc5395a94a2": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>SUPER FOOD<\/strong><\/p><p><strong>PLANT PROTEIN<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/plant-based-protein-icon.png",
+            "image_url": ""
+          }
+        },
         "bf8abafd-5e72-43e1-ae64-3848850292c0": {
           "type": "text_column",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN LUPINI FLAKES<\/strong><\/p>",
@@ -221,14 +219,14 @@
         "feature-2",
         "feature-3",
         "feature-4",
-        "dfadbf3b-d281-468e-acdf-7dc5395a94a2",
         "feature-5",
+        "dfadbf3b-d281-468e-acdf-7dc5395a94a2",
         "bf8abafd-5e72-43e1-ae64-3848850292c0"
       ],
       "custom_css": [
         ".feature-columns {margin: 50px 0 0 0;}",
         ".inner {max-width: 1200px !important;}",
-        ".cols .col {flex: 0 0 33%;}",
+        ".cols .col {flex: 0 0 25%;}",
         ".cols .col img {max-width: 145px !important;}"
       ],
       "settings": {
@@ -441,7 +439,7 @@
     "e9215ff1-807b-4aaa-9f69-13c9855a0337": {
       "type": "rich-text",
       "custom_css": [
-        "a .btn, .btn {background-color: #2b9490; color: #fff;}",
+        "a .btn,.btn {background-color: #2b9490; color: #fff;}",
         "a.btn.action:hover,.btn.action:hover {background-color: #e052ad;}",
         " {background-color: #ffffff !important; background: #ffffff !important;}"
       ],
