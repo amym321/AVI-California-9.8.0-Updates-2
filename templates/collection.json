@@ -66,7 +66,7 @@
           "type": "text_column",
           "settings": {
             "title": "",
-            "text": "<p><strong>NON GMO<\/strong><\/p><p><strong>SUPER FOOD<\/strong><\/p>",
+            "text": "<p><strong>NON <\/strong><\/p><p><strong>GMO<\/strong><\/p>",
             "image": "shopify:\/\/shop_images\/plant-based-protein-icon.png",
             "image_url": ""
           }
