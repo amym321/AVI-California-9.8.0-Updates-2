@@ -55,7 +55,6 @@
         },
         "164788197054459ef2-4": {
           "type": "text_column",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><strong>SUPER<\/strong><\/p><p><strong>FOOD<\/strong><\/p>",
@@ -83,7 +82,6 @@
         },
         "bc100b8f-95cb-4f3e-b552-b5a23c01cc9d": {
           "type": "text_column",
-          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><strong>REGENERATIVELY<\/strong><\/p><p><strong>GROWN & ECO FRIENDLY<\/strong><\/p>",
