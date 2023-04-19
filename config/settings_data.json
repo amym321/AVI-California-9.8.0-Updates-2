@@ -20,7 +20,7 @@
     "social_youtube_link": "",
     "favicon": "shopify:\/\/shop_images\/logo-icon.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/AVI-logo.png",
-    "checkout_logo_position": "left",
+    "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#f7f2e5",
     "checkout_sidebar_background_color": "#f7f2e5",
