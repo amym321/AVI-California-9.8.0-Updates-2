@@ -93,7 +93,7 @@
           "settings": {
             "name": "Review Box 1",
             "vertical_alignment": "2",
-            "rating_color": "#1F1F1F",
+            "rating_color": "#faad14",
             "section_color": "#ffffff",
             "primary_text_color": "#1F1F1F"
           }
