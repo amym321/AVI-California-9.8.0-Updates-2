@@ -595,6 +595,10 @@
         "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-4",
         "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-5"
       ],
+      "custom_css": [
+        ".cols .col {flex: 0 0 25%;}",
+        ".cols .col img {max-width: 145px !important;}"
+      ],
       "settings": {
         "title": "",
         "subtitle": "",
