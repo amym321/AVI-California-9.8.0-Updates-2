@@ -262,6 +262,17 @@
         "show_on_mobile": true
       }
     },
+    "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "feature-columns": {
       "type": "feature-columns",
       "blocks": {
@@ -459,7 +470,7 @@
         ".image-with-text .flex-row .info h2 {font-size: 2.6em !important; margin: 0 auto 20px auto; width: 90%;}",
         ".image-with-text .flex-row .info p {color: #bf9c6e !important; font-size: 1.8em !important; font-weight: 100; margin: 0 0 50px 0;}",
         ".image-with-text-section {background: #fff;}",
-        "@media (max-width:420px) {.content .flex-row {padding: 70px 0; }}"
+        "@media (max-width: 420px) {.content .flex-row {padding: 70px 0; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/graph.png",
@@ -737,6 +748,7 @@
     "1f893d81-ea15-45cc-bb1c-d038c888d216",
     "1647529858a824f6f2",
     "16475250747d66e204",
+    "3b6f69a9-8347-41ba-9fce-76d08e9245bd",
     "feature-columns",
     "1647529743558de923",
     "banner-with-text-left",
