@@ -101,6 +101,9 @@
         "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-1",
         "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-2"
       ],
+      "custom_css": [
+        ".collage .cards .card.image {box-shadow: none;}"
+      ],
       "settings": {
         "desktop_layout": "left",
         "mobile_layout": "column",
