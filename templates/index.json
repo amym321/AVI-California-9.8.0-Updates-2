@@ -165,6 +165,9 @@
       "block_order": [
         "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0"
       ],
+      "custom_css": [
+        ".collage .cards .card.image {box-shadow: none;}"
+      ],
       "settings": {
         "desktop_layout": "left",
         "mobile_layout": "column",
