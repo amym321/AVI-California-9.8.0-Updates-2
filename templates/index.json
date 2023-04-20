@@ -606,7 +606,7 @@
         "button_label": "",
         "button_link": "",
         "show_background": false,
-        "expanded": false,
+        "expanded": true,
         "max_width": 2000,
         "show_on_desktop": true,
         "show_on_mobile": true
