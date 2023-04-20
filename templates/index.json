@@ -588,6 +588,7 @@
     },
     "e1c8eeae-981a-48af-a964-46d6ca362d83": {
       "type": "feature-columns",
+      "disabled": true,
       "blocks": {
         "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-0": {
           "type": "text_column",
@@ -669,7 +670,6 @@
     },
     "alireviews-widget-240757": {
       "type": "alireviews-widget-240757",
-      "disabled": true,
       "custom_css": [
         "#shopify-ali-review .shop_info .reviews h3.alireview-rcs__title {font-size: 2.6em !important; color: #3db2b0 !important; font-family: \"Baskerville No 2\", serif !important; font-weight: 700;}"
       ],
