@@ -44,6 +44,7 @@
                 </div>
               </div>
             {%- endunless -%}
+            <div class="subscription-separator">OR</div>{% comment %} - am {% endcomment %}
             {%- for th_subscription_spg in product.selling_plan_groups -%}
               {%- if th_subscription_spg.app_id == '18d463fb7da4ca64c4511f4aa069dc20' -%}
                 <div class="th_sp_wf_cls th_subscription_radio_fieldset">

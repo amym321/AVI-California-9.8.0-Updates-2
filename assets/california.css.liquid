@@ -10088,6 +10088,11 @@ body {
 /******* styles - am *******/
 /***************************/
 
+/* custom image section on homepage */
+.custom-content .custom__image {
+  transform: translateY(-80px) !important;
+}
+
 /* homepage ali reviews */
 #shopify-ali-review-widget {
   transform: translateY(10px);
@@ -10097,6 +10102,10 @@ body {
 #shopify-ali-review time .alireview-date,
 #shopify-ali-review time.alireview-date {
    display: none !important;
+}
+.alireview-number-total-review {
+  background: #FAAD14 !important;
+  background-color: #FAAD14 !important;
 }
 
 /* footer links*/
@@ -10139,13 +10148,11 @@ body {
   background: #bf9c6e !important; /* #f7f2e5 */
   color:  #FFF !important;
 }
-.thsb_subscription_description_section .thsb_subscription_description_tooltip p {
-  color: #FFF !important;
-}
+
 
 .th_subscription_radio_section .th_subscription_radio_section_outer {
   border: 3.5px solid #e5e5e5 !important;
-  padding: 25px  !important;
+  padding: 30px  !important;
 }
 .th_subscription_radio_section .th_subscription_radio_fieldset {
   margin: 0 0 20px  !important;
@@ -10165,9 +10172,9 @@ body {
 .th_subscription_radio_section .th_subscription_radio_label_outer input + label {
   background-color: #f7f7f7  !important; /*#f7f2e5*/
   /* color: #bf9c6e !important; */
-  border: 3px solid rgb(191, 156, 110, .1) ;
+  border: 3px solid rgb(191, 156, 110, .07) ;
   border-radius: 10px !important;
-  background-color: rgb(191, 156, 110, .1) !important; /*#f7f7f7 */
+  background-color: rgb(191, 156, 110, .07) !important; /*#f7f7f7 */
 
 }
 .th_subscription_radio_section .th_subscription_radio_label_outer input:checked + label {
@@ -10176,19 +10183,35 @@ body {
   border-color: #bf9c6e !important; /*#838383*/
 }
 
+.th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em {
+  background-color: #000 !important;
+}
+
 .th_subscription_radio_section .th_subscription_radio_spg_plan_label_title,
 .th_subscription_radio_section .th_subscription_radio_spg_plan_title,
 .th_subscription_radio_section .th_subscription_radio_spg_plan_price_delivery em,
 .thsb_subscription_description_section .thsb_subscription_description_text p,
 .th_subscription_radio_section .th_subscription_radio_label_outer input + label,
-.thsb_subscription_description_section .thsb_subscription_description_tooltip p {
-  font-size: 16px !important;
+.thsb_subscription_description_section .thsb_subscription_description_tooltip p,
+.th_subscription_radio_label_outer .money,
+.th_subscription_radio_fieldset_discount_val em,
+.subscription-separator {
+  font-size: 19px !important;
+  color: #000 !important;
+}
+.thsb_subscription_description_section .thsb_subscription_description_tooltip p,
+.th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em {
+  color: #FFF !important;
 }
 
 .th_subscription_radio_section .th_subscription_section_title {
   font-size: 22px !important;
 }
 
+.subscription-separator {
+  margin-bottom: 12px;
+  transform: translateX(170px);
+}
 /* .th_subscription_radio_section .th_subscription_radio_fieldset:nth-of-type(1):after {
   content: 'OR';
 } */
