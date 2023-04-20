@@ -528,6 +528,81 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "05f6c44c-c206-4cfa-8e42-55a769daa5f7": {
+      "type": "feature-columns",
+      "blocks": {
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-0": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/cocnut_5.jpg",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-2": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-3": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-4": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-5": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-0",
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-1",
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-2",
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-3",
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-4",
+        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-5"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "button_label": "",
+        "button_link": "",
+        "show_background": false,
+        "expanded": false,
+        "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -546,6 +621,7 @@
     "alireviews-widget-240757",
     "16494256826c42a5cf",
     "alireviews-section-1661910018",
-    "31e0fbfa-60df-4344-b031-61fee971de72"
+    "31e0fbfa-60df-4344-b031-61fee971de72",
+    "05f6c44c-c206-4cfa-8e42-55a769daa5f7"
   ]
 }
