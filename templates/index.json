@@ -128,22 +128,10 @@
             "text": "",
             "text_align": "center"
           }
-        },
-        "536bc3da-45c1-410c-9ea8-70e403e53af4": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ingredients_2.jpg",
-            "show_border": false,
-            "link": "",
-            "text": "",
-            "text_align": "center"
-          }
         }
       },
       "block_order": [
-        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0",
-        "536bc3da-45c1-410c-9ea8-70e403e53af4"
+        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0"
       ],
       "custom_css": [
         ".collage .cards .card.image {box-shadow: none;}"
@@ -160,66 +148,32 @@
         "show_on_mobile": false
       }
     },
-    "37a21267-7477-4017-bcf9-92595535541f": {
-      "type": "hero",
-      "disabled": true,
+    "f256aa87-de86-429b-a729-3f92a195fded": {
+      "type": "collage",
       "blocks": {
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-0": {
-          "type": "heading",
-          "disabled": true,
+        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0": {
+          "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ingredients_2.jpg",
+            "show_border": false,
+            "link": "",
             "text": "",
-            "max_width": 1000
-          }
-        },
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-1": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Hero subheading",
-            "max_width": 500
-          }
-        },
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "text": "Shop now",
-            "link": "shopify:\/\/collections\/all",
-            "style": "action",
-            "size": "normal"
-          }
-        },
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-3": {
-          "type": "scroll-button",
-          "disabled": true,
-          "settings": {
-            "text": "Discover more",
-            "style": "line",
-            "size": "small"
+            "text_align": "center"
           }
         }
       },
       "block_order": [
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-0",
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-1",
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-2",
-        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-3"
+        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ingredients_1.jpg",
-        "video": "",
-        "alignment": "h-center v-center",
-        "color_heading": "#000000",
-        "color_subheading": "#121212",
-        "color_line_button": "#121212",
-        "color_paragraph": "#121212",
-        "overlay_color": "#000000",
-        "overlay_opacity": 10,
-        "mobile_min_height": 500,
-        "video_mobile": "",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "heading": "",
+        "show_background": false,
         "expanded": true,
-        "show_on_desktop": true,
+        "content_max_width": 2000,
+        "expanded_content": false,
+        "show_on_desktop": false,
         "show_on_mobile": true
       }
     },
@@ -835,60 +789,13 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
-    },
-    "f256aa87-de86-429b-a729-3f92a195fded": {
-      "type": "collage",
-      "blocks": {
-        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ingredients_2.jpg",
-            "show_border": false,
-            "link": "",
-            "text": "",
-            "text_align": "center"
-          }
-        },
-        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-1": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "show_border": false
-          }
-        },
-        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-2": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "show_border": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0",
-        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-1",
-        "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-2"
-      ],
-      "settings": {
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "heading": "",
-        "show_background": false,
-        "expanded": true,
-        "content_max_width": 2000,
-        "expanded_content": false,
-        "show_on_desktop": false,
-        "show_on_mobile": true
-      }
     }
   },
   "order": [
     "hero",
     "3e54ae5d-0944-4ccf-bf19-8acce5a3922f",
     "c2d0f25e-4797-447c-b96b-69d72d981a20",
-    "37a21267-7477-4017-bcf9-92595535541f",
+    "f256aa87-de86-429b-a729-3f92a195fded",
     "1d1b7369-4eec-4002-b82d-c7089c6dc06d",
     "1f893d81-ea15-45cc-bb1c-d038c888d216",
     "1647529858a824f6f2",
@@ -906,7 +813,6 @@
     "16494256826c42a5cf",
     "alireviews-section-1661910018",
     "31e0fbfa-60df-4344-b031-61fee971de72",
-    "05f6c44c-c206-4cfa-8e42-55a769daa5f7",
-    "f256aa87-de86-429b-a729-3f92a195fded"
+    "05f6c44c-c206-4cfa-8e42-55a769daa5f7"
   ]
 }
