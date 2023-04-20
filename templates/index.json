@@ -268,7 +268,7 @@
         ".content {padding-top: 60px !important;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Add Stuff Here <\/span>* Add More Stuff * More Shit To Say\n      <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack Out Of The bag * Granola Bars\n      <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
         "show_background": false,
         "expanded": false,
         "expanded_content": false,

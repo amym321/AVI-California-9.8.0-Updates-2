@@ -30,6 +30,9 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
+        "custom_css": [
+
+        ],
         "settings": {
           "show_announcement": true,
           "home_page_only": false,
