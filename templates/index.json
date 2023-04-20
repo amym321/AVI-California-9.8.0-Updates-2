@@ -393,7 +393,7 @@
         "1647529743321f5396-0"
       ],
       "custom_css": [
-        "@media (max-width: 400px) {.content h2 {font-size: 2.2em; padding: 0 10px !important; } }"
+        "@media (max-width: 400px) {.content h2 {font-size: 2.2em; padding: 0 10px !important; }}"
       ],
       "settings": {
         "show_background": false,
@@ -500,7 +500,7 @@
           "type": "text_column",
           "settings": {
             "title": "Granola Cookie Dough Bites Recipe",
-            "text": "<p>These bars have a creamy, decadent layer and the perfect crunchy base. You can easily whip these up in 10 minutes and have everyone believing it took much more effort to make!<\/p>",
+            "text": "<p>These bars have a creamy, decadent layer and the perfect crunchy base. You can easily whip these up in 10 minutes !<\/p>",
             "image": "shopify:\/\/shop_images\/22.png",
             "image_url": "https:\/\/avi-foods.com\/blogs\/recipes\/chocolate-granola-mousse-bars-recipe"
           }
@@ -657,90 +657,6 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
-    },
-    "05f6c44c-c206-4cfa-8e42-55a769daa5f7": {
-      "type": "feature-columns",
-      "disabled": true,
-      "blocks": {
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-0": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/cocnut_5.jpg",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-1": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/chocolate_4.jpg",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-2": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/almonds_2_287c708a-4e62-4ff6-b87c-91028421b0de.jpg",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-3": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/lupini_6b_cc8c7979-cca0-4286-a080-190bd7f04544.jpg",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-4": {
-          "type": "text_column",
-          "disabled": true,
-          "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-5": {
-          "type": "text_column",
-          "disabled": true,
-          "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
-            "image_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-0",
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-1",
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-2",
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-3",
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-4",
-        "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-5"
-      ],
-      "custom_css": [
-        ".feature-columns {margin: 50px 0 0 0;}",
-        ".cols .col {flex: 0 0 25%;}",
-        ".cols .col img {max-width: 145px !important;}"
-      ],
-      "settings": {
-        "title": "",
-        "subtitle": "",
-        "button_label": "",
-        "button_link": "",
-        "show_background": false,
-        "expanded": true,
-        "max_width": 2000,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
     }
   },
   "order": [
@@ -763,7 +679,6 @@
     "alireviews-widget-240757",
     "16494256826c42a5cf",
     "alireviews-section-1661910018",
-    "31e0fbfa-60df-4344-b031-61fee971de72",
-    "05f6c44c-c206-4cfa-8e42-55a769daa5f7"
+    "31e0fbfa-60df-4344-b031-61fee971de72"
   ]
 }
