@@ -313,7 +313,7 @@
         "text_position": "left",
         "text_align": "left",
         "button_label": "ORDER NOW",
-        "button_link": "shopify:\/\/products\/double-chocolate-sea-salt",
+        "button_link": "shopify:\/\/collections\/double-chocolate",
         "expanded": false,
         "expanded_content": false,
         "show_on_desktop": true,
