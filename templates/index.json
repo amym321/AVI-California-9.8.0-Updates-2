@@ -66,6 +66,66 @@
         "show_on_mobile": true
       }
     },
+    "37a21267-7477-4017-bcf9-92595535541f": {
+      "type": "hero",
+      "blocks": {
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-0": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "max_width": 1000
+          }
+        },
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Hero subheading",
+            "max_width": 500
+          }
+        },
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "text": "Shop now",
+            "link": "shopify:\/\/collections\/all",
+            "style": "action",
+            "size": "normal"
+          }
+        },
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-3": {
+          "type": "scroll-button",
+          "disabled": true,
+          "settings": {
+            "text": "Discover more",
+            "style": "line",
+            "size": "small"
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-0",
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-1",
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-2",
+        "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-3"
+      ],
+      "settings": {
+        "video": "",
+        "alignment": "h-center v-center",
+        "color_heading": "#000000",
+        "color_subheading": "#121212",
+        "color_line_button": "#121212",
+        "color_paragraph": "#121212",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "mobile_min_height": 500,
+        "video_mobile": "",
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "1d1b7369-4eec-4002-b82d-c7089c6dc06d": {
       "type": "slideshow",
       "blocks": {
@@ -669,6 +729,7 @@
   },
   "order": [
     "hero",
+    "37a21267-7477-4017-bcf9-92595535541f",
     "1d1b7369-4eec-4002-b82d-c7089c6dc06d",
     "1647529858a824f6f2",
     "16475250747d66e204",
