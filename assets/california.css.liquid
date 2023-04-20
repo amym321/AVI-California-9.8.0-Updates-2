@@ -10128,12 +10128,17 @@ body {
 
 /* instafeed */
 #insta-feed h2 {
-  font-size:32px !important;
+  font-size:38px !important;
   padding-top: 30px;
 }
 @media only screen and (min-width: 769px) {
   #insta-feed h2 {
     padding-top: 30px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #insta-feed h2 {
+    font-size:32px !important;
   }
 }
 
@@ -10256,7 +10261,17 @@ body {
   color: white !important;
 }
 
-/*header*/
+/* Announcement bar */
+.section-announcement-bar {
+  z-index: 20;
+  position: sticky;
+  top: 0;
+}
+
+/* header */
+.sticky-header .section-header {
+  top: 42px;
+}
 .section-header .header .content {
   padding-top: 10px;
 }
@@ -10304,17 +10319,32 @@ body {
   }
 }
 
-/* Marquee - announcemnt bar */
-.announcement-bar {
+/* Marquee bar */
+.announcement-bar,
+.marquee-bar {
   padding-left: 0px;
   padding-right: 0px;
+}
+.marquee-bar {
+   background: #e052ad;
+   font-family: "Baskerville No 2", serif;
+   padding-top: 30px;
 }
 .marquee {
   padding: 2px 0;
   display: block;
-  height: 42px;
   overflow: hidden;
   position: relative;
+}
+.announcement-bar .marquee {
+  height: 42px;
+}
+.marquee-bar .marquee {
+  height: 70px;
+}
+.marquee-bar p {
+   font-size: 38px;
+   line-height:38px;
 }
 .marquee-block {
   display: block;
