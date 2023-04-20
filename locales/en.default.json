@@ -39,7 +39,7 @@
       "search_results_more": "More search results",
       "search_results_loading": "Loading..."
     },
-    "navigation":{
+    "navigation": {
       "cancel_html": "or {{ link }}"
     },
     "newsletter_form": {
@@ -58,13 +58,13 @@
       "signup_form_email_placeholder": "Email address",
       "signup_form_submit": "Notify me",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"text-link\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
       "password_link_html": "Enter with Password",
       "back_link_html": "Close",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
     "country": {
-      "dropdown_label": "Country/region"
+      "dropdown_label": "Country\/region"
     },
     "language": {
       "dropdown_label": "Language"
@@ -83,7 +83,7 @@
     },
     "comments": {
       "title": "Comments ({{ count }})",
-      "comment_title_html": "{{ author }} on <time datetime=\"{{ date }}\">{{ date }}</time>",
+      "comment_title_html": "{{ author }} on <time datetime=\"{{ date }}\">{{ date }}<\/time>",
       "comments_count": {
         "zero": "There are no comments",
         "one": "{{ count }} comment",
@@ -137,7 +137,7 @@
       "on_sale": "On Sale",
       "sold_out": "Sold Out",
       "quantity": "Quantity",
-      "available_units_html": "Available units: <span class='units'>{{ units }}</span>",
+      "available_units_html": "Available units: <span class='units'>{{ units }}<\/span>",
       "unavailable": "Unavailable",
       "add_to_cart": "Add to Cart",
       "adding_to_cart": "Adding product...",
@@ -173,7 +173,7 @@
       "title": "My account",
       "user_info_html": "Welcome back, {{ name }}!",
       "details": "Account details",
-      "address_info_html": "The default address is:<br><span class=\"highlight\">{{ address }}</span>",
+      "address_info_html": "The default address is:<br><span class=\"highlight\">{{ address }}<\/span>",
       "empty": "You haven't added any address yet.",
       "add_address": "Add address",
       "edit_addresses": "Edit addresses ({{ count }})",
@@ -182,7 +182,7 @@
     "orders": {
       "title": "Order history",
       "empty": "You haven't placed any orders yet.",
-      "order_description_html": "On {{ date }} order {{ link }} was placed and it's current status is <span class=\"highlight\">{{ financial_status }}</span> and <span class=\"highlight\">{{ fulfillment_status }}</span>.",
+      "order_description_html": "On {{ date }} order {{ link }} was placed and it's current status is <span class=\"highlight\">{{ financial_status }}<\/span> and <span class=\"highlight\">{{ fulfillment_status }}<\/span>.",
       "new_order": "Create new order"
     },
     "order": {
@@ -229,7 +229,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "phone_label": "Tel.",
       "set_default_label": "Set as default address?",
@@ -320,10 +320,10 @@
       "seller_instructions": "Special instructions for seller:",
       "empty": "It appears that your cart is currently empty.",
       "continue_browsing": "Continue browsing",
-      "currency_conversion_html": "{{ name }} process all orders in {{ currency }}. While the content of your cart is currently displayed in <span class='selected-currency'></span>, you will checkout using {{ currency }} at the most current exchange rate.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "currency_conversion_html": "{{ name }} process all orders in {{ currency }}. While the content of your cart is currently displayed in <span class='selected-currency'><\/span>, you will checkout using {{ currency }} at the most current exchange rate.",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout.",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout.",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout."
     }
   },
@@ -331,12 +331,12 @@
     "errors": {
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
-      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
       "auth_error_html": "There was a problem authenticating your Google Maps API Key."
     }
   },
-  "store_availability":{
-    "general":{
+  "store_availability": {
+    "general": {
       "view_store_info": "View store information",
       "check_other_stores": "Check availability at other stores",
       "pick_up_available": "Pickup available",
@@ -346,10 +346,10 @@
     }
   },
   "gift_cards": {
-    "issued":{
+    "issued": {
       "title": "Here's your {{ value }} gift card for {{ shop }}!",
       "subtext": "Here's your gift card!",
-      "amount_left_html": "{{ amount }} <small>left</small>",
+      "amount_left_html": "{{ amount }} <small>left<\/small>",
       "redeem": "Use this code at checkout to redeem your gift card.",
       "shop_link": "Start Shopping",
       "print": "Print",

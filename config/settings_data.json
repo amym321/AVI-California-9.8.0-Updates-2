@@ -62,7 +62,7 @@
           "logo_max_width": 70,
           "logo_position": "center",
           "top_nav_linklist": "main-menu",
-          "header_padding": 30,
+          "header_padding": 10,
           "show_search": true,
           "enable_account": true,
           "enable_transparent_header": false,
