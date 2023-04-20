@@ -10226,7 +10226,7 @@ body {
 
 .subscription-separator {
   margin-bottom: 12px;
-  transform: translateX(170px);
+  /* transform: translateX(170px); */
 }
 
 .th_subscription_radio_spg_plan_title,
@@ -10264,4 +10264,42 @@ body {
 /* Hero */
 .sections .shopify-section > .content.hero.with-background {
   margin: 0  !important;
+}
+
+/* recipes */
+@media (max-width: 420px) {
+  .recipes .row.cols .col {
+    flex: 0 0 90% !important;
+  }
+}
+
+
+/* testimonials */
+.sections .shopify-section > .content.testimonial {
+  background: #f7f2e5 !important;
+}
+.testimonial .titles {
+  padding-top: 90px;
+}
+
+@media (min-width: 769px) {
+  .testimonial .col:nth-of-type(2) {
+    padding-top: 50px !important;
+  }
+  .testimonial .col:nth-of-type(5) {
+    transform: translatey(-100px);
+  }
+  .testimonial .col:nth-of-type(6) {
+    transform: translatey(-40px);
+  }
+}
+@media (max-width: 768px) {
+  .testimonial .row.cols .col {
+    flex: 0 0 45% !important;
+  }
+}
+@media (max-width: 420px) {
+  .testimonial .row.cols .col {
+    flex: 0 0 90% !important;
+  }
 }

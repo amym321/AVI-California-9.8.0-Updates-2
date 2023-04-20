@@ -1,4 +1,13 @@
-<div class="content feature-columns {% render 'content-classes', scope: section %}">
+{% assign review = false %}
+{% assign recipes = false %}
+{% if section.settings.title contains "word for it" %}
+  {% assign review = true %}
+{% elsif section.settings.title contains "Recipes" %}
+  {% assign recipes = true %}
+{% endif %}
+
+
+<div class="{% if review == true %} testimonial{% endif %} {% if recipes == true %} recipes {% endif %} content feature-columns {% render 'content-classes', scope: section %}">
   <div class="inner with-layout-options centered" style="max-width: {{ section.settings.max_width }}px;">
     <div class="titles">
       <h2 class="section-title">{{ section.settings.title | escape }}</h2>
