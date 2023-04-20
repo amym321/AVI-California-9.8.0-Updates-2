@@ -643,21 +643,6 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
-    },
-    "31e0fbfa-60df-4344-b031-61fee971de72": {
-      "type": "featured-blog",
-      "disabled": true,
-      "settings": {
-        "blog": "recipes",
-        "layout": "grid",
-        "post_limit": 2,
-        "title": "Check Our Latest Recipes",
-        "show_background": false,
-        "expanded": false,
-        "max_width": 1200,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
     }
   },
   "order": [
@@ -679,7 +664,6 @@
     "e9215ff1-807b-4aaa-9f69-13c9855a0337",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
-    "alireviews-section-1661910018",
-    "31e0fbfa-60df-4344-b031-61fee971de72"
+    "alireviews-section-1661910018"
   ]
 }
