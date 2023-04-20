@@ -353,7 +353,7 @@
         ".inner {max-width: 1200px !important;}",
         ".cols .col {flex: 0 0 25%;}",
         ".cols .col img {max-width: 145px !important;}",
-        "@media (max-width: 800px){.content p {font-size: 1.1em;} }"
+        "@media (max-width: 400px) {.content p {font-size: 1.1em; }}"
       ],
       "settings": {
         "title": "",
