@@ -129,30 +129,25 @@
             "text_align": "center"
           }
         },
-        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-1": {
-          "type": "product",
+        "536bc3da-45c1-410c-9ea8-70e403e53af4": {
+          "type": "image",
           "disabled": true,
           "settings": {
-            "product": "",
-            "show_border": false
-          }
-        },
-        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-2": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "show_border": false
+            "image": "shopify:\/\/shop_images\/ingredients_2.jpg",
+            "show_border": false,
+            "link": "",
+            "text": "",
+            "text_align": "center"
           }
         }
       },
       "block_order": [
         "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0",
-        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-1",
-        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-2"
+        "536bc3da-45c1-410c-9ea8-70e403e53af4"
       ],
       "custom_css": [
-        ".collage .cards .card.image {box-shadow: none;}"
+        ".collage .cards .card.image {box-shadow: none;}",
+        "@media(max-width: 800px) {}"
       ],
       "settings": {
         "desktop_layout": "left",
