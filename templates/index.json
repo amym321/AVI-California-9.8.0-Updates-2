@@ -146,8 +146,7 @@
         "536bc3da-45c1-410c-9ea8-70e403e53af4"
       ],
       "custom_css": [
-        ".collage .cards .card.image {box-shadow: none;}",
-        "@media(max-width: 800px) {}"
+        ".collage .cards .card.image {box-shadow: none;}"
       ],
       "settings": {
         "desktop_layout": "left",
@@ -158,7 +157,7 @@
         "content_max_width": 2000,
         "expanded_content": false,
         "show_on_desktop": true,
-        "show_on_mobile": true
+        "show_on_mobile": false
       }
     },
     "37a21267-7477-4017-bcf9-92595535541f": {
