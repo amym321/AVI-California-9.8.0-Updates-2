@@ -677,7 +677,7 @@
         "button_label": "",
         "button_link": "",
         "show_background": false,
-        "expanded": true,
+        "expanded": false,
         "max_width": 1400,
         "show_on_desktop": true,
         "show_on_mobile": true
