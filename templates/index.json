@@ -392,6 +392,9 @@
         "d96ab067-24b9-4d40-ac09-0302cc5afcc3",
         "1647529743321f5396-0"
       ],
+      "custom_css": [
+        "@media (max-width: 400px) {.content h2 {font-size: 2.2em;}}"
+      ],
       "settings": {
         "show_background": false,
         "expanded": true,
