@@ -606,6 +606,60 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "1d1b7369-4eec-4002-b82d-c7089c6dc06d": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--16745576530176__1d1b7369-4eec-4002-b82d-c7089c6dc06d-16819689438964e6bb-0": {
+          "type": "image",
+          "settings": {
+            "overlay_color": "#292929",
+            "overlay_opacity": 0,
+            "alignment": "center",
+            "slide_text_color": "is-dark",
+            "text_alignment": "middle center",
+            "heading": "",
+            "subheading": "",
+            "cta": "",
+            "link": "",
+            "button_to_scroll": "",
+            "credits": ""
+          }
+        },
+        "template--16745576530176__1d1b7369-4eec-4002-b82d-c7089c6dc06d-16819689438964e6bb-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "overlay_color": "#292929",
+            "overlay_opacity": 0,
+            "alignment": "center",
+            "slide_text_color": "is-dark",
+            "text_alignment": "middle center",
+            "heading": "Slideshow Heading",
+            "subheading": "Slideshow subheading.",
+            "cta": "Browse our products",
+            "link": "",
+            "button_to_scroll": "Learn more",
+            "credits": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__1d1b7369-4eec-4002-b82d-c7089c6dc06d-16819689438964e6bb-0",
+        "template--16745576530176__1d1b7369-4eec-4002-b82d-c7089c6dc06d-16819689438964e6bb-1"
+      ],
+      "settings": {
+        "hero_height": 90,
+        "arrows": true,
+        "autoplay": true,
+        "use_fade": "false",
+        "autoplay_speed": 5,
+        "hero_parallax": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -625,6 +679,7 @@
     "16494256826c42a5cf",
     "alireviews-section-1661910018",
     "31e0fbfa-60df-4344-b031-61fee971de72",
-    "05f6c44c-c206-4cfa-8e42-55a769daa5f7"
+    "05f6c44c-c206-4cfa-8e42-55a769daa5f7",
+    "1d1b7369-4eec-4002-b82d-c7089c6dc06d"
   ]
 }
