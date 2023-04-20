@@ -676,7 +676,7 @@
         "subtitle": "<p><strong>Here's what others are saying...<\/strong><\/p>",
         "button_label": "",
         "button_link": "",
-        "show_background": true,
+        "show_background": false,
         "expanded": true,
         "max_width": 1400,
         "show_on_desktop": true,
