@@ -1,14 +1,32 @@
 {%- if section.settings.show_announcement -%}
   {%- if section.settings.home_page_only == false or template.name == 'index' -%}
+
     <style type="text/css">
       .announcement-bar { background: {{ section.settings.color_announcement_bg }}; }
       .announcement-bar p { color: {{ section.settings.color_announcement_text }}; }
     </style>
-    <div class="announcement-bar" role="banner">
+
+    {% comment %} native announcement bar {% endcomment %}
+    {% comment %} <div class="announcement-bar" role="banner">
       {% if section.settings.announcement_link != blank %}<a href="{{ section.settings.announcement_link }}">{% endif %}
         <p>{{ section.settings.top_banner_text }}</p>
       {% if section.settings.announcement_link != blank %}</a>{% endif %}
+    </div> {% endcomment %}
+
+    {% comment %} scrolling Marquee - am {% endcomment %}
+    <div class="announcement-bar" role="banner">
+      {% comment %} <div class="custom-liquid__wrapper"> {% endcomment %}
+      {% if section.settings.announcement_link != blank %}<a href="{{ section.settings.announcement_link }}">{% endif %}
+        <div class="marquee">
+          <div class="marquee-block">
+            <p class="marquee-text">
+              <span>{{ section.settings.top_banner_text }}</span>
+            </p>
+          </div>
+        </div>
+      {% if section.settings.announcement_link != blank %}</a>{% endif %}
     </div>
+
   {%- endif -%}
 {%- endif -%}
 
