@@ -643,6 +643,79 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "e1c8eeae-981a-48af-a964-46d6ca362d83": {
+      "type": "feature-columns",
+      "blocks": {
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-0": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_1.png",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-2": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-3": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-4": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5": {
+          "type": "text_column",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-0",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-1",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-2",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-3",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-4",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5"
+      ],
+      "settings": {
+        "title": "Text columns with images",
+        "subtitle": "<p>Use this section to describe details that make your store different.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_background": true,
+        "expanded": false,
+        "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -664,6 +737,7 @@
     "e9215ff1-807b-4aaa-9f69-13c9855a0337",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
-    "alireviews-section-1661910018"
+    "alireviews-section-1661910018",
+    "e1c8eeae-981a-48af-a964-46d6ca362d83"
   ]
 }
