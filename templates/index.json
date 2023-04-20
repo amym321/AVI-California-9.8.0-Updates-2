@@ -264,6 +264,9 @@
     },
     "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".content {padding-top: 60px !important;}"
+      ],
       "settings": {
         "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Add Stuff Here <\/span>* Add More Stuff\n      <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
         "show_background": false,
