@@ -652,6 +652,9 @@
         "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-4",
         "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5"
       ],
+      "custom_css": [
+        ".testimonials{}"
+      ],
       "settings": {
         "title": "Don’t take our word for it.",
         "subtitle": "<p><strong>Here's what others are saying...<\/strong><\/p>",
