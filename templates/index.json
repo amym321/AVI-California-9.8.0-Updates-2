@@ -552,7 +552,7 @@
       ],
       "custom_css": [
         ".feature-columns,.content.with-background {background-color: #ffffff !important; background: #ffffff !important;}",
-        "@media (max-width:768px){.row .col:nth-of-type(3){display:none:}}"
+        "@media (max-width:768px){.row .col:nth-of-type(3){display:none;}}"
       ],
       "settings": {
         "title": "Check Out Our Latest Recipes",
