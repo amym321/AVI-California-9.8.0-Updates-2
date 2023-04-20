@@ -452,7 +452,7 @@
     "16478530667bcdd444": {
       "type": "image-with-text",
       "custom_css": [
-        ".content .flex-row {flex-direction: column; padding: 100px 0 100px 0;}",
+        ".content .flex-row {flex-direction: column; padding: 100px 0;}",
         ".image-with-text .flex-row .image {flex: 0 0 100%; min-width: ;}",
         ".flex-row .info {text-align: center;}",
         ".image-with-text .flex-row .info .category {display: none;}",
