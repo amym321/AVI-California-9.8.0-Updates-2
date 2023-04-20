@@ -71,6 +71,7 @@
       "blocks": {
         "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "",
             "max_width": 1000
