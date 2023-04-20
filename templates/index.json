@@ -68,6 +68,7 @@
     },
     "37a21267-7477-4017-bcf9-92595535541f": {
       "type": "hero",
+      "disabled": true,
       "blocks": {
         "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-0": {
           "type": "heading",
@@ -112,6 +113,7 @@
         "template--16745576530176__37a21267-7477-4017-bcf9-92595535541f-1681969892bfa55a6b-3"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/ingredients_1.jpg",
         "video": "",
         "alignment": "h-center v-center",
         "color_heading": "#000000",
@@ -129,11 +131,11 @@
     },
     "1d1b7369-4eec-4002-b82d-c7089c6dc06d": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--16745576530176__1d1b7369-4eec-4002-b82d-c7089c6dc06d-16819689438964e6bb-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ingredients_1.jpg",
             "overlay_color": "#292929",
             "overlay_opacity": 0,
             "alignment": "center",
