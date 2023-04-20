@@ -102,7 +102,7 @@
         "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-2"
       ],
       "custom_css": [
-        ".collage .cards .card.image {box-shadow:none;}"
+        ".collage .cards .card.image {box-shadow: none;}"
       ],
       "settings": {
         "desktop_layout": "left",
@@ -110,7 +110,7 @@
         "heading": "",
         "show_background": false,
         "expanded": false,
-        "content_max_width": 1200,
+        "content_max_width": 2000,
         "expanded_content": false,
         "show_on_desktop": true,
         "show_on_mobile": true
