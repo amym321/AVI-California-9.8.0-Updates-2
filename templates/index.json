@@ -586,64 +586,6 @@
         "show_on_mobile": true
       }
     },
-    "alireviews-widget-240757": {
-      "type": "alireviews-widget-240757",
-      "custom_css": [
-        "#shopify-ali-review .shop_info .reviews h3.alireview-rcs__title {font-size: 2.6em !important; color: #3db2b0 !important; font-family: \"Baskerville No 2\", serif !important; font-weight: 700;}"
-      ],
-      "settings": {
-      }
-    },
-    "16494256826c42a5cf": {
-      "type": "apps",
-      "blocks": {
-        "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 21,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff"
-      ],
-      "settings": {
-        "show_background": true,
-        "expanded": false,
-        "expanded_content": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "alireviews-section-1661910018": {
-      "type": "apps",
-      "disabled": true,
-      "blocks": {
-        "alireviews-block-1661910018": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
-          "disabled": true,
-          "settings": {
-            "name": "Review Box 4",
-            "vertical_alignment": "5",
-            "rating_color": "#be9b73",
-            "section_color": "#ffffff",
-            "primary_text_color": "#1f1f1f"
-          }
-        }
-      },
-      "block_order": [
-        "alireviews-block-1661910018"
-      ],
-      "settings": {
-        "show_background": false,
-        "expanded": false,
-        "expanded_content": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "e1c8eeae-981a-48af-a964-46d6ca362d83": {
       "type": "feature-columns",
       "blocks": {
@@ -706,13 +648,71 @@
         "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5"
       ],
       "settings": {
-        "title": "Text columns with images",
-        "subtitle": "<p>Use this section to describe details that make your store different.<\/p>",
+        "title": "Don’t take our word for it.",
+        "subtitle": "<p><strong>Here's what others are saying...<\/strong><\/p>",
         "button_label": "",
         "button_link": "",
         "show_background": true,
         "expanded": false,
         "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "alireviews-widget-240757": {
+      "type": "alireviews-widget-240757",
+      "custom_css": [
+        "#shopify-ali-review .shop_info .reviews h3.alireview-rcs__title {font-size: 2.6em !important; color: #3db2b0 !important; font-family: \"Baskerville No 2\", serif !important; font-weight: 700;}"
+      ],
+      "settings": {
+      }
+    },
+    "16494256826c42a5cf": {
+      "type": "apps",
+      "blocks": {
+        "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 21,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff"
+      ],
+      "settings": {
+        "show_background": true,
+        "expanded": false,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "alireviews-section-1661910018": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "alireviews-block-1661910018": {
+          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "disabled": true,
+          "settings": {
+            "name": "Review Box 4",
+            "vertical_alignment": "5",
+            "rating_color": "#be9b73",
+            "section_color": "#ffffff",
+            "primary_text_color": "#1f1f1f"
+          }
+        }
+      },
+      "block_order": [
+        "alireviews-block-1661910018"
+      ],
+      "settings": {
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": true,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -735,9 +735,9 @@
     "alireviews-widget-231234",
     "6f22c8c0-8bb3-410b-9872-95104b611c34",
     "e9215ff1-807b-4aaa-9f69-13c9855a0337",
+    "e1c8eeae-981a-48af-a964-46d6ca362d83",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
-    "alireviews-section-1661910018",
-    "e1c8eeae-981a-48af-a964-46d6ca362d83"
+    "alireviews-section-1661910018"
   ]
 }
