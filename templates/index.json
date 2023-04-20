@@ -531,6 +531,7 @@
     },
     "05f6c44c-c206-4cfa-8e42-55a769daa5f7": {
       "type": "feature-columns",
+      "disabled": true,
       "blocks": {
         "template--16745576530176__05f6c44c-c206-4cfa-8e42-55a769daa5f7-1681967978abc77336-0": {
           "type": "text_column",
@@ -564,6 +565,7 @@
           "settings": {
             "title": "",
             "text": "",
+            "image": "shopify:\/\/shop_images\/lupini_6b_cc8c7979-cca0-4286-a080-190bd7f04544.jpg",
             "image_url": ""
           }
         },
