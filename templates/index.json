@@ -601,16 +601,18 @@
         "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-1": {
           "type": "text_column",
           "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_2.png",
             "image_url": ""
           }
         },
         "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-2": {
           "type": "text_column",
           "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_3.png",
             "image_url": ""
           }
         },
@@ -653,14 +655,15 @@
         "button_label": "",
         "button_link": "",
         "show_background": true,
-        "expanded": false,
-        "max_width": 1200,
+        "expanded": true,
+        "max_width": 2000,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
     },
     "alireviews-widget-240757": {
       "type": "alireviews-widget-240757",
+      "disabled": true,
       "custom_css": [
         "#shopify-ali-review .shop_info .reviews h3.alireview-rcs__title {font-size: 2.6em !important; color: #3db2b0 !important; font-family: \"Baskerville No 2\", serif !important; font-weight: 700;}"
       ],
