@@ -740,6 +740,53 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "c2d0f25e-4797-447c-b96b-69d72d981a20": {
+      "type": "collage",
+      "blocks": {
+        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ingredients_1.jpg",
+            "show_border": false,
+            "link": "",
+            "text": "",
+            "text_align": "center"
+          }
+        },
+        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "show_border": false
+          }
+        },
+        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-2": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "show_border": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0",
+        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-1",
+        "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-2"
+      ],
+      "settings": {
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "heading": "",
+        "show_background": false,
+        "expanded": true,
+        "content_max_width": 1200,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -762,6 +809,7 @@
     "16494256826c42a5cf",
     "alireviews-section-1661910018",
     "31e0fbfa-60df-4344-b031-61fee971de72",
-    "05f6c44c-c206-4cfa-8e42-55a769daa5f7"
+    "05f6c44c-c206-4cfa-8e42-55a769daa5f7",
+    "c2d0f25e-4797-447c-b96b-69d72d981a20"
   ]
 }
