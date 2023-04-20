@@ -10147,15 +10147,16 @@ body {
 .thsb_subscription_description_section .thsb_subscription_description_tooltip {
   background: #bf9c6e !important; /* #f7f2e5 */
   color:  #FFF !important;
+  max-width: unset !important;
 }
 
 
 .th_subscription_radio_section .th_subscription_radio_section_outer {
   border: 3.5px solid #e5e5e5 !important;
-  padding: 30px  !important;
+  padding: 40px 30px !important;
 }
 .th_subscription_radio_section .th_subscription_radio_fieldset {
-  margin: 0 0 20px  !important;
+  margin: 0 0 20px !important;
 }
 
 
@@ -10172,15 +10173,15 @@ body {
 .th_subscription_radio_section .th_subscription_radio_label_outer input + label {
   background-color: #f7f7f7  !important; /*#f7f2e5*/
   /* color: #bf9c6e !important; */
-  border: 3px solid rgb(191, 156, 110, .07) ;
+  border: 3px solid rgb(61, 178, 176, .1); /* rgb(191, 156, 110, .07) ;*/
   border-radius: 10px !important;
-  background-color: rgb(191, 156, 110, .07) !important; /*#f7f7f7 */
-
+  background-color: rgb(61, 178, 176, .1) !important; /*#f7f7f7   rgb(191, 156, 110, .07) */
+  text-transform: uppercase;
 }
 .th_subscription_radio_section .th_subscription_radio_label_outer input:checked + label {
-  background-color: #bf9c6e  !important;
+  background-color: #3db2b0 !important; /*#bf9c6e */
   color: #fff !important;
-  border-color: #bf9c6e !important; /*#838383*/
+  border-color: #3db2b0  !important; /*#838383*/
 }
 
 .th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em {
@@ -10197,11 +10198,26 @@ body {
 .th_subscription_radio_fieldset_discount_val em,
 .subscription-separator {
   font-size: 19px !important;
-  color: #000 !important;
+  /* color: #000 !important; */
 }
 .thsb_subscription_description_section .thsb_subscription_description_tooltip p,
-.th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em {
+.th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em,
+.thsb_subscription_description_tooltip p b,
+.thsb_subscription_description_tooltip ul li  {
   color: #FFF !important;
+}
+.thsb_subscription_description_text p {
+  color: #000 !important;
+}
+.thsb_subscription_description_tooltip ul  {
+  display: block  !important;
+}
+
+.th_subscription_radio_fieldset_discount_val {
+  margin-left: 12px !important;
+}
+.th_subscription_radio_fieldset_discount_val em {
+  padding: 5px !important;
 }
 
 .th_subscription_radio_section .th_subscription_section_title {
@@ -10212,6 +10228,32 @@ body {
   margin-bottom: 12px;
   transform: translateX(170px);
 }
-/* .th_subscription_radio_section .th_subscription_radio_fieldset:nth-of-type(1):after {
-  content: 'OR';
-} */
+
+.th_subscription_radio_spg_plan_title,
+.th_subscription_radio_spg_plan_label_title,
+.th_subscription_radio_section .th_subscription_radio_spg_plan_price_delivery {
+  text-transform: uppercase;
+}
+.th_subscription_radio_spg_plan_label_title  {
+  text-decoration: underline !important;
+  padding: 15px 0 !important;
+}
+
+.th_subscription_radio_section .th_subscription_radio_spg_plan_svg svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+
+/*account login */
+.template-customers-login .btn.action,
+.template-customers-account .btn.action {
+  color: white;
+  background: #3db2b0;
+}
+.template-customers-login .btn.action:hover {
+  background-color: #e052ad;
+  color: white !important;
+}
+
+

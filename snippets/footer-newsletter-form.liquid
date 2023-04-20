@@ -5,7 +5,7 @@
     <input type="hidden" name="contact[tags]" value="newsletter">
     <input class="small {% if form.errors contains 'email' %} error{% endif %}" type="text" name="contact[email]" placeholder="{{ 'layout.footer.newsletter_email' | t }}" autocorrect="off" autocapitalize="off" aria-label="{{ 'layout.footer.newsletter_email' | t }}">
 <!--     <input type="submit" class="btn line" value="{{ 'layout.footer.newsletter_submit' | t }}"> -->
-	<input type="submit" class="btn line" value="Subscribe">
+	<input type="submit" class="btn line" value="Sign Up">
     {% if form.errors %}
       {% for field in form.errors %}
         <div class="field-error">{{ form.errors.messages[field] }}</div>
