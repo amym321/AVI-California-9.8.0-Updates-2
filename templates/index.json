@@ -268,7 +268,7 @@
         ".content {padding-top: 60px !important;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Add Stuff Here <\/span>* Add More Stuff * More Shit To Say\n      <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Add Stuff Here <\/span>* Add More Stuff \n<img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/keto-friendly-granola_480x480.png?v=1664234964\" width=\"45\" height=\"45\" style=\"max-width: 45px; width: 45px; > More Shit To Say\n      <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
         "show_background": false,
         "expanded": false,
         "expanded_content": false,
