@@ -669,7 +669,11 @@
         "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5"
       ],
       "custom_css": [
-        ".testimonials {}"
+        ".feature-columns {margin: 50px 0 0 0;}",
+        ".inner {max-width: 1200px !important;}",
+        ".cols .col {flex: 0 0 25%;}",
+        ".cols .col img {max-width: 120px !important;}",
+        "@media (max-width: 400px) {.content p {font-size: 1.1em; } img {width: 60% !important; }}"
       ],
       "settings": {
         "title": "Don’t take our word for it.",
