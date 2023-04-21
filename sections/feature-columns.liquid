@@ -18,12 +18,13 @@
     <div class="row cols layout-{{ section.blocks.size }}">
       {% assign index = 1 %}
       {% for block in section.blocks limit: section.blocks.size %}
-        <div class="col" {{ block.shopify_attributes }}>
+        {% comment %} class testimonial_img drives allows keyframes on quotes only - am {% endcomment %}
+        <div class="col {% if review == true %} testimonial_img{% endif %}" {{ block.shopify_attributes }}>
           {% if block.settings.image == blank %}
             <div class="number">{{ index }}</div>
           {% else %}
             {% if block.settings.image_url %}<a href="{{ block.settings.image_url }}">{% endif %}
-            <img src="{{ block.settings.image | img_url: '480x480' }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" style="max-width: {{ block.settings.image.width }}px; width: 100%; height: auto;">
+            <img class="" src="{{ block.settings.image | img_url: '480x480' }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" style="max-width: {{ block.settings.image.width }}px; width: 100%; height: auto;">
             {% if block.settings.image_url %}</a>{% endif %}
           {% endif %}
           <h3>{{ block.settings.title }}</h3>
@@ -42,6 +43,52 @@
     {% endunless %}
   </div>
 </div>
+
+
+{% comment %} add animation keyframes when in viewport for Testimonials - am {% endcomment %}
+<script>
+  var element0 = document.querySelectorAll('.testimonial_img')[0];
+  var element2 = document.querySelectorAll('.testimonial_img')[2];
+  var element3 = document.querySelectorAll('.testimonial_img')[3];
+  var element4 = document.querySelectorAll('.testimonial_img')[4];
+  var element5 = document.querySelectorAll('.testimonial_img')[5];
+
+  if (element0 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      element0.classList.toggle( 'animation1', entries[0].isIntersecting );
+    });
+    observer.observe( element0 );
+  }
+
+  if (element2 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      element2.classList.toggle( 'animation2', entries[0].isIntersecting );
+    });
+    observer.observe( element2 );
+  }
+
+  if (element3 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      element3.classList.toggle( 'animation3', entries[0].isIntersecting );
+    });
+    observer.observe( element3 );
+  }
+
+  if (element4 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      element4.classList.toggle( 'animation2', entries[0].isIntersecting );
+    });
+    observer.observe( element4 );
+  }
+
+  if (element5 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      element5.classList.toggle( 'animation1', entries[0].isIntersecting );
+    });
+    observer.observe( element5 );
+  }
+</script>
+
 
 {% schema %}
 {
