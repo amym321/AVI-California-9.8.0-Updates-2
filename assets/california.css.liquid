@@ -10159,6 +10159,7 @@ body {
 .th_subscription_radio_section .th_subscription_radio_section_outer {
   border: 3.5px solid #e5e5e5 !important;
   padding: 40px 30px !important;
+  border-radius: 20px !important;
 }
 .th_subscription_radio_section .th_subscription_radio_fieldset {
   margin: 0 0 20px !important;
@@ -10181,16 +10182,12 @@ body {
   border: 3px solid rgb(61, 178, 176, .1); /* rgb(191, 156, 110, .07) ;*/
   border-radius: 10px !important;
   background-color: rgb(61, 178, 176, .1) !important; /*#f7f7f7   rgb(191, 156, 110, .07) */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .th_subscription_radio_section .th_subscription_radio_label_outer input:checked + label {
   background-color: #3db2b0 !important; /*#bf9c6e */
   color: #fff !important;
   border-color: #3db2b0  !important; /*#838383*/
-}
-
-.th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em {
-  background-color: #000 !important;
 }
 
 .th_subscription_radio_section .th_subscription_radio_spg_plan_label_title,
@@ -10201,7 +10198,8 @@ body {
 .thsb_subscription_description_section .thsb_subscription_description_tooltip p,
 .th_subscription_radio_label_outer .money,
 .th_subscription_radio_fieldset_discount_val em,
-.subscription-separator {
+.subscription-separator,
+.th_subscription_radio_section .th_subscription_section_title {
   font-size: 19px !important;
   /* color: #000 !important; */
 }
@@ -10209,6 +10207,7 @@ body {
 .th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em,
 .thsb_subscription_description_tooltip p b,
 .thsb_subscription_description_tooltip ul li  {
+  text-align: left;
   color: #FFF !important;
 }
 .thsb_subscription_description_text p {
@@ -10216,29 +10215,27 @@ body {
 }
 .thsb_subscription_description_tooltip ul  {
   display: block  !important;
+  text-align: left;
 }
 
 .th_subscription_radio_fieldset_discount_val {
   margin-left: 12px !important;
 }
 .th_subscription_radio_fieldset_discount_val em {
-  padding: 5px !important;
+  background-color: #e052ad !important;
+  padding: 7px !important;
 }
 
-.th_subscription_radio_section .th_subscription_section_title {
+/* .th_subscription_radio_section .th_subscription_section_title {
   font-size: 22px !important;
-}
+} */
 
-.subscription-separator {
-  margin-bottom: 12px;
-  /* transform: translateX(170px); */
-}
 
-.th_subscription_radio_spg_plan_title,
+/* .th_subscription_radio_spg_plan_title,
 .th_subscription_radio_spg_plan_label_title,
 .th_subscription_radio_section .th_subscription_radio_spg_plan_price_delivery {
   text-transform: uppercase;
-}
+} */
 .th_subscription_radio_spg_plan_label_title  {
   text-decoration: underline !important;
   padding: 15px 0 !important;
@@ -10248,6 +10245,26 @@ body {
   width: 18px !important;
   height: 18px !important;
 }
+
+.subscription-separator {
+  margin-bottom: 12px;
+  /* transform: translateX(170px); */
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 4px;
+  width: 100%;
+  color: #e5e5e5;
+  fill: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+      /* display radio buttons - not working right now */
+/* .th_subscription_radio_section input[type='radio'] {
+  display: grid !important;
+  grid-template-columns: .75em auto !important;
+  gap: 0.5em !important;
+} */
 
 
 /*account login */
