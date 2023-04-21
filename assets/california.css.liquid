@@ -10396,15 +10396,9 @@ body {
   padding-top: 90px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 421px) {
   .testimonial .col:nth-of-type(2) {
     padding-top: 65px !important;
-  }
-  .testimonial .col:nth-of-type(5) {
-    transform: translatey(-100px);
-  }
-  .testimonial .col:nth-of-type(6) {
-    transform: translatey(-40px);
   }
 }
 @media (max-width: 768px) {
@@ -10427,6 +10421,14 @@ body {
   opacity: 0;
   position: relative;
 }
+@media (min-width:421px) {
+  .testimonial .row.cols .col:nth-of-type(5) {
+    top:-70px;
+  }
+  .testimonial .row.cols .col:nth-of-type(6) {
+    top:-35px;
+  }
+}
 
 .animation1 {
   animation-name: fadeInUp400;
@@ -10435,7 +10437,7 @@ body {
   animation-delay: .4s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
+  -webkit-animation-fill-mode: both;
 }
 @media (max-width:420px) {
   .animation1, .animation2, .animation3 {
@@ -10450,7 +10452,7 @@ body {
   animation-delay: .1s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
+  -webkit-animation-fill-mode: both;
 }
 
 .animation3 {
@@ -10460,7 +10462,7 @@ body {
   animation-delay: .6s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
+  -webkit-animation-fill-mode: both;
 }
 
 @keyframes fadeInUp400 {
