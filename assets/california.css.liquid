@@ -10319,6 +10319,7 @@ body {
   }
 }
 
+
 /* Marquee bar */
 .announcement-bar,
 .marquee-bar {
@@ -10343,8 +10344,8 @@ body {
   height: 70px;
 }
 .marquee-bar p {
-   font-size: 38px;
-   line-height:38px;
+   font-size: 36px;
+   line-height:36px;
 }
 .marquee-block {
   display: block;
@@ -10353,14 +10354,14 @@ body {
   height: 100%;
   position: absolute;
   overflow: hidden;
-  animation: marquee 15s linear infinite;
+  animation: marquee 10s linear infinite; /*15*/
   white-space: nowrap;
   animation-play-state: running;
   will-change: transform;
 }
 @media (max-width:720px){
   .marquee-block {
-    animation: marquee 10s linear infinite;
+    animation: marquee 5s linear infinite; /*10*/
   }
 }
 .marquee-text  {
@@ -10373,8 +10374,19 @@ body {
   will-change: transform;
 
   float: left;
-  width: 75ch;
-  text-shadow: 75ch 0 currentColor,
+  /* width: 75ch; */
+  width: 100ch;
+  text-shadow: 100ch 0 currentColor,
+        200ch 0 currentColor,
+        300ch 0 currentColor,
+        400ch 0 currentColor,
+        500ch 0 currentColor,
+        600ch 0 currentColor,
+        700ch 0 currentColor,
+        800ch 0 currentColor,
+        900ch 0 currentColor,
+        1000ch 0 currentColor;
+  /* text-shadow: 75ch 0 currentColor,
         150ch 0 currentColor,
         225ch 0 currentColor,
         300ch 0 currentColor,
@@ -10383,7 +10395,7 @@ body {
         525ch 0 currentColor,
         600ch 0 currentColor,
         675ch 0 currentColor,
-        750ch 0 currentColor;
+        750ch 0 currentColor;   */
 }
 @media (max-width:720px) {
   .marquee-text  {
