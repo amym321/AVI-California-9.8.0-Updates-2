@@ -114,6 +114,9 @@
           "footer-3",
           "f37efc1d-c29a-4154-8eb8-411e72a42786"
         ],
+        "custom_css": [
+          ".fc-facebook,.fc-instagram {font-size: 2.8em;}"
+        ],
         "settings": {
           "footer_show_payments": false,
           "home_footer_hidden": false,
