@@ -1,7 +1,7 @@
 <div class="content banner-with-text position-{{ section.settings.text_position }} align-{{ section.settings.text_align }} with-background {% render 'content-classes', scope: section %}">
   <div class="background">
     {% if section.settings.image %}
-      <div class="image"></div>
+      <div class="image banner-image"></div>
       <style type="text/css">
         #shopify-section-{{ section.id }} .image {
           background-position: {{ section.settings.image_position }};
@@ -54,6 +54,28 @@
     {% endif %}
   </div>
 </div>
+
+
+{% comment %} add animation keyframes when in viewport for Testimonials - am {% endcomment %}
+<script>
+  var banner0 = document.querySelectorAll('.banner-image')[0];
+  var banner1 = document.querySelectorAll('.banner-image')[1];
+
+  if (banner0 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      banner0.classList.toggle( 'animate-banner-1', entries[0].isIntersecting );
+    });
+    observer.observe( banner0 );
+  }
+
+  if (banner1 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      banner1.classList.toggle( 'animate-banner-2', entries[0].isIntersecting );
+    });
+    observer.observe( banner1 );
+  }
+ </script>
+
 
 {% schema %}
   {

@@ -9959,11 +9959,11 @@ body {
     max-width: 100% !important;
     padding: 60px 40px;
   }
-@media (max-width:420px) {
-  .footer .content {
-    padding: 40px 20px;
+  @media (max-width:420px) {
+    .footer .content {
+      padding: 40px 20px;
+    }
   }
-}
   .footer .content h2 { color: white !important; font-size: 1.85em !important; margin: 0 0 20px 0 !important; }
   
   #footerForm { display: flex; justify-content: flex-start; flex-wrap: wrap;  }
@@ -10526,3 +10526,94 @@ body {
     transform: none;
   }
 }
+
+
+/* Banner with Tetx animation - homepage */
+ .animate-banner-1,
+ .animate-banner-2 {
+  animation-duration: 1s;
+  animation-delay: .1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animate-banner-1 {
+  animation-name: fadeInLeft;
+  -webkit-animation-name: fadeInLeft;
+}
+
+.animate-banner-2 {
+  animation-name: fadeInRight;
+  -webkit-animation-name: fadeInRight;
+}
+
+@media (max-width:540px) {
+  .animate-banner-1 {
+    animation-name: fadeInLeftMobile;
+    -webkit-animation-name: fadeInLeftMobile;
+  }
+  .animate-banner-2 {
+    animation-name: fadeInRightMobile;
+    -webkit-animation-name: fadeInRightMobile;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-400px,0,0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(400px,0,0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeftMobile {
+  0% {
+    opacity: 0;
+    transform: translate3d(-80px,0,0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRightMobile {
+  0% {
+    opacity: 0;
+    transform: translate3d(80px,0,0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* fix Banner-with-text - text was off pag on ipad */
+@media screen and (max-width: 1260px) and (min-width: 721px) {
+  .template-index .banner-with-text-section .info:nth-of-type(1),
+  .template-index .banner-with-text-section:nth-of-type(8) .info  {
+      right: 70px;
+  }
+}
+@media screen and (max-width: 1260px) and (min-width: 721px) {
+  /* .template-index .banner-with-text-section .info:nth-of-type(2), */
+  .template-index .banner-with-text-section:nth-of-type(9) .info {
+      left: 70px;
+  }
+}
+
