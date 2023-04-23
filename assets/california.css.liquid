@@ -9293,7 +9293,7 @@ body {
   
 /* ---------------------------  INSTAGRAM ---------------------------  */
   
-  #shopify-section-template--15759719563520__16494256826c42a5cf { background:#f7f2e5; padding: 1% 1% 1% 1%;  }
+  /* #shopify-section-template--15759719563520__16494256826c42a5cf { background:#f7f2e5; padding: 1% 1% 1% 1%;  } */
   #insta-feed img { border: 5px solid #FFF !important;  }
   
   
@@ -9953,9 +9953,17 @@ body {
   
   /* ---------------------------  FOOTER ---------------------------  */ 
   
-  .footer { background: #bf9c6e; padding: 100px 0 100px 0;  }
-  .template-index  .footer { padding: 20px 0 100px 0;  }
-  .footer .content { max-width: 100% !important; }
+  .footer {  background: #bf9c6e;  /* padding: 100px 0 100px 0;   */  }
+  /* .template-index  .footer {  padding: 20px 0 100px 0;  } */
+  .footer .content {
+    max-width: 100% !important;
+    padding: 60px 40px;
+  }
+@media (max-width:420px) {
+  .footer .content {
+    padding: 40px 20px;
+  }
+}
   .footer .content h2 { color: white !important; font-size: 1.85em !important; margin: 0 0 20px 0 !important; }
   
   #footerForm { display: flex; justify-content: flex-start; flex-wrap: wrap;  }
@@ -10313,22 +10321,21 @@ body {
   padding-right: 0px;
 }
 .marquee-bar {
-   background: #e052ad;
-   font-family: "Baskerville No 2", serif;
-   padding-top: 30px;
+  background: #e052ad;
+  /* background:  linear-gradient(to right,#f7f2e5 , #bf9c6e  ); */  /*#2b9490,#e052ad*/
+  font-family: "Baskerville No 2", serif;
+  padding-top: 30px;
 }
-.marquee, .marquee2 {
+.marquee {
   padding: 2px 0;
   display: block;
   overflow: hidden;
   position: relative;
 }
-.announcement-bar .marquee,
-.announcement-bar .marquee2 {
+.announcement-bar .marquee {
   height: 42px;
 }
-.marquee-bar .marquee,
-.marquee-bar .marquee2 {
+.marquee-bar .marquee {
   height: 70px;
 }
 .marquee-bar p {
@@ -10342,7 +10349,7 @@ body {
   height: 100%;
   position: absolute;
   overflow: hidden;
-  /*animation: marquee2 10s linear infinite;*/ /*15*/
+  /*animation: marquee 10s linear infinite;*/ /*15*/
   white-space: nowrap;
   animation-play-state: running;
   will-change: transform;
@@ -10361,7 +10368,6 @@ body {
     animation: marquee2 5s linear infinite; /*10*/
   }
 }
-
 
 
 .marquee-text  {
