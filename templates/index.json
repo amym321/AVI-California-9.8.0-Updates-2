@@ -743,6 +743,20 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "0f201928-2a56-4f46-bd63-c479424299d0": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/double-chocolate.png",
+        "subtitle": "",
+        "title": "Double Chocolate Sea Salt",
+        "text": "<p>Satisfies chocolate cravings with zero guilt!<\/p>",
+        "text_position": "left",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -766,6 +780,7 @@
     "e1c8eeae-981a-48af-a964-46d6ca362d83",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
-    "alireviews-section-1661910018"
+    "alireviews-section-1661910018",
+    "0f201928-2a56-4f46-bd63-c479424299d0"
   ]
 }
