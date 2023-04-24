@@ -44,6 +44,9 @@
       },
       "popup": {
         "type": "popup",
+        "custom_css": [
+          ".modal .frame {overflow: unset;}"
+        ],
         "settings": {
           "enable_popup": true,
           "enable_test": false,
