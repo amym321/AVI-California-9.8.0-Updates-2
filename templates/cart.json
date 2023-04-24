@@ -1,1 +1,17 @@
-{"sections":{"cart":{"type":"cart","settings":{}}},"order":["cart"]}
+{
+  "sections": {
+    "cart": {
+      "type": "cart",
+      "custom_css": [
+        ".content {padding-bottom: 100px !important;}",
+        "@media (max-width: 420px) {.content {padding-bottom: 50px !important; }}"
+      ],
+      "settings": {
+        "continue_shopping_url": "shopify:\/\/collections"
+      }
+    }
+  },
+  "order": [
+    "cart"
+  ]
+}
