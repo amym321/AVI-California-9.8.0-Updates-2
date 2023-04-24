@@ -124,6 +124,15 @@
           "show_language_selector": false,
           "show_country_selector": false
         }
+      },
+      "account-login": {
+        "type": "account-login",
+        "custom_css": [
+          ".login {padding-top: 100px !important;padding-bottom: 100px !important;}",
+          "@media (max-width:420px) {.login {padding-top: 50px !important;padding-bottom: 50px !important;}}"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
