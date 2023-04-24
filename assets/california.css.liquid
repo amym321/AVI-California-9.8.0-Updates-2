@@ -10226,24 +10226,17 @@ body {
   text-align: left;
 }
 
-.th_subscription_radio_fieldset_discount_val {
-  margin-left: 12px !important;
-}
 .th_subscription_radio_fieldset_discount_val em {
-  background-color: #e052ad !important;
-  padding: 7px !important;
+  background-color: #ffffff00 !important; /* #e052ad */
+  font-size: 22px !important;
+}
+.th_subscription_radio_section .th_subscription_radio_label_outer .th_subscription_radio_fieldset_discount_val em {
+  color: #000 !important;
+}
+.th_subscription_radio_section .th_subscription_radio_label_outer input:checked + label .th_subscription_radio_fieldset_discount_val em {
+  color: #fff !important;
 }
 
-/* .th_subscription_radio_section .th_subscription_section_title {
-  font-size: 22px !important;
-} */
-
-
-/* .th_subscription_radio_spg_plan_title,
-.th_subscription_radio_spg_plan_label_title,
-.th_subscription_radio_section .th_subscription_radio_spg_plan_price_delivery {
-  text-transform: uppercase;
-} */
 .th_subscription_radio_spg_plan_label_title  {
   text-decoration: underline !important;
   padding: 15px 0 !important;
@@ -10604,7 +10597,7 @@ body {
 }
 
 /* fix Banner-with-text - text was off pag on ipad */
-@media screen and (max-width: 1260px) and (min-width: 721px) {
+@media screen and (max-width: 1260px) and (min-width: 1021px) {
   .template-index .banner-with-text-section .info:nth-of-type(1),
   .template-index .banner-with-text-section:nth-of-type(8) .info  {
       right: 70px;
