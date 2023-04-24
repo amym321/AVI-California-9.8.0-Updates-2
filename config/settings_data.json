@@ -45,7 +45,8 @@
       "popup": {
         "type": "popup",
         "custom_css": [
-          ".modal .frame {overflow: unset;}"
+          ".modal .frame {overflow: unset;}",
+          ".input-group-btn .solid {background: #bf9c6e;}"
         ],
         "settings": {
           "enable_popup": true,
