@@ -10446,7 +10446,8 @@ body {
   }
 }
 
-/* Testimonial animation */
+
+/* Animate Testimonials */
 .testimonial .row.cols .col:nth-of-type(1),
 .testimonial .row.cols .col:nth-of-type(3),
 .testimonial .row.cols .col:nth-of-type(4),
@@ -10522,7 +10523,7 @@ body {
 }
 
 
-/* Banner with Tetx animation - homepage */
+/* Animate Banner with Text - homepage */
  .animate-banner-1,
  .animate-banner-2 {
   animation-duration: 1s;
@@ -10610,4 +10611,83 @@ body {
       left: 70px;
   }
 }
+
+
+/* Animation Icons - homepage */
+.layout-8  .col:nth-of-type(1) img,
+.layout-8  .col:nth-of-type(5) img {
+  animation-delay: .08s;
+  opacity: 0;
+  visibility: hidden;
+}
+.layout-8  .col:nth-of-type(2) img,
+.layout-8  .col:nth-of-type(6) img {
+  animation-delay: .16s;
+  opacity: 0;
+  visibility: hidden;
+}
+.layout-8  .col:nth-of-type(3) img,
+.layout-8  .col:nth-of-type(7) img {
+  animation-delay: .24s;
+  opacity: 0;
+  visibility: hidden;
+}
+.layout-8  .col:nth-of-type(4) img,
+.layout-8  .col:nth-of-type(8) img {
+  animation-delay: .32s;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width:420px) {
+  .layout-8  .col:nth-of-type(1) img,
+  .layout-8  .col:nth-of-type(5) img,
+  .layout-8  .col:nth-of-type(2) img,
+  .layout-8  .col:nth-of-type(6) img,
+  .layout-8  .col:nth-of-type(3) img,
+  .layout-8  .col:nth-of-type(7) img,
+  .layout-8  .col:nth-of-type(4) img,
+  .layout-8  .col:nth-of-type(8) img {
+    animation-delay: .1s;
+  }
+}
+
+.animate-icons {
+  animation-name: fadeInUp100;
+  -webkit-animation-name: fadeInUp100;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-duration: .1s;
+  -webkit-animation-duration: .1s;
+}
+
+@keyframes fadeInUp100 {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0,100px,0);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+
+/* Animate Artisan Avinola - homepage */
+.artisan {
+  opacity: 0;
+  visibility: hidden;
+}
+.animate-artisan {
+  animation-delay: .01s;
+  -webkit-animation-delay: .01s;
+  animation-name: fadeInUp100;
+  -webkit-animation-name: fadeInUp100;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-duration: .1s;
+  -webkit-animation-duration: .1s;
+}
+
 

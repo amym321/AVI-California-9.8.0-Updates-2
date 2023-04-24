@@ -17,7 +17,7 @@
         endcase
       %}
 
-      <div class="custom__item custom__item--{{ block.id }}" {{ block.shopify_attributes }}>
+      <div class="custom__item {% if block.settings.title contains "Artisan AVINOLA" or block.settings.text contains "DELICIOUSLY IMPRESSIVE" %} artisan {% endif %} custom__item--{{ block.id }}" {{ block.shopify_attributes }}>
         <div>
           {% case block.type %}
             {% when 'image' %}
@@ -75,6 +75,25 @@
     {% endif %}
 
 </div>
+
+
+<script>
+var artisan0 = document.querySelectorAll('.artisan')[0];
+var artisan1 = document.querySelectorAll('.artisan')[1];
+
+if (artisan0!== null ) {
+  var observer = new IntersectionObserver(entries => {
+    artisan0.classList.toggle( 'animate-artisan', entries[0].isIntersecting );
+  });
+  observer.observe( artisan0 );
+}
+if (artisan1!== null ) {
+  var observer = new IntersectionObserver(entries => {
+    artisan1.classList.toggle( 'animate-artisan', entries[0].isIntersecting );
+  });
+  observer.observe( artisan1 );
+}
+</script>
 
 {% schema %}
 {

@@ -45,6 +45,65 @@
 </div>
 
 
+{% comment %} add animation keyframes when in viewport for Icons - am {% endcomment %}
+<script>
+  var icon0 = document.querySelectorAll('.layout-8 .col img')[0];
+  var icon1 = document.querySelectorAll('.layout-8 .col img')[1];
+  var icon2 = document.querySelectorAll('.layout-8 .col img')[2];
+  var icon3 = document.querySelectorAll('.layout-8 .col img')[3];
+  var icon4 = document.querySelectorAll('.layout-8 .col img')[4];
+  var icon5 = document.querySelectorAll('.layout-8 .col img')[5];
+  var icon6 = document.querySelectorAll('.layout-8 .col img')[6];
+  var icon7 = document.querySelectorAll('.layout-8 .col img')[7];
+
+  if (icon0 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon0.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon0 );
+  }
+  if (icon1 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon1.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon1 );
+  }
+  if (icon2 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon2.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon2 );
+  }
+  if (icon3 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon3.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon3 );
+  }
+
+  if (icon4 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon4.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon4 );
+  }  if (icon5 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon5.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon5 );
+  }  if (icon6 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon6.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon6 );
+  }  if (icon7 !== null ) {
+    var observer = new IntersectionObserver(entries => {
+      icon7.classList.toggle( 'animate-icons', entries[0].isIntersecting );
+    });
+    observer.observe( icon7 );
+  }
+ </script>
+
 {% comment %} add animation keyframes when in viewport for Testimonials - am {% endcomment %}
 <script>
   var element0 = document.querySelectorAll('.testimonial_img')[0];
