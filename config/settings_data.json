@@ -151,6 +151,15 @@
         ],
         "settings": {
         }
+      },
+      "account-register": {
+        "type": "account-register",
+        "custom_css": [
+          ".content {padding-top: 100px !important; padding-bottom: 100px !important;}",
+          "@media (max-width: 420px) {.content {padding-top: 50px !important; padding-bottom: 50px !important; }}"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
