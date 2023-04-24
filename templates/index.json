@@ -228,7 +228,7 @@
         "f68cbd06-d5a2-4333-8730-f121c72dc120": {
           "type": "html",
           "settings": {
-            "code": "<h2>Artisan AVINOLA <br> Granola’s healthier, wiser Cousin<\/h2>",
+            "code": "<h2 class=\"artisan\">Artisan AVINOLA <br> Granola’s healthier, wiser Cousin<\/h2>",
             "width": "50%"
           }
         },
