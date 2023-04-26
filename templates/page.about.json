@@ -214,6 +214,29 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "244c78c5-7588-4730-9188-bf42a19125fe": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
+        ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
+      "settings": {
+        "title": "Double Chocolate Sea Salt",
+        "text": "<p>Satisfies chocolate cravings with zero guilt! <\/p>",
+        "image": "shopify:\/\/shop_images\/double-choc-home-image_8e446dc4-903e-46e0-aa05-aed83f9e6b4f.png",
+        "image_for_mobile": "shopify:\/\/shop_images\/double-choc-home-mobile-image.png",
+        "image_position": "center right",
+        "text_position": "left",
+        "text_align": "left",
+        "button_label": "Order Now",
+        "button_link": "shopify:\/\/collections\/double-chocolate",
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -225,6 +248,7 @@
     "logo-list",
     "rich-text",
     "05cf8cc2-16a2-4aa5-affa-d290fb9d40a5",
-    "3786bdd6-675a-420e-a243-e794705887b7"
+    "3786bdd6-675a-420e-a243-e794705887b7",
+    "244c78c5-7588-4730-9188-bf42a19125fe"
   ]
 }
