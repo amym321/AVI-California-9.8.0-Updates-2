@@ -9,6 +9,7 @@
     },
     "606cc783-c2d3-4458-8b2f-6a33826efe9b": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/avi-team-maggie.png",
         "subtitle": "",
@@ -23,6 +24,7 @@
     },
     "dc1e61a2-73a0-4d53-aba5-63127d2dd80b": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/avi-team-sonia.png",
         "subtitle": "",
@@ -37,6 +39,7 @@
     },
     "35710418-9fe0-41d0-814b-97d1d2926b1a": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/avi-team-Mason.png",
         "subtitle": "",
