@@ -7,6 +7,32 @@
         "expanded": true
       }
     },
+    "606cc783-c2d3-4458-8b2f-6a33826efe9b": {
+      "type": "image-with-text",
+      "settings": {
+        "subtitle": "Subtitle",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text_position": "left",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b": {
+      "type": "image-with-text",
+      "settings": {
+        "subtitle": "Subtitle",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text_position": "right",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "164917726153b1f9e7": {
       "type": "banner-with-text",
       "settings": {
@@ -42,39 +68,13 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
-    },
-    "606cc783-c2d3-4458-8b2f-6a33826efe9b": {
-      "type": "image-with-text",
-      "settings": {
-        "subtitle": "Subtitle",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "left",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b": {
-      "type": "image-with-text",
-      "settings": {
-        "subtitle": "Subtitle",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "right",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
     }
   },
   "order": [
     "main",
-    "164917726153b1f9e7",
-    "1649177814296202b6",
     "606cc783-c2d3-4458-8b2f-6a33826efe9b",
-    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b"
+    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b",
+    "164917726153b1f9e7",
+    "1649177814296202b6"
   ]
 }
