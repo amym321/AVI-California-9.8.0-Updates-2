@@ -18,6 +18,7 @@
     },
     "image-with-text-1": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subtitle": "MATERIALS",
         "title": "We care about quality",
@@ -31,6 +32,7 @@
     },
     "image-with-text-2": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subtitle": "PROXIMITY",
         "title": "Locally made",
@@ -44,6 +46,7 @@
     },
     "image-with-text-3": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subtitle": "SUSTAINABILITY",
         "title": "Focused on nature",
@@ -57,6 +60,7 @@
     },
     "logo-list": {
       "type": "logo-list",
+      "disabled": true,
       "blocks": {
         "logo-0": {
           "type": "logo",
@@ -99,6 +103,7 @@
     },
     "rich-text": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "title": "Our quality promise",
         "richtext": "<p>Quality is never an accident. It is always the result of intelligent effort. We spend most of our time and energy for good design and to achieve high quality. Every single detail from material to technique is thought through with obsessive attention. If our product doesn't satisfy you, we'll take it back.<\/p>",
@@ -176,13 +181,13 @@
         "template--16745576562944__05cf8cc2-16a2-4aa5-affa-d290fb9d40a5-168249908537368368-5"
       ],
       "settings": {
-        "title": "Text columns with images",
-        "subtitle": "<p>Use this section to describe details that make your store different.<\/p>",
+        "title": "",
+        "subtitle": "",
         "button_label": "",
         "button_link": "",
         "show_background": true,
         "expanded": false,
-        "max_width": 1200,
+        "max_width": 1600,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
