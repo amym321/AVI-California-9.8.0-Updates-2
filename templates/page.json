@@ -24,8 +24,9 @@
     "dc1e61a2-73a0-4d53-aba5-63127d2dd80b": {
       "type": "image-with-text",
       "settings": {
-        "subtitle": "Subtitle",
-        "title": "Image with text",
+        "image": "shopify:\/\/shop_images\/avi-team-sonia.png",
+        "subtitle": "",
+        "title": "Shakira",
         "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
         "text_position": "right",
         "show_background": false,
