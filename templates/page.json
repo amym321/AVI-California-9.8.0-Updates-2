@@ -10,8 +10,8 @@
     "606cc783-c2d3-4458-8b2f-6a33826efe9b": {
       "type": "image-with-text",
       "settings": {
-        "subtitle": "Subtitle",
-        "title": "Image with text",
+        "subtitle": "",
+        "title": "Jane Doe",
         "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
         "text_position": "left",
         "show_background": false,
