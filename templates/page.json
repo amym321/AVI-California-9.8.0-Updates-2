@@ -35,6 +35,20 @@
         "show_on_mobile": true
       }
     },
+    "35710418-9fe0-41d0-814b-97d1d2926b1a": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/avi-team-Mason.png",
+        "subtitle": "",
+        "title": "Dude",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text_position": "left",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "164917726153b1f9e7": {
       "type": "banner-with-text",
       "settings": {
@@ -76,6 +90,7 @@
     "main",
     "606cc783-c2d3-4458-8b2f-6a33826efe9b",
     "dc1e61a2-73a0-4d53-aba5-63127d2dd80b",
+    "35710418-9fe0-41d0-814b-97d1d2926b1a",
     "164917726153b1f9e7",
     "1649177814296202b6"
   ]
