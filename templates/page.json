@@ -73,6 +73,11 @@
     },
     "1649177814296202b6": {
       "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
+        ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
       "settings": {
         "title": "Double Chocolate Sea Salt",
         "text": "<p>Satisfies chocolate cravings with zero guilt! <\/p>",
