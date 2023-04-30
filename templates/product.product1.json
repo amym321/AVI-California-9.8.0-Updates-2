@@ -49,18 +49,6 @@
         "expanded": true
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "show_product_recommendations": false,
-        "product_recommendations_heading": "You may also like",
-        "columns": 4,
-        "show_background": true,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "164788620451a4cee4": {
       "type": "feature-columns",
       "blocks": {
@@ -97,6 +85,19 @@
         "show_on_mobile": true
       }
     },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": false,
+        "product_recommendations_heading": "You may also like",
+        "columns": 4,
+        "show_background": true,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "alireviews-section-1658404844": {
       "type": "apps",
       "blocks": {
@@ -114,6 +115,11 @@
       "block_order": [
         "alireviews-block-1658404844"
       ],
+      "custom_css": [
+        "#shopify-ali-review time .alireview-date,#shopify-ali-review time.alireview-date {display: none !important;}",
+        ".alireview-number-total-review,.alireview-btn--1,.alr-count-reviews .alr-progress-bar-wrap .alr-progress-bar div {background: #bf9c6e !important; background-color: #bf9c6e !important;}",
+        ".alr-icon-star,.alr-count-reviews .alr-star i {color: #bf9c6e !important;}"
+      ],
       "settings": {
         "show_background": false,
         "expanded": false,
@@ -125,8 +131,8 @@
   },
   "order": [
     "main",
-    "product-recommendations",
     "164788620451a4cee4",
+    "product-recommendations",
     "alireviews-section-1658404844"
   ]
 }
