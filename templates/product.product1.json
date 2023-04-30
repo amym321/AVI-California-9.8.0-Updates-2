@@ -87,6 +87,7 @@
     },
     "27e03b43-3965-4879-b317-a21898e4db25": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
 
       ],
