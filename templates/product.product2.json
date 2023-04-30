@@ -73,6 +73,22 @@
         "show_on_mobile": true
       }
     },
+    "c1c00acc-9877-4bee-b2e2-e7bc47a9d3a8": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Snack-packs.jpg",
+        "subtitle": "",
+        "title": "Get The Snack Packs Too!",
+        "text": "<p>Add some Snack Packs to your order for a snack on-the-go. <\/p><p><\/p><p>Toss one into your backpack or sports bag for a delicious nutrient-dense snack anytime of the day.<\/p>",
+        "button_label": "Snack Packs",
+        "button_link": "shopify:\/\/collections\/snack-packs",
+        "text_position": "left",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -115,6 +131,7 @@
   "order": [
     "main",
     "1647887150e13ce0e2",
+    "c1c00acc-9877-4bee-b2e2-e7bc47a9d3a8",
     "product-recommendations",
     "alireviews-section-1679866475026"
   ]
