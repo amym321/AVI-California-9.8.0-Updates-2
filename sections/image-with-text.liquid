@@ -19,12 +19,18 @@
           {% if section.settings.subtitle != blank %}
             <p class="category">{{ section.settings.subtitle }}</p>
           {% endif %}
-          {% if section.settings.subtitle != blank %}
+          {% if section.settings.title != blank %}
             <h2>{{ section.settings.title }}</h2>
           {% endif %}
           {% if section.settings.text != blank %}
             {{ section.settings.text }}
           {% endif %}
+          {% comment %} added button - am {% endcomment %}
+          {% unless section.settings.button_label == blank or section.settings.button_link == blank %}
+            <div>
+              <a href="{{ section.settings.button_link }}" class="btn action small">{{ section.settings.button_label | escape }}</a>
+            </div>
+          {% endunless %}
         </div>
       </div>
     </div>
@@ -81,6 +87,22 @@
         "default": {
           "en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "es": "<p>Vincula un texto largo con una imagen para dar visibilidad a tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad, estilo, o incluso ofrece una reseña.</p>"
+        }
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": {
+          "en": "Button label",
+          "es": "Etiqueta del botón"
+        }
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": {
+          "en": "Button link",
+          "es": "Enlace del botón"
         }
       },
       {
