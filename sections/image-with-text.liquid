@@ -1,4 +1,4 @@
-<div class="content image-with-text {% render 'content-classes', scope: section %}">
+<div class="content image-with-text {% if product.title contains "Snack" %} hide {% endif %}  {% render 'content-classes', scope: section %}">
   <div class="inner with-layout-options {{ settings.content_layout }}">
     <div class="flex-row {% if section.settings.text_position == "left" %}odd{% endif %}">
       <div class="left image">
