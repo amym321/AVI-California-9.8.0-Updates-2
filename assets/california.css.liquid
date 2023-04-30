@@ -10349,17 +10349,25 @@ body {
   will-change: transform;
 }
 .announcement-bar .marquee-block {
-  animation: marquee 10s linear infinite; /*10*/
+  animation: marquee 15s linear infinite; /*10*/
 }
 .marquee-bar .marquee-block {
-  animation: marquee2 10s linear infinite; /*10*/
+  animation: marquee2 12s linear infinite; /*10*/
 }
-@media (max-width:720px){
+@media (min-width:541px) and (max-width:920px) {
   .announcement-bar .marquee-block {
-    animation: marquee 5s linear infinite; /*10*/
+    animation: marquee 8s linear infinite;
   }
   .marquee-bar .marquee-block {
-    animation: marquee2 5s linear infinite; /*10*/
+    animation: marquee2 8s linear infinite;
+  }
+}
+@media (max-width:540px) {
+  .announcement-bar .marquee-block {
+    animation: marquee 5s linear infinite;
+  }
+  .marquee-bar .marquee-block {
+    animation: marquee2 5s linear infinite;
   }
 }
 
@@ -10695,6 +10703,16 @@ body {
 
 
 /* influencers page */
+.influencer-founder {
+  text-align: start;
+  max-width: 400px;
+}
+@media (min-width:991px) {
+  .influencer-founder-text {
+    flex: 0 0 60% !important;
+    width: 60% !important;
+  }
+}
 .influencer-founder-img {
   max-width: 80% !important;
   float: right !important;
@@ -10702,6 +10720,9 @@ body {
   margin: auto !important;
 }
 @media (max-width:990px) {
+  .influencer-founder {
+    margin: auto !important
+  }
   .influencer-founder-img {
   max-width: 80% !important;
   float: none !important;
