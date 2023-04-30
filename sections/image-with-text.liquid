@@ -28,7 +28,7 @@
           {% comment %} added button - am {% endcomment %}
           {% unless section.settings.button_label == blank or section.settings.button_link == blank %}
             <div>
-              <a href="{{ section.settings.button_link }}" class="btn action small">{{ section.settings.button_label | escape }}</a>
+              <a href="{{ section.settings.button_link }}" class="image-with-text-btn btn action small">{{ section.settings.button_label | escape }}</a>
             </div>
           {% endunless %}
         </div>
