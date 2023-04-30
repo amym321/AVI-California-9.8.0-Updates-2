@@ -88,7 +88,7 @@
     "27e03b43-3965-4879-b317-a21898e4db25": {
       "type": "image-with-text",
       "custom_css": [
-        "@media (min-width: 990px) {.content {margin: 30px 0 !important; }}"
+        "@media (min-width: 991px) {.content {margin: 30px 0 !important; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Snack-packs.jpg",
