@@ -86,7 +86,7 @@
       "custom_css": [
         "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
         "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
-        "h2 {text-decoration: none;}"
+        "h2,a {text-decoration: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/influencers-prebiotic-fiber-3b.png",
@@ -107,7 +107,7 @@
       "custom_css": [
         "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
         "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
-        "h2 {text-decoration: none;}"
+        "h2,a {text-decoration: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Influencers-aviator.jpg",
