@@ -1,4 +1,4 @@
-<div class="content slideshow height_{{ section.settings.hero_height }} no-padding with-background {% render 'content-classes', scope: section %} {% if section.settings.hero_parallax %}with-parallax{% endif %}" id="slideshow-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
+<div class="content slideshow {% if page.title contains "Influencers" %} influencer-page {% endif %} height_{{ section.settings.hero_height }} no-padding with-background {% render 'content-classes', scope: section %} {% if section.settings.hero_parallax %}with-parallax{% endif %}" id="slideshow-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
   <div class="slides" data-autoplay="{{ section.settings.autoplay }}" data-arrows="{{ section.settings.arrows }}" data-speed="{{ section.settings.autoplay_speed }}" data-use-fade="{{ section.settings.use_fade }}">
     {% liquid
       if section.blocks.size > 0
