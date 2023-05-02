@@ -41,6 +41,9 @@
       "block_order": [
         "template--16745576562944__725fdc87-8b55-4f86-bf1d-03bb8a5ff7e5-1683057458abdb325d-0"
       ],
+      "custom_css": [
+        ".slideshow {color:red;}"
+      ],
       "settings": {
         "hero_height": 30,
         "arrows": false,
