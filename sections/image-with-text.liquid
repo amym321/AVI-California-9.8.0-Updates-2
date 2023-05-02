@@ -1,4 +1,6 @@
-<div class="content image-with-text {% if product.title contains "Snack" %} hide {% endif %} {% render 'content-classes', scope: section %}">
+<div class="content image-with-text {% if product.title contains "Snack" %} hide {% endif %}
+    {% if product.title contains "Influencer" %} influencer-page {% endif %}
+    {% render 'content-classes', scope: section %}">
   <div class="inner with-layout-options {{ settings.content_layout }}">
     <div class="flex-row {% if section.settings.text_position == "left" %}odd{% endif %}">
       <div class="left image">
@@ -20,7 +22,15 @@
             <p class="category">{{ section.settings.subtitle }}</p>
           {% endif %}
           {% if section.settings.title != blank %}
-            <h2>{{ section.settings.title }}</h2>
+
+            {% if section.settings.heading_link != blank %}
+              <a href="{{ section.settings.heading_link }}" >
+                <h2>11 {{ section.settings.title }}</h2>
+              </a>
+            {% else %}
+              <h2>22 {{ section.settings.title }}</h2>
+            {% endif %}
+
           {% endif %}
           {% if section.settings.text != blank %}
             {{ section.settings.text }}
@@ -75,6 +85,13 @@
         "default": {
           "en": "Image with text",
           "es": "Imagen con texto"
+        }
+      },
+      {
+        "type": "url",
+        "id": "heading_link",
+        "label": {
+          "en": "Heading link"
         }
       },
       {
