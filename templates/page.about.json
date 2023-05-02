@@ -30,9 +30,9 @@
             "slide_text_color": "is-light",
             "text_alignment": "middle center",
             "heading": "",
+            "link": "",
             "subheading": "",
             "cta": "",
-            "link": "",
             "button_to_scroll": "",
             "credits": ""
           }
@@ -92,6 +92,7 @@
         "image": "shopify:\/\/shop_images\/influencers-prebiotic-fiber-3b.png",
         "subtitle": "",
         "title": "Lynn Maamari @yourhealthydiaryy",
+        "heading_link": "https:\/\/www.instagram.com\/yourhealthydiaryy\/",
         "text": "<p>Has 12 hobbies at any given time. Apart from flying, she loves running and training the visually impaired. Certified as a Health Coach from the Integrative Institute of Nutrition in NYC. Spends most of her time outdoors & on the move.<\/p>",
         "button_label": "",
         "button_link": "",
@@ -113,6 +114,7 @@
         "image": "shopify:\/\/shop_images\/Influencers-aviator.jpg",
         "subtitle": "",
         "title": "Fernando @fitaviatorsclub",
+        "heading_link": "",
         "text": "<p>Improving crew member quality of life through health and fitness on the road and at home. The aviation industry is filled with many challenges to keep your health at optimum. As NASM Certified CPT and RMT Certified Intervention coach, I share my knowledge combined with experience to provide the necessary information, and advice, to overcome industry obstacles and live a balanced healthy lifestyle. After all, we want to feel good and healthy to perform at our best everyday.<\/p>",
         "button_label": "",
         "button_link": "",
@@ -129,6 +131,7 @@
       "settings": {
         "subtitle": "SUSTAINABILITY",
         "title": "Focused on nature",
+        "heading_link": "",
         "text": "<p>We select fabrics that demonstrate an ongoing commitment to reduce environmental impact. Organic, recycled and eco-friendly. We don’t use virgin oil-based fabrics. Sustainability lies at the very heart of what we do.<\/p>",
         "button_label": "",
         "button_link": "",
