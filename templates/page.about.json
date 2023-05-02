@@ -17,20 +17,46 @@
         "expanded": true
       }
     },
+    "725fdc87-8b55-4f86-bf1d-03bb8a5ff7e5": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16745576562944__725fdc87-8b55-4f86-bf1d-03bb8a5ff7e5-1683057458abdb325d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/granola-keto.jpg",
+            "overlay_color": "#292929",
+            "overlay_opacity": 0,
+            "alignment": "center",
+            "slide_text_color": "is-light",
+            "text_alignment": "middle center",
+            "heading": "",
+            "subheading": "",
+            "cta": "Our Intrepid Influencers",
+            "link": "",
+            "button_to_scroll": "",
+            "credits": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576562944__725fdc87-8b55-4f86-bf1d-03bb8a5ff7e5-1683057458abdb325d-0"
+      ],
+      "settings": {
+        "hero_height": 40,
+        "arrows": false,
+        "autoplay": false,
+        "use_fade": "false",
+        "autoplay_speed": 5,
+        "hero_parallax": true,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "fc84d62d-2eb3-4616-819e-51ef523c9de6": {
       "type": "custom-content",
+      "disabled": true,
       "blocks": {
-        "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "Talk about your brand",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "alignment": "center",
-            "align_text": "left"
-          }
-        },
         "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-1": {
           "type": "image",
           "settings": {
@@ -41,7 +67,6 @@
         }
       },
       "block_order": [
-        "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-0",
         "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-1"
       ],
       "settings": {
@@ -317,6 +342,7 @@
   "order": [
     "featured-image",
     "main",
+    "725fdc87-8b55-4f86-bf1d-03bb8a5ff7e5",
     "fc84d62d-2eb3-4616-819e-51ef523c9de6",
     "image-with-text-1",
     "image-with-text-2",
