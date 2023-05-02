@@ -46,9 +46,9 @@
       ],
       "settings": {
         "show_background": false,
-        "expanded": true,
+        "expanded": false,
         "expanded_content": false,
-        "max_width": 950,
+        "max_width": 2000,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
