@@ -17,6 +17,42 @@
         "expanded": true
       }
     },
+    "fc84d62d-2eb3-4616-819e-51ef523c9de6": {
+      "type": "custom-content",
+      "blocks": {
+        "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/granola-keto.jpg",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-0",
+        "template--16745576562944__fc84d62d-2eb3-4616-819e-51ef523c9de6-1683054306355a5649-1"
+      ],
+      "settings": {
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": false,
+        "max_width": 950,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "image-with-text-1": {
       "type": "image-with-text",
       "custom_css": [
@@ -281,6 +317,7 @@
   "order": [
     "featured-image",
     "main",
+    "fc84d62d-2eb3-4616-819e-51ef523c9de6",
     "image-with-text-1",
     "image-with-text-2",
     "image-with-text-3",
