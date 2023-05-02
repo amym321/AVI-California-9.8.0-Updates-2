@@ -19,11 +19,13 @@
     },
     "image-with-text-1": {
       "type": "image-with-text",
-      "disabled": true,
       "settings": {
-        "subtitle": "MATERIALS",
-        "title": "We care about quality",
-        "text": "<p>All of our goods were created from the finest materials with exceptional attention to detail and a unique combination of colors, textures and styles. Our leitmotiv is to include on our catalog the products with the most beautiful aesthetics and also an unbelievable performance to make you find the pleasure of camping in nature.<\/p>",
+        "image": "shopify:\/\/shop_images\/influencers-prebiotic-fiber-3b.png",
+        "subtitle": "",
+        "title": "Lynn Maamari @yourhealthydiaryy",
+        "text": "<p>Has 12 hobbies at any given time. Apart from flying, she loves running and training the visually impaired. Certified as a Health Coach from the Integrative Institute of Nutrition in NYC. Spends most of her time outdoors & on the move.<\/p>",
+        "button_label": "",
+        "button_link": "",
         "text_position": "right",
         "show_background": false,
         "expanded": true,
@@ -33,11 +35,12 @@
     },
     "image-with-text-2": {
       "type": "image-with-text",
-      "disabled": true,
       "settings": {
         "subtitle": "PROXIMITY",
         "title": "Locally made",
         "text": "<p>Our factories, all located in a local environment, have a long tradition of more than 40 years in the outdoor sector. We promote local economy. Expert hands are commissioned by artisan methods and taking care of the smallest detail of manufacturing our products. Our suppliers are also in our area. This condition helps us reduce our CO2 emissions while being in control of our raw materials and suppliers.<\/p>",
+        "button_label": "",
+        "button_link": "",
         "text_position": "left",
         "show_background": false,
         "expanded": true,
@@ -52,6 +55,8 @@
         "subtitle": "SUSTAINABILITY",
         "title": "Focused on nature",
         "text": "<p>We select fabrics that demonstrate an ongoing commitment to reduce environmental impact. Organic, recycled and eco-friendly. We don’t use virgin oil-based fabrics. Sustainability lies at the very heart of what we do.<\/p>",
+        "button_label": "",
+        "button_link": "",
         "text_position": "right",
         "show_background": false,
         "expanded": true,
@@ -195,6 +200,7 @@
     },
     "3786bdd6-675a-420e-a243-e794705887b7": {
       "type": "banner-with-text",
+      "disabled": true,
       "custom_css": [
         ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
         ".banner-with-text-section .content {padding: 125px"
@@ -217,6 +223,7 @@
     },
     "244c78c5-7588-4730-9188-bf42a19125fe": {
       "type": "banner-with-text",
+      "disabled": true,
       "custom_css": [
         ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
         ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important;}",
@@ -237,6 +244,29 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "1683053067983e5675": {
+      "type": "apps",
+      "blocks": {
+        "3fceb6ad-597c-488f-96ea-6989f3b9e44a": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "3fceb6ad-597c-488f-96ea-6989f3b9e44a"
+      ],
+      "settings": {
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -249,6 +279,7 @@
     "rich-text",
     "05cf8cc2-16a2-4aa5-affa-d290fb9d40a5",
     "3786bdd6-675a-420e-a243-e794705887b7",
-    "244c78c5-7588-4730-9188-bf42a19125fe"
+    "244c78c5-7588-4730-9188-bf42a19125fe",
+    "1683053067983e5675"
   ]
 }
