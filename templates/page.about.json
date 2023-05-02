@@ -39,7 +39,8 @@
     "image-with-text-2": {
       "type": "image-with-text",
       "custom_css": [
-        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset;}}"
+        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
+        "@media (max-width: 990px) {}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Influencers-aviator.jpg",
