@@ -86,7 +86,7 @@
       "custom_css": [
         "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
         "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
-        "h2,a {text-decoration: none;}",
+        "h2,a {text-decoration-color: #3db2b0;}",
         ".content {margin: 0 0 50px;}"
       ],
       "settings": {
@@ -109,7 +109,7 @@
       "custom_css": [
         "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
         "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
-        "h2,a {text-decoration: none;}",
+        "h2,a {text-decoration-color: #3db2b0;}",
         ".content {margin: 0 0 50px;}"
       ],
       "settings": {
