@@ -38,10 +38,14 @@
     },
     "image-with-text-2": {
       "type": "image-with-text",
+      "custom_css": [
+        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; }}"
+      ],
       "settings": {
-        "subtitle": "PROXIMITY",
-        "title": "Locally made",
-        "text": "<p>Our factories, all located in a local environment, have a long tradition of more than 40 years in the outdoor sector. We promote local economy. Expert hands are commissioned by artisan methods and taking care of the smallest detail of manufacturing our products. Our suppliers are also in our area. This condition helps us reduce our CO2 emissions while being in control of our raw materials and suppliers.<\/p>",
+        "image": "shopify:\/\/shop_images\/Influencers-aviator.jpg",
+        "subtitle": "",
+        "title": "Fernando @fitaviatorsclub",
+        "text": "<p>Improving crew member quality of life through health and fitness on the road and at home. The aviation industry is filled with many challenges to keep your health at optimum. As NASM Certified CPT and RMT Certified Intervention coach, I share my knowledge combined with experience to provide the necessary information, and advice, to overcome industry obstacles and live a balanced healthy lifestyle. After all, we want to feel good and healthy to perform at our best everyday.<\/p>",
         "button_label": "",
         "button_link": "",
         "text_position": "left",
