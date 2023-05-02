@@ -19,6 +19,9 @@
     },
     "image-with-text-1": {
       "type": "image-with-text",
+      "custom_css": [
+        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; }}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/influencers-prebiotic-fiber-3b.png",
         "subtitle": "",
