@@ -10098,8 +10098,8 @@ body {
 /***************************/
 
 /* custom image section on homepage */
-.custom-content .custom__image {
-  transform: translateY(-80px) !important;
+.template-index .custom-content .custom__image {
+  /* transform: translateY(-80px) !important; */
 }
 
 /* homepage ali reviews */
@@ -10733,6 +10733,9 @@ body {
     max-width: 80% !important;
     float: none !important;
   }
+  .influencer-full-image {
+    display:none;
+  }
 }
 
 .influencer-full-image  img {
@@ -10782,11 +10785,6 @@ body {
   text-decoration: underline;
 }
 
-
-/* Image With Text on PDP */
-/* .template-product .image-with-text-section {
-  border-bottom: none !important;
-} */
 .template-product .sections .shopify-section > .image-with-text {
   background: #f7f2e5 !important;
   padding: 30px 0 !important;
@@ -10798,12 +10796,6 @@ body {
   }
 }
 
-/* @media (min-width: 721px) {
-  .template-product  .image-with-text {
-    margin: 30px 0 !important;
-  }
-} */
-
 .template-product  .image-with-text p, 
 .template-product  .image-with-text a {
   text-align: center;
@@ -10812,7 +10804,8 @@ body {
   margin: 30px 0;
 }
 
-.template-product .image-with-text-btn {
+.template-product .image-with-text-btn,
+.template-page .image-with-text-btn {
   display: block;
   width: 250px;
   margin-left: auto;
@@ -10821,12 +10814,18 @@ body {
   background-color: #e052ad  !important;
   color: #fff  !important;
 }
-.template-product .image-with-text-btn:hover {
+.template-page .image-with-text-btn {
+  margin-top: 20px  !important;
+  margin-bottom: 30px  !important;
+}
+.template-product .image-with-text-btn:hover,
+.template-page .image-with-text-btn:hover {
   background-color: #2b9490  !important;
 }
 
 @media (max-width: 720px) {
-  .template-product .image-with-text-btn {
+  .template-product .image-with-text-btn,
+  .template-page .image-with-text-btn {
     margin-top: 25px !important;
     margin-bottom: 25px !important;
   }
@@ -10838,5 +10837,20 @@ body {
 @media (min-width: 721px) {
   .template-product .image-with-text img {
     padding-top: 40px;
+  }
+}
+
+/* Influencer page - Image With Text secgtion */
+.influencer-page .image-with-text .flex-row .image {
+  flex: 0 0 30%;
+}
+
+/* Influencer page Banner */
+.template-page .influencer-page  {
+  transform: translateY(-60px);
+}
+@media (max-width: 990px) {
+  .template-page .influencer-page.height_30 {
+    height: 20vh;
   }
 }
