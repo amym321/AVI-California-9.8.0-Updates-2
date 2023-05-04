@@ -75,11 +75,11 @@
     },
     "c1c00acc-9877-4bee-b2e2-e7bc47a9d3a8": {
       "type": "image-with-text",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Snack-packs.jpg",
+        "image": "shopify:\/\/shop_images\/snack-packs.png",
         "subtitle": "",
         "title": "Get The Snack Packs Too!",
+        "heading_link": "",
         "text": "<p>Add some Snack Packs to your order for a snack on-the-go. <\/p><p><\/p><p>Toss one into your backpack or sports bag for a delicious nutrient-dense snack anytime of the day.<\/p>",
         "button_label": "Snack Packs",
         "button_link": "shopify:\/\/collections\/snack-packs",
