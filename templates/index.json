@@ -49,7 +49,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/home-hero-v2_11563aaf-30a7-4d9e-bd26-ef811a803d9c.jpg",
+        "image": "shopify:\/\/shop_images\/home-hero-bg.jpg",
         "video": "",
         "alignment": "h-right v-center",
         "color_heading": "#3db2b0",
@@ -59,7 +59,7 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "mobile_min_height": 1000,
-        "image_mobile": "shopify:\/\/shop_images\/home-banner-mob-3.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/home-hero-bg-mobile.jpg",
         "video_mobile": "",
         "expanded": true,
         "show_on_desktop": true,
