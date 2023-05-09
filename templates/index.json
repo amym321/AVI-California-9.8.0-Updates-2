@@ -210,7 +210,7 @@
         "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-1"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.cols .col {flex: 0 0 65% !important; }}"
+        "@media (max-width: 540px) {.cols .col {flex: 0 0 65% !important; }}"
       ],
       "settings": {
         "title": "",
