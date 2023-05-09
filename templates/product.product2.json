@@ -75,7 +75,6 @@
     },
     "c1c00acc-9877-4bee-b2e2-e7bc47a9d3a8": {
       "type": "image-with-text",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/snack-packs.png",
         "subtitle": "",
@@ -110,11 +109,11 @@
         "alireviews-block-1679866475026": {
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
-            "name": "Review Box 1",
+            "name": "Review Box",
             "vertical_alignment": "2",
-            "rating_color": "#bf9c6e",
+            "rating_color": "#1F1F1F",
             "section_color": "#ffffff",
-            "primary_text_color": "#1f1f1f"
+            "primary_text_color": "#1F1F1F"
           }
         }
       },
