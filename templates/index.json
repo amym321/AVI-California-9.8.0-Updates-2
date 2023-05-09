@@ -706,7 +706,7 @@
         "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff": {
           "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 21,
+            "heading_size": 20,
             "feed_width": 100,
             "html_area": ""
           }
@@ -731,11 +731,11 @@
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "disabled": true,
           "settings": {
-            "name": "Review Box 4",
-            "vertical_alignment": "5",
-            "rating_color": "#be9b73",
+            "name": "Review Box",
+            "vertical_alignment": "2",
+            "rating_color": "#1F1F1F",
             "section_color": "#ffffff",
-            "primary_text_color": "#1f1f1f"
+            "primary_text_color": "#1F1F1F"
           }
         }
       },
@@ -746,6 +746,94 @@
         "show_background": false,
         "expanded": false,
         "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "bbaf9820-16c0-40b2-ab8e-f4298c1079e2": {
+      "type": "feature-columns",
+      "blocks": {
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-0": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/Chocolate-Sea-Salt0-1_ee2d00c6-1217-4abf-bf9e-04c4d951e068.jpg",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/AVI1.jpg",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-2": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-3": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-4": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-5": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "50699314-57ad-4365-b244-7d6e59464949": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-0",
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-1",
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-2",
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-3",
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-4",
+        "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-5",
+        "50699314-57ad-4365-b244-7d6e59464949"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "button_label": "",
+        "button_link": "",
+        "show_background": true,
+        "expanded": false,
+        "max_width": 1200,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -772,6 +860,7 @@
     "e1c8eeae-981a-48af-a964-46d6ca362d83",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
-    "alireviews-section-1661910018"
+    "alireviews-section-1661910018",
+    "bbaf9820-16c0-40b2-ab8e-f4298c1079e2"
   ]
 }
