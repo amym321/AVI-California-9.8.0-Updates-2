@@ -119,6 +119,7 @@
     },
     "c2d0f25e-4797-447c-b96b-69d72d981a20": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0": {
           "type": "image",
@@ -151,6 +152,7 @@
     },
     "f256aa87-de86-429b-a729-3f92a195fded": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0": {
           "type": "image",
