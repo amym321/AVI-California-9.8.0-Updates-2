@@ -627,20 +627,6 @@
         "show_on_mobile": true
       }
     },
-    "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".content {\/*padding-top: 60px !important;*\/ padding-bottom: 60px !important;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
-        "show_background": false,
-        "expanded": false,
-        "expanded_content": false,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "alireviews-widget-230741": {
       "type": "alireviews-widget-230741",
       "disabled": true,
@@ -756,6 +742,20 @@
         "show_on_mobile": true
       }
     },
+    "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".content {padding-top: 60px !important; \/* padding-bottom: 60px !important;*\/}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "alireviews-widget-240757": {
       "type": "alireviews-widget-240757",
       "disabled": true,
@@ -798,9 +798,9 @@
           "settings": {
             "name": "Review Box",
             "vertical_alignment": "2",
-            "rating_color": "#1f1f1f",
+            "rating_color": "#1F1F1F",
             "section_color": "#ffffff",
-            "primary_text_color": "#1f1f1f"
+            "primary_text_color": "#1F1F1F"
           }
         }
       },
@@ -832,11 +832,11 @@
     "e1c8eeae-981a-48af-a964-46d6ca362d83",
     "3e54ae5d-0944-4ccf-bf19-8acce5a3922f",
     "16478530667bcdd444",
-    "3b6f69a9-8347-41ba-9fce-76d08e9245bd",
     "alireviews-widget-230741",
     "alireviews-widget-231234",
     "6f22c8c0-8bb3-410b-9872-95104b611c34",
     "e9215ff1-807b-4aaa-9f69-13c9855a0337",
+    "3b6f69a9-8347-41ba-9fce-76d08e9245bd",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
     "alireviews-section-1661910018"
