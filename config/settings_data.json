@@ -1,9 +1,9 @@
 {
   "current": {
     "color_accent": "#ffffff",
-    "color_header_text": "#bf9c6e",
-    "color_header_bg": "#f7f2e5",
-    "color_header_border": "#404752",
+    "color_header_text": "#ffffff",
+    "color_header_bg": "#bf9c6e",
+    "color_header_border": "#bf9c6e",
     "opacity_header_border": 0,
     "color_side_nav_text": "#404752",
     "color_side_nav_bg": "#ffffff",
