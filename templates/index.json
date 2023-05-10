@@ -64,7 +64,7 @@
         "mobile_min_height": 1000,
         "image_mobile": "shopify:\/\/shop_images\/home-hero-background-mobile-4.jpg",
         "video_mobile": "",
-        "expanded": true,
+        "expanded": false,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -554,7 +554,7 @@
       "custom_css": [
         ".content {margin-bottom: 0;}",
         "img {z-index: 10;}",
-        "h2 {font-size:2.6em;}"
+        "h2 {font-size: 2.6em;}"
       ],
       "settings": {
         "title": "Don’t take our word for it.",
@@ -800,9 +800,9 @@
           "settings": {
             "name": "Review Box",
             "vertical_alignment": "2",
-            "rating_color": "#1F1F1F",
+            "rating_color": "#1f1f1f",
             "section_color": "#ffffff",
-            "primary_text_color": "#1F1F1F"
+            "primary_text_color": "#1f1f1f"
           }
         }
       },
