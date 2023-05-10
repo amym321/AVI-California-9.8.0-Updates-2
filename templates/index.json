@@ -439,7 +439,8 @@
         "1647529743321f5396-0"
       ],
       "custom_css": [
-        "@media (max-width: 400px) {.content h2 {font-size: 2.2em; padding: 0 10px !important; }}"
+        "@media (max-width: 400px) {.content h2 {font-size: 2em; padding: 0 10px !important; }}",
+        ".content {margin: 80px 0;}"
       ],
       "settings": {
         "show_background": false,
