@@ -66,6 +66,7 @@
         "type": "header",
         "custom_css": [
           "h2 {margin-bottom: 0;}",
+          ".header {border-bottom: 1px solid #bf9c6e;}",
           ".header .content {padding-bottom: 0 !important4;}"
         ],
         "settings": {
@@ -76,7 +77,7 @@
           "header_padding": 10,
           "show_search": true,
           "enable_account": true,
-          "enable_transparent_header": false,
+          "enable_transparent_header": true,
           "transparent_header_text_color": "#bf9c6e",
           "transparent_header_border_color": "#ffffff",
           "transparent_header_border_opacity": 0,
