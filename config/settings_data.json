@@ -70,7 +70,7 @@
           ".header .content {padding-bottom: 0 !important4;}"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/AVI-logo.png",
+          "logo": "shopify:\/\/shop_images\/AVI-logo-white.png",
           "logo_max_width": 70,
           "logo_position": "center",
           "top_nav_linklist": "main-menu",
