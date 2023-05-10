@@ -49,7 +49,7 @@
         "button"
       ],
       "custom_css": [
-        "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left:5px; padding-right:5px; }}"
+        "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-hero-background-2.jpg",
@@ -65,58 +65,6 @@
         "image_mobile": "shopify:\/\/shop_images\/home-hero-background-mobile-4.jpg",
         "video_mobile": "",
         "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "3e54ae5d-0944-4ccf-bf19-8acce5a3922f": {
-      "type": "collage",
-      "disabled": true,
-      "blocks": {
-        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/wave_2d.png",
-            "show_border": false,
-            "link": "",
-            "text": "",
-            "text_align": "center"
-          }
-        },
-        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-1": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "show_border": false
-          }
-        },
-        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-2": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "show_border": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-0",
-        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-1",
-        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-2"
-      ],
-      "custom_css": [
-        ".collage .cards .card.image {box-shadow: none;}",
-        ".cards {max-width: none !important;}"
-      ],
-      "settings": {
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "heading": "",
-        "show_background": false,
-        "expanded": true,
-        "content_max_width": 2000,
-        "expanded_content": false,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -326,6 +274,89 @@
         "show_on_mobile": true
       }
     },
+    "1647529743558de923": {
+      "type": "custom-content",
+      "blocks": {
+        "d96ab067-24b9-4d40-ac09-0302cc5afcc3": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"myquote\"> <h2>‘If you are what you eat, <br> then I only want to eat the good stuff'<\/h2>\n<\/div>",
+            "width": "50%"
+          }
+        },
+        "1647529743321f5396-0": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>-Remy Ratatouille <\/strong><\/p>",
+            "width": "75%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        }
+      },
+      "block_order": [
+        "d96ab067-24b9-4d40-ac09-0302cc5afcc3",
+        "1647529743321f5396-0"
+      ],
+      "custom_css": [
+        "@media (max-width: 400px) {.content h2 {font-size: 2.2em; padding: 0 10px !important; }}"
+      ],
+      "settings": {
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": false,
+        "max_width": 950,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "banner-with-text-left": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
+      "settings": {
+        "title": "Sweet Almond Coconut",
+        "text": "<p>Delightfully tasty with epic crunch!<br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/almond-coconut-granola-tilt-2.png",
+        "image_for_mobile": "shopify:\/\/shop_images\/almond-coconut-granola-removebg-preview.png",
+        "image_position": "center left",
+        "text_position": "right",
+        "text_align": "left",
+        "button_label": "ORDER NOW",
+        "button_link": "shopify:\/\/collections\/almond-coconut-granola",
+        "expanded": true,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "banner-with-text-right": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
+        ".info .btn:first-of-type {color: #d750ae !important;}",
+        ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important; color: #fff !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
+      "settings": {
+        "title": "Double Chocolate Sea Salt",
+        "text": "<p>Satisfies chocolate cravings with zero guilt! <br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/granola-chocolate-tilt-2.png",
+        "image_for_mobile": "shopify:\/\/shop_images\/granola-chocolate-removebg-preview.png",
+        "image_position": "center right",
+        "text_position": "left",
+        "text_align": "left",
+        "button_label": "ORDER NOW",
+        "button_link": "shopify:\/\/collections\/double-chocolate",
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "feature-columns": {
       "type": "feature-columns",
       "blocks": {
@@ -433,84 +464,148 @@
         "show_on_mobile": true
       }
     },
-    "1647529743558de923": {
-      "type": "custom-content",
+    "c20bb3d7-20bc-4dc9-99e6-c9f1cc85b662": {
+      "type": "collage",
       "blocks": {
-        "d96ab067-24b9-4d40-ac09-0302cc5afcc3": {
-          "type": "html",
+        "template--16745576530176__c20bb3d7-20bc-4dc9-99e6-c9f1cc85b662-16836934136f01c7e6-0": {
+          "type": "image",
           "settings": {
-            "code": "<div class=\"myquote\"> <h2>‘If you are what you eat, <br> then I only want to eat the good stuff'<\/h2>\n<\/div>",
-            "width": "50%"
-          }
-        },
-        "1647529743321f5396-0": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "text": "<p><strong>-Remy Ratatouille <\/strong><\/p>",
-            "width": "75%",
-            "alignment": "center",
-            "align_text": "center"
+            "image": "shopify:\/\/shop_images\/wave_2e.png",
+            "show_border": false,
+            "link": "",
+            "text": "",
+            "text_align": "center"
           }
         }
       },
       "block_order": [
-        "d96ab067-24b9-4d40-ac09-0302cc5afcc3",
-        "1647529743321f5396-0"
+        "template--16745576530176__c20bb3d7-20bc-4dc9-99e6-c9f1cc85b662-16836934136f01c7e6-0"
       ],
       "custom_css": [
-        "@media (max-width: 400px) {.content h2 {font-size: 2.2em; padding: 0 10px !important; }}"
+        ".collage .cards .card.image {box-shadow: none;}",
+        ".cards {max-width: none !important;}"
       ],
       "settings": {
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "heading": "",
         "show_background": false,
         "expanded": true,
+        "content_max_width": 1200,
         "expanded_content": false,
-        "max_width": 950,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
     },
-    "banner-with-text-left": {
-      "type": "banner-with-text",
+    "e1c8eeae-981a-48af-a964-46d6ca362d83": {
+      "type": "feature-columns",
+      "blocks": {
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-0": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_1d.png",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_2c.png",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-2": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_3.png",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-3": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_4.png",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-4": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_5.png",
+            "image_url": ""
+          }
+        },
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_6f.png",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-0",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-1",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-2",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-3",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-4",
+        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5"
+      ],
       "custom_css": [
-        ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
-        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+
       ],
       "settings": {
-        "title": "Sweet Almond Coconut",
-        "text": "<p>Delightfully tasty with epic crunch!<br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/almond-coconut-granola-tilt-2.png",
-        "image_for_mobile": "shopify:\/\/shop_images\/almond-coconut-granola-removebg-preview.png",
-        "image_position": "center left",
-        "text_position": "right",
-        "text_align": "left",
-        "button_label": "ORDER NOW",
-        "button_link": "shopify:\/\/collections\/almond-coconut-granola",
+        "title": "Don’t take our word for it.",
+        "subtitle": "<p><strong>Here's what others are saying...<\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_background": false,
         "expanded": true,
-        "expanded_content": true,
+        "max_width": 1400,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
     },
-    "banner-with-text-right": {
-      "type": "banner-with-text",
+    "3e54ae5d-0944-4ccf-bf19-8acce5a3922f": {
+      "type": "collage",
+      "blocks": {
+        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wave_2d.png",
+            "show_border": false,
+            "link": "",
+            "text": "",
+            "text_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-0"
+      ],
       "custom_css": [
-        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
-        ".info .btn:first-of-type {color: #d750ae !important;}",
-        ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important; color: #fff !important;}",
-        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+        ".collage .cards .card.image {box-shadow: none;}",
+        ".cards {max-width: none !important;}"
       ],
       "settings": {
-        "title": "Double Chocolate Sea Salt",
-        "text": "<p>Satisfies chocolate cravings with zero guilt! <br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/granola-chocolate-tilt-2.png",
-        "image_for_mobile": "shopify:\/\/shop_images\/granola-chocolate-removebg-preview.png",
-        "image_position": "center right",
-        "text_position": "left",
-        "text_align": "left",
-        "button_label": "ORDER NOW",
-        "button_link": "shopify:\/\/collections\/double-chocolate",
-        "expanded": false,
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "heading": "",
+        "show_background": false,
+        "expanded": true,
+        "content_max_width": 2000,
         "expanded_content": false,
         "show_on_desktop": true,
         "show_on_mobile": true
@@ -658,87 +753,6 @@
         "show_on_mobile": true
       }
     },
-    "e1c8eeae-981a-48af-a964-46d6ca362d83": {
-      "type": "feature-columns",
-      "blocks": {
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-0": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/quote_1d.png",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-1": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/quote_2c.png",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-2": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/quote_3.png",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-3": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/quote_4.png",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-4": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/quote_5.png",
-            "image_url": ""
-          }
-        },
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5": {
-          "type": "text_column",
-          "settings": {
-            "title": "",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/quote_6f.png",
-            "image_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-0",
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-1",
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-2",
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-3",
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-4",
-        "template--16745576530176__e1c8eeae-981a-48af-a964-46d6ca362d83-1682004362b079a6a9-5"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "Don’t take our word for it.",
-        "subtitle": "<p><strong>Here's what others are saying...<\/strong><\/p>",
-        "button_label": "",
-        "button_link": "",
-        "show_background": false,
-        "expanded": true,
-        "max_width": 1400,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "alireviews-widget-240757": {
       "type": "alireviews-widget-240757",
       "disabled": true,
@@ -801,7 +815,6 @@
   },
   "order": [
     "hero",
-    "3e54ae5d-0944-4ccf-bf19-8acce5a3922f",
     "c2d0f25e-4797-447c-b96b-69d72d981a20",
     "f256aa87-de86-429b-a729-3f92a195fded",
     "bbaf9820-16c0-40b2-ab8e-f4298c1079e2",
@@ -809,16 +822,18 @@
     "1647529858a824f6f2",
     "16475250747d66e204",
     "3b6f69a9-8347-41ba-9fce-76d08e9245bd",
-    "feature-columns",
     "1647529743558de923",
     "banner-with-text-left",
     "banner-with-text-right",
+    "feature-columns",
+    "c20bb3d7-20bc-4dc9-99e6-c9f1cc85b662",
+    "e1c8eeae-981a-48af-a964-46d6ca362d83",
+    "3e54ae5d-0944-4ccf-bf19-8acce5a3922f",
     "16478530667bcdd444",
     "alireviews-widget-230741",
     "alireviews-widget-231234",
     "6f22c8c0-8bb3-410b-9872-95104b611c34",
     "e9215ff1-807b-4aaa-9f69-13c9855a0337",
-    "e1c8eeae-981a-48af-a964-46d6ca362d83",
     "alireviews-widget-240757",
     "16494256826c42a5cf",
     "alireviews-section-1661910018"
