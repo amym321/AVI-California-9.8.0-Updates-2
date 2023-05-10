@@ -599,7 +599,8 @@
       ],
       "custom_css": [
         ".collage .cards .card.image {box-shadow: none;}",
-        ".cards {max-width: none !important;}"
+        ".cards {max-width: none !important;}",
+        "@media (max-width: 960px) {.content {display:none; }}"
       ],
       "settings": {
         "desktop_layout": "left",
