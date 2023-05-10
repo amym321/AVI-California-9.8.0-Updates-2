@@ -260,103 +260,6 @@
         "show_on_mobile": true
       }
     },
-    "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".content {padding-top: 60px !important;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
-        "show_background": false,
-        "expanded": false,
-        "expanded_content": false,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "1647529743558de923": {
-      "type": "custom-content",
-      "blocks": {
-        "d96ab067-24b9-4d40-ac09-0302cc5afcc3": {
-          "type": "html",
-          "settings": {
-            "code": "<div class=\"myquote\"> <h2>‘If you are what you eat, <br> then I only want to eat the good stuff'<\/h2>\n<\/div>",
-            "width": "50%"
-          }
-        },
-        "1647529743321f5396-0": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "text": "<p><strong>-Remy Ratatouille <\/strong><\/p>",
-            "width": "75%",
-            "alignment": "center",
-            "align_text": "center"
-          }
-        }
-      },
-      "block_order": [
-        "d96ab067-24b9-4d40-ac09-0302cc5afcc3",
-        "1647529743321f5396-0"
-      ],
-      "custom_css": [
-        "@media (max-width: 400px) {.content h2 {font-size: 2.2em; padding: 0 10px !important; }}"
-      ],
-      "settings": {
-        "show_background": false,
-        "expanded": true,
-        "expanded_content": false,
-        "max_width": 950,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "banner-with-text-left": {
-      "type": "banner-with-text",
-      "custom_css": [
-        ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
-        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
-      ],
-      "settings": {
-        "title": "Sweet Almond Coconut",
-        "text": "<p>Delightfully tasty with epic crunch!<br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/almond-coconut-granola-tilt-2.png",
-        "image_for_mobile": "shopify:\/\/shop_images\/almond-coconut-granola-removebg-preview.png",
-        "image_position": "center left",
-        "text_position": "right",
-        "text_align": "left",
-        "button_label": "ORDER NOW",
-        "button_link": "shopify:\/\/collections\/almond-coconut-granola",
-        "expanded": true,
-        "expanded_content": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "banner-with-text-right": {
-      "type": "banner-with-text",
-      "custom_css": [
-        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
-        ".info .btn:first-of-type {color: #d750ae !important;}",
-        ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important; color: #fff !important;}",
-        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
-      ],
-      "settings": {
-        "title": "Double Chocolate Sea Salt",
-        "text": "<p>Satisfies chocolate cravings with zero guilt! <br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/granola-chocolate-tilt-2.png",
-        "image_for_mobile": "shopify:\/\/shop_images\/granola-chocolate-removebg-preview.png",
-        "image_position": "center right",
-        "text_position": "left",
-        "text_align": "left",
-        "button_label": "ORDER NOW",
-        "button_link": "shopify:\/\/collections\/double-chocolate",
-        "expanded": false,
-        "expanded_content": false,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "feature-columns": {
       "type": "feature-columns",
       "blocks": {
@@ -460,6 +363,89 @@
         "show_background": false,
         "expanded": true,
         "max_width": 1450,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "banner-with-text-left": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
+      "settings": {
+        "title": "Sweet Almond Coconut",
+        "text": "<p>Delightfully tasty with epic crunch!<br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/almond-coconut-granola-tilt-2.png",
+        "image_for_mobile": "shopify:\/\/shop_images\/almond-coconut-granola-removebg-preview.png",
+        "image_position": "center left",
+        "text_position": "right",
+        "text_align": "left",
+        "button_label": "ORDER NOW",
+        "button_link": "shopify:\/\/collections\/almond-coconut-granola",
+        "expanded": true,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "banner-with-text-right": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
+        ".info .btn:first-of-type {color: #d750ae !important;}",
+        ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important; color: #fff !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
+      "settings": {
+        "title": "Double Chocolate Sea Salt",
+        "text": "<p>Satisfies chocolate cravings with zero guilt! <br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/granola-chocolate-tilt-2.png",
+        "image_for_mobile": "shopify:\/\/shop_images\/granola-chocolate-removebg-preview.png",
+        "image_position": "center right",
+        "text_position": "left",
+        "text_align": "left",
+        "button_label": "ORDER NOW",
+        "button_link": "shopify:\/\/collections\/double-chocolate",
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "1647529743558de923": {
+      "type": "custom-content",
+      "blocks": {
+        "d96ab067-24b9-4d40-ac09-0302cc5afcc3": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"myquote\"> <h2>‘If you are what you eat, <br> then I only want to eat the good stuff'<\/h2>\n<\/div>",
+            "width": "50%"
+          }
+        },
+        "1647529743321f5396-0": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>-Remy Ratatouille <\/strong><\/p>",
+            "width": "75%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        }
+      },
+      "block_order": [
+        "d96ab067-24b9-4d40-ac09-0302cc5afcc3",
+        "1647529743321f5396-0"
+      ],
+      "custom_css": [
+        "@media (max-width: 400px) {.content h2 {font-size: 2.2em; padding: 0 10px !important; }}"
+      ],
+      "settings": {
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": false,
+        "max_width": 950,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -600,7 +586,7 @@
       "custom_css": [
         ".collage .cards .card.image {box-shadow: none;}",
         ".cards {max-width: none !important;}",
-        "@media (max-width: 960px) {.content {display:none; }}"
+        "@media (max-width: 960px) {.content {display: none; }}"
       ],
       "settings": {
         "desktop_layout": "left",
@@ -637,6 +623,20 @@
         "text_position": "left",
         "show_background": false,
         "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".content {\/*padding-top: 60px !important;*\/ padding-bottom: 60px !important;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": false,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -798,9 +798,9 @@
           "settings": {
             "name": "Review Box",
             "vertical_alignment": "2",
-            "rating_color": "#1F1F1F",
+            "rating_color": "#1f1f1f",
             "section_color": "#ffffff",
-            "primary_text_color": "#1F1F1F"
+            "primary_text_color": "#1f1f1f"
           }
         }
       },
@@ -824,15 +824,15 @@
     "1f893d81-ea15-45cc-bb1c-d038c888d216",
     "1647529858a824f6f2",
     "16475250747d66e204",
-    "3b6f69a9-8347-41ba-9fce-76d08e9245bd",
-    "1647529743558de923",
+    "feature-columns",
     "banner-with-text-left",
     "banner-with-text-right",
-    "feature-columns",
+    "1647529743558de923",
     "c20bb3d7-20bc-4dc9-99e6-c9f1cc85b662",
     "e1c8eeae-981a-48af-a964-46d6ca362d83",
     "3e54ae5d-0944-4ccf-bf19-8acce5a3922f",
     "16478530667bcdd444",
+    "3b6f69a9-8347-41ba-9fce-76d08e9245bd",
     "alireviews-widget-230741",
     "alireviews-widget-231234",
     "6f22c8c0-8bb3-410b-9872-95104b611c34",
