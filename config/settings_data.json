@@ -64,6 +64,10 @@
       },
       "header": {
         "type": "header",
+        "custom_css": [
+          "h2 {margin: 0;}",
+          ".header .content {padding-bottom:0 !important4;}"
+        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/AVI-logo.png",
           "logo_max_width": 70,

@@ -49,7 +49,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/home-hero-bg.jpg",
+        "image": "shopify:\/\/shop_images\/home-hero-background-2.jpg",
         "video": "",
         "alignment": "h-right v-center",
         "color_heading": "#3db2b0",
@@ -68,6 +68,7 @@
     },
     "3e54ae5d-0944-4ccf-bf19-8acce5a3922f": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "template--16745576530176__3e54ae5d-0944-4ccf-bf19-8acce5a3922f-16819708597e4c85dc-0": {
           "type": "image",
@@ -185,6 +186,7 @@
     },
     "bbaf9820-16c0-40b2-ab8e-f4298c1079e2": {
       "type": "feature-columns",
+      "disabled": true,
       "blocks": {
         "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-0": {
           "type": "text_column",
