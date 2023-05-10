@@ -83,7 +83,7 @@
           "transparent_header_border_opacity": 0,
           "side_nav_linklist": "main-menu",
           "show_social_icons": true,
-          "show_language_selector": true,
+          "show_language_selector": false,
           "show_country_selector": true
         }
       },
