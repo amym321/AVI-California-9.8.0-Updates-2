@@ -66,8 +66,14 @@
                
               
               {% endfor %}
-               <li><a href="/pages/our-Story">Our Story</a></li>
-              <li><a href="/pages/affiliates">Affiliates</a></li>
+                <li><a href="/pages/our-Story">Our Story</a></li>
+                <li>
+                  <a class="plus" href="/pages/affiliates" data-action="link-to-child-list" data-handle="ul-affiliates" aria-controls="PrimaryNavLabel-affiliates" aria-expanded="false">Affiliates</a>
+                  <ul role="list" class="ul-affiliates" id="PrimaryNavLabel-benefits" style="display: none;">
+                    <li><a href="/pages/affiliates">Apply As Affiliate</a></li>
+                    <li><a href="/pages/avi-influencers">Our Influencers</a></li>
+                  </ul>
+                </li>
                 <li><a href="/pages/contact">Contact</a></li>
               {% if shop.customer_accounts_enabled %}
                 <li class="separator">—</li>
