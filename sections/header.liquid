@@ -170,14 +170,27 @@
       <div class="center">
         {% render 'logo' %}
       </div>
-      <div class="right">
+      <div class="left right">
         <div class="menu">
             <div id="desktopNav" class="nav" role="navigation" aria-label="Secondary">
         		<ul role="list" class="main">
-                	<li><a href="/pages/our-story">Our Story</a></li>
-                  	<li><a href="/pages/affiliates">Affiliates</a></li>
-					<li><a href="/pages/contact">Contact</a></li>
-                </ul>
+              <li><a href="/pages/our-story">Our Story</a></li>
+              <li>
+                <a class="plus" href="/pages/affiliates" data-action="link-to-child-list" data-handle="ul-affiliates" aria-controls="PrimaryNavLabel-affiliates" aria-expanded="false">Affiliates</a>
+                {% comment %} <a href="/pages/affiliates">Affiliates</a> {% endcomment %}
+                  <ul role="list" class="tab ul-affiliates second" id="PrimaryNavLabel-affiliates">
+                    <div class="columns">
+                        <li class="column">
+                          <a href="/pages/affiliates" class="column-header">Apply As Affiliate</a>
+                        </li>
+                        <li class="column">
+                          <a href="/pages/avi-influencers" class="column-header">Our Influencers</a>
+                        </li>
+                    </div>
+                  </ul>
+              </li>
+              <li><a href="/pages/contact">Contact</a></li>
+            </ul>
           </div>
         </div>
         {% render 'language-and-country-selectors', extended: false %}
