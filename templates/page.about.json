@@ -100,29 +100,6 @@
         "show_on_mobile": true
       }
     },
-    "image-with-text-1": {
-      "type": "image-with-text",
-      "custom_css": [
-        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
-        "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
-        "h2,a {text-decoration-color: #3db2b0;}",
-        ".content {margin: 0 0 50px;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/curt-influencer-3.jpg",
-        "subtitle": "",
-        "title": "Lynn Maamari @yourhealthydiaryy",
-        "heading_link": "https:\/\/www.instagram.com\/yourhealthydiaryy\/",
-        "text": "<p>Has 12 hobbies at any given time. Apart from flying, she loves running and training the visually impaired. Certified as a Health Coach from the Integrative Institute of Nutrition in NYC. Spends most of her time outdoors & on the move.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "text_position": "right",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "image-with-text-2": {
       "type": "image-with-text",
       "custom_css": [
@@ -137,6 +114,29 @@
         "title": "Nicole @ketowizzard",
         "heading_link": "https:\/\/www.instagram.com\/ketowizzard",
         "text": "<p>Nutrition is important to me, because when I feel my best I give my best! Healthy foods produce a healthy mind! I feel my best when I eat nutritious foods that fuel my body and mind! Avinola is hands down my favorite granola! Not only is it made from nutritious ingredients, but it tastes amazing too! <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "text_position": "right",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "custom_css": [
+        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
+        "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
+        "h2,a {text-decoration-color: #3db2b0;}",
+        ".content {margin: 0 0 50px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/curt-influencer-3.jpg",
+        "subtitle": "",
+        "title": "Curt @ketoxjunkie",
+        "heading_link": "https:\/\/www.instagram.com\/ketoxjunkie",
+        "text": "<p>As a person that has lost 300 lbs along the way I have found that nutrition is so important in the grand scheme of things. What you use to fuel your body daily not only gives you the energy to get you through the day but it can help lower the risk of things such as high blood pressure.I love Avinola because it's a great tasting snack and the fact that it uses lupini flakes. I love that it's keto friendly and I feel no guilt with eating it. Also, it goes great with ice cream\/yogurt and straight out the package.<\/p>",
         "button_label": "",
         "button_link": "",
         "text_position": "right",
@@ -397,8 +397,8 @@
     "main",
     "725fdc87-8b55-4f86-bf1d-03bb8a5ff7e5",
     "fc84d62d-2eb3-4616-819e-51ef523c9de6",
-    "image-with-text-1",
     "image-with-text-2",
+    "image-with-text-1",
     "image-with-text-3",
     "logo-list",
     "rich-text",
