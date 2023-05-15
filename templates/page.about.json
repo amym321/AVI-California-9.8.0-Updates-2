@@ -30,9 +30,9 @@
             "slide_text_color": "is-light",
             "text_alignment": "middle center",
             "heading": "",
-            "link": "",
             "subheading": "",
             "cta": "",
+            "link": "",
             "button_to_scroll": "",
             "credits": ""
           }
@@ -347,6 +347,30 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "4bf7de89-c8a7-4ac4-ad09-806268a3a441": {
+      "type": "custom-content",
+      "blocks": {
+        "template--16745576562944__4bf7de89-c8a7-4ac4-ad09-806268a3a441-1684184522d5476c9d-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bowl-Chocolate-granola_2.jpg",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576562944__4bf7de89-c8a7-4ac4-ad09-806268a3a441-1684184522d5476c9d-1"
+      ],
+      "settings": {
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": false,
+        "max_width": 950,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -362,6 +386,7 @@
     "05cf8cc2-16a2-4aa5-affa-d290fb9d40a5",
     "3786bdd6-675a-420e-a243-e794705887b7",
     "244c78c5-7588-4730-9188-bf42a19125fe",
-    "1683053067983e5675"
+    "1683053067983e5675",
+    "4bf7de89-c8a7-4ac4-ad09-806268a3a441"
   ]
 }
