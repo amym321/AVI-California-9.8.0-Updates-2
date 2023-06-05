@@ -369,6 +369,7 @@
     },
     "4bf7de89-c8a7-4ac4-ad09-806268a3a441": {
       "type": "custom-content",
+      "disabled": true,
       "blocks": {
         "template--16745576562944__4bf7de89-c8a7-4ac4-ad09-806268a3a441-1684184522d5476c9d-1": {
           "type": "image",
