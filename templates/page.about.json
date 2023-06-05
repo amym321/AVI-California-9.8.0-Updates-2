@@ -146,6 +146,17 @@
         "show_on_mobile": true
       }
     },
+    "2fee3166-182f-4303-aad8-57e4a22763ad": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<br><br><br>",
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "image-with-text-3": {
       "type": "image-with-text",
       "disabled": true,
@@ -394,17 +405,6 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
-    },
-    "2fee3166-182f-4303-aad8-57e4a22763ad": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<br><br><br><br>",
-        "show_background": false,
-        "expanded": true,
-        "expanded_content": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
     }
   },
   "order": [
@@ -414,6 +414,7 @@
     "fc84d62d-2eb3-4616-819e-51ef523c9de6",
     "image-with-text-2",
     "image-with-text-1",
+    "2fee3166-182f-4303-aad8-57e4a22763ad",
     "image-with-text-3",
     "logo-list",
     "rich-text",
@@ -421,7 +422,6 @@
     "3786bdd6-675a-420e-a243-e794705887b7",
     "244c78c5-7588-4730-9188-bf42a19125fe",
     "1683053067983e5675",
-    "4bf7de89-c8a7-4ac4-ad09-806268a3a441",
-    "2fee3166-182f-4303-aad8-57e4a22763ad"
+    "4bf7de89-c8a7-4ac4-ad09-806268a3a441"
   ]
 }
