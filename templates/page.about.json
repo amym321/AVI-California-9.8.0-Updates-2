@@ -123,29 +123,6 @@
         "show_on_mobile": true
       }
     },
-    "image-with-text-1": {
-      "type": "image-with-text",
-      "custom_css": [
-        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
-        "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
-        "h2,a {text-decoration-color: #3db2b0;}",
-        ".content {margin: 0 0 50px;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/curt-influencer-14.jpg",
-        "subtitle": "",
-        "title": "Curt @ketoxjunkie",
-        "heading_link": "https:\/\/www.instagram.com\/ketoxjunkie",
-        "text": "<p>As a person that has lost 300 lbs along the way I have found that nutrition is so important in the grand scheme of things. What you use to fuel your body daily not only gives you the energy to get you through the day but it can help lower the risk of things such as high blood pressure.<\/p><p><\/p><p>I love Avinola because it's a great tasting snack and the fact that it uses lupini flakes. I love that it's keto friendly and I feel no guilt with eating it. Also, it goes great with ice cream\/yogurt and straight out the package.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "text_position": "right",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "61ee6bb1-204f-4d85-9008-30a0947aaa61": {
       "type": "image-with-text",
       "custom_css": [
@@ -160,6 +137,29 @@
         "title": "Fernando @FitAviatorsClub",
         "heading_link": "https:\/\/www.fitaviatorsclub.com\/",
         "text": "<p>Everyday we make choices that continue to shape our lifestyle. These choices derive from our knowledge and experiences that can create or break habits. The crew member lifestyle is one that makes it more challenging to maintain optimal health. Nonetheless, it can be accomplished through Fitness and Nutrition.<\/p><p>Fitness is more than just picking up weights or going for a run. Structured exercise result in positive psychological and physical benefits that go beyond your expectations. It's setting yourself up for a strong healthy you in the long run. Think of it as your body's 401k.    <\/p><p>I invite you to join and learn the many effective ways on how to maintain a well balanced healthy lifestyle in aviation. In an industry surrounded by variety and uncertainty, one thing is certain. The habits you create now are what lead you to obtain that healthy lifestyle.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "text_position": "right",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "custom_css": [
+        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
+        "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
+        "h2,a {text-decoration-color: #3db2b0;}",
+        ".content {margin: 0 0 50px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/curt-influencer-14.jpg",
+        "subtitle": "",
+        "title": "Curt @ketoxjunkie",
+        "heading_link": "https:\/\/www.instagram.com\/ketoxjunkie",
+        "text": "<p>As a person that has lost 300 lbs along the way I have found that nutrition is so important in the grand scheme of things. What you use to fuel your body daily not only gives you the energy to get you through the day but it can help lower the risk of things such as high blood pressure.<\/p><p><\/p><p>I love Avinola because it's a great tasting snack and the fact that it uses lupini flakes. I love that it's keto friendly and I feel no guilt with eating it. Also, it goes great with ice cream\/yogurt and straight out the package.<\/p>",
         "button_label": "",
         "button_link": "",
         "text_position": "right",
@@ -436,8 +436,8 @@
     "725fdc87-8b55-4f86-bf1d-03bb8a5ff7e5",
     "fc84d62d-2eb3-4616-819e-51ef523c9de6",
     "image-with-text-2",
-    "image-with-text-1",
     "61ee6bb1-204f-4d85-9008-30a0947aaa61",
+    "image-with-text-1",
     "2fee3166-182f-4303-aad8-57e4a22763ad",
     "image-with-text-3",
     "logo-list",
