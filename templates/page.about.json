@@ -146,6 +146,29 @@
         "show_on_mobile": true
       }
     },
+    "61ee6bb1-204f-4d85-9008-30a0947aaa61": {
+      "type": "image-with-text",
+      "custom_css": [
+        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
+        "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
+        "h2,a {text-decoration-color: #3db2b0;}",
+        ".content {margin: 0 0 50px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fernando-influencer-2.jpg",
+        "subtitle": "",
+        "title": "Fernando",
+        "heading_link": "",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "text_position": "right",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "2fee3166-182f-4303-aad8-57e4a22763ad": {
       "type": "custom-liquid",
       "settings": {
@@ -405,28 +428,6 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
-    },
-    "61ee6bb1-204f-4d85-9008-30a0947aaa61": {
-      "type": "image-with-text",
-      "custom_css": [
-        "@media (min-width: 991px) {.image-with-text .flex-row .image {flex: 0 0 30%; } .rte h2 {text-align: unset; }}",
-        "@media (max-width: 990px) {.flex-row {margin: 0 20px; } .image img {margin: auto; max-width: 192px; } .info {text-align: center; }}",
-        "h2,a {text-decoration-color: #3db2b0;}",
-        ".content {margin: 0 0 50px;}"
-      ],
-      "settings": {
-        "subtitle": "Subtitle",
-        "title": "Image with text",
-        "heading_link": "",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "text_position": "left",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
     }
   },
   "order": [
@@ -436,6 +437,7 @@
     "fc84d62d-2eb3-4616-819e-51ef523c9de6",
     "image-with-text-2",
     "image-with-text-1",
+    "61ee6bb1-204f-4d85-9008-30a0947aaa61",
     "2fee3166-182f-4303-aad8-57e4a22763ad",
     "image-with-text-3",
     "logo-list",
@@ -444,7 +446,6 @@
     "3786bdd6-675a-420e-a243-e794705887b7",
     "244c78c5-7588-4730-9188-bf42a19125fe",
     "1683053067983e5675",
-    "4bf7de89-c8a7-4ac4-ad09-806268a3a441",
-    "61ee6bb1-204f-4d85-9008-30a0947aaa61"
+    "4bf7de89-c8a7-4ac4-ad09-806268a3a441"
   ]
 }
