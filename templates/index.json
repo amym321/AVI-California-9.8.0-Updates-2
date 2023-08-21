@@ -775,7 +775,7 @@
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
-            "html_area": ".apps {\n padding-top: 20px !important;\n}"
+            "html_area": ""
           }
         }
       },
