@@ -784,7 +784,8 @@
         "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff"
       ],
       "custom_css": [
-        ".apps {padding-top: 30px !important;}"
+        ".apps {padding-top: 30px !important;}",
+        "#insta-feed h2 {margin-bottom: 40px;}"
       ],
       "settings": {
         "show_background": true,
