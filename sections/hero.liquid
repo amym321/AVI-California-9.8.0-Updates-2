@@ -48,7 +48,7 @@
       >
       <img 
         src="{{ section.settings.image | img_url: '2048x' }}"
-        loading="lazy" 
+            {% comment %} loading="lazy"  {% endcomment %}  {% comment %} no lazy loading above fold - am {% endcomment %}
         width="{{ section.settings.image.width }}"
         alt="{{ section.settings.image.alt }}"
         height="{{ section.settings.image.height }}"
