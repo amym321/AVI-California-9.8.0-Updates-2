@@ -71,7 +71,6 @@
     },
     "c2d0f25e-4797-447c-b96b-69d72d981a20": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0": {
           "type": "image",
@@ -87,6 +86,7 @@
       "block_order": [
         "template--16745576530176__c2d0f25e-4797-447c-b96b-69d72d981a20-16819708597e4c85dc-0"
       ],
+      "disabled": true,
       "custom_css": [
         ".collage .cards .card.image {box-shadow: none;}"
       ],
@@ -104,7 +104,6 @@
     },
     "f256aa87-de86-429b-a729-3f92a195fded": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0": {
           "type": "image",
@@ -120,6 +119,7 @@
       "block_order": [
         "template--16745576530176__f256aa87-de86-429b-a729-3f92a195fded-16819708597e4c85dc-0"
       ],
+      "disabled": true,
       "custom_css": [
         ".collage .cards .card.image {box-shadow: none;}"
       ],
@@ -137,7 +137,6 @@
     },
     "bbaf9820-16c0-40b2-ab8e-f4298c1079e2": {
       "type": "feature-columns",
-      "disabled": true,
       "blocks": {
         "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-0": {
           "type": "text_column",
@@ -162,6 +161,7 @@
         "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-0",
         "template--16745576530176__bbaf9820-16c0-40b2-ab8e-f4298c1079e2-16836603425fd70d50-1"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 540px) {.cols .col {flex: 0 0 65% !important; }}"
       ],
@@ -190,7 +190,6 @@
     },
     "1647529858a824f6f2": {
       "type": "custom-content",
-      "disabled": true,
       "blocks": {
         "1647529858991c0f69-1": {
           "type": "image",
@@ -204,6 +203,7 @@
       "block_order": [
         "1647529858991c0f69-1"
       ],
+      "disabled": true,
       "custom_css": [
         "img {max-width: 100px; margin: 0 auto 0 -50px;}",
         ".custom-content .custom__item {padding: 0 !important; display: flex !important; justify-content: center;}",
@@ -747,7 +747,7 @@
     "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
       "type": "custom-liquid",
       "custom_css": [
-        ".content {padding-top: 60px !important; \/* padding-bottom: 60px !important;*\/}"
+        ".content {padding-top: 80px !important; \/* padding-bottom: 80px !important;*\/}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
@@ -792,12 +792,12 @@
     },
     "alireviews-section-1661910018": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "alireviews-block-1661910018": {
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "disabled": true,
           "settings": {
+            "product": "",
             "name": "Review Box",
             "vertical_alignment": "2",
             "rating_color": "#1f1f1f",
@@ -809,6 +809,7 @@
       "block_order": [
         "alireviews-block-1661910018"
       ],
+      "disabled": true,
       "settings": {
         "show_background": false,
         "expanded": false,
