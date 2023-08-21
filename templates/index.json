@@ -782,6 +782,9 @@
       "block_order": [
         "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff"
       ],
+      "custom_css": [
+        ".apps {padding-top: 20px !important;}"
+      ],
       "settings": {
         "show_background": true,
         "expanded": false,
