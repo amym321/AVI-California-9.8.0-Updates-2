@@ -115,6 +115,7 @@
         },
         "cf072fdd-d0d5-4d20-816a-3f1a8924d7ee": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "$4.99",
             "text_style": "uppercase",
@@ -140,16 +141,16 @@
             "increase_space_before_block": true
           }
         },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1": {
+          "type": "description",
+          "settings": {
+            "increase_space_before_block": true
+          }
+        },
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
-            "increase_space_before_block": true
-          }
-        },
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1": {
-          "type": "description",
-          "settings": {
             "increase_space_before_block": true
           }
         }
@@ -159,12 +160,11 @@
         "cf072fdd-d0d5-4d20-816a-3f1a8924d7ee",
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1",
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1",
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1",
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1"
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1"
       ],
       "custom_css": [
         ".shopify-payment-button {display: none !important;}",
-        ".price {display: none;}",
         ".with-payment-button:hover {background: #3db2b0;}"
       ],
       "settings": {
