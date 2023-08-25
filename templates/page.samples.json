@@ -95,8 +95,8 @@
       "settings": {
         "blog": "article",
         "layout": "grid",
-        "post_limit": 2,
-        "title": "Check our latest news",
+        "post_limit": 4,
+        "title": "From The Journal",
         "show_background": false,
         "expanded": true,
         "max_width": 950,
