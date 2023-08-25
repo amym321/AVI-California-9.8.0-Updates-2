@@ -212,8 +212,8 @@
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1"
       ],
       "settings": {
-        "featured_product": "double-chocolate-sea-salt",
-        "product_images_layout": "stack",
+        "featured_product": "chocolate-almond-sample-duo",
+        "product_images_layout": "bottom",
         "enable_sticky_info": true,
         "zoom_enable": true,
         "enable_video_looping": false,
