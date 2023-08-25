@@ -92,6 +92,9 @@
     },
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4": {
       "type": "featured-blog",
+      "custom_css": [
+        ".extra, .text {display: none;}"
+      ],
       "settings": {
         "blog": "article",
         "layout": "grid",
