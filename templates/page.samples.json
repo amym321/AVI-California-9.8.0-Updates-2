@@ -189,6 +189,7 @@
     },
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         ".content .flex-row {flex-direction: column; padding: 100px 0;}",
         ".image-with-text .flex-row .image {flex: 0 0 100%;}",
