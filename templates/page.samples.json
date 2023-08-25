@@ -220,7 +220,7 @@
         ".featured-blog {background: #f7f2e5 !important;}",
         ".inner h2 {padding-top: 50px; padding-bottom: 20px; display: block; text-align: center;}",
         ".extra,.text {display: none;}",
-        ".content {padding-bottom: 80px !important;}"
+        ".content {padding-bottom: 80px !important; margin-top:50px;}"
       ],
       "settings": {
         "blog": "article",
