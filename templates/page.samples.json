@@ -110,7 +110,7 @@
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-title-1": {
           "type": "title",
           "settings": {
-            "increase_space_before_block": false
+            "increase_space_before_block": true
           }
         },
         "cf072fdd-d0d5-4d20-816a-3f1a8924d7ee": {
@@ -123,6 +123,7 @@
         },
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "increase_space_before_block": false
           }
