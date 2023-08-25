@@ -93,6 +93,7 @@
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4": {
       "type": "featured-blog",
       "custom_css": [
+        "section-title {display: block;}",
         ".extra,.text {display: none;}",
         ".content {margin-bottom: 80px;}"
       ],
