@@ -47,6 +47,11 @@
         "2fb12db7-c509-4c17-a35b-aac5f3019839",
         "75009843-88f4-4494-a1a7-58e4098cc06b"
       ],
+      "custom_css": [
+        "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; }}",
+        ".hero .btn {animation: none;}",
+        ".hero img {animation: none:}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hero-sample.jpg",
         "video": "",
@@ -220,7 +225,7 @@
         ".featured-blog {background: #f7f2e5 !important;}",
         ".inner h2 {padding-top: 50px; padding-bottom: 20px; display: block; text-align: center;}",
         ".extra,.text {display: none;}",
-        ".content {padding-bottom: 80px !important; margin-top: 50px; margin-bottom:unset;}"
+        ".content {padding-bottom: 80px !important; margin-top: 50px; margin-bottom: unset;}"
       ],
       "settings": {
         "blog": "article",
