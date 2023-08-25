@@ -48,6 +48,7 @@
         "75009843-88f4-4494-a1a7-58e4098cc06b"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/hero-sample.jpg",
         "video": "",
         "alignment": "h-right v-center",
         "color_heading": "#000000",
