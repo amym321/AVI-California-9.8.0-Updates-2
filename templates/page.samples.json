@@ -76,7 +76,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "text": "<p>DELICIOUSLY IMPRESSIVE<br\/>1 CUP = 100% of your DAILY FIBER‍<br\/>& <strong>15g <\/strong>of PLANT BASED PROTEIN<\/p>",
+            "text": "<p>DELICIOUSLY IMPRESSIVE<br\/>1 CUP = <strong>100%<\/strong> of your DAILY FIBER‍<br\/>& <strong>15g <\/strong>of PLANT BASED PROTEIN<\/p>",
             "width": "66%",
             "alignment": "center",
             "align_text": "center"
