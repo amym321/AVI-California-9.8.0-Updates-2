@@ -99,8 +99,69 @@
         "show_on_mobile": true
       }
     },
+    "748165c2-2e04-4d3a-865f-238746f14b7d": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-title-1": {
+          "type": "title",
+          "settings": {
+            "increase_space_before_block": false
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1": {
+          "type": "price",
+          "settings": {
+            "increase_space_before_block": false
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatches_selector": "Color",
+            "popup_selector": "Size",
+            "popup_text": "Size guide",
+            "popup_page": "",
+            "increase_space_before_block": true
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "increase_space_before_block": true
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1": {
+          "type": "description",
+          "settings": {
+            "increase_space_before_block": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-title-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1"
+      ],
+      "settings": {
+        "featured_product": "chocolate-almond-sample-duo",
+        "product_images_layout": "bottom",
+        "enable_sticky_info": true,
+        "zoom_enable": true,
+        "enable_video_looping": false,
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "cec811a1-9ed2-4d0b-a7f1-8cf8ad359b0d": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         ".collection {max-width: 1200px; margin: 100px auto 150px auto; width: 90%;}"
       ],
@@ -163,62 +224,13 @@
         "show_on_mobile": true
       }
     },
-    "748165c2-2e04-4d3a-865f-238746f14b7d": {
-      "type": "featured-product",
-      "blocks": {
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-title-1": {
-          "type": "title",
-          "settings": {
-            "increase_space_before_block": false
-          }
-        },
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1": {
-          "type": "price",
-          "settings": {
-            "increase_space_before_block": false
-          }
-        },
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button",
-            "swatches_selector": "Color",
-            "popup_selector": "Size",
-            "popup_text": "Size guide",
-            "popup_page": "",
-            "increase_space_before_block": true
-          }
-        },
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "increase_space_before_block": true
-          }
-        },
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1": {
-          "type": "description",
-          "settings": {
-            "increase_space_before_block": true
-          }
-        }
-      },
-      "block_order": [
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-title-1",
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1",
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1",
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1",
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1"
-      ],
+    "2dc6b2db-a956-4de7-bc41-1d10bec47867": {
+      "type": "newsletter",
       "settings": {
-        "featured_product": "chocolate-almond-sample-duo",
-        "product_images_layout": "bottom",
-        "enable_sticky_info": true,
-        "zoom_enable": true,
-        "enable_video_looping": false,
-        "show_background": false,
-        "expanded": true,
+        "heading": "Be In The Know! Sign up for discounts & promos",
+        "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+        "show_background": true,
+        "expanded": false,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -228,9 +240,10 @@
     "f9207745-5ad4-4d0d-8dd9-ca28fa6cef17",
     "main",
     "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
+    "748165c2-2e04-4d3a-865f-238746f14b7d",
     "cec811a1-9ed2-4d0b-a7f1-8cf8ad359b0d",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
-    "748165c2-2e04-4d3a-865f-238746f14b7d"
+    "2dc6b2db-a956-4de7-bc41-1d10bec47867"
   ]
 }
