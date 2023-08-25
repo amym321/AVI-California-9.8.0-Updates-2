@@ -280,6 +280,21 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "f180f0bc-7da2-48b0-b758-02a78665c1f5": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Talk about your brand",
+        "richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "max_width": 650,
+        "show_background": true,
+        "expanded": true,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -291,6 +306,7 @@
     "cec811a1-9ed2-4d0b-a7f1-8cf8ad359b0d",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
-    "2dc6b2db-a956-4de7-bc41-1d10bec47867"
+    "2dc6b2db-a956-4de7-bc41-1d10bec47867",
+    "f180f0bc-7da2-48b0-b758-02a78665c1f5"
   ]
 }
