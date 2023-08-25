@@ -56,7 +56,7 @@
         "color_line_button": "#121212",
         "color_paragraph": "#121212",
         "overlay_color": "#000000",
-        "overlay_opacity": 10,
+        "overlay_opacity": 0,
         "mobile_min_height": 500,
         "video_mobile": "",
         "expanded": true,
