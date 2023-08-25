@@ -283,6 +283,9 @@
     },
     "f180f0bc-7da2-48b0-b758-02a78665c1f5": {
       "type": "rich-text",
+      "custom_css": [
+        ".content h2 {display:block;}"
+      ],
       "settings": {
         "title": "Talk about your brand",
         "richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
