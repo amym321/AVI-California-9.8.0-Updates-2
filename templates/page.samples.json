@@ -1,5 +1,59 @@
 {
   "sections": {
+    "f9207745-5ad4-4d0d-8dd9-ca28fa6cef17": {
+      "type": "hero",
+      "blocks": {
+        "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Hero heading",
+            "max_width": 500
+          }
+        },
+        "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Hero subheading",
+            "max_width": 500
+          }
+        },
+        "75009843-88f4-4494-a1a7-58e4098cc06b": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "max_width": 500
+          }
+        },
+        "432453ce-4a64-4891-833b-ddf501f33766": {
+          "type": "subheading",
+          "settings": {
+            "text": "Hero subheading",
+            "max_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1",
+        "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-subheading-1",
+        "75009843-88f4-4494-a1a7-58e4098cc06b",
+        "432453ce-4a64-4891-833b-ddf501f33766"
+      ],
+      "settings": {
+        "video": "",
+        "alignment": "h-center v-center",
+        "color_heading": "#000000",
+        "color_subheading": "#121212",
+        "color_line_button": "#121212",
+        "color_paragraph": "#121212",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "mobile_min_height": 500,
+        "video_mobile": "",
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -108,13 +162,75 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "748165c2-2e04-4d3a-865f-238746f14b7d": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-title-1": {
+          "type": "title",
+          "settings": {
+            "increase_space_before_block": false
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1": {
+          "type": "price",
+          "settings": {
+            "increase_space_before_block": false
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatches_selector": "Color",
+            "popup_selector": "Size",
+            "popup_text": "Size guide",
+            "popup_page": "",
+            "increase_space_before_block": true
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "increase_space_before_block": true
+          }
+        },
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1": {
+          "type": "description",
+          "settings": {
+            "increase_space_before_block": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-title-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1",
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1"
+      ],
+      "settings": {
+        "featured_product": "double-chocolate-sea-salt",
+        "product_images_layout": "stack",
+        "enable_sticky_info": true,
+        "zoom_enable": true,
+        "enable_video_looping": false,
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
+    "f9207745-5ad4-4d0d-8dd9-ca28fa6cef17",
     "main",
     "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
     "cec811a1-9ed2-4d0b-a7f1-8cf8ad359b0d",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
-    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4"
+    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
+    "748165c2-2e04-4d3a-865f-238746f14b7d"
   ]
 }
