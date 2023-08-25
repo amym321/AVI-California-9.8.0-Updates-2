@@ -146,7 +146,7 @@
       ],
       "settings": {
         "featured_product": "chocolate-almond-sample-duo",
-        "product_images_layout": "bottom",
+        "product_images_layout": "stack",
         "enable_sticky_info": true,
         "zoom_enable": true,
         "enable_video_looping": false,
