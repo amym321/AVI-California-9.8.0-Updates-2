@@ -55,6 +55,7 @@
         "75009843-88f4-4494-a1a7-58e4098cc06b",
         "432453ce-4a64-4891-833b-ddf501f33766"
       ],
+      "disabled": true,
       "settings": {
         "video": "",
         "alignment": "h-right v-center",
