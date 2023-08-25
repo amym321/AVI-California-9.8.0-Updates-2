@@ -219,6 +219,10 @@
     },
     "2dc6b2db-a956-4de7-bc41-1d10bec47867": {
       "type": "newsletter",
+      "custom_css": [
+        ".titles h2 {display: block !important;}",
+        ".content.newsletter {background: #f7f2e5 !important;}"
+      ],
       "settings": {
         "heading": "Be In The Know! Sign up for discounts & promos",
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
