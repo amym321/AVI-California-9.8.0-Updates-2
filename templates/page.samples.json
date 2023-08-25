@@ -201,8 +201,8 @@
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4": {
       "type": "featured-blog",
       "custom_css": [
-        ".inner h2 {display: block;}",
-        ".extra, .text {display: none;}",
+        ".inner h2 {display: block; text-align: center;}",
+        ".extra,.text {display: none;}",
         ".content {margin-bottom: 80px;}"
       ],
       "settings": {
