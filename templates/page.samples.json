@@ -152,6 +152,9 @@
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1",
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1"
       ],
+      "custom_css": [
+        ".shopify-payment-button {display: none !important;}"
+      ],
       "settings": {
         "featured_product": "chocolate-almond-sample-duo",
         "product_images_layout": "left",
