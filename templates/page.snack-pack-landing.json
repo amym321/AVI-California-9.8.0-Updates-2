@@ -12,10 +12,10 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "",
-        "columns": 4,
+        "collection": "samples",
+        "columns": 2,
         "rows": 2,
-        "button_label": "Browse more products",
+        "button_label": "",
         "button_link": "",
         "show_background": false,
         "expanded": true,
