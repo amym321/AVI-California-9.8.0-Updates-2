@@ -92,8 +92,7 @@
         "p {color: #3db2b0; font-size: 1.7em; line-height: 1.3em; margin: 30px 0 30px 0;}",
         "p strong {font-weight: 300; color: #3db2b0;}",
         ".custom-content .custom__item {margin: 0;}",
-        ".content {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/grains.png?v=1647531655) no-repeat left center; max-width: 80%; margin: auto;}",
-        ".content . {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/beans.png?v=1647531644) no-repeat right center;}"
+        ".content {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/grains.png?v=1647531655) no-repeat left center; max-width: 80%; margin: auto;}"
       ],
       "settings": {
         "show_background": false,
