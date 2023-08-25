@@ -138,7 +138,8 @@
         ".with-payment-button:hover {background: #3db2b0;}",
         ".buttons .add-to-cart:hover {background-color: #e052ad;}",
         ".info {right: 0; position: absolute;}",
-        "@media (max-width: 991px) {.add-to-cart {margin: auto; }}"
+        "@media (max-width: 991px) {.add-to-cart {margin: auto; }}",
+        "@media (max-width: 720px) {.frame {display:none; }}"
       ],
       "settings": {
         "featured_product": "chocolate-almond-sample-duo",
