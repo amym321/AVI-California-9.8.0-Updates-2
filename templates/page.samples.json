@@ -27,11 +27,22 @@
             "alignment": "center",
             "align_text": "left"
           }
+        },
+        "bbca55f3-433e-4690-897b-0d33ab326d36": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 class=\"artisan\">Artisan AVINOLA <br> Granola’s healthier, wiser Cousin<\/h2>",
+            "width": "50%"
+          }
         }
       },
       "block_order": [
         "template--16818739937536__2bb3a96d-20a2-45d6-87e9-004963fc62ce-image-1",
-        "template--16818739937536__2bb3a96d-20a2-45d6-87e9-004963fc62ce-text-1"
+        "template--16818739937536__2bb3a96d-20a2-45d6-87e9-004963fc62ce-text-1",
+        "bbca55f3-433e-4690-897b-0d33ab326d36"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "show_background": false,
