@@ -137,7 +137,7 @@
         ".shopify-payment-button {display: none !important;}",
         ".with-payment-button:hover {background: #3db2b0;}",
         ".buttons .add-to-cart:hover {background-color: #e052ad;}",
-        ".info {right: 0; position: absolute; top: 0 !important;margin-top: 0;}",
+        ".info {right: 0; position: absolute; top: 0 !important; margin-top: 0;}",
         "@media (max-width: 991px) {.add-to-cart {margin: auto; }}",
         "@media (max-width: 720px) {.frame {display: none; }}"
       ],
@@ -224,7 +224,8 @@
         ".image-with-text .flex-row .info .category {display: none;}",
         ".image-with-text .flex-row .info h2 {font-size: 2.6em !important; margin: 0 auto 20px auto; width: 90%;}",
         ".image-with-text .flex-row .info p {color: #bf9c6e !important; font-size: 1.8em !important; font-weight: 100; margin: 0 0 50px 0;}",
-        "@media (max-width: 420px) {.content .flex-row {padding: 70px 0; }}"
+        "@media (max-width: 420px) {.content .flex-row {padding: 70px 0; }}",
+        ".with-layout-options {max-width: unset;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/graph.png",
