@@ -165,6 +165,7 @@
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1"
       ],
       "custom_css": [
+        ".content {margin-top: 80px;}",
         ".shopify-payment-button {display: none !important;}",
         ".with-payment-button:hover {background: #3db2b0;}",
         ".buttons .add-to-cart:hover {background-color: #e052ad;}"
