@@ -210,7 +210,7 @@
         ".featured-blog {background: #f7f2e5 !important;}",
         ".inner h2 {padding-top: 50px; padding-bottom: 20px; display: block; text-align: center;}",
         ".extra,.text {display: none;}",
-        ".content {margin-bottom: 80px;}"
+        ".content {padding-bottom: 80px !important;}"
       ],
       "settings": {
         "blog": "article",
