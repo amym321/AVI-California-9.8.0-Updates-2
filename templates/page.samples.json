@@ -37,14 +37,7 @@
         "75009843-88f4-4494-a1a7-58e4098cc06b": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "max_width": 500
-          }
-        },
-        "432453ce-4a64-4891-833b-ddf501f33766": {
-          "type": "subheading",
-          "settings": {
-            "text": "Hero subheading",
+            "text": "<p>KETO with PREBIOTIC FIBER<\/p><p>ZERO ADDED SUGARS<\/p><p>GRAIN & GLUTEN FREE<\/p>",
             "max_width": 500
           }
         }
@@ -52,8 +45,7 @@
       "block_order": [
         "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1",
         "2fb12db7-c509-4c17-a35b-aac5f3019839",
-        "75009843-88f4-4494-a1a7-58e4098cc06b",
-        "432453ce-4a64-4891-833b-ddf501f33766"
+        "75009843-88f4-4494-a1a7-58e4098cc06b"
       ],
       "settings": {
         "video": "",
