@@ -219,6 +219,7 @@
     },
     "2dc6b2db-a956-4de7-bc41-1d10bec47867": {
       "type": "newsletter",
+      "disabled": true,
       "custom_css": [
         ".titles h2 {display: block !important;}",
         ".newsletter {background: #f7f2e5 !important; margin: 0 !important; padding: 60px 20px !important;}"
