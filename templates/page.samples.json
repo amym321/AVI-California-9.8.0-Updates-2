@@ -55,7 +55,6 @@
         "75009843-88f4-4494-a1a7-58e4098cc06b",
         "432453ce-4a64-4891-833b-ddf501f33766"
       ],
-      "disabled": true,
       "settings": {
         "video": "",
         "alignment": "h-right v-center",
@@ -283,8 +282,9 @@
     },
     "f180f0bc-7da2-48b0-b758-02a78665c1f5": {
       "type": "rich-text",
+      "disabled": true,
       "custom_css": [
-        ".content h2 {display:block;}"
+        ".content h2 {display: block;}"
       ],
       "settings": {
         "title": "Talk about your brand",
