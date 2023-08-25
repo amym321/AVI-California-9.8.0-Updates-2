@@ -134,13 +134,13 @@
       ],
       "custom_css": [
         ".content {margin-top: 80px; margin-bottom: 120px;}",
+        "@media (min-width: 991px) and (max-width: 1191px) {.content {margin-bottom: 220px; }}",
         ".shopify-payment-button {display: none !important;}",
         ".with-payment-button:hover {background: #3db2b0;}",
         ".buttons .add-to-cart:hover {background-color: #e052ad;}",
         ".info {right: 0; position: absolute; top: 0 !important; margin-top: 0;}",
         "@media (max-width: 991px) {.add-to-cart {margin: auto; }}",
-        "@media (max-width: 720px) {.frame {display: none; }}",
-        "@media (min-width: 991px) and (max-width: 1191px) {.content {margin-bottom: 220px; }}"
+        "@media (max-width: 720px) {.frame {display: none; }}"
       ],
       "settings": {
         "featured_product": "chocolate-almond-sample-duo",
