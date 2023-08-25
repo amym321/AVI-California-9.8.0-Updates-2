@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_background": false,
+        "expanded": true
+      }
+    },
+    "cec811a1-9ed2-4d0b-a7f1-8cf8ad359b0d": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {max-width: 1200px; margin: 100px auto 150px auto; width: 90%;}"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "collection": "samples",
+        "columns": 2,
+        "rows": 2,
+        "button_label": "",
+        "button_link": "",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cec811a1-9ed2-4d0b-a7f1-8cf8ad359b0d"
+  ]
+}
