@@ -2,6 +2,7 @@
   "sections": {
     "a7cea8d8-fa5c-406d-ae41-6d4a97e7b8ac": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subtitle": "Subtitle",
         "title": "Image with text",
@@ -22,14 +23,14 @@
         "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Hero heading",
+            "text": "Sample AVI Granola",
             "max_width": 500
           }
         },
-        "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-subheading-1": {
-          "type": "subheading",
+        "2fb12db7-c509-4c17-a35b-aac5f3019839": {
+          "type": "heading",
           "settings": {
-            "text": "Hero subheading",
+            "text": "for just $4.99 !",
             "max_width": 500
           }
         },
@@ -50,14 +51,13 @@
       },
       "block_order": [
         "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1",
-        "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-subheading-1",
+        "2fb12db7-c509-4c17-a35b-aac5f3019839",
         "75009843-88f4-4494-a1a7-58e4098cc06b",
         "432453ce-4a64-4891-833b-ddf501f33766"
       ],
-      "disabled": true,
       "settings": {
         "video": "",
-        "alignment": "h-center v-center",
+        "alignment": "h-right v-center",
         "color_heading": "#000000",
         "color_subheading": "#121212",
         "color_line_button": "#121212",
