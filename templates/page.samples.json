@@ -80,49 +80,6 @@
         "expanded": true
       }
     },
-    "2bb3a96d-20a2-45d6-87e9-004963fc62ce": {
-      "type": "custom-content",
-      "blocks": {
-        "bbca55f3-433e-4690-897b-0d33ab326d36": {
-          "type": "html",
-          "settings": {
-            "code": "<h2 class=\"artisan\">Artisan AVINOLA <br> Granola’s healthier, wiser Cousin<\/h2>",
-            "width": "50%"
-          }
-        },
-        "template--16818739937536__2bb3a96d-20a2-45d6-87e9-004963fc62ce-text-1": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "text": "<p>DELICIOUSLY IMPRESSIVE<br\/>1 CUP = <strong>100%<\/strong> of your DAILY FIBER‍<br\/>& <strong>15g <\/strong>of PLANT BASED PROTEIN<\/p>",
-            "width": "66%",
-            "alignment": "center",
-            "align_text": "center"
-          }
-        }
-      },
-      "block_order": [
-        "bbca55f3-433e-4690-897b-0d33ab326d36",
-        "template--16818739937536__2bb3a96d-20a2-45d6-87e9-004963fc62ce-text-1"
-      ],
-      "custom_css": [
-        "h2 {color: #bf9c6e !important;}",
-        "p {font-size: 1.7em; line-height: 1.3em; margin: 30px 0 30px 0;}",
-        "p strong {font-weight: 300; color: #3db2b0;}",
-        ".custom-content .custom__item {margin: 0;}",
-        ".content {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/grains.png) no-repeat left center; max-width: 80%; margin: auto;}",
-        ".custom__item {text-align: center;}",
-        ".content .custom__item--bbca55f3-433e-4690-897b-0d33ab326d36 {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/beans.png) no-repeat right center;}"
-      ],
-      "settings": {
-        "show_background": false,
-        "expanded": true,
-        "expanded_content": false,
-        "max_width": 950,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "748165c2-2e04-4d3a-865f-238746f14b7d": {
       "type": "featured-product",
       "blocks": {
@@ -183,7 +140,7 @@
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1"
       ],
       "custom_css": [
-        ".content {margin-top: 80px;}",
+        ".content {margin-top: 80px; margin-bottom: 120px;}",
         ".shopify-payment-button {display: none !important;}",
         ".with-payment-button:hover {background: #3db2b0;}",
         ".buttons .add-to-cart:hover {background-color: #e052ad;}"
@@ -196,6 +153,49 @@
         "enable_video_looping": false,
         "show_background": false,
         "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "2bb3a96d-20a2-45d6-87e9-004963fc62ce": {
+      "type": "custom-content",
+      "blocks": {
+        "bbca55f3-433e-4690-897b-0d33ab326d36": {
+          "type": "html",
+          "settings": {
+            "code": "<h2 class=\"artisan\">Artisan AVINOLA <br> Granola’s healthier, wiser Cousin<\/h2>",
+            "width": "50%"
+          }
+        },
+        "template--16818739937536__2bb3a96d-20a2-45d6-87e9-004963fc62ce-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>DELICIOUSLY IMPRESSIVE<br\/>1 CUP = <strong>100%<\/strong> of your DAILY FIBER‍<br\/>& <strong>15g <\/strong>of PLANT BASED PROTEIN<\/p>",
+            "width": "66%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        }
+      },
+      "block_order": [
+        "bbca55f3-433e-4690-897b-0d33ab326d36",
+        "template--16818739937536__2bb3a96d-20a2-45d6-87e9-004963fc62ce-text-1"
+      ],
+      "custom_css": [
+        "h2 {color: #bf9c6e !important;}",
+        "p {font-size: 1.7em; line-height: 1.3em; margin: 30px 0 30px 0;}",
+        "p strong {font-weight: 300; color: #3db2b0;}",
+        ".custom-content .custom__item {margin: 0;}",
+        ".content {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/grains.png) no-repeat left center; max-width: 80%; margin: auto;}",
+        ".custom__item {text-align: center;}",
+        ".content .custom__item--bbca55f3-433e-4690-897b-0d33ab326d36 {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/beans.png) no-repeat right center;}"
+      ],
+      "settings": {
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": false,
+        "max_width": 950,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -286,8 +286,8 @@
     "a7cea8d8-fa5c-406d-ae41-6d4a97e7b8ac",
     "f9207745-5ad4-4d0d-8dd9-ca28fa6cef17",
     "main",
-    "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
     "748165c2-2e04-4d3a-865f-238746f14b7d",
+    "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
     "cec811a1-9ed2-4d0b-a7f1-8cf8ad359b0d",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
