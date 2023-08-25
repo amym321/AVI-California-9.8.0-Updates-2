@@ -220,7 +220,7 @@
         ".featured-blog {background: #f7f2e5 !important;}",
         ".inner h2 {padding-top: 50px; padding-bottom: 20px; display: block; text-align: center;}",
         ".extra,.text {display: none;}",
-        ".content {padding-bottom: 80px !important; margin-top:50px;}"
+        ".content {padding-bottom: 80px !important; margin-top: 50px;}"
       ],
       "settings": {
         "blog": "article",
@@ -233,6 +233,20 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "9c159e85-c0f1-4e05-a828-363b96c20ce3": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".content {padding-top: 80px !important; \/* padding-bottom: 80px !important;*\/}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -242,6 +256,7 @@
     "748165c2-2e04-4d3a-865f-238746f14b7d",
     "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
-    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4"
+    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
+    "9c159e85-c0f1-4e05-a828-363b96c20ce3"
   ]
 }
