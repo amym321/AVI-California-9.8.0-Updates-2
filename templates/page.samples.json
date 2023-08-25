@@ -199,7 +199,7 @@
         "@media (max-width: 420px) {.content .flex-row {padding: 70px 0; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/protein_graph.jpg",
+        "image": "shopify:\/\/shop_images\/graph.png",
         "subtitle": "Avi Foods",
         "title": "We are the top source of Plant Based Protein!",
         "heading_link": "",
