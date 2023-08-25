@@ -221,7 +221,7 @@
       "type": "newsletter",
       "custom_css": [
         ".titles h2 {display: block !important;}",
-        ".newsletter {background: #f7f2e5 !important; margin: 0 !important; padding-top: 50px !important; padding-bottom: 70px !important;}"
+        ".newsletter {background: #f7f2e5 !important; margin: 0 !important; padding: 60px 20px !important;}"
       ],
       "settings": {
         "heading": "Be In The Know! Sign up for discounts & promos",
