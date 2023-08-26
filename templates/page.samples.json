@@ -53,6 +53,7 @@
         ".hero img {animation: none;}"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/hero-sample.jpg",
         "video": "",
         "alignment": "h-right v-center",
         "color_heading": "#000000",
@@ -62,6 +63,7 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "mobile_min_height": 1000,
+        "image_mobile": "shopify:\/\/shop_images\/hero-sample-mobile.jpg",
         "video_mobile": "",
         "expanded": true,
         "show_on_desktop": true,
