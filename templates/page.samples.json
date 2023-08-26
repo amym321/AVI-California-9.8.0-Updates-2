@@ -218,27 +218,6 @@
         "show_on_mobile": true
       }
     },
-    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4": {
-      "type": "featured-blog",
-      "disabled": true,
-      "custom_css": [
-        ".featured-blog {background: #f7f2e5 !important;}",
-        ".inner h2 {padding-top: 50px; padding-bottom: 20px; display: block; text-align: center;}",
-        ".extra,.text {display: none;}",
-        ".content {padding-bottom: 80px !important; margin-top: 50px; margin-bottom: unset;}"
-      ],
-      "settings": {
-        "blog": "article",
-        "layout": "grid",
-        "post_limit": 4,
-        "title": "From The Journal",
-        "show_background": false,
-        "expanded": true,
-        "max_width": 950,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "1dd1ec01-8c54-412a-8a17-0fcd64906092": {
       "type": "collage",
       "blocks": {
@@ -357,6 +336,26 @@
         "show_on_mobile": true
       }
     },
+    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4": {
+      "type": "featured-blog",
+      "custom_css": [
+        ".featured-blog {\/* background: #f7f2e5 !important;*\/}",
+        ".inner h2 {padding-top: 50px; padding-bottom: 20px; display: block; text-align: center;}",
+        ".extra,.text {display: none;}",
+        ".content {padding-bottom: 80px !important; margin-top: 50px; margin-bottom: unset;}"
+      ],
+      "settings": {
+        "blog": "article",
+        "layout": "grid",
+        "post_limit": 4,
+        "title": "From The Journal",
+        "show_background": false,
+        "expanded": true,
+        "max_width": 950,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "9c159e85-c0f1-4e05-a828-363b96c20ce3": {
       "type": "custom-liquid",
       "custom_css": [
@@ -379,9 +378,9 @@
     "748165c2-2e04-4d3a-865f-238746f14b7d",
     "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
-    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
     "1dd1ec01-8c54-412a-8a17-0fcd64906092",
     "f4c86979-2bb8-460e-8bb8-540e67e6ae5d",
+    "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
     "9c159e85-c0f1-4e05-a828-363b96c20ce3"
   ]
 }
