@@ -238,20 +238,6 @@
         "show_on_mobile": true
       }
     },
-    "9c159e85-c0f1-4e05-a828-363b96c20ce3": {
-      "type": "custom-liquid",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
-        "show_background": false,
-        "expanded": false,
-        "expanded_content": false,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
     "f4c86979-2bb8-460e-8bb8-540e67e6ae5d": {
       "type": "feature-columns",
       "blocks": {
@@ -267,8 +253,9 @@
         "template--16818739937536__f4c86979-2bb8-460e-8bb8-540e67e6ae5d-text_column-2": {
           "type": "text_column",
           "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_2_filled_2_bg.png",
             "image_url": ""
           }
         },
@@ -316,7 +303,7 @@
       "custom_css": [
         ".content {margin-bottom: 0;}",
         "img {z-index: 10;}",
-        "h2 {font-size: 2.6em; display:block;}"
+        "h2 {font-size: 2.6em; display: block;}"
       ],
       "settings": {
         "title": "Don’t take our word for it.",
@@ -326,6 +313,20 @@
         "show_background": false,
         "expanded": true,
         "max_width": 1400,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "9c159e85-c0f1-4e05-a828-363b96c20ce3": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": false,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -339,7 +340,7 @@
     "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
-    "9c159e85-c0f1-4e05-a828-363b96c20ce3",
-    "f4c86979-2bb8-460e-8bb8-540e67e6ae5d"
+    "f4c86979-2bb8-460e-8bb8-540e67e6ae5d",
+    "9c159e85-c0f1-4e05-a828-363b96c20ce3"
   ]
 }
