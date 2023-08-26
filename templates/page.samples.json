@@ -258,8 +258,9 @@
         "template--16818739937536__f4c86979-2bb8-460e-8bb8-540e67e6ae5d-text_column-1": {
           "type": "text_column",
           "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/quote_1d.png",
             "image_url": ""
           }
         },
@@ -311,6 +312,11 @@
         "template--16818739937536__f4c86979-2bb8-460e-8bb8-540e67e6ae5d-text_column-4",
         "template--16818739937536__f4c86979-2bb8-460e-8bb8-540e67e6ae5d-text_column-5",
         "template--16818739937536__f4c86979-2bb8-460e-8bb8-540e67e6ae5d-text_column-6"
+      ],
+      "custom_css": [
+        ".content {margin-bottom: 0;}",
+        "img {z-index: 10;}",
+        "h2 {font-size: 2.6em;}"
       ],
       "settings": {
         "title": "Don’t take our word for it.",
