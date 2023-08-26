@@ -339,7 +339,7 @@
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4": {
       "type": "featured-blog",
       "custom_css": [
-        ".featured-blog {\/* background: #f7f2e5 !important;*\/}",
+        ".featured-blog {\/* background: #f7f2e5 !important;*\/ margin-left: 20px; margin-right: 20px;}",
         ".inner h2 {padding-top: 50px; padding-bottom: 20px; display: block; text-align: center;}",
         ".extra,.text {display: none;}",
         ".content {padding-bottom: 80px !important; margin-top: 50px; margin-bottom: unset;}"
