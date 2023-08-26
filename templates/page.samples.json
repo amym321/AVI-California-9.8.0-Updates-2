@@ -316,7 +316,7 @@
       "custom_css": [
         ".content {margin-bottom: 0;}",
         "img {z-index: 10;}",
-        "h2 {font-size: 2.6em;}"
+        "h2 {font-size: 2.6em; display:block;}"
       ],
       "settings": {
         "title": "Don’t take our word for it.",
