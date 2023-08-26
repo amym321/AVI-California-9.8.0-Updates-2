@@ -342,6 +342,7 @@
         "template--16818739937536__c4461e13-469c-49e0-9a1e-adcba8a8aeae-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/wave_2d.png",
             "show_border": false,
             "link": "",
             "text": "",
