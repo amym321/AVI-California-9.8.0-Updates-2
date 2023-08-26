@@ -238,6 +238,39 @@
         "show_on_mobile": true
       }
     },
+    "1dd1ec01-8c54-412a-8a17-0fcd64906092": {
+      "type": "collage",
+      "blocks": {
+        "template--16818739937536__1dd1ec01-8c54-412a-8a17-0fcd64906092-image-1": {
+          "type": "image",
+          "settings": {
+            "show_border": false,
+            "link": "",
+            "text": "",
+            "text_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16818739937536__1dd1ec01-8c54-412a-8a17-0fcd64906092-image-1"
+      ],
+      "custom_css": [
+        ".collage .cards .card.image {box-shadow: none;}",
+        ".cards {max-width: none !important;}",
+        ".content {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "heading": "",
+        "show_background": false,
+        "expanded": true,
+        "content_max_width": 2000,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "f4c86979-2bb8-460e-8bb8-540e67e6ae5d": {
       "type": "feature-columns",
       "blocks": {
@@ -344,6 +377,7 @@
     "2bb3a96d-20a2-45d6-87e9-004963fc62ce",
     "a6f5ef17-4149-48c6-9d52-62c9dcc2edf7",
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
+    "1dd1ec01-8c54-412a-8a17-0fcd64906092",
     "f4c86979-2bb8-460e-8bb8-540e67e6ae5d",
     "9c159e85-c0f1-4e05-a828-363b96c20ce3"
   ]
