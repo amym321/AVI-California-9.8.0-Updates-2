@@ -1,55 +1,54 @@
 {
   "sections": {
+    "cc45c96a-7fe2-4eea-a345-a7d4ac31b165": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/caputos-3.jpg",
+            "link": "https:\/\/www.shopcaputos.com\/locations"
+          }
+        },
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-2": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-3": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-4": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-1",
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-2",
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-3",
+        "template--16819231129856__cc45c96a-7fe2-4eea-a345-a7d4ac31b165-logo-4"
+      ],
+      "settings": {
+        "title": "As featured in",
+        "show_background": false,
+        "expanded": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_background": false,
         "expanded": true
-      }
-    },
-    "606cc783-c2d3-4458-8b2f-6a33826efe9b": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/avi-team-maggie.png",
-        "subtitle": "",
-        "title": "Jane Doe",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "left",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/avi-team-sonia.png",
-        "subtitle": "",
-        "title": "Shakira",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "right",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "35710418-9fe0-41d0-814b-97d1d2926b1a": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/avi-team-Mason.png",
-        "subtitle": "",
-        "title": "Dude",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "left",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
       }
     },
     "164917726153b1f9e7": {
@@ -99,10 +98,8 @@
     }
   },
   "order": [
+    "cc45c96a-7fe2-4eea-a345-a7d4ac31b165",
     "main",
-    "606cc783-c2d3-4458-8b2f-6a33826efe9b",
-    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b",
-    "35710418-9fe0-41d0-814b-97d1d2926b1a",
     "164917726153b1f9e7",
     "1649177814296202b6"
   ]
