@@ -57,7 +57,7 @@
         ".logo {width: 200px;}"
       ],
       "settings": {
-        "title": "As featured in",
+        "title": "",
         "show_background": false,
         "expanded": false,
         "show_on_desktop": true,
