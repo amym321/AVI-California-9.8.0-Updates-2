@@ -1,55 +1,68 @@
 {
   "sections": {
+    "c599d855-a7bd-4cf4-9906-144be2a16994": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Find Us At These Fine Retailers!",
+        "richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "max_width": 650,
+        "show_background": true,
+        "expanded": true,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "ac49273b-03c3-469c-8b10-97c46c7912e3": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-1": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-2": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-3": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-1",
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-2",
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-3",
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4"
+      ],
+      "settings": {
+        "title": "As featured in",
+        "show_background": false,
+        "expanded": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_background": false,
         "expanded": true
-      }
-    },
-    "606cc783-c2d3-4458-8b2f-6a33826efe9b": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/avi-team-maggie.png",
-        "subtitle": "",
-        "title": "Jane Doe",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "left",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/avi-team-sonia.png",
-        "subtitle": "",
-        "title": "Shakira",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "right",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "35710418-9fe0-41d0-814b-97d1d2926b1a": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/avi-team-Mason.png",
-        "subtitle": "",
-        "title": "Dude",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_position": "left",
-        "show_background": false,
-        "expanded": true,
-        "show_on_desktop": true,
-        "show_on_mobile": true
       }
     },
     "164917726153b1f9e7": {
@@ -99,10 +112,9 @@
     }
   },
   "order": [
+    "c599d855-a7bd-4cf4-9906-144be2a16994",
+    "ac49273b-03c3-469c-8b10-97c46c7912e3",
     "main",
-    "606cc783-c2d3-4458-8b2f-6a33826efe9b",
-    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b",
-    "35710418-9fe0-41d0-814b-97d1d2926b1a",
     "164917726153b1f9e7",
     "1649177814296202b6"
   ]
