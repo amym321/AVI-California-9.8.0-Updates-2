@@ -9549,9 +9549,14 @@ body {
   .buttons .add-to-cart {
     background-color: #e052ad;
     color: white !important;
-  
   }
   
+  @media (max-width: 991px) {
+    .buttons .add-to-cart {
+      margin: auto;
+    }
+  }
+
  
   /* ---------------------------  HOME SECTIONS ---------------------------  */
   
@@ -9676,7 +9681,9 @@ body {
 
    /* ---------------------------  COLLECTIONS ---------------------------  */ 
   
-  .template-collection .layout { background: url(https://cdn.shopify.com/s/files/1/0632/6881/5104/files/product-bg.png?v=1647884900) no-repeat; }
+  @media (min-width: 720px){
+    .template-collection .layout { background: url(https://cdn.shopify.com/s/files/1/0632/6881/5104/files/product-bg.png?v=1647884900); } /* no-repeat */
+  }
   .template-collection .content .collection { max-width: 1200px; margin: 100px auto 150px auto; width: 90%; }
   .template-collection .content .collection .head { display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 0 0 100px 0; }
   .template-collection .content .collection .head h2 { font-size: 2.5em;  }
@@ -9715,9 +9722,9 @@ body {
   
   /* ---------------------------  PRODDUCT ---------------------------  */ 
   
-  
-  .template-product .layout { background: url(https://cdn.shopify.com/s/files/1/0632/6881/5104/files/product-bg.png?v=1647884900) no-repeat; }
-
+  @media (min-width: 720px){
+    .template-product .layout { background: url(https://cdn.shopify.com/s/files/1/0632/6881/5104/files/product-bg.png?v=1647884900) no-repeat; }
+  }
   .template-product .product { max-width: 1200px; width: 90%; margin: 100px auto !important;  }
   
   .product-icons { margin: 50px 0 0 0; }
@@ -9845,8 +9852,13 @@ body {
   
   #our-story .page-content-wrapper { border-bottom: 1px solid #bf9c6e; padding: 0 0 50px 0; margin: 0 0 50px 0;    }
   
-  .shopify-section.section-page .content { background: url( https://cdn.shopify.com/s/files/1/0632/6881/5104/files/page-bg.jpg?v=1649179674) no-repeat center top; }
-  
+  @media (min-width: 720px) {
+    .template-page .layout,  /* all page sections on page templates */
+    #sold-here .layout  {        /* Logo List section on Sold Here page */
+      background: url( https://cdn.shopify.com/s/files/1/0632/6881/5104/files/page-bg.jpg?v=1649179674) repeat-y ;  /* center no-repeat */
+    }
+  }
+
      /* 1st - blue banner nth type 2 */
      /* 2nd - pink banner nth type 3 */
   /* BANNER WITH TEXT on pages Sweet Almond Coconut nth type 2 */
