@@ -7,7 +7,7 @@
       {% for block in section.blocks %}
         <div class="logo">
           {% if block.settings.link != blank %}
-            <a href="{{ block.settings.link }}">
+      <a href="{{ block.settings.link }}"  {% if template contains "sold-here" %} target="_blank" {% endif %}>
           {% endif %}
           {% if block.settings.image %}
             {% render 'resp-img',
@@ -23,6 +23,21 @@
           {% if block.settings.link != blank %}
             </a>
           {% endif %}
+
+          {% comment %} added text & button - am {% endcomment %}
+          {% if block.settings.text != blank %}
+            {% comment %} <div class="rte-setting rte">{{ block.settings.text }}</div> {% endcomment %}
+            <h3 class="rte-setting rte">{{ block.settings.text }}</h3>
+            {% comment %} <h4 class="rte-setting rte">{{ block.settings.text }}</h4> {% endcomment %}
+          {% endif %}
+
+          {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+              <a href="{{ block.settings.button_link }}" target="_blank" class="image-with-text-btn btn action normal">
+                {{ block.settings.button_label | escape }}
+              </a>
+          {% endif %}
+          {% comment %} end - am {% endcomment %}
+
         </div>
       {% endfor %}
     </div>
@@ -104,6 +119,33 @@
             "info": {
               "en": "Optional",
               "es": "Opcional"
+            }
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": {
+              "en": "Text"
+            },
+            "default": {
+              "en": "Use this text to share information"
+            }
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": {
+              "en": "Button label"
+            },
+            "default": {
+              "en": "Explore"
+            }
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": {
+              "en": "Button link"
             }
           }
         ]
