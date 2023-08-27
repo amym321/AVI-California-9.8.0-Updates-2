@@ -2,6 +2,9 @@
   "sections": {
     "c599d855-a7bd-4cf4-9906-144be2a16994": {
       "type": "rich-text",
+      "custom_css": [
+        "h2 {display:block;}"
+      ],
       "settings": {
         "title": "Find Us At These Fine Retailers!",
         "richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
