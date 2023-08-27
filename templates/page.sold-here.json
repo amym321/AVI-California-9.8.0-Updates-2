@@ -85,10 +85,11 @@
         "07ca2ccf-49db-46da-9594-97b9a21ac4a1": {
           "type": "logo",
           "settings": {
-            "link": "",
-            "text": "Use this text to share information",
-            "button_label": "Explore",
-            "button_link": ""
+            "image": "shopify:\/\/shop_images\/sunset-foods-2.jpg",
+            "link": "https:\/\/www.sunsetfoods.com\/map",
+            "text": "Sunset Foods",
+            "button_label": "Locations",
+            "button_link": "https:\/\/www.sunsetfoods.com\/map"
           }
         },
         "a8d949aa-3210-4667-9487-e4d238b58047": {
