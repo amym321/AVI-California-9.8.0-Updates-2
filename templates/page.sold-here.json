@@ -137,7 +137,7 @@
 
       ],
       "settings": {
-        "custom_liquid": "<hr width=\"75%\" style=\"height:2px; background-color:gray\">",
+        "custom_liquid": "",
         "show_background": false,
         "expanded": true,
         "expanded_content": true,
@@ -147,6 +147,7 @@
     },
     "de804f57-2e18-4eef-bbe5-878b968e3240": {
       "type": "rich-text",
+      "disabled": true,
       "custom_css": [
         "h2 {display: block; text-decoration: underline overline; text-decoration-style: wavy; color: #e052ad !important;}"
       ],
@@ -202,6 +203,7 @@
         "8ef8102d-a652-4402-800f-6c4d3d38b255",
         "6e84bd1c-e623-4707-803d-28390cc529cb"
       ],
+      "disabled": true,
       "settings": {
         "show_background": false,
         "expanded": true,
