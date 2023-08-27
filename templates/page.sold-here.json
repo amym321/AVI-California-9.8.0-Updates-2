@@ -55,10 +55,11 @@
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4"
       ],
       "custom_css": [
-        "content {margin-top: 100px;}",
+        ".content {margin-top: 100px;}",
         ".logo {width: 200px;}",
-        "h2 {display: block; margin-bottom: 50px;}",
-        " .image-with-text-btn {width: unset; }"
+        "h2,h3 {\/*display: block; margin-bottom: 50px;*\/ margin-top: 20px; height: 60px;}",
+        ".image-with-text-btn {width: unset;}",
+        ".btn.action {font-size: unset !important;}"
       ],
       "settings": {
         "title": "Find Us At These Fine Retailers!",
