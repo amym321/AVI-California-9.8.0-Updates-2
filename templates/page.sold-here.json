@@ -131,6 +131,17 @@
         "show_on_mobile": true
       }
     },
+    "a9a9c899-6a9b-4059-a6bf-bbcad0171a19": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<hr>",
+        "show_background": false,
+        "expanded": true,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "de804f57-2e18-4eef-bbe5-878b968e3240": {
       "type": "rich-text",
       "custom_css": [
@@ -246,6 +257,7 @@
   "order": [
     "main",
     "ac49273b-03c3-469c-8b10-97c46c7912e3",
+    "a9a9c899-6a9b-4059-a6bf-bbcad0171a19",
     "de804f57-2e18-4eef-bbe5-878b968e3240",
     "990b8786-0aef-4ba4-a184-64b2156090a0",
     "164917726153b1f9e7",
