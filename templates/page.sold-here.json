@@ -106,10 +106,10 @@
           "type": "logo",
           "settings": {
             "image": "shopify:\/\/shop_images\/here-here-2.jpg",
-            "link": "",
+            "link": "https:\/\/hereheremarket.com\/pages\/chicago-food-stop-pop-up",
             "text": "Here Here Market",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https:\/\/hereheremarket.com\/pages\/chicago-food-stop-pop-up"
           }
         }
       },
