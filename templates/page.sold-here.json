@@ -54,10 +54,11 @@
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4"
       ],
       "custom_css": [
-        ".logo {width: 200px;}"
+        ".logo {width: 200px;}",
+        "h2 {display:block;}"
       ],
       "settings": {
-        "title": "",
+        "title": "Find Us At These Fine Retailers!",
         "show_background": false,
         "expanded": false,
         "show_on_desktop": true,
