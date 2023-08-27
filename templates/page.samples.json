@@ -62,7 +62,7 @@
         "color_paragraph": "#121212",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "mobile_min_height": 1000,
+        "mobile_min_height": 800,
         "image_mobile": "shopify:\/\/shop_images\/hero-sample-mobile.jpg",
         "video_mobile": "",
         "expanded": true,
