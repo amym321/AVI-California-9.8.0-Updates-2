@@ -170,8 +170,8 @@
         "42aba5c4-03b0-430e-88df-d6839832d688": {
           "type": "text",
           "settings": {
-            "title": "Find Us At These Events",
-            "text": "<h1>______________________<\/h1><h1><\/h1>",
+            "title": "",
+            "text": "<h3>Find Us At These Events<\/h3>",
             "width": "50%",
             "alignment": "center",
             "align_text": "center"
