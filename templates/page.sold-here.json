@@ -53,6 +53,9 @@
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-3",
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4"
       ],
+      "custom_css": [
+        ".logo {width: 200px;}"
+      ],
       "settings": {
         "title": "As featured in",
         "show_background": false,
