@@ -215,9 +215,8 @@
         "8ef8102d-a652-4402-800f-6c4d3d38b255",
         "6e84bd1c-e623-4707-803d-28390cc529cb"
       ],
-      "disabled": true,
       "custom_css": [
-        "h3 {font-size: 2.4em; text-decoration: underline; \/*text-decoration-style: wavy;*\/ padding-bottom: 50px; color: #e052ad !important;}"
+
       ],
       "settings": {
         "show_background": false,
