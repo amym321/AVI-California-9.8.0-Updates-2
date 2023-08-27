@@ -133,6 +133,7 @@
     },
     "a9a9c899-6a9b-4059-a6bf-bbcad0171a19": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
 
       ],
