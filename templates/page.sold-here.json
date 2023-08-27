@@ -145,7 +145,7 @@
     "de804f57-2e18-4eef-bbe5-878b968e3240": {
       "type": "rich-text",
       "custom_css": [
-        "h2 {display: block; text-decoration: underline;}"
+        "h2 {display: block; text-decoration: underline overline; color: #e052ad !important;}"
       ],
       "settings": {
         "title": "Find Us At These Events",
