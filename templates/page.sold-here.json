@@ -137,7 +137,7 @@
 
       ],
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<hr width=\"75%\" style=\"height:2px; background-color:gray\">",
         "show_background": false,
         "expanded": true,
         "expanded_content": true,
