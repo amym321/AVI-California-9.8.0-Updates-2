@@ -26,25 +26,37 @@
           "type": "logo",
           "settings": {
             "image": "shopify:\/\/shop_images\/caputos-3.jpg",
-            "link": "https:\/\/www.shopcaputos.com\/locations"
+            "link": "https:\/\/www.shopcaputos.com\/locations",
+            "text": "Caputo's",
+            "button_label": "Locations",
+            "button_link": "https:\/\/www.shopcaputos.com"
           }
         },
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-2": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
           }
         },
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-3": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
           }
         },
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
           }
         }
       },
