@@ -105,17 +105,9 @@
         "cb689e8d-610d-4504-ac87-e06b68cc6404": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/here-here-2.jpg",
             "link": "",
-            "text": "Use this text to share information",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "9bdd5e6a-229f-4a2d-b8b4-1365b5454200": {
-          "type": "logo",
-          "settings": {
-            "link": "",
-            "text": "Use this text to share information",
+            "text": "Here Here Market",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -130,8 +122,7 @@
         "1deb6966-eaf9-481a-83cb-ee4447360991",
         "07ca2ccf-49db-46da-9594-97b9a21ac4a1",
         "a8d949aa-3210-4667-9487-e4d238b58047",
-        "cb689e8d-610d-4504-ac87-e06b68cc6404",
-        "9bdd5e6a-229f-4a2d-b8b4-1365b5454200"
+        "cb689e8d-610d-4504-ac87-e06b68cc6404"
       ],
       "custom_css": [
         ".content {margin-top: 100px;}",
