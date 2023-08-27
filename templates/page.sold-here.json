@@ -167,6 +167,16 @@
     "990b8786-0aef-4ba4-a184-64b2156090a0": {
       "type": "custom-content",
       "blocks": {
+        "42aba5c4-03b0-430e-88df-d6839832d688": {
+          "type": "text",
+          "settings": {
+            "title": "Find Us At These Events",
+            "text": "<h1>______________________<\/h1><h1><\/h1>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        },
         "template--16819231162624__990b8786-0aef-4ba4-a184-64b2156090a0-text-1": {
           "type": "text",
           "settings": {
@@ -199,11 +209,11 @@
         }
       },
       "block_order": [
+        "42aba5c4-03b0-430e-88df-d6839832d688",
         "template--16819231162624__990b8786-0aef-4ba4-a184-64b2156090a0-text-1",
         "8ef8102d-a652-4402-800f-6c4d3d38b255",
         "6e84bd1c-e623-4707-803d-28390cc529cb"
       ],
-      "disabled": true,
       "settings": {
         "show_background": false,
         "expanded": true,
