@@ -46,10 +46,10 @@
           "type": "logo",
           "settings": {
             "image": "shopify:\/\/shop_images\/Chicago-health-foods-4.png",
-            "link": "",
+            "link": "https:\/\/chicagohealthfoods.com\/pages\/visit-us",
             "text": "Chicago Health Foods",
-            "button_label": "Explore",
-            "button_link": ""
+            "button_label": "Locations",
+            "button_link": "https:\/\/chicagohealthfoods.com\/pages\/visit-us"
           }
         },
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4": {
