@@ -131,6 +131,24 @@
         "show_on_mobile": true
       }
     },
+    "de804f57-2e18-4eef-bbe5-878b968e3240": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {display:block;}"
+      ],
+      "settings": {
+        "title": "Find Us At These Events",
+        "richtext": "",
+        "button_label": "",
+        "button_link": "",
+        "max_width": 650,
+        "show_background": true,
+        "expanded": true,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "990b8786-0aef-4ba4-a184-64b2156090a0": {
       "type": "custom-content",
       "blocks": {
@@ -228,6 +246,7 @@
   "order": [
     "main",
     "ac49273b-03c3-469c-8b10-97c46c7912e3",
+    "de804f57-2e18-4eef-bbe5-878b968e3240",
     "990b8786-0aef-4ba4-a184-64b2156090a0",
     "164917726153b1f9e7",
     "1649177814296202b6"
