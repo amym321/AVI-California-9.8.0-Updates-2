@@ -58,13 +58,73 @@
             "button_label": "Explore",
             "button_link": ""
           }
+        },
+        "9018a02b-7fe5-4d82-bca1-3968c7ba0978": {
+          "type": "logo",
+          "settings": {
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "1deb6966-eaf9-481a-83cb-ee4447360991": {
+          "type": "logo",
+          "settings": {
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "07ca2ccf-49db-46da-9594-97b9a21ac4a1": {
+          "type": "logo",
+          "settings": {
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "a8d949aa-3210-4667-9487-e4d238b58047": {
+          "type": "logo",
+          "settings": {
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "cb689e8d-610d-4504-ac87-e06b68cc6404": {
+          "type": "logo",
+          "settings": {
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "9bdd5e6a-229f-4a2d-b8b4-1365b5454200": {
+          "type": "logo",
+          "settings": {
+            "link": "",
+            "text": "Use this text to share information",
+            "button_label": "Explore",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-1",
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-2",
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-3",
-        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4"
+        "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4",
+        "9018a02b-7fe5-4d82-bca1-3968c7ba0978",
+        "1deb6966-eaf9-481a-83cb-ee4447360991",
+        "07ca2ccf-49db-46da-9594-97b9a21ac4a1",
+        "a8d949aa-3210-4667-9487-e4d238b58047",
+        "cb689e8d-610d-4504-ac87-e06b68cc6404",
+        "9bdd5e6a-229f-4a2d-b8b4-1365b5454200"
       ],
       "custom_css": [
         ".content {margin-top: 100px;}",
