@@ -3,11 +3,11 @@
     "c599d855-a7bd-4cf4-9906-144be2a16994": {
       "type": "rich-text",
       "custom_css": [
-        "h2 {display:block;}"
+        "h2 {display: block;}"
       ],
       "settings": {
         "title": "Find Us At These Fine Retailers!",
-        "richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "richtext": "",
         "button_label": "",
         "button_link": "",
         "max_width": 650,
@@ -24,7 +24,8 @@
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-1": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "image": "shopify:\/\/shop_images\/caputos-3.jpg",
+            "link": "https:\/\/www.shopcaputos.com\/locations"
           }
         },
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-2": {
