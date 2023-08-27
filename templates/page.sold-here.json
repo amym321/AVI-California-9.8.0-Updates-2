@@ -1,22 +1,11 @@
 {
   "sections": {
-    "c599d855-a7bd-4cf4-9906-144be2a16994": {
-      "type": "rich-text",
+    "main": {
+      "type": "main-page",
       "disabled": true,
-      "custom_css": [
-        "h2 {display: block;}"
-      ],
       "settings": {
-        "title": "Find Us At These Fine Retailers!",
-        "richtext": "",
-        "button_label": "",
-        "button_link": "",
-        "max_width": 650,
-        "show_background": true,
-        "expanded": true,
-        "expanded_content": false,
-        "show_on_desktop": true,
-        "show_on_mobile": true
+        "show_background": false,
+        "expanded": true
       }
     },
     "ac49273b-03c3-469c-8b10-97c46c7912e3": {
@@ -142,12 +131,52 @@
         "show_on_mobile": true
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
+    "990b8786-0aef-4ba4-a184-64b2156090a0": {
+      "type": "custom-content",
+      "blocks": {
+        "template--16819231162624__990b8786-0aef-4ba4-a184-64b2156090a0-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "Saturday Feb 11 & 12th 2023",
+            "text": "<p>Chicago Artisan Market in Ravenswood 10am - 4pm<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        },
+        "8ef8102d-a652-4402-800f-6c4d3d38b255": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        },
+        "6e84bd1c-e623-4707-803d-28390cc529cb": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16819231162624__990b8786-0aef-4ba4-a184-64b2156090a0-text-1",
+        "8ef8102d-a652-4402-800f-6c4d3d38b255",
+        "6e84bd1c-e623-4707-803d-28390cc529cb"
+      ],
       "settings": {
         "show_background": false,
-        "expanded": true
+        "expanded": true,
+        "expanded_content": false,
+        "max_width": 950,
+        "show_on_desktop": true,
+        "show_on_mobile": true
       }
     },
     "164917726153b1f9e7": {
@@ -197,9 +226,9 @@
     }
   },
   "order": [
-    "c599d855-a7bd-4cf4-9906-144be2a16994",
-    "ac49273b-03c3-469c-8b10-97c46c7912e3",
     "main",
+    "ac49273b-03c3-469c-8b10-97c46c7912e3",
+    "990b8786-0aef-4ba4-a184-64b2156090a0",
     "164917726153b1f9e7",
     "1649177814296202b6"
   ]
