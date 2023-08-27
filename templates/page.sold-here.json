@@ -125,10 +125,10 @@
         "cb689e8d-610d-4504-ac87-e06b68cc6404"
       ],
       "custom_css": [
-        ".content {margin-top: 100px;}",
+        ".content {margin-top: 100px; margin-left: 20px; margin-right: 20px;}",
         ".logo {width: 200px; margin-bottom: 50px;}",
         "h2 {display: block; margin-bottom: 50px;}",
-        " h3 {margin-top: 20px; height: 70px; font-size: 1.5em;}",
+        "h3 {margin-top: 20px; height: 70px; font-size: 1.5em;}",
         ".image-with-text-btn {width: unset; display: unset;}",
         ".btn.action {font-size: unset !important;}"
       ],
