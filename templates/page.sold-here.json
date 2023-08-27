@@ -37,7 +37,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/ffc-2.png",
             "link": "https:\/\/ffc.com\/club-locations\/",
-            "text": "Fitness Formula Clubs",
+            "text": "Use this text to share information",
             "button_label": "locations",
             "button_link": "https:\/\/ffc.com\/club-locations\/"
           }
@@ -130,7 +130,7 @@
       "custom_css": [
         ".content {margin-top: 100px;}",
         ".logo {width: 200px;}",
-        "h2,h3 {\/*display: block; margin-bottom: 50px;*\/ margin-top: 20px; height: 70px;}",
+        "h2,h3 {\/*display: block; margin-bottom: 50px;*\/ margin-top: 20px; height: 70px; font-size: 1.5em;}",
         ".image-with-text-btn {width: unset; display: unset;}",
         ".btn.action {font-size: unset !important;}"
       ],
