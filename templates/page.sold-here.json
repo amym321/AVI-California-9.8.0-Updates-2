@@ -35,10 +35,11 @@
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-2": {
           "type": "logo",
           "settings": {
-            "link": "",
+            "image": "shopify:\/\/shop_images\/ffc-2.png",
+            "link": "https:\/\/ffc.com\/club-locations\/",
             "text": "Use this text to share information",
-            "button_label": "Explore",
-            "button_link": ""
+            "button_label": "locations",
+            "button_link": "https:\/\/ffc.com\/club-locations\/"
           }
         },
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-3": {
