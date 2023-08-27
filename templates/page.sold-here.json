@@ -45,8 +45,9 @@
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-3": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Chicago-health-foods-4.png",
             "link": "",
-            "text": "Use this text to share information",
+            "text": "Chicago Health Foods",
             "button_label": "Explore",
             "button_link": ""
           }
