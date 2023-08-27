@@ -1,0 +1,109 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_background": false,
+        "expanded": true
+      }
+    },
+    "606cc783-c2d3-4458-8b2f-6a33826efe9b": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/avi-team-maggie.png",
+        "subtitle": "",
+        "title": "Jane Doe",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text_position": "left",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/avi-team-sonia.png",
+        "subtitle": "",
+        "title": "Shakira",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text_position": "right",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "35710418-9fe0-41d0-814b-97d1d2926b1a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/avi-team-Mason.png",
+        "subtitle": "",
+        "title": "Dude",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text_position": "left",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "164917726153b1f9e7": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #2b9490 !important; background-position: bottom center !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
+      "settings": {
+        "title": "Sweet Almond Coconut",
+        "text": "<p>Delightfully tasty with epic crunch!<\/p>",
+        "image": "shopify:\/\/shop_images\/sweet-almond-coconut-home-image_310d382e-ef19-4f86-8887-5f3630001aba.png",
+        "image_for_mobile": "shopify:\/\/shop_images\/sweet-almond-coconut-home-mobile-image_2ed362e1-82bd-4e3e-b7e9-968b3e84cbe8.png",
+        "image_position": "center left",
+        "text_position": "left",
+        "text_align": "left",
+        "button_label": "Order Now",
+        "button_link": "shopify:\/\/collections\/almond-coconut-granola",
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "1649177814296202b6": {
+      "type": "banner-with-text",
+      "custom_css": [
+        ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #d750ae !important; background-position: bottom center !important;}",
+        ".banner-with-text-section a.btn.action:hover {background-color: #3db2b0 !important;}",
+        ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
+      ],
+      "settings": {
+        "title": "Double Chocolate Sea Salt",
+        "text": "<p>Satisfies chocolate cravings with zero guilt! <\/p>",
+        "image": "shopify:\/\/shop_images\/double-choc-home-image_8e446dc4-903e-46e0-aa05-aed83f9e6b4f.png",
+        "image_for_mobile": "shopify:\/\/shop_images\/double-choc-home-mobile-image.png",
+        "image_position": "center right",
+        "text_position": "left",
+        "text_align": "left",
+        "button_label": "Order Now",
+        "button_link": "shopify:\/\/products\/double-chocolate-sea-salt",
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "606cc783-c2d3-4458-8b2f-6a33826efe9b",
+    "dc1e61a2-73a0-4d53-aba5-63127d2dd80b",
+    "35710418-9fe0-41d0-814b-97d1d2926b1a",
+    "164917726153b1f9e7",
+    "1649177814296202b6"
+  ]
+}
