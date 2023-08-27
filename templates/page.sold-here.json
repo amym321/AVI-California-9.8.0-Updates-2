@@ -2,6 +2,7 @@
   "sections": {
     "c599d855-a7bd-4cf4-9906-144be2a16994": {
       "type": "rich-text",
+      "disabled": true,
       "custom_css": [
         "h2 {display: block;}"
       ],
@@ -54,8 +55,9 @@
         "template--16819231162624__ac49273b-03c3-469c-8b10-97c46c7912e3-logo-4"
       ],
       "custom_css": [
+        ".content {margin-top: 100px;}",
         ".logo {width: 200px;}",
-        "h2 {display:block;}"
+        "h2 {display: block; margin-bottom:50px;}"
       ],
       "settings": {
         "title": "Find Us At These Fine Retailers!",
