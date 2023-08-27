@@ -65,10 +65,11 @@
         "9018a02b-7fe5-4d82-bca1-3968c7ba0978": {
           "type": "logo",
           "settings": {
-            "link": "",
-            "text": "Use this text to share information",
-            "button_label": "Explore",
-            "button_link": ""
+            "image": "shopify:\/\/shop_images\/get-healthy-2.jpg",
+            "link": "https:\/\/gethealthyamerica.com\/directions\/",
+            "text": "Get Healthy America",
+            "button_label": "Locations",
+            "button_link": "https:\/\/gethealthyamerica.com\/directions\/"
           }
         },
         "1deb6966-eaf9-481a-83cb-ee4447360991": {
