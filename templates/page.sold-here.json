@@ -129,9 +129,9 @@
         ".logo {width: 180px; margin: 40px; margin-bottom: 30px;}",
         "h2 {display: block; margin-bottom: 50px;}",
         "h3 {margin-top: 20px; font-size: 1.5em;}",
-        "@media (min-width: 621px) {h3 {height: 70px; }}",
+        "@media (min-width: 621px) {h3 {height: 40px; }}",
         "@media (max-width: 620px) {h3 {margin-bottom: 40px; }}",
-        ".image-with-text-btn {width: unset; display: unset;}",
+        ".image-with-text-btn {width: unset; \/*display: unset;*\/ margin-top: 40px !important; margin-bottom: 30px !important; height: 33px; display: block !important;}",
         ".btn.action {font-size: unset !important;}"
       ],
       "settings": {
