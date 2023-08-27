@@ -220,7 +220,7 @@
       ],
       "settings": {
         "show_background": false,
-        "expanded": true,
+        "expanded": false,
         "expanded_content": false,
         "max_width": 950,
         "show_on_desktop": true,
