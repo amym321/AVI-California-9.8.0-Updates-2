@@ -75,10 +75,11 @@
         "1deb6966-eaf9-481a-83cb-ee4447360991": {
           "type": "logo",
           "settings": {
-            "link": "",
-            "text": "Use this text to share information",
-            "button_label": "Explore",
-            "button_link": ""
+            "image": "shopify:\/\/shop_images\/harris-teeter-2.jpg",
+            "link": "https:\/\/harristeeter.com\/stores\/search",
+            "text": "Harris Teeter",
+            "button_label": "Locations",
+            "button_link": "https:\/\/harristeeter.com\/stores\/search"
           }
         },
         "07ca2ccf-49db-46da-9594-97b9a21ac4a1": {
