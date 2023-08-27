@@ -127,7 +127,7 @@
       "custom_css": [
         ".content {margin-top: 100px;}",
         ".logo {width: 200px; margin-bottom: 50px;}",
-        "h2,h3 {\/*display: block; margin-bottom: 50px;*\/ margin-top: 20px; height: 70px; font-size: 1.5em;}",
+        "h2,h3 {display: block; \/*margin-bottom: 50px;*\/ margin-top: 20px; height: 70px; font-size: 1.5em;}",
         ".image-with-text-btn {width: unset; display: unset;}",
         ".btn.action {font-size: unset !important;}"
       ],
