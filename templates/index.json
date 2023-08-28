@@ -105,8 +105,8 @@
         "75212874-0a61-414b-8e53-0a53f30fc6c1": {
           "type": "button",
           "settings": {
-            "text": "Shop now",
-            "link": "shopify:\/\/collections\/all",
+            "text": "learn more",
+            "link": "shopify:\/\/collections\/superfood-granola",
             "style": "action",
             "size": "normal"
           }
