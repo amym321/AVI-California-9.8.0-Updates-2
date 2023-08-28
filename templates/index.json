@@ -71,6 +71,69 @@
         "show_on_mobile": true
       }
     },
+    "3e88af67-3f02-4f92-941e-7375e376f371": {
+      "type": "hero",
+      "blocks": {
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Hero heading",
+            "max_width": 500
+          }
+        },
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Hero subheading",
+            "max_width": 500
+          }
+        },
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-button-1": {
+          "type": "button",
+          "settings": {
+            "text": "Shop now",
+            "link": "shopify:\/\/collections\/all",
+            "style": "action",
+            "size": "normal"
+          }
+        },
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-scroll-button-1": {
+          "type": "scroll-button",
+          "settings": {
+            "text": "Discover more",
+            "style": "line",
+            "size": "small"
+          }
+        }
+      },
+      "block_order": [
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-heading-1",
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-subheading-1",
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-button-1",
+        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-scroll-button-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; }}",
+        ".hero .btn {animation: none;}",
+        ".hero img {\/*animation: none;*\/ -webkit-animation: none; animation: none; -webkit-transform: none; transform: none; -webkit-animation-fill-mode: none; animation-fill-mode: none; opacity: 1; transform-origin: unset;}"
+      ],
+      "settings": {
+        "video": "",
+        "alignment": "h-center v-center",
+        "color_heading": "#000000",
+        "color_subheading": "#121212",
+        "color_line_button": "#121212",
+        "color_paragraph": "#121212",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "mobile_min_height": 500,
+        "video_mobile": "",
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "c2d0f25e-4797-447c-b96b-69d72d981a20": {
       "type": "collage",
       "blocks": {
@@ -827,6 +890,7 @@
   },
   "order": [
     "hero",
+    "3e88af67-3f02-4f92-941e-7375e376f371",
     "c2d0f25e-4797-447c-b96b-69d72d981a20",
     "f256aa87-de86-429b-a729-3f92a195fded",
     "bbaf9820-16c0-40b2-ab8e-f4298c1079e2",
