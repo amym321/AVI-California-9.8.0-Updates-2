@@ -51,7 +51,7 @@
       "custom_css": [
         "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; }}",
         ".hero .btn {animation: none;}",
-        ".hero img {animation: none:}"
+        ".hero img {animation: none;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-hero-desktop-3.jpg",
@@ -773,7 +773,7 @@
       "type": "apps",
       "blocks": {
         "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
