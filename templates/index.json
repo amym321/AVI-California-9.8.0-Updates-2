@@ -81,24 +81,10 @@
             "max_width": 500
           }
         },
-        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Hero subheading",
-            "max_width": 500
-          }
-        },
         "cdb1c49d-f811-459b-a7c5-9127d768b5d4": {
           "type": "paragraph",
           "settings": {
             "text": "<p>KETO with PREBIOTIC FIBER<\/p><p>ZERO ADDED SUGARS<\/p><p>GRAIN & GLUTEN FREE<\/p>",
-            "max_width": 500
-          }
-        },
-        "7c080cec-9821-43cd-8e81-9d1dc7d1c82b": {
-          "type": "subheading",
-          "settings": {
-            "text": "Hero subheading",
             "max_width": 500
           }
         },
@@ -114,9 +100,7 @@
       },
       "block_order": [
         "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-heading-1",
-        "template--16745576530176__3e88af67-3f02-4f92-941e-7375e376f371-subheading-1",
         "cdb1c49d-f811-459b-a7c5-9127d768b5d4",
-        "7c080cec-9821-43cd-8e81-9d1dc7d1c82b",
         "75212874-0a61-414b-8e53-0a53f30fc6c1"
       ],
       "disabled": true,
