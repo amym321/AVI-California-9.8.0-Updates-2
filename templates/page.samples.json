@@ -92,7 +92,7 @@
         ".blocks {\/*padding: unset;*\/ background: unset;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/hero-sample.jpg",
+        "image": "shopify:\/\/shop_images\/home-hero-background-2.jpg",
         "video": "",
         "alignment": "h-right v-center",
         "color_heading": "#3db2b0",
@@ -102,7 +102,7 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "mobile_min_height": 800,
-        "image_mobile": "shopify:\/\/shop_images\/hero-sample-mobile-2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/home-hero-background-mobile-4.jpg",
         "video_mobile": "",
         "expanded": true,
         "show_on_desktop": true,
