@@ -4,12 +4,12 @@
       "type": "image-with-text",
       "custom_css": [
         ".with-layout-options {max-width: unset;}",
-        ".trial {\/*font-size: 3.5em;*\/}"
+        ".trial {font-size: 55px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Bowl-Almond-Coconut_9399ea16-a17c-4a23-ba88-df38d1a9f680.jpg",
         "subtitle": "DELICIOUS GRANOLA! <br><br>",
-        "title": "<span class=\"trial\">TRIAL OFFER<\/span><br>2 FOR $4.99 <br><br>",
+        "title": "<span class=\"trial\">TRIAL OFFER<\/span><br><br>2 FOR $4.99 <br><br>",
         "heading_link": "",
         "text": "<p>- KETO with PREBIOTIC FIBER<\/p><p>- ZERO ADDED SUGARS<\/p><p>- GRAIN & GLUTEN FREE<\/p>",
         "button_label": "",
