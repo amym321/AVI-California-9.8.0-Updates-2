@@ -517,7 +517,7 @@
     "9c159e85-c0f1-4e05-a828-363b96c20ce3": {
       "type": "custom-liquid",
       "custom_css": [
-
+        ".content {margin: 0;}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
