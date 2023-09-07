@@ -6,15 +6,30 @@
     data-product-single-media-wrapper
     data-media-id="{{ section.id }}-{{ media.id }}"
     tabindex="-1">
+
   {% case media.media_type %}
     {% when 'image' %}
-      {% liquid
-        assign alt = media.alt | escape
-        if section.settings.zoom_enable
-          assign data_mfp_src =  media | img_url: '2048x2048'
-        endif
-        render 'resp-img', image: media, sizes: "(max-width: 620px) 100vw, 50vw", default_size: "1024x1024", squared: true, alt: alt, data_mfp_src: data_mfp_src
-      %}
+      {% comment %} don't display 1st image of Samples Duo product on Samples landing page - am {% endcomment %}
+      {% if template == "page.samples"  %}
+        {% unless media  contains "sample-duo" %}
+          {% liquid
+            assign alt = media.alt | escape
+            if section.settings.zoom_enable
+              assign data_mfp_src =  media | img_url: '2048x2048'
+            endif
+            render 'resp-img', image: media, sizes: "(max-width: 620px) 100vw, 50vw", default_size: "1024x1024", squared: true, alt: alt, data_mfp_src: data_mfp_src
+          %}
+        {% endunless %}
+      {% else %} {% comment %} business as usual - am{% endcomment %}
+        {% liquid
+          assign alt = media.alt | escape
+          if section.settings.zoom_enable
+            assign data_mfp_src =  media | img_url: '2048x2048'
+          endif
+          render 'resp-img', image: media, sizes: "(max-width: 620px) 100vw, 50vw", default_size: "1024x1024", squared: true, alt: alt, data_mfp_src: data_mfp_src
+        %}
+      {% endif %}
+
     {% when 'external_video' %}
       <div class="inner" style="padding-top: {{ 1 | divided_by: media.aspect_ratio | times: 100 }}%;">
         {{ media | external_video_tag }}
