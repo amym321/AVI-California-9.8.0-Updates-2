@@ -429,6 +429,24 @@
         "show_on_mobile": true
       }
     },
+    "52018f3b-ebc8-46a2-9ba6-ce9373363e47": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {display: block; text-align: center;}"
+      ],
+      "settings": {
+        "title": "You May Also Like",
+        "collection": "superfood-granola",
+        "columns": 4,
+        "rows": 1,
+        "button_label": "Browse more products",
+        "button_link": "shopify:\/\/collections",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "9c159e85-c0f1-4e05-a828-363b96c20ce3": {
       "type": "custom-liquid",
       "custom_css": [
@@ -439,24 +457,6 @@
         "show_background": false,
         "expanded": false,
         "expanded_content": false,
-        "show_on_desktop": true,
-        "show_on_mobile": true
-      }
-    },
-    "52018f3b-ebc8-46a2-9ba6-ce9373363e47": {
-      "type": "featured-collection",
-      "custom_css": [
-        "h2 {display: block; text-align:center;}"
-      ],
-      "settings": {
-        "title": "You May Also Like",
-        "collection": "superfood-granola",
-        "columns": 4,
-        "rows": 2,
-        "button_label": "Browse more products",
-        "button_link": "",
-        "show_background": false,
-        "expanded": true,
         "show_on_desktop": true,
         "show_on_mobile": true
       }
@@ -474,7 +474,7 @@
     "f4c86979-2bb8-460e-8bb8-540e67e6ae5d",
     "c4461e13-469c-49e0-9a1e-adcba8a8aeae",
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
-    "9c159e85-c0f1-4e05-a828-363b96c20ce3",
-    "52018f3b-ebc8-46a2-9ba6-ce9373363e47"
+    "52018f3b-ebc8-46a2-9ba6-ce9373363e47",
+    "9c159e85-c0f1-4e05-a828-363b96c20ce3"
   ]
 }
