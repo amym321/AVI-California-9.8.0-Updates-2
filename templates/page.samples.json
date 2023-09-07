@@ -432,14 +432,15 @@
     "52018f3b-ebc8-46a2-9ba6-ce9373363e47": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {display: block; text-align: center;}"
+        "h2 {display: block; text-align: center;}",
+        "a {margin: auto; display: block; margin-bottom: 80px; width:300px;}"
       ],
       "settings": {
         "title": "You May Also Like",
         "collection": "superfood-granola",
         "columns": 4,
         "rows": 1,
-        "button_label": "Browse more products",
+        "button_label": "Shop More",
         "button_link": "shopify:\/\/collections",
         "show_background": false,
         "expanded": true,
