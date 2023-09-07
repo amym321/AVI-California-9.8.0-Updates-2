@@ -452,7 +452,7 @@
     "9f23ca95-bec1-4450-b390-310b64049417": {
       "type": "newsletter",
       "custom_css": [
-        ".content {\/*background-color:red;*\/}"
+        "h2 {display:block;}"
       ],
       "settings": {
         "heading": "Subscribe to our newsletter",
