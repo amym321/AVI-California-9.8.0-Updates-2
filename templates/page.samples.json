@@ -449,6 +449,20 @@
         "show_on_mobile": true
       }
     },
+    "9f23ca95-bec1-4450-b390-310b64049417": {
+      "type": "newsletter",
+      "custom_css": [
+        ".content {\/*background-color:red;*\/}"
+      ],
+      "settings": {
+        "heading": "Subscribe to our newsletter",
+        "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+        "show_background": true,
+        "expanded": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
     "9c159e85-c0f1-4e05-a828-363b96c20ce3": {
       "type": "custom-liquid",
       "custom_css": [
@@ -477,6 +491,7 @@
     "c4461e13-469c-49e0-9a1e-adcba8a8aeae",
     "0d90e84f-7ff2-41db-bc01-2700a8d6cba4",
     "52018f3b-ebc8-46a2-9ba6-ce9373363e47",
+    "9f23ca95-bec1-4450-b390-310b64049417",
     "9c159e85-c0f1-4e05-a828-363b96c20ce3"
   ]
 }
