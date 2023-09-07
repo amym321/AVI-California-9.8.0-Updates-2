@@ -17,6 +17,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatches_selector": "Color",
@@ -124,11 +125,12 @@
         "alireviews-block-1658404844": {
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
+            "product": "",
             "name": "Review Box",
             "vertical_alignment": "2",
-            "rating_color": "#1F1F1F",
+            "rating_color": "#1f1f1f",
             "section_color": "#ffffff",
-            "primary_text_color": "#1F1F1F"
+            "primary_text_color": "#1f1f1f"
           }
         }
       },
