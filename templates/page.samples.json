@@ -432,7 +432,7 @@
     "52018f3b-ebc8-46a2-9ba6-ce9373363e47": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {display: block; text-align: center;}",
+        "h2 {display: block; text-align: center; margin-top: 50px;}",
         ".btn {margin: auto; display: block; margin-top: 50px; margin-bottom: 100px; width: 300px; background-color: #3db2b0; color: white !important;}",
         ".btn:hover {background-color: #e052ad;}"
       ],
