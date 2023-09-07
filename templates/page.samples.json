@@ -433,7 +433,8 @@
       "type": "featured-collection",
       "custom_css": [
         "h2 {display: block; text-align: center;}",
-        ".btn {margin: auto; display: block; margin-top: 20px; margin-bottom: 80px; width: 300px; background-color: #e052ad; color: white !important;}"
+        ".btn {margin: auto; display: block; margin-top: 20px; margin-bottom: 80px; width: 300px; background-color: #3db2b0; color: white !important;}",
+        ".btn:hover {background-color: #e052ad;}"
       ],
       "settings": {
         "title": "You May Also Like",
