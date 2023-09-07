@@ -52,14 +52,14 @@
         "dcf15fc8-3729-44de-8033-13b0549cd9fe": {
           "type": "paragraph",
           "settings": {
-            "text": "<p><strong>TRIAL OFFER<\/strong><\/p>",
+            "text": "<p><strong>TRIAL OFFER<\/strong><\/p><p><\/p>",
             "max_width": 500
           }
         },
         "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "GRANOLA SAMPLES\n2 FOR $4.99!",
+            "text": "<br>GRANOLA SAMPLES\n\n2 FOR $4.99!\n<br>",
             "max_width": 500
           }
         },
