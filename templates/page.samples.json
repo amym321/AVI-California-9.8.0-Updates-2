@@ -269,8 +269,7 @@
         "p strong {font-weight: 300; color: #3db2b0;}",
         ".custom-content .custom__item {margin: 0;}",
         ".content {max-width: 80%; margin: auto;}",
-        ".custom__item {text-align: center;}",
-        ".content .custom__item--bbca55f3-433e-4690-897b-0d33ab326d36 {background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/beans.png) no-repeat right center;}"
+        ".custom__item {text-align: center;}"
       ],
       "settings": {
         "show_background": false,
