@@ -1,3 +1,4 @@
+<div class="newsletter-section"> {% comment %} - am {% endcomment %}
 <div class="content newsletter extra-padding {% render 'content-classes', scope: section %}" data-section-id="{{ section.id }}" data-section-type="newsletter">
   <div class="titles">
     {% if section.settings.heading %}
@@ -31,6 +32,8 @@
       {% endif %}
     {% endform %}
   </div>
+</div>
+
 </div>
 
 {% schema %}
