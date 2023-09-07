@@ -160,6 +160,12 @@
             "show_dynamic_checkout": true,
             "increase_space_before_block": true
           }
+        },
+        "b6fb87fa-4975-45a2-b244-93a3897296ff": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/all-icons.png?v=1650554707\" alt=\"Superfood Granola\" \/>"
+          }
         }
       },
       "block_order": [
@@ -167,7 +173,8 @@
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-price-1",
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-variant_picker-1",
         "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-description-1",
-        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1"
+        "template--16818739937536__748165c2-2e04-4d3a-865f-238746f14b7d-buy_buttons-1",
+        "b6fb87fa-4975-45a2-b244-93a3897296ff"
       ],
       "custom_css": [
         ".content {margin-top: 80px; margin-bottom: 120px;}",
@@ -178,7 +185,7 @@
         ".info {right: 0; position: absolute; top: 0 !important; margin-top: 0;}",
         "@media (max-width: 991px) {.add-to-cart {margin: auto; }}",
         "@media (max-width: 720px) {.frame {display: none; }}",
-        "@media (max-width:720px) {form {margin: 10px;}}"
+        "@media (max-width: 720px) {form {margin: 10px; }}"
       ],
       "settings": {
         "featured_product": "chocolate-almond-sample-duo",
