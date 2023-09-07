@@ -433,7 +433,7 @@
       "type": "featured-collection",
       "custom_css": [
         "h2 {display: block; text-align: center;}",
-        "a {margin: auto; display: block; margin-bottom: 80px; width:300px;}"
+        ".btn {margin: auto; display: block; margin-bottom: 80px; width: 300px; background-color: #e052ad; color: white !important;}"
       ],
       "settings": {
         "title": "You May Also Like",
