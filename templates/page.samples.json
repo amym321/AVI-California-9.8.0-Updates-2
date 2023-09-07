@@ -2,6 +2,7 @@
   "sections": {
     "e570c3e1-6b3a-40d1-ba8a-f5a7c2d60d42": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         ".with-layout-options {max-width: unset; min-width: 100%;}",
         "h2 {font-size: 55px;}",
@@ -88,7 +89,7 @@
         "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; }}",
         "@media (max-width: 620px) {.hero img {animation: none; opacity: 1; transform-origin: unset; max-width: 100% !important; position: absolute; top: 0; left: 0; right: 0; margin: 0; padding: 0; min-height: unset; }}",
         ".paragraph strong {font-size: 40px;}",
-        ".blocks {padding:unset; background:unset;}"
+        ".blocks {padding: unset; background: unset;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hero-sample.jpg",
