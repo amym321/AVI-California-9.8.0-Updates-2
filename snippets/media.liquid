@@ -9,9 +9,10 @@
 
   {% case media.media_type %}
     {% when 'image' %}
-      {% comment %} don't display 1st image of Samples Duo product on Samples landing page - am {% endcomment %}
+      {% comment %} don't display specific image of Samples Duo product on Samples landing page - am {% endcomment %}
       {% if template == "page.samples"  %}
-        {% unless media  contains "sample-duo" %}
+        {% comment %} if media  contains "sample"   "Bowl-Almond-Coconut"{% endcomment %}
+        {% if media  contains "sample" %} {% comment %} "Chocolate" "Bowl-Almond-Coconut"{% endcomment %}
           {% liquid
             assign alt = media.alt | escape
             if section.settings.zoom_enable
@@ -19,7 +20,7 @@
             endif
             render 'resp-img', image: media, sizes: "(max-width: 620px) 100vw, 50vw", default_size: "1024x1024", squared: true, alt: alt, data_mfp_src: data_mfp_src
           %}
-        {% endunless %}
+        {% endif %}
       {% else %} {% comment %} business as usual - am{% endcomment %}
         {% liquid
           assign alt = media.alt | escape

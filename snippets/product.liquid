@@ -24,13 +24,28 @@
                 <a href="{{ media.preview_image | img_url: '1024x1024' }}" data-action="show-product-media" data-id="{{ media.id }}" class="{% if media.media_type == 'model' %} model{% endif %}{% if featured_media == media %} active{% endif %}">
                   <div>
                     {% assign alt = media.alt | escape %}
-                    {% render 'resp-img',
-                      image: media.preview_image,
-                      sizes: "240px",
-                      default_size: "240x240",
-                      squared: true,
-                      alt: alt
-                    %}
+
+                    {% comment %} don't display specific image of Samples Duo product on Samples landing page - am {% endcomment %}
+                    {% if template == "page.samples"  %}
+                      {% if media  contains "sample" %} {% comment %}"sample" "Chocolate" "Bowl-Almond-Coconut"{% endcomment %}
+                        {% render 'resp-img',
+                          image: media.preview_image,
+                          sizes: "240px",
+                          default_size: "240x240",
+                          squared: true,
+                          alt: alt
+                        %}
+                      {% endif %}
+                    {% else %} {% comment %} business as usual - am{% endcomment %}
+                      {% render 'resp-img',
+                        image: media.preview_image,
+                        sizes: "240px",
+                        default_size: "240x240",
+                        squared: true,
+                        alt: alt
+                      %}
+                    {% endif %}
+
                     {%- if media.media_type == 'video' or media.media_type =='external_video' -%}
                       <div class="badge">
                         {% render 'icon-video-badge-full-color' %}
@@ -276,7 +291,7 @@
                     <span class="add">
                       {%- if current_variant.available -%}
                         
-                      ORDER NOW
+                      ADD TO CART
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}
@@ -355,7 +370,13 @@
           {% endunless %}
         {% endform %}
       </div>
-        <div class="product-icons"><img src="https://cdn.shopify.com/s/files/1/0632/6881/5104/files/all-icons.png?v=1650554707" alt="Superfood Granola" /></div>
+
+      {% comment %} don't display product icons on Samples landing page - am {% endcomment %}
+      {%  unless template == "page.samples" %}
+        <div class="product-icons">
+          <img src="https://cdn.shopify.com/s/files/1/0632/6881/5104/files/all-icons.png?v=1650554707" alt="Superfood Granola" />
+        </div>
+      {% endunless %}
 
     </div>
   </div>
