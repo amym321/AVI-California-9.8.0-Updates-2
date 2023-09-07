@@ -516,6 +516,84 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "83d11bea-a4fc-4b17-9c05-c59ad9ee5983": {
+      "type": "feature-columns",
+      "blocks": {
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-1": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/sample-duo-2b.jpg",
+            "image_url": ""
+          }
+        },
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-2": {
+          "type": "text_column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/Chocolate-Sea-Salt-2_54ce5082-4bc7-4efe-b89d-43820e525160.jpg",
+            "image_url": ""
+          }
+        },
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-3": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-4": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-5": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        },
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-6": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews.<\/p>",
+            "image_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-1",
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-2",
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-3",
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-4",
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-5",
+        "template--16818739937536__83d11bea-a4fc-4b17-9c05-c59ad9ee5983-text_column-6"
+      ],
+      "settings": {
+        "title": "Text columns with images",
+        "subtitle": "<p>Use this section to describe details that make your store different.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_background": true,
+        "expanded": false,
+        "max_width": 1200,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -533,6 +611,7 @@
     "52018f3b-ebc8-46a2-9ba6-ce9373363e47",
     "9c159e85-c0f1-4e05-a828-363b96c20ce3",
     "16940621061c855ef7",
-    "9f23ca95-bec1-4450-b390-310b64049417"
+    "9f23ca95-bec1-4450-b390-310b64049417",
+    "83d11bea-a4fc-4b17-9c05-c59ad9ee5983"
   ]
 }
