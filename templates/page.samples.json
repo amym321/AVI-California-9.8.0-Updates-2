@@ -20,6 +20,13 @@
     "f9207745-5ad4-4d0d-8dd9-ca28fa6cef17": {
       "type": "hero",
       "blocks": {
+        "dcf15fc8-3729-44de-8033-13b0549cd9fe": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>TRIAL OFFER<\/p>",
+            "max_width": 500
+          }
+        },
         "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1": {
           "type": "heading",
           "settings": {
@@ -44,6 +51,7 @@
         }
       },
       "block_order": [
+        "dcf15fc8-3729-44de-8033-13b0549cd9fe",
         "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1",
         "2fb12db7-c509-4c17-a35b-aac5f3019839",
         "75009843-88f4-4494-a1a7-58e4098cc06b"
