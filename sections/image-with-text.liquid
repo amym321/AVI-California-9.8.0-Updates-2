@@ -1,4 +1,5 @@
-<div class="content image-with-text {% if product.title contains "Snack" %} hide {% endif %}
+<div class="content image-with-text
+    {% if product.title contains "Snack" or product.title contains "Sample" %} hide {% endif %}
     {% if product.title contains "Influencer" %} influencer-page {% endif %}
     {% render 'content-classes', scope: section %}">
   <div class="inner with-layout-options {{ settings.content_layout }}">
