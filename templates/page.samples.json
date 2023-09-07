@@ -4,7 +4,7 @@
       "type": "image-with-text",
       "custom_css": [
         ".with-layout-options {max-width: unset;}",
-        "h2 span {font-size: 55px;}"
+        "h2 {font-size: 55px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Bowl-Almond-Coconut_9399ea16-a17c-4a23-ba88-df38d1a9f680.jpg",
