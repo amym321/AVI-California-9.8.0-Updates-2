@@ -455,7 +455,7 @@
         "e8023e43-6af5-47f2-9650-09b61a54ce0c": {
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
-            "product": "",
+            "product": "double-chocolate-sea-salt",
             "name": "Review Box",
             "vertical_alignment": "2",
             "rating_color": "#1F1F1F",
