@@ -481,6 +481,11 @@
       "block_order": [
         "e8023e43-6af5-47f2-9650-09b61a54ce0c"
       ],
+      "custom_css": [
+        "#shopify-ali-review time .alireview-date,#shopify-ali-review time.alireview-date {display: none !important;}",
+        ".alireview-number-total-review,.alireview-btn--1,.alr-count-reviews .alr-progress-bar-wrap .alr-progress-bar div {background: #bf9c6e !important; background-color: #bf9c6e !important;}",
+        ".alr-icon-star,.alr-count-reviews .alr-star i {color: #bf9c6e !important;}"
+      ],
       "settings": {
         "show_background": false,
         "expanded": false,
