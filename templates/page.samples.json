@@ -163,6 +163,7 @@
         },
         "b6fb87fa-4975-45a2-b244-93a3897296ff": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div class=\"product-icons\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/all-icons.png?v=1650554707\" alt=\"Superfood Granola\" \/>\n        <\/div>"
           }
@@ -562,6 +563,17 @@
         "show_on_desktop": true,
         "show_on_mobile": true
       }
+    },
+    "54648c9e-6504-4d0b-8057-fd4292b188fc": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"product-icons\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/all-icons.png?v=1650554707\" alt=\"Superfood Granola\" \/>\n        <\/div>",
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
@@ -580,6 +592,7 @@
     "52018f3b-ebc8-46a2-9ba6-ce9373363e47",
     "9c159e85-c0f1-4e05-a828-363b96c20ce3",
     "16940621061c855ef7",
-    "9f23ca95-bec1-4450-b390-310b64049417"
+    "9f23ca95-bec1-4450-b390-310b64049417",
+    "54648c9e-6504-4d0b-8057-fd4292b188fc"
   ]
 }
