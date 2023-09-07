@@ -509,7 +509,7 @@
         ".text,.btn {border-radius: 10px !important; height: 55px;}"
       ],
       "settings": {
-        "heading": "Never Miss An Offer",
+        "heading": "Never Miss An Offer!",
         "subheading": "<p>Sign Up for the latest Promotions. Directly to your inbox.<\/p>",
         "show_background": true,
         "expanded": false,
