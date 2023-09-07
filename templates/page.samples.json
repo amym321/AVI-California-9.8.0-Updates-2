@@ -5,7 +5,9 @@
       "custom_css": [
         ".with-layout-options {max-width: unset; min-width: 100%;}",
         "h2 {font-size: 55px;}",
-        "h2,p {text-align: left;}"
+        "h2,p {text-align: left;}",
+        ".right {padding-left: 40px;}",
+        "@media (max-width: 600px) {.right {padding-left: 20px; padding-right: 20px;}}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Bowl-Almond-Coconut_9399ea16-a17c-4a23-ba88-df38d1a9f680.jpg",
