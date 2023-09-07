@@ -1,9 +1,9 @@
 {
   "sections": {
-    "a7cea8d8-fa5c-406d-ae41-6d4a97e7b8ac": {
+    "e570c3e1-6b3a-40d1-ba8a-f5a7c2d60d42": {
       "type": "image-with-text",
-      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/Bowl-Almond-Coconut_9399ea16-a17c-4a23-ba88-df38d1a9f680.jpg",
         "subtitle": "Subtitle",
         "title": "Image with text",
         "heading_link": "",
@@ -415,7 +415,7 @@
     }
   },
   "order": [
-    "a7cea8d8-fa5c-406d-ae41-6d4a97e7b8ac",
+    "e570c3e1-6b3a-40d1-ba8a-f5a7c2d60d42",
     "f9207745-5ad4-4d0d-8dd9-ca28fa6cef17",
     "main",
     "748165c2-2e04-4d3a-865f-238746f14b7d",
