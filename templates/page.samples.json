@@ -453,7 +453,9 @@
       "type": "newsletter",
       "custom_css": [
         "h2 {display: block;}",
-        ".newsletter-section {background-color: #f7f2e5;}"
+        ".newsletter-section {background-color: #f7f2e5;}",
+        ".btn {background-color: #3db2b0; color: white !important;}",
+        ".btn:hover {background-color: #e052ad;}"
       ],
       "settings": {
         "heading": "Never Miss An Offer",
