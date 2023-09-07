@@ -273,7 +273,6 @@
       "block_order": [
         "template--16818739937536__1dd1ec01-8c54-412a-8a17-0fcd64906092-image-1"
       ],
-      "disabled": true,
       "custom_css": [
         ".collage .cards .card.image {box-shadow: none;}",
         ".cards {max-width: none !important;}",
@@ -357,7 +356,6 @@
         "template--16818739937536__f4c86979-2bb8-460e-8bb8-540e67e6ae5d-text_column-5",
         "template--16818739937536__f4c86979-2bb8-460e-8bb8-540e67e6ae5d-text_column-6"
       ],
-      "disabled": true,
       "custom_css": [
         ".content {margin-bottom: 0;}",
         "img {z-index: 10;}",
@@ -393,7 +391,6 @@
       "block_order": [
         "template--16818739937536__c4461e13-469c-49e0-9a1e-adcba8a8aeae-image-1"
       ],
-      "disabled": true,
       "custom_css": [
         ".collage .cards .card.image {box-shadow: none;}",
         ".cards {max-width: none !important;}",
