@@ -456,8 +456,8 @@
         ".newsletter-section {background-color: #f7f2e5;}"
       ],
       "settings": {
-        "heading": "Subscribe to our newsletter",
-        "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+        "heading": "Never Miss An Offer",
+        "subheading": "<p>Sign Up for the latest Promotions. Directly to your inbox.<\/p>",
         "show_background": true,
         "expanded": false,
         "show_on_desktop": true,
