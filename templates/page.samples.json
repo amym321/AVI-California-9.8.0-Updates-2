@@ -89,7 +89,7 @@
         "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; }}",
         "@media (max-width: 620px) {.hero img {\/* animation: none; opacity: 1; transform-origin: unset; max-width: 100% !important; position: absolute; top: 0; left: 0; right: 0; margin: 0; padding: 0; min-height: unset;*\/ }}",
         ".paragraph strong {font-size: 50px;}",
-        "h1 {font-size: 60px;}",
+        "h1 {font-size: 60px !important;}",
         ".blocks {background: unset;}",
         "@media (min-width: 900px) {.blocks {padding: 0 90px 0 0; }}",
         "strong {line-height: 45px;}"
