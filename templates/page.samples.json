@@ -164,7 +164,7 @@
         "b6fb87fa-4975-45a2-b244-93a3897296ff": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/all-icons.png?v=1650554707\" alt=\"Superfood Granola\" \/>"
+            "custom_liquid": "<div class=\"product-icons\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/all-icons.png?v=1650554707\" alt=\"Superfood Granola\" \/>\n        <\/div>"
           }
         }
       },
