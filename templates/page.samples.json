@@ -241,7 +241,7 @@
     "54648c9e-6504-4d0b-8057-fd4292b188fc": {
       "type": "custom-liquid",
       "custom_css": [
-        "img {margin: auto;}"
+        "img {margin: auto; margin-bottom: 60px;}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"product-icons\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/all-icons.png?v=1650554707\" alt=\"Superfood Granola\" \/>\n        <\/div>",
