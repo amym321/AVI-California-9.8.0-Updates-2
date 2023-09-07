@@ -91,7 +91,8 @@
         ".paragraph strong {font-size: 50px;}",
         "h1 {font-size: 60px;}",
         ".blocks {background: unset;}",
-        "@media (min-width:900px){.blocks {padding: 0 90px 0 0;}}"
+        "@media (min-width: 900px) {.blocks {padding: 0 90px 0 0; }}",
+        "strong {line-height: 45px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-hero-background-2.jpg",
