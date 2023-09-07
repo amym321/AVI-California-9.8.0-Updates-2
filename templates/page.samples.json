@@ -51,7 +51,7 @@
         "dcf15fc8-3729-44de-8033-13b0549cd9fe": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>TRIAL OFFER<\/p>",
+            "text": "<p><strong>TRIAL OFFER<\/strong><\/p>",
             "max_width": 500
           }
         },
