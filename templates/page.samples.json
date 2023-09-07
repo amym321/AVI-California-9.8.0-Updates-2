@@ -59,7 +59,7 @@
         "template--16818739937536__f9207745-5ad4-4d0d-8dd9-ca28fa6cef17-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "GRANOLA SAMPLES\n2 FOR $4.99!\n<br>",
+            "text": "GRANOLA SAMPLES\n2 FOR $4.99!",
             "max_width": 500
           }
         },
@@ -74,7 +74,7 @@
         "75009843-88f4-4494-a1a7-58e4098cc06b": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>- KETO with PREBIOTIC FIBER<\/p><p>- ZERO ADDED SUGARS<\/p><p>- GRAIN & GLUTEN FREE<\/p>",
+            "text": "<p>- 1 OUNCE BAGS<\/p><p>- KETO with PREBIOTIC FIBER<\/p><p>- ZERO ADDED SUGARS<\/p><p>- GRAIN & GLUTEN FREE<\/p>",
             "max_width": 500
           }
         }
