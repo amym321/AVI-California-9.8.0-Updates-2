@@ -15,7 +15,7 @@
       "custom_css": [
         ".content {max-width: 1200px; margin-bottom: 70px;}",
         "@media (max-width: 420px) {.collection .columns_4 .product {width: 100%; }}",
-        ".add-to-cart {width: auto; background: #3db2b0; font-size: 1.6em !important; line-height: 1.3em !important; padding: 9px 20px 3px 20px !important; border-radius: 10px !important; font-weight: 300; letter-spacing: 0.03em; color: #fff; display: block; text-transform: uppercase; margin-left: auto !important; margin-right: auto !important; margin-bottom: 20px !important;}",
+        ".add-to-cart {width: auto; background: #3db2b0; font-size: 1.3em !important; line-height: 1.3em !important; padding: 9px 20px 3px 20px !important; border-radius: 10px !important; font-weight: 300; letter-spacing: 0.03em; color: #fff; display: block; text-transform: uppercase; margin-left: auto !important; margin-right: auto !important; margin-bottom: 20px !important;}",
         ".add-to-cart:hover {background: #e052ad;}"
       ],
       "settings": {
