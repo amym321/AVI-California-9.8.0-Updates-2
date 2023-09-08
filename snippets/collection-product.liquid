@@ -80,4 +80,13 @@
       </div>
     </div>
   </a>
+  {% comment %} upsell collection has ATC - am {% endcomment %}
+  {% if template == 'cart' %}
+    <form method="post" action="/cart/add">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+      <input class="hide" min="1" type="number" id="quantity" name="quantity" value="1"/>
+      <input type="submit" value="Add to cart" class="btn add-to-cart" />
+    </form>
+  {% endif %}
+
 </div>
