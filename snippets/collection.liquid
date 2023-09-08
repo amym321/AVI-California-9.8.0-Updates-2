@@ -62,16 +62,27 @@
       %}
     </div>
 
-  {% comment %} don't display upsell product if it's already in the cart - am {% endcomment %}
+  {% comment %} don't display upsell product in cart if it's already a cart.item - am {% endcomment %}
+  {% comment %} Increase limit to new_limit if some featured products are already a cart.item - am {% endcomment %}
   {% elsif template == 'cart' %}
     <div class="products columns_{{ columns }}">
       {% liquid
-        for product in collection.products limit: limit
 
+        assign new_limit = limit
+        for product in collection.products limit: limit
+          for item in cart.items
+            if product.id == item.product.id
+              assign new_limit = new_limit | plus: 1
+            endif
+          endfor
+        endfor
+
+        for product in collection.products limit: new_limit
           assign flag = false
           for item in cart.items
             if product.id == item.product.id
               assign flag = true
+              assign limit = limit | plus: 1
             endif
           endfor
 
