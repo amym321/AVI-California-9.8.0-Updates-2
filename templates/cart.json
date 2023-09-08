@@ -13,7 +13,8 @@
     "d71967a5-f6c5-41a5-8579-c3c5b658acb8": {
       "type": "featured-collection",
       "custom_css": [
-        ".content {max-width: 1200px; margin-bottom:70px;}"
+        ".content {max-width: 1200px; margin-bottom: 70px;}",
+        "@media (max-width: 420px) {.collection .products.columns_4 .product {width:100%;}}"
       ],
       "settings": {
         "title": "You May Also Like",
