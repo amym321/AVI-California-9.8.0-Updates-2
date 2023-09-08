@@ -61,6 +61,34 @@
         endfor
       %}
     </div>
+
+  {% comment %} don't display upsell product if it's already in the cart - am {% endcomment %}
+  {% elsif template == 'cart' %}
+    <div class="products columns_{{ columns }}">
+      {% liquid
+        for product in collection.products limit: limit
+
+          assign flag = false
+          for item in cart.items
+            if product.id == item.product.id
+              assign flag = true
+            endif
+          endfor
+
+          unless flag == true
+            render 'collection-product', product: product, columns: columns
+          endunless
+
+        else
+          if limit > 0
+            for i in (1..limit)
+              render 'collection-product-onboarding', i: i
+            endfor
+          endif
+        endfor
+      %}
+    </div>
+
   {% else %}
     {% if collection.products_count > 0 %}
       <div class="products columns_{{ columns }}">
