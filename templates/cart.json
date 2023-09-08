@@ -15,7 +15,7 @@
       "disabled": true,
       "settings": {
         "title": "You May Also Like",
-        "collection": "superfood-granola",
+        "collection": "upsell",
         "columns": 4,
         "rows": 1,
         "button_label": "Browse more products",
