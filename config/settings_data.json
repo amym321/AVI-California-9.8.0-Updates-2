@@ -12,7 +12,7 @@
     "base_font": "josefin_sans_n4",
     "enable_sticky_header": true,
     "content_max_width": 1200,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "cart_notes_enable": false,
     "additional_checkout_buttons_enable": false,
     "social_facebook_link": "https:\/\/www.facebook.com\/AVIFOODSCO",
