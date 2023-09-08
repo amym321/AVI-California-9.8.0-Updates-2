@@ -457,7 +457,7 @@
         "template--16818739937536__c4461e13-469c-49e0-9a1e-adcba8a8aeae-image-1"
       ],
       "custom_css": [
-        ".collage .cards .card.image {box-shadow: none;}",
+        ".image {box-shadow: none;}",
         ".cards {max-width: none !important;}",
         "@media (max-width: 960px) {.content {display: none; }}"
       ],
