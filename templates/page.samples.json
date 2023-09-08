@@ -86,10 +86,8 @@
         "75009843-88f4-4494-a1a7-58e4098cc06b"
       ],
       "custom_css": [
-        "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; }}",
-        ".hero .btn {animation: none;}",
-        ".hero img {margin: 0 !important; \/*animation: none;*\/ -webkit-animation: none; animation: none; -webkit-transform: none; transform: none; -webkit-animation-fill-mode: none; animation-fill-mode: none; opacity: 1; transform-origin: unset;}",
-        "img,picture, .content {min-width: 100% !important; }"
+        "@media (max-width: 866px) {h1 {font-size: 2.5em !important; padding-left: 5px; padding-right: 5px; } img,picture,.content {min-width: 100% !important;}}",
+        ".hero img {margin: 0 !important; \/*animation: none;*\/ -webkit-animation: none; animation: none; -webkit-transform: none; transform: none; -webkit-animation-fill-mode: none; animation-fill-mode: none; opacity: 1; transform-origin: unset;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-hero-background-2.jpg",
