@@ -518,7 +518,7 @@
       "type": "newsletter",
       "custom_css": [
         "h2 {display: block;}",
-        ".newsletter-section {background-color: #f7f2e5;}",
+        ".newsletter-section {padding: 30px 0; background-color: #f7f2e5;}",
         ".btn {background-color: #3db2b0; color: white !important; font-size: 1.6em !important; text-transform: uppercase; line-height: 1.3em !important; padding: 8px 20px 4px 20px !important;}",
         ".btn:hover {background-color: #e052ad;}",
         ".text,.btn {border-radius: 10px !important; height: 55px;}"
