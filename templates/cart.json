@@ -9,9 +9,26 @@
       "settings": {
         "continue_shopping_url": "shopify:\/\/collections"
       }
+    },
+    "d71967a5-f6c5-41a5-8579-c3c5b658acb8": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "You May Also Like",
+        "collection": "superfood-granola",
+        "columns": 4,
+        "rows": 1,
+        "button_label": "Browse more products",
+        "button_link": "",
+        "show_background": false,
+        "expanded": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
     }
   },
   "order": [
-    "cart"
+    "cart",
+    "d71967a5-f6c5-41a5-8579-c3c5b658acb8"
   ]
 }
