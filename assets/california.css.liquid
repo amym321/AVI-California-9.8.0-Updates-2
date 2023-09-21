@@ -10332,11 +10332,20 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
+#samples .marquee-bar {
+    background:  #e052ad !important;
+}
 .marquee-bar {
-  background: #e052ad;
+  background: #bf9c6e;  /*  #e052ad  #f7f2e5 */
   /* background:  linear-gradient(to right,#f7f2e5 , #bf9c6e  ); */  /*#2b9490,#e052ad*/
   font-family: "Baskerville No 2", serif;
   padding-top: 30px;
+}
+@media (min-width: 540px) {
+  .marquee-bar {
+    padding-bottom: 20px;
+    padding-top: 50px
+  }
 }
 .marquee {
   padding: 2px 0;
@@ -10370,7 +10379,7 @@ body {
   animation: marquee 15s linear infinite; /*10*/
 }
 .marquee-bar .marquee-block {
-  animation: marquee2 12s linear infinite; /*10*/
+  animation: marquee2 14s linear infinite; /* was 12. 10 b4 that */
 }
 @media (min-width:541px) and (max-width:920px) {
   .announcement-bar .marquee-block {
@@ -10391,7 +10400,7 @@ body {
 
 
 .marquee-text  {
-  color:#fff;
+  color:#fff;   /* #e052ad */
   letter-spacing: .15em;
   display: inline-block;
   white-space: nowrap;
