@@ -10376,25 +10376,25 @@ body {
   will-change: transform;
 }
 .announcement-bar .marquee-block {
-  animation: marquee 15s linear infinite; /*10*/
+  animation: marquee 18s linear infinite; /* was 15, 10*/
 }
 .marquee-bar .marquee-block {
-  animation: marquee2 14s linear infinite; /* was 12. 10 b4 that */
+  animation: marquee2 16s linear infinite; /* was 14, 12, 10  */
 }
 @media (min-width:541px) and (max-width:920px) {
   .announcement-bar .marquee-block {
-    animation: marquee 8s linear infinite;
+    animation: marquee 10s linear infinite;  /* was 8  */
   }
   .marquee-bar .marquee-block {
-    animation: marquee2 8s linear infinite;
+    animation: marquee2 10s linear infinite;  /* was 8  */
   }
 }
 @media (max-width:540px) {
   .announcement-bar .marquee-block {
-    animation: marquee 5s linear infinite;
+    animation: marquee 6s linear infinite;  /* was 5 */
   }
   .marquee-bar .marquee-block {
-    animation: marquee2 5s linear infinite;
+    animation: marquee2 6s linear infinite;  /* was 5  */
   }
 }
 
@@ -10467,14 +10467,6 @@ body {
 #samples .marquee-hr-thick {
   border:#e052ad 5px solid;
 }
-/* @media (max-width:540px) {
-  .marquee-hr-thick {
-    border:#bf9c6e 5px solid;
-  }
-  #samples .marquee-hr-thick {
-    border:#e052ad 5px solid;
-  }
-} */
 
 @keyframes marquee {
   0% { left: 0; }
