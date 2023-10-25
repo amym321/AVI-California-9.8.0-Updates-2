@@ -536,7 +536,7 @@
         ".content {margin: 0;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"marquee-bar\" role=\"banner\">\n  <div class=\"marquee\">\n    <div class=\"marquee-block\">\n      <p class=\"marquee-text\">\n        <span>Granola <\/span>* Cereal * Snack On It's Own * Granola Bars * Trail Mix * Yogurt Topping * <\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+        "custom_liquid": "<hr class=\"marquee-hr-thick\">\n  <hr class=\"marquee-hr-thin\">\n  <div   class=\"marquee-bar\" role=\"banner\">\n    <div class=\"marquee\">\n      <div class=\"marquee-block\">\n        <p class=\"marquee-text\">\n          <span>Granola <\/span>&#9825; Cereal &#9825; Snack On It's Own &#9825; Granola Bars &#9825; Trail Mix &#9825; Yogurt Topping &#9825; <\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n  <hr class=\"marquee-hr-thin\">\n  <hr class=\"marquee-hr-thick\">",
         "show_background": false,
         "expanded": false,
         "expanded_content": false,
