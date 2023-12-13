@@ -806,7 +806,7 @@
     "3b6f69a9-8347-41ba-9fce-76d08e9245bd": {
       "type": "custom-liquid",
       "custom_css": [
-        ".content {padding-top: 80px !important; \/* padding-bottom: 80px !important;*\/}"
+        ".content {padding-top: 80px !important; margin-bottom: 0; \/* padding-bottom: 80px !important;*\/}"
       ],
       "settings": {
         "custom_liquid": "<hr class=\"marquee-hr-thick\">\n  <hr class=\"marquee-hr-thin\">\n  <div   class=\"marquee-bar\" role=\"banner\">\n    <div class=\"marquee\">\n      <div class=\"marquee-block\">\n        <p class=\"marquee-text\">\n          <span>Granola <\/span>&#9825; Cereal &#9825; Snack On It's Own &#9825; Granola Bars &#9825; Trail Mix &#9825; Yogurt Topping &#9825; <\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n  <hr class=\"marquee-hr-thin\">\n  <hr class=\"marquee-hr-thick\">",
