@@ -646,6 +646,7 @@
       "custom_css": [
         ".image {box-shadow: none;}",
         ".cards {max-width: none !important;}",
+        ".content {padding-top: 0 !important; padding-left: 0 !important; padding-right: 0 !important;}",
         "@media (max-width: 960px) {.content {display: none; }}"
       ],
       "settings": {
@@ -831,8 +832,8 @@
         "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
+            "title_color": "",
+            "alignment": "center",
             "html_area": ""
           }
         }
