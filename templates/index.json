@@ -842,7 +842,7 @@
         "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff"
       ],
       "custom_css": [
-        ".apps {padding-top: 30px !important; margin-bottom: 40px;}",
+        ".apps {padding-top: 30px !important; \/*margin-bottom: 40px;*\/ background: #f7f2e5 !important; padding-bottom: 40px; margin-bottom: 0;}",
         "#insta-feed h2 {margin-bottom: 40px;}"
       ],
       "settings": {
