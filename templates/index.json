@@ -809,7 +809,7 @@
         ".content {padding-top: 80px !important; margin-bottom: 0; \/* padding-bottom: 80px !important;*\/}"
       ],
       "settings": {
-        "custom_liquid": "<hr class=\"marquee-hr-thick\">\n  <hr class=\"marquee-hr-thin\">\n  <div   class=\"marquee-bar\" role=\"banner\">\n    <div class=\"marquee\">\n      <div class=\"marquee-block\">\n        <p class=\"marquee-text\">\n          <span>Granola <\/span>&#9825; Cereal &#9825; Snack On It's Own &#9825; Granola Bars &#9825; Trail Mix &#9825; Yogurt Topping &#9825; <\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n  <hr class=\"marquee-hr-thin\">\n  <hr class=\"marquee-hr-thick\">",
+        "custom_liquid": "<hr class=\"marquee-hr-thick\">\n  <hr class=\"marquee-hr-thin\">\n  <div   class=\"marquee-bar\" role=\"banner\">\n    <div class=\"marquee\">\n      <div class=\"marquee-block\">\n        <p class=\"marquee-text\">\n          <span>Granola <\/span>&#9825; Cereal &#9825; Snack On Its Own &#9825; Granola Bars &#9825; Trail Mix &#9825; Yogurt Topping &#9825; <\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n  <hr class=\"marquee-hr-thin\">\n  <hr class=\"marquee-hr-thick\">",
         "show_background": false,
         "expanded": false,
         "expanded_content": false,
@@ -832,6 +832,7 @@
         "222c7b26-a7d1-46c3-96d3-7d0f5a8344ff": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title": "",
             "title_color": "",
             "alignment": "center",
             "html_area": ""
