@@ -65,7 +65,7 @@
           "type": "text_column",
           "settings": {
             "title": "Ingredients",
-            "text": "<p>Ingredients: Lupini bean flakes, cassava plant prebiotic fiber, almonds, coconut chips, coconut oil, soluble tapioca fiber, erythritol, flax seeds, chia seeds, water, pecans, vanilla extract, salt, monk fruit extract.<br\/><\/p>",
+            "text": "<p>Ingredients: Lupini bean flakes, cassava plant prebiotic fiber, almonds, coconut chips, coconut oil, erythritol, flax seeds, chia seeds, water, pecans, vanilla extract, salt, monk fruit extract.<br\/><\/p>",
             "image_url": ""
           }
         }
