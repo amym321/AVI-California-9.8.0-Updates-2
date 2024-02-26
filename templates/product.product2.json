@@ -52,7 +52,7 @@
           "type": "text_column",
           "settings": {
             "title": "Ingredients",
-            "text": "<p>Lupini bean flakes, soluble tapioca fiber syrup, almonds, pecans, chocolate chips (unsweetened chocolate, erythritol, cocoa butter, stevia extract, sunflower lecithin), coconut oil, erythritol, flax seeds, chia seeds, cocoa powder (processed with alkali), coconut chips, vanilla extract, salt, monk fruit extract.<\/p>",
+            "text": "<p>Lupini bean flakes, cassava plant prebiotic fiber, almonds, pecans, chocolate chips, coconut oil, erythritol, flax seeds, chia seeds, cocoa powder, coconut chips, vanilla extract, salt, monk fruit extract.<\/p>",
             "image_url": ""
           }
         }
@@ -109,11 +109,12 @@
         "alireviews-block-1679866475026": {
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
+            "product": "",
             "name": "Review Box",
             "vertical_alignment": "2",
-            "rating_color": "#1F1F1F",
+            "rating_color": "#1f1f1f",
             "section_color": "#ffffff",
-            "primary_text_color": "#1F1F1F"
+            "primary_text_color": "#1f1f1f"
           }
         }
       },
