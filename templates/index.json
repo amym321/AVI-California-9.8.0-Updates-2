@@ -3,13 +3,6 @@
     "hero": {
       "type": "hero",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "text": "The ONLY Granola made  with Ancient Lupini Flakes!",
-            "max_width": 500
-          }
-        },
         "subheading": {
           "type": "subheading",
           "settings": {
@@ -20,8 +13,8 @@
         "7c54627b-a3f3-4053-8dec-78c8ad142d7a": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>KETO with PREBIOTIC FIBER<\/p><p>ZERO ADDED SUGARS<\/p><p>GRAIN & GLUTEN FREE<\/p>",
-            "max_width": 500
+            "text": "<p>9 G of FIBER per serving<\/p><p>0 ADDED SUGAR<\/p><p>GRAIN & GLUTEN FREE<\/p>",
+            "max_width": 620
           }
         },
         "57947af1-1696-4135-8db2-ef9545844f8f": {
@@ -42,7 +35,6 @@
         }
       },
       "block_order": [
-        "heading",
         "subheading",
         "7c54627b-a3f3-4053-8dec-78c8ad142d7a",
         "57947af1-1696-4135-8db2-ef9545844f8f",
