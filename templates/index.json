@@ -85,7 +85,7 @@
           "type": "button",
           "settings": {
             "text": "learn more",
-            "link": "shopify:\/\/collections\/superfood-granola",
+            "link": "shopify:\/\/pages\/eco-friendly-food",
             "style": "action",
             "size": "normal"
           }
