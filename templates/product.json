@@ -18,7 +18,7 @@
         "8c9e8c30-c1da-452c-857d-61a00d14efae": {
           "type": "text",
           "settings": {
-            "text": "9 oz bag",
+            "text": "Free Shipping :)",
             "text_style": "body",
             "increase_space_before_block": false
           }
@@ -127,11 +127,12 @@
         "alireviews-block-1679866473241": {
           "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
+            "product": "",
             "name": "Review Box 1",
             "vertical_alignment": "2",
-            "rating_color": "#1F1F1F",
+            "rating_color": "#1f1f1f",
             "section_color": "#ffffff",
-            "primary_text_color": "#1F1F1F"
+            "primary_text_color": "#1f1f1f"
           }
         }
       },
@@ -139,6 +140,11 @@
         "alireviews-block-1679866473241"
       ],
       "settings": {
+        "show_background": false,
+        "expanded": false,
+        "expanded_content": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true
       }
     }
   },
