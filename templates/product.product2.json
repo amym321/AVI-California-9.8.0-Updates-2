@@ -44,7 +44,7 @@
           "type": "text_column",
           "settings": {
             "title": "Product Description",
-            "text": "<p>Our Chocolate Sea Salt small batch Granola combines rich cocoa butter, chocolate chips and cocoa powder for the ultimate indulgent snack. Our grain-free clusters are not only keto friendly but have zero added sugars. Crafted with our magical lupini bean flakes, this granola will transform your nutritional profile and provide you with 9 grams of fiber to keep you energized and feeling full. This plant based protein offers loads of antioxidants from chia and flax seeds and can be enjoyed with milk, yogurt, a smoothie or just straight out of the bag! <\/p>",
+            "text": "<p>Our Chocolate Sea Salt small batch Granola combines rich cocoa butter, chocolate chips and cocoa powder for the ultimate indulgent snack. Our grain-free clusters are not only gluten-free but have zero added sugars. Crafted with our magical lupini bean flakes, this granola will transform your nutritional profile and provide you with 9 grams of fiber to keep you energized and feeling full. This plant based protein offers loads of antioxidants from chia and flax seeds and can be enjoyed with milk, yogurt, a smoothie or just straight out of the bag! <\/p>",
             "image_url": ""
           }
         },
@@ -107,7 +107,7 @@
       "type": "apps",
       "blocks": {
         "alireviews-block-1679866475026": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
             "product": "",
             "name": "Review Box",
