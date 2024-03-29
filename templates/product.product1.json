@@ -65,7 +65,7 @@
           "type": "text_column",
           "settings": {
             "title": "Ingredients",
-            "text": "<p>Ingredients: Lupini bean flakes, cassava plant prebiotic fiber, almonds, pecans, chocolate chips, coconut oil, erythritol, flax seeds, chia seeds, cocoa poweder, coconut chips, vanilla extract, salt, monk fruit extract.<br\/><\/p>",
+            "text": "<p>Ingredients: Lupini bean flakes, cassava plant prebiotic fiber, almonds, coconut chips, coconut oil, cassava plant powder, erythritol, flax seeds, chia seeds, water, pecans, almond exact, salt, monk fruit extract.<br\/><\/p>",
             "image_url": ""
           }
         }
@@ -123,7 +123,7 @@
       "type": "apps",
       "blocks": {
         "alireviews-block-1658404844": {
-          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
             "product": "",
             "name": "Review Box",
