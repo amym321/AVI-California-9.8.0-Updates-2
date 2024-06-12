@@ -474,7 +474,6 @@
     },
     "banner_with_text_M93zrQ": {
       "type": "banner-with-text",
-      "disabled": true,
       "custom_css": [
         ".banner-with-text-section {min-height: 450px; margin: 200px 0 0 0; padding: 0 0 0 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg.png?v=1647852557) no-repeat #bf9c6e !important; background-position: bottom center !important;}",
         ".banner-with-text-section .content {padding: 125px 0 125px 0 !important; max-width: 1200px; margin: auto;}"
