@@ -474,7 +474,6 @@
     },
     "banner_with_text_gtQtgc": {
       "type": "banner-with-text",
-      "disabled": true,
       "custom_css": [
         ".banner-with-text-section {min-height: 450px; margin: 0 0 0 0; padding: 0 0 50px 0; background: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/6881\/5104\/files\/home-section-bg2.png?v=1647852761) no-repeat #bf9c6e !important; background-position: bottom center !important;}",
         ".info .btn:first-of-type {color: #bf9c6e !important;}",
@@ -484,6 +483,7 @@
       "settings": {
         "title": "Banner with text",
         "text": "<p>Pair large text with an image to give focus to your chosen <\/p>",
+        "image": "shopify:\/\/shop_images\/almond-coconut-granola-tilt-2.png",
         "image_position": "center center",
         "text_position": "right",
         "text_align": "left",
@@ -520,6 +520,7 @@
         "d96ab067-24b9-4d40-ac09-0302cc5afcc3",
         "1647529743321f5396-0"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 400px) {.content h2 {font-size: 2em; padding: 0 10px !important; }}",
         ".content {margin: 80px 0;}"
